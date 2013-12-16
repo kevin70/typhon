@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.skfiy.typhon</groupId>
+        <artifactId>typhon-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    
+    <groupId>org.skfiy.typhon</groupId>
+    <artifactId>typhon-agent</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Skfiy Typhon Agent</name>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                        <manifestEntries>
+                            <Agent-Class>org.skfiy.typhon.agent.Agent</Agent-Class>
+                            <Can-Redefine-Classes>true</Can-Redefine-Classes>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2013 The Skfiy Open Association.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE mbeans-descriptors PUBLIC
+	 "-//Apache Software Foundation//DTD Model MBeans Configuration File"
+	 "http://skfiy.googlecode.com/files/mbeans-descriptors.dtd">
+         
+<mbeans-descriptors>
+    
+    <mbean name="Container"
+           description="The Typhon IoC Container"
+           domain="org.skfiy.typhon"
+           type="org.skfiy.typhon.container.GuiceContainer">
+        
+        <operation name="init"
+                   description="init this Container"
+                   impact="ACTION"
+                   returnType="void"/>
+        
+        <operation name="getInstance"
+                   description="get object instance"
+                   impact="ACTION"
+                   returnType="java.lang.Object">
+            <parameter name="clazz" type="java.lang.Class"/>
+        </operation>
+        
+        <operation name="injectMembers"
+                   description="inject members"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="obj" type="java.lang.Object"/>
+        </operation>
+        
+        <operation name="destroy"
+                   description="destroy this ServiceManager"
+                   impact="ACTION"
+                   returnType="void"/>
+    </mbean>
+    
+</mbeans-descriptors>

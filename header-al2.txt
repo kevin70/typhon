@@ -1,0 +1,17 @@
+^<\?xml.*>$
+^@echo off$
+^#!
+^\W*$
+^(rem)?\W*Copyright ([0-9\-]*) The Skfiy Open Association.
+^(rem)?\W*$
+^(rem)?\W*Licensed under the Apache License, Version 2.0 \(the "License"\);
+^(rem)?\W*you may not use this file except in compliance with the License.
+^(rem)?\W*You may obtain a copy of the License at
+^(rem)?\W*
+^(rem)?\W*http://www.apache.org/licenses/LICENSE-2.0
+^(rem)?\W*
+^(rem)?\W*Unless required by applicable law or agreed to in writing, software
+^(rem)?\W*distributed under the License is distributed on an "AS IS" BASIS,
+^(rem)?\W*WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+^(rem)?\W*See the License for the specific language governing permissions and
+^(rem)?\W*limitations under the License.
