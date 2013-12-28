@@ -23,8 +23,8 @@ import com.alibaba.fastjson.JSONObject;
  */
 public final class Response {
 
-    public String ns;
-    private JSONObject data;
+    private final String ns;
+    private final JSONObject data;
 
     public Response(String ns, JSONObject data) {
         this.ns = ns;
@@ -37,5 +37,11 @@ public final class Response {
 
     public JSONObject getData() {
         return data;
+    }
+
+    @Override
+    public String toString() {
+        String ret = ns + ":" + data.toJSONString();
+        return ret;
     }
 }

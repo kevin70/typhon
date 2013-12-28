@@ -21,8 +21,6 @@ import javax.inject.Singleton;
 import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.RoleData;
-import org.skfiy.typhon.packet.Namespaces;
-import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.repository.RoleRepository;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
@@ -46,20 +44,24 @@ public class BasicRoleListener extends AbstractRoleListener {
         player.setRole(role);
 
         // 首次初始化角色信息
-        sendPlayerInfo(player);
+        Session session = SessionContext.getSession();
+        session.setAttribute(SessionUtils.ATTR_PLAYER, player);
     }
 
     @Override
     public void roleLoaded(Role role) {
-        Player player = new Player();
-        player.setRole(role);
-        
-        RoleData roleData = roleReposy.loadRoleData(role.getRid());
-        for (RoleDatable rd : roleDatables) {
-            rd.deserialize(roleData, player);
+        Session session = SessionContext.getSession();
+        Player player = (Player) session.getAttribute(SessionUtils.ATTR_PLAYER);
+        if (player == null) {
+            player = new Player();
+            player.setRole(role);
+            
+            RoleData roleData = roleReposy.loadRoleData(role.getRid());
+            for (RoleDatable rd : roleDatables) {
+                rd.deserialize(roleData, player);
+            }
+            session.setAttribute(SessionUtils.ATTR_PLAYER, player);
         }
-
-        sendPlayerInfo(player);
     }
 
     @Override
@@ -70,15 +72,5 @@ public class BasicRoleListener extends AbstractRoleListener {
         }
         
         roleReposy.update(roleData);
-    }
-    
-    private void sendPlayerInfo(Player player) {
-        Session session = SessionContext.getSession();
-        session.setAttribute(SessionUtils.ATTR_PLAYER, player);
-        
-        // send player
-        player.setNs(Namespaces.NS_PLAYER_INF);
-        player.setType(Packet.Type.set);
-        session.write(player);
     }
 }

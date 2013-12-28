@@ -15,15 +15,16 @@
  */
 package org.skfiy.typhon.spi.auth;
 
+import java.util.Map;
 import javax.inject.Inject;
-import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.User;
-import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.Auth;
 import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
 import org.skfiy.typhon.repository.impl.UserRepositoryImpl;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
 import org.skfiy.typhon.session.SessionManager;
+import org.skfiy.typhon.session.SessionUtils;
 
 /**
  *
@@ -38,39 +39,41 @@ public abstract class AbstractAuthenticator implements Authenticator {
     @Inject
     protected RoleRepositoryImpl roleReposy;
 
+    @Override
+    public void authentic(Auth auth) {
+        prepare(doAuthentic(auth));
+    }
+    
     /**
      *
      * @param user
-     * @param authType
      */
-    protected void prepare(User user, String authType) {
+    protected void prepare(User user) {
         String lock = (user.getUsername() + "@add-session").intern();
-
         synchronized (lock) {
             Session session = SessionContext.getSession();
             session.setId(user.getUid());
-            session.setAuthType(authType);
-
-            // 已经存在会话
-//            Session existingSession = sessionManager.getSession(user.getUid());
-//            if (existingSession != null) {
-//                for (Map.Entry<String, Object> entry
-//                        : existingSession.getAttributeMap().entrySet()) {
-//                    session.setAttribute(entry.getKey(), entry.getValue());
-//                }
-//                // 断开已经存在的Session
-//                existingSession.close();
-//            }
-            sessionManager.addSession(user.getUid(), session);
-
-            // load role
-            Role role = roleReposy.get(user.getUid());
-            if (role == null) {
-                session.write(Namespaces.NS_ROLE, "{}");
-            } else {
+            
+            // **
+            Session anotherSession = sessionManager.getSession(user.getUid());
+            if (anotherSession != null) {
+                anotherSession.close();
                 
+                for (Map.Entry<String, Object> entry
+                        : anotherSession.getAttributeMap().entrySet()) {
+                    session.setAttribute(entry.getKey(), entry.getValue());
+                }
             }
+            
+            session.setAttribute(SessionUtils.ATTR_USER, user);
+            sessionManager.addSession(user.getUid(), session);
         }
     }
 
+    /**
+     * 
+     * @param auth
+     * @return 
+     */
+    protected abstract User doAuthentic(Auth auth);
 }

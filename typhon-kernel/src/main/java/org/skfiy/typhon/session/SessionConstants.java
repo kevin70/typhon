@@ -24,6 +24,5 @@ public abstract class SessionConstants {
     
     public static final String ATTR_USER = "USER";
     public static final String ATTR_PLAYER = "PLAYER";
-    public static final String TMP_ATTR_AUTH_PACKET = "auth-packet";
-    
+    public static final String ATTR_OVER_PACKET_ID = "OVER_PACKET_ID";
 }

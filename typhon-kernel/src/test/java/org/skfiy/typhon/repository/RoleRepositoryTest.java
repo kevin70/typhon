@@ -38,100 +38,72 @@ public class RoleRepositoryTest extends TestBase {
 
     @Test
     public void save() {
-        int rid = initRole();
-        cleanRole(rid);
-    }
-    
-    @Test
-    public void delete() {
-        int rid = initRole();
-        cleanRole(rid);
+        initRole();
+        cleanRole();
     }
     
     @Test
     public void update() {
-        int rid = initRole();
+        initRole();
         
         Role role = new Role();
         role.setRid(rid);
         role.setLevel(12);
-        
         roleReposy.update(role);
+        
         // clean
-        cleanRole(rid);
+        cleanRole();
     }
     
     @Test
     public void get() {
-        int rid = initRole();
+        initRole();
+        
         Role role = roleReposy.get(rid);
         Assert.assertEquals(rid, role.getRid());
         
         // clean
-        cleanRole(rid);
+        cleanRole();
     }
     
     @Test
     public void existsName() {
-        int rid = initRole();
+        initRole();
         boolean r = roleReposy.existsName(TestConstants.ROLE_NAME);
         Assert.assertTrue(r);
         
         // clean
-        cleanRole(rid);
+        cleanRole();
     }
     
     @Test
     public void updateRoleData() {
-        int rid = initRole();
+        initRole();
+        
         RoleData roleData = new RoleData();
         roleData.setRid(rid);
         roleData.setNormalData("NormalData");
-        roleData.setKnapsackData("KnapsackData");
+        roleData.setBagData("BagData");
         roleReposy.update(roleData);
         
         // clean
-        cleanRole(rid);
+        cleanRole();
     }
     
     @Test
     public void loadRoleData() {
-        int rid = initRole();
+        initRole();
         RoleData roleData = new RoleData();
         roleData.setRid(rid);
         roleData.setNormalData("NormalData");
-        roleData.setKnapsackData("KnapsackData");
+        roleData.setBagData("BagData");
         roleReposy.update(roleData);
         
         RoleData newRoleData = roleReposy.loadRoleData(rid);
         Assert.assertEquals(roleData.getNormalData(), newRoleData.getNormalData());
-        Assert.assertEquals(roleData.getKnapsackData(), newRoleData.getKnapsackData());
+        Assert.assertEquals(roleData.getBagData(), newRoleData.getBagData());
+        
         // clean
-        cleanRole(rid);
-    }
-    
-    // init datas
-    private int initUser() {
-        return userReposy.save(TestConstants.USERNAME, TestConstants.PASSWORD);
-    }
-
-    private void cleanUser(int uid) {
-        userReposy.delete(uid);
-    }
-
-    private int initRole() {
-        int uid = initUser();
-
-        Role role = new Role();
-        role.setRid(uid);
-        role.setName(TestConstants.ROLE_NAME);
-        role.setLevel(1);
-        roleReposy.save(role);
-        return uid;
-    }
-
-    private void cleanRole(int rid) {
-        roleReposy.delete(rid);
-        cleanUser(rid);
+        cleanRole();
     }
 }

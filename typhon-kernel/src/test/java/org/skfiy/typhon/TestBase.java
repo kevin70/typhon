@@ -15,6 +15,10 @@
  */
 package org.skfiy.typhon;
 
+import javax.inject.Inject;
+import org.skfiy.typhon.domain.Role;
+import org.skfiy.typhon.repository.RoleRepository;
+import org.skfiy.typhon.repository.UserRepository;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -27,6 +31,14 @@ import org.testng.annotations.Guice;
 @Guice(moduleFactory = TestModuleFactory.class)
 public abstract class TestBase extends TestSupport {
 
+    protected int uid = -1;
+    protected int rid = -1;
+    
+    @Inject
+    protected UserRepository userResposy;
+    @Inject
+    protected RoleRepository roleResposy;
+    
     @BeforeClass
     public final void beforeInvoke(ITestContext context) {
         setup();
@@ -44,4 +56,51 @@ public abstract class TestBase extends TestSupport {
     protected void teardown() {
         //
     }
+
+    // **********************************************************//
+    /**
+     * 
+     */
+    protected void initUser() {
+        if (uid != -1) {
+            throw new IllegalStateException("已经有保存成功的User信息未被清理 uid=" + uid);
+        }
+        uid = userResposy.save(TestConstants.USERNAME, TestConstants.PASSWORD);
+    }
+    
+    /**
+     * 
+     */
+    protected void cleanUser() {
+        if (uid != -1) {
+            userResposy.delete(uid);
+            uid = -1;
+        }
+    }
+    
+    /**
+     * 
+     */
+    protected void initRole() {
+        if (rid != -1) {
+            throw new IllegalStateException("已经有保存成功的Role信息未被清理 rid=" + rid);
+        }
+        
+        initUser();
+        
+        Role role = new Role();
+        role.setRid(uid);
+        role.setName(TestConstants.ROLE_NAME);
+        roleResposy.save(role);
+        rid = uid;
+    }
+    
+    protected void cleanRole() {
+        if (rid != -1) {
+            roleResposy.delete(rid);
+            rid = -1;
+        }
+        cleanUser();
+    }
+    // **********************************************************//
 }

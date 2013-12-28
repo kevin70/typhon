@@ -23,7 +23,7 @@ public class RoleData {
 
     private int rid;
     private String normalData;
-    private String knapsackData;
+    private String bagData;
 
     public int getRid() {
         return rid;
@@ -41,11 +41,12 @@ public class RoleData {
         this.normalData = normalData;
     }
 
-    public String getKnapsackData() {
-        return knapsackData;
+    public String getBagData() {
+        return bagData;
     }
 
-    public void setKnapsackData(String knapsackData) {
-        this.knapsackData = knapsackData;
+    public void setBagData(String bagData) {
+        this.bagData = bagData;
     }
+
 }

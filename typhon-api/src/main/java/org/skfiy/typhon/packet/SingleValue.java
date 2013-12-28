@@ -13,30 +13,38 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.spi;
-
-import org.skfiy.typhon.session.SessionUtils;
-import java.util.Set;
-import javax.inject.Inject;
-import javax.inject.Singleton;
-import org.skfiy.typhon.domain.Player;
-import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
-import org.skfiy.typhon.session.Session;
-import org.skfiy.typhon.session.SessionListener;
+package org.skfiy.typhon.packet;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@Singleton
-public class PlayerSessionListener implements SessionListener {
+public class SingleValue extends Packet {
 
-    @Override
-    public void sessionCreated(Session session) {
+    public static final String SUCCESS = "S";
+    public static final String FAILURE = "F";
+    
+    private Object val;
 
+    public Object getVal() {
+        return val;
     }
 
-    @Override
-    public void sessionDestroyed(Session session) {
+    public void setVal(Object val) {
+        this.val = val;
     }
+
+    /**
+     * 
+     * @param packet
+     * @param val
+     * @return 
+     */
+    public static SingleValue createResult(Packet packet, Object val) {
+        SingleValue result = new SingleValue();
+        result.setId(packet.getId());
+        result.setVal(val);
+        return result;
+    }
+    
 }

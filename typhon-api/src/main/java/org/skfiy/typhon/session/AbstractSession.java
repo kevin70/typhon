@@ -37,7 +37,7 @@ public abstract class AbstractSession implements Session {
     private Map<String, Object> attributes;
 
     public AbstractSession() {
-        attributes = new ConcurrentHashMap<String, Object>();
+        attributes = new ConcurrentHashMap<>();
     }
 
     @Override
@@ -88,7 +88,8 @@ public abstract class AbstractSession implements Session {
     @Override
     public void write(Packet packet) {
         Assert.notNull(packet);
-        Assert.notNull(packet.getNs());
+        Assert.notNull(packet.getNs(),
+                "[Assertion failed] - packet ns is required; it must not be null");
         
         write(packet.getNs(), JSON.toJSONString(packet));
     }

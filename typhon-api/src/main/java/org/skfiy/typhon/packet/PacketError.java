@@ -64,7 +64,7 @@ public class PacketError extends Packet {
     /**
      *
      * @param packet
-     * @param code
+     * @param cond
      * @return
      */
     public static PacketError createResult(Packet packet, Condition cond) {

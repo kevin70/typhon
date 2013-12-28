@@ -53,10 +53,10 @@ public class RoleRepositoryImpl implements RoleRepository {
     private final String SAVE_ROLE_DATA_RID_SQL = "insert into " + getRoleDataTableName()
             + "(rid) values(?)";
     private final String UPDATE_ROLE_DATA_SQL = "update " + getRoleDataTableName()
-            + " t set t.normalData=?,t.knapsackData=? where t.rid=?";
+            + " t set t.normalData=?,t.bagData=? where t.rid=?";
     private final String DELETE_ROLE_DATA_SQL = "delete from " + getRoleDataTableName()
             + " where rid=?";
-    private final String LOAD_ROLE_DATA_SQL = "select t.normalData,t.knapsackData from "
+    private final String LOAD_ROLE_DATA_SQL = "select t.normalData,t.bagData from "
             + getRoleDataTableName()
             + " t where t.rid=?";
     
@@ -236,7 +236,7 @@ public class RoleRepositoryImpl implements RoleRepository {
             conn = connectionProvider.getConnection();
             ps = conn.prepareStatement(UPDATE_ROLE_DATA_SQL);
             ps.setString(1, roleData.getNormalData());
-            ps.setString(2, roleData.getKnapsackData());
+            ps.setString(2, roleData.getBagData());
 
             //*****
             ps.setInt(3, roleData.getRid());
@@ -282,7 +282,7 @@ public class RoleRepositoryImpl implements RoleRepository {
             RoleData roleData = new RoleData();
             roleData.setRid(rid);
             roleData.setNormalData(rs.getString("normalData"));
-            roleData.setKnapsackData(rs.getString("knapsackData"));
+            roleData.setBagData(rs.getString("bagData"));
             
             return roleData;
         } catch (SQLException ex) {

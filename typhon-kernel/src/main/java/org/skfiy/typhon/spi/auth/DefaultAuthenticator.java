@@ -20,7 +20,6 @@ import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
-import org.skfiy.typhon.session.SessionUtils;
 
 /**
  *
@@ -30,7 +29,7 @@ import org.skfiy.typhon.session.SessionUtils;
 public class DefaultAuthenticator extends AbstractAuthenticator {
 
     @Override
-    public void authentic(Auth auth) {
+    protected User doAuthentic(Auth auth) {
         User user = userResposy.findByUsername(auth.getUsername());
         if (user == null) {
             throw new UserNotFoundException("not found [" + auth.getUsername() + "] user");
@@ -42,10 +41,11 @@ public class DefaultAuthenticator extends AbstractAuthenticator {
 
         userResposy.updateLastAccessedTime(user.getUid());
         
+        // 设置Session认证类型
         Session session = SessionContext.getSession();
-        session.setAttribute(SessionUtils.ATTR_USER, user);
-        session.setAttribute(SessionUtils.TMP_ATTR_AUTH_PACKET, auth);
+        session.setAuthType("DEFAULT");
         
-        prepare(user, "DEFAULT");
+        return user;
     }
+
 }

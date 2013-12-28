@@ -28,6 +28,7 @@ import org.skfiy.typhon.packet.Auth;
 import org.skfiy.typhon.packet.PacketError;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
+import org.skfiy.typhon.spi.RoleProvider;
 import org.skfiy.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,8 +44,10 @@ public class AuthenticationAction {
     
     @Inject
     private Authenticator authenticator;
+    @Inject
+    private RoleProvider roleProvider;
 
-    @Action(Namespaces.NS_AUTH)
+    @Action(Namespaces.AUTH)
     public void authentic(Auth auth) {
         Session session = SessionContext.getSession();
         
@@ -73,7 +76,7 @@ public class AuthenticationAction {
             JSONObject result = new JSONObject();
             result.put("id", auth.getId());
             result.put("uid", SessionUtils.getUser().getUid());
-            session.write(Namespaces.NS_USER_INFO, result);
+            session.write(Namespaces.USER_INFO, result);
             
         } catch (UserNotFoundException e) {
             LOG.debug("not found user [{}]", auth.getUsername(), e);
@@ -91,6 +94,7 @@ public class AuthenticationAction {
             session.write(error);
         }
         
-        
+        // 预加载角色
+        roleProvider.preload();
     }
 }

@@ -15,28 +15,38 @@
  */
 package org.skfiy.typhon.spi;
 
-import org.skfiy.typhon.session.SessionUtils;
-import java.util.Set;
-import javax.inject.Inject;
-import javax.inject.Singleton;
 import org.skfiy.typhon.domain.Player;
-import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
+import org.skfiy.typhon.domain.Role;
+import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.session.Session;
-import org.skfiy.typhon.session.SessionListener;
+import org.skfiy.typhon.session.SessionContext;
+import org.skfiy.typhon.session.SessionUtils;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@Singleton
-public class PlayerSessionListener implements SessionListener {
+public class FinalRoleListener extends AbstractRoleListener {
+
+//    @Override
+//    public void roleCreated(Role role) {
+//        sendPlayerInfo();
+//    }
 
     @Override
-    public void sessionCreated(Session session) {
-
+    public void roleLoaded(Role role) {
+        sendPlayerInfo();
     }
 
-    @Override
-    public void sessionDestroyed(Session session) {
+    private void sendPlayerInfo() {
+        Session session = SessionContext.getSession();
+        Player player = SessionUtils.getPlayer();
+
+        // send player
+        player.setNs(Namespaces.PLAYER_INFO);
+        player.setType(Packet.Type.set);
+        session.write(player);
     }
+
 }

@@ -15,8 +15,11 @@
  */
 package org.skfiy.typhon.action;
 
+import org.skfiy.typhon.Response;
+import org.skfiy.typhon.TestConstants;
 import org.skfiy.typhon.TestProtocolBase;
 import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.PacketRole;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,26 +27,26 @@ import org.testng.annotations.Test;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class AuthenticationActionTest extends TestProtocolBase {
+public class RoleActionTest extends TestProtocolBase {
 
     @Test
-    public void authentic() {
+    public void create() {
         initUser();
         auth();
-        cleanUser();
+        poll();
         
-        removalOverMessage();
-    }
-    
-    /**
-     * 
-     */
-    @Test
-    public void existsRoleAuthentic() {
-        initRole();
-        auth();
+        // 创建角色
+        PacketRole packetRole = new PacketRole();
+        packetRole.setNs(Namespaces.ROLE_CREATE);
+        packetRole.setId(generateId());
+        packetRole.setName(TestConstants.ROLE_NAME);
+        offer(packetRole);
         
-        Assert.assertEquals(poll().getNs(), Namespaces.PLAYER_INFO);
+        // 收到创建角色响应信息
+        Response resp = poll();
         cleanRole();
+        roleResposy.delete(resp.getData().getJSONObject("role").getIntValue("rid"));
+        
+        Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
     }
 }

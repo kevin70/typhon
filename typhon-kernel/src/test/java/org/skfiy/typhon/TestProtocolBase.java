@@ -29,7 +29,10 @@ import org.jboss.netty.handler.logging.LoggingHandler;
 import org.skfiy.typhon.net.ProtocolHandler;
 import org.skfiy.typhon.net.NettyEndpointHandler;
 import org.skfiy.typhon.net.TestProtocolHandler;
+import org.skfiy.typhon.packet.Auth;
+import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.packet.Packet;
+import org.testng.Assert;
 
 /**
  *
@@ -66,7 +69,7 @@ public class TestProtocolBase extends TestBase {
      * 
      * @param packet 
      */
-    protected final void offer(Packet packet) {
+    public final void offer(Packet packet) {
         String msg = JSON.toJSONString(packet, SERIALIZE_CONFIG);
         offer(packet.getNs(), msg);
     }
@@ -76,7 +79,7 @@ public class TestProtocolBase extends TestBase {
      * @param ns
      * @param json 
      */
-    protected final void offer(String ns, JSON json) {
+    public final void offer(String ns, JSON json) {
         offer(ns, json.toJSONString());
     }
 
@@ -85,7 +88,7 @@ public class TestProtocolBase extends TestBase {
      * @param ns
      * @param msg 
      */
-    protected final void offer(String ns, String msg) {
+    public final void offer(String ns, String msg) {
         byte[] b0 = ns.getBytes(StandardCharsets.UTF_8);
         byte[] b1 = msg.getBytes(StandardCharsets.UTF_8);
 
@@ -103,7 +106,7 @@ public class TestProtocolBase extends TestBase {
      * 
      * @return 
      */
-    protected final Response poll() {
+    public final Response poll() {
         Object r = DECODER.poll();
         if (r == null) {
             return null;
@@ -126,6 +129,43 @@ public class TestProtocolBase extends TestBase {
         byte[] dataBytes = new byte[buf.readableBytes()];
         buf.readBytes(dataBytes, 0, dataBytes.length);
         return (new Response(ns, (JSONObject) JSON.parse(dataBytes)));
+    }
+    
+    protected void auth() {
+        String pid = generateId();
+        Auth auth = new Auth();
+        auth.setNs(Namespaces.AUTH);
+        auth.setId(pid);
+        auth.setUsername(TestConstants.USERNAME);
+        auth.setPassword(TestConstants.PASSWORD);
+        
+        // 发送认证消息
+        offer(auth);
+        
+        // 认证成功响应
+        Response resp = poll();
+        boolean a = Namespaces.USER_INFO.equals(resp.getNs())
+                && pid.equals(resp.getData().getString("id"));
+        Assert.assertTrue(a);
+    }
+    
+    /**
+     * 
+     */
+    protected void removalOverMessage() {
+        for (;;) {
+            if (poll() == null) {
+                break;
+            }
+        }
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+    protected String generateId() {
+        return Integer.toHexString((int) (Math.random() * 1000));
     }
     
     private void offer(byte[] bytes) {

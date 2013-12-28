@@ -25,35 +25,40 @@ public interface Namespaces {
     /**
      * 
      */
-    String NS_ERROR = "error";
+    String ERROR = "error";
     
     /**
      * 普通用户认证命名空间.
      */
-    String NS_AUTH = "auth";
+    String AUTH = "auth";
     
     /**
      * OAuth2 认证命名空间.
      */
-    String NS_OAUTH2 = "oauth2";
+    String OAUTH2 = "oauth2";
     
     /**
      * 登录返回User信息命名空间.
      */
-    String NS_USER_INFO = "user-info";
+    String USER_INFO = "user-info";
     
     /**
      * 登录返回的Role信息.
      */
-    String NS_ROLE = "role";
+    String ROLE = "role";
     
     /**
      * 创建角色.
      */
-    String NS_ROLE_CREATE= "role-create";
+    String ROLE_CREATE= "role-create";
     
     /**
      * 玩家信息.
      */
-    String NS_PLAYER_INF = "player-info";
+    String PLAYER_INFO = "player-info";
+    
+    /**
+     * 一个属性值.
+     */
+    String SINGLE_VAL = "a-val";
 }

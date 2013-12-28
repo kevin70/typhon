@@ -15,6 +15,7 @@
  */
 package org.skfiy.typhon.spi.auth;
 
+import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
 
 /**

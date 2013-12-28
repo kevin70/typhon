@@ -26,6 +26,6 @@ public class TestScript1 implements Script {
 
     @Override
     public void invoke(Session session, Object obj) {
-        session.setAttribute("TEST_KEY", -5872995244130936946L);
+        session.setAttribute("TEST_KEY", -7954472900187032398L);
     }
 }

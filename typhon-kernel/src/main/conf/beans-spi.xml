@@ -24,12 +24,15 @@ limitations under the License.
     <bean type="org.skfiy.typhon.spi.auth.Authenticator"
           class="org.skfiy.typhon.spi.auth.DefaultAuthenticator"/>
     
+    <bean class="org.skfiy.typhon.spi.RoleProvider"/>
+    
     <multi-set type="org.skfiy.typhon.session.SessionListener">
         <element class="org.skfiy.typhon.spi.PlayerSessionListener"/>
     </multi-set>
     
     <multi-set type="org.skfiy.typhon.spi.RoleListener">
         <element class="org.skfiy.typhon.spi.BasicRoleListener"/>
+        <element class="org.skfiy.typhon.spi.FinalRoleListener"/>
     </multi-set>
 
     <multi-set type="org.skfiy.typhon.spi.RoleDatable">

@@ -20,10 +20,8 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.domain.Role;
+import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Namespaces;
-import org.skfiy.typhon.packet.Packet;
-import org.skfiy.typhon.packet.PacketError;
-import org.skfiy.typhon.packet.PacketRole;
 import org.skfiy.typhon.repository.RoleRepository;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
@@ -45,49 +43,63 @@ public class RoleProvider {
     @Inject
     private Set<RoleListener> roleListeners;
 
-    public void create(PacketRole packet) {
-        String lock = (packet.getName() + "@create-role").intern();
-        synchronized (lock) {
-            Session session = SessionContext.getSession();
-            if (roleReposy.existsName(packet.getName())) {
-                LOG.debug("esists role name [{}]", packet.getName());
-                PacketError error = PacketError.createResult(packet, PacketError.Condition.conflict);
-                session.write(error);
-                return;
-            }
+    /**
+     * 
+     * @param name 
+     */
+    public void create(String name) {
+        // save role
+        Role role = new Role();
+        role.setRid(SessionUtils.getUser().getUid());
+        role.setName(name);
+        roleReposy.save(role);
 
-            // save role
-            Role role = new Role();
-            role.setRid(SessionUtils.getUser().getUid());
-            role.setName(packet.getName());
-            roleReposy.save(role);
+        LOG.debug("create role [rid={}, name={}] successful", role.getRid(), role.getName());
 
-            LOG.debug("create role [rid={}, name={}] successful", role.getRid(), role.getName());
+        create0(role);
+        load0(role);
+    }
 
-            // fire RoleListener
-            for (RoleListener roleListener : roleListeners) {
-                roleListener.roleCreated(role);
+    /**
+     *
+     */
+    public void preload() {
+        Session session = SessionContext.getSession();
+        User user = SessionUtils.getUser();
+
+        // 当前存在Player则不从数据库查询角色信息
+        Player player = (Player) session.getAttribute(SessionUtils.ATTR_PLAYER);
+        if (player != null) {
+            load0(player.getRole());
+        } else {
+            Role role = roleReposy.get(user.getUid());
+            if (role == null) {
+                session.write(Namespaces.ROLE, "{}");
+            } else {
+                load0(role);
             }
         }
     }
 
-    public void load(Role role) {
+    /**
+     *
+     * @param role
+     */
+    protected void create0(Role role) {
         // fire RoleListener
+        for (RoleListener roleListener : roleListeners) {
+            roleListener.roleCreated(role);
+        }
+    }
+
+    /**
+     *
+     * @param role
+     */
+    protected void load0(Role role) {
         for (RoleListener roleListener : roleListeners) {
             roleListener.roleLoaded(role);
         }
-        
-        // send player
     }
 
-    public void onlineRole(Session session) {
-        onlineRole(session, false);
-    }
-
-    public void onlineRole(Session session, boolean inited) {
-    }
-
-    public void offlineRole(Session session) {
-    }
-    
 }
