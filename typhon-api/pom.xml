@@ -44,7 +44,7 @@ limitations under the License.
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.2</version>
+            <version>1.7.5</version>
         </dependency>
         <dependency>
             <groupId>org.skfiy.typhon</groupId>

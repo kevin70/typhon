@@ -139,9 +139,9 @@ public class Bootstrap {
             try {
                 addURL(confDir.toURI().toURL());
                 
-                for (File f : confDir.listFiles()) {
-                    addURL(f.toURI().toURL());
-                }
+//                for (File f : confDir.listFiles()) {
+//                    addURL(f.toURI().toURL());
+//                }
             } catch (MalformedURLException ex) {
                 // FIXME
                 ex.printStackTrace();

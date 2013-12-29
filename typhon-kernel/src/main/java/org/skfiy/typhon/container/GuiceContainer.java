@@ -56,7 +56,6 @@ import org.w3c.dom.NodeList;
  */
 public class GuiceContainer extends AbstractComponent implements Container {
 
-    private boolean devMode;
     private List<Component> components;
     private List<Class> bindingClasses;
     private Injector injector;
@@ -65,19 +64,13 @@ public class GuiceContainer extends AbstractComponent implements Container {
      * 默认无参构造函数.
      */
     public GuiceContainer() {
-        devMode = Typhons.isDevMode();
         components = new LinkedList<>();
         bindingClasses = new LinkedList<>();
     }
 
     @Override
     public void init() {
-        Stage stage = Stage.PRODUCTION;
-        if (devMode) {
-            stage = Stage.DEVELOPMENT;
-        }
-        
-        injector = Guice.createInjector(stage, new XmlModule(),
+        injector = Guice.createInjector(new XmlModule(),
                 new AbstractModule() {
             @Override
             protected void configure() {

@@ -230,5 +230,3 @@ goto end
 goto end
 
 :end
-
-PAUSE

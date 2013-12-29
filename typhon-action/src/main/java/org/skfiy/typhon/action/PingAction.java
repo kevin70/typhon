@@ -1,8 +1,3 @@
-package test.debug;
-
-import org.skfiy.typhon.script.Script;
-import org.skfiy.typhon.session.Session;
-
 /*
  * Copyright 2013 The Skfiy Open Association.
  *
@@ -18,14 +13,21 @@ import org.skfiy.typhon.session.Session;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.skfiy.typhon.action;
+
+import org.skfiy.typhon.annotation.Action;
+import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.Ping;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class TestScript1 implements Script {
+public class PingAction {
 
-    @Override
-    public void invoke(Session session, Object obj) {
-        session.setAttribute("TEST_KEY", -8069800088649577134L);
+    @Action(Namespaces.PING)
+    public void ping(Ping ping) {
+        // nothing
     }
+
 }

@@ -19,15 +19,16 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelStateEvent;
 import org.jboss.netty.channel.MessageEvent;
-import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
-import org.skfiy.typhon.session.SessionContext;
+import org.jboss.netty.handler.timeout.IdleState;
+import org.jboss.netty.handler.timeout.IdleStateAwareChannelHandler;
+import org.jboss.netty.handler.timeout.IdleStateEvent;
 
 /**
  * Netty 3 端点处理器实现.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class NettyEndpointHandler extends SimpleChannelUpstreamHandler {
+public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
 
     private ProtocolHandler protocolHandler;
     private static final byte SPLIT = 0;
@@ -52,6 +53,16 @@ public class NettyEndpointHandler extends SimpleChannelUpstreamHandler {
             throws Exception {
     }
 
+    @Override
+    public void channelIdle(ChannelHandlerContext ctx, IdleStateEvent e) throws Exception {
+        if (e.getState() == IdleState.READER_IDLE) {
+            e.getChannel().close();
+        } else if (e.getState() == IdleState.WRITER_IDLE) {
+            //e.getChannel().write(new PingMessage());
+            System.out.println("Writer idle");
+        }
+    }
+    
     @Override
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e)
             throws Exception {

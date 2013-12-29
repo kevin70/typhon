@@ -61,4 +61,9 @@ public interface Namespaces {
      * 一个属性值.
      */
     String SINGLE_VAL = "a-val";
+    
+    /**
+     * 心跳消息命名空间.
+     */
+    String PING = "ping";
 }

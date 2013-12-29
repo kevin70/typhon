@@ -19,6 +19,7 @@ import java.net.InetSocketAddress;
 import javax.management.MBeanServer;
 import org.apache.commons.modeler.Registry;
 import org.jboss.netty.bootstrap.ServerBootstrap;
+import org.jboss.netty.channel.ChannelHandler;
 import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
 import org.jboss.netty.channel.Channels;
@@ -26,6 +27,9 @@ import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder;
 import org.jboss.netty.handler.codec.frame.LengthFieldPrepender;
 import org.jboss.netty.handler.logging.LoggingHandler;
+import org.jboss.netty.handler.timeout.IdleStateHandler;
+import org.jboss.netty.util.HashedWheelTimer;
+import org.jboss.netty.util.Timer;
 import org.skfiy.typhon.AbstractMBeanLifecycle;
 import org.skfiy.typhon.Connector;
 import org.skfiy.typhon.LifecycleException;
@@ -117,9 +121,14 @@ public class NettyConnector extends AbstractMBeanLifecycle
         
         final NettyEndpointHandler handler = new NettyEndpointHandler();
         nettyServer.setPipelineFactory(new ChannelPipelineFactory() {
+            
+            private final Timer timer = new HashedWheelTimer();
+            private final ChannelHandler idleStateHandler = new IdleStateHandler(timer, 60, 30, 0);
+            
             @Override
             public ChannelPipeline getPipeline() throws Exception {
                 ChannelPipeline pipeline = Channels.pipeline();
+                pipeline.addLast("IdleState", idleStateHandler);
                 pipeline.addLast("FrameDecoder",
                         new LengthFieldBasedFrameDecoder(
                         Integer.MAX_VALUE, 0, 4, 0, 4));
