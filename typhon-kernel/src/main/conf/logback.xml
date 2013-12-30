@@ -14,41 +14,53 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<configuration scan="true" scanPeriod="60 seconds">
-    
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+<configuration scan="true">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d [%thread] - %msg%n</pattern>
+            <pattern>%d [%thread]  %M - %msg%n%ex{full}</pattern>
+            <charset>UTF-8</charset>
         </encoder>
     </appender>
 
-    <appender name="FILE" 
-              class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${typhon.home}/logs/typhon.log</file>
-        <rollingPolicy 
-            class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>
-                ${typhon.home}/logs/typhon-%d{yyyy-MM-dd}-%i.log
-            </FileNamePattern>
-            <MaxHistory>10</MaxHistory>
-            <TimeBasedFileNamingAndTriggeringPolicy
-                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <MaxFileSize>10MB</MaxFileSize>
-            </TimeBasedFileNamingAndTriggeringPolicy>        
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${typhon.home}/logs/typhon-%i.log</FileNamePattern>
+            <maxHistory>9</MaxHistory>
         </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
         <encoder>
-            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n</pattern>
+            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    
+    <appender name="protected" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${user.home}/.logs/typhon-protected.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${typhon.home}/logs/typhon-protected-%i.log</fileNamePattern>
+            <maxHistory>9</maxHistory>
+            <compressionMode>GZ</compressionMode>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
+            <charset>UTF-8</charset>
         </encoder>
     </appender>
 
     <logger name="org.apache.commons" level="error"/>
     <logger name="org.reflections" level="error"/>
     
-    <logger name="typhon_ConsoleOut" level="trace" addtivity="false">
-        <appender-ref ref="STDOUT"/>
+    <logger name="console.out" level="trace" addtivity="false">
+        <appender-ref ref="stdout"/>
     </logger>
     
-    <root level="DEBUG">
-        <appender-ref ref="FILE"/>
+    <root level="debug">
+        <appender-ref ref="file"/>
     </root>
 </configuration>

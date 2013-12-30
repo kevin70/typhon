@@ -43,5 +43,5 @@ public final class Globals {
      * Logger LOG = LoggerFactory.getLogger({@link #CONSOLE_LOG_NAME});
      * </pre>
      */
-    public static final String CONSOLE_LOG_NAME = "typhon_ConsoleOut";
+    public static final String CONSOLE_LOG_NAME = "console.out";
 }

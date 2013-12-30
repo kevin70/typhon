@@ -15,6 +15,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <portable-config>
+    <config-file path="conf/logback.xml">
+        <replace xpath="/configuration/@scan">false</replace>
+        <replace xpath="//root/@level">info</replace>
+    </config-file>
     <config-file path="conf/beans-kernel.xml">
         <replace xpath="/beans/bean[@type='org.skfiy.typhon.dispatcher.DispatcherFactory']/@class">org.skfiy.typhon.dispatcher.AsmDispatcherFactory</replace>
         <replace xpath="/beans/bean[@type='org.skfiy.typhon.script.ScriptManager']/@class">org.skfiy.typhon.script.ProductionScriptManager</replace>
