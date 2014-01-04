@@ -35,8 +35,8 @@ limitations under the License.
     <name>Skfiy Typhon Parent</name>
     
     <scm>
-        <connection>scm:git:git://github.com:skfiy/typhon.git</connection>
-        <developerConnection>scm:git:git@github.com:skfiy/typhon.git</developerConnection>
+        <connection>scm:git:https://github.com/skfiy/typhon.git</connection>
+        <developerConnection>scm:git:https://github.com/skfiy/typhon.git</developerConnection>
         <url>https://github.com/skfiy/typhon</url>
     </scm>
     
