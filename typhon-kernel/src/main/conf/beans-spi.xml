@@ -25,18 +25,24 @@ limitations under the License.
           class="org.skfiy.typhon.spi.auth.DefaultAuthenticator"/>
     
     <bean class="org.skfiy.typhon.spi.RoleProvider"/>
+    <bean class="org.skfiy.typhon.spi.ItemProvider"/>
+    
+    <multi-set type="org.skfiy.typhon.spi.item.ItemCompleter">
+        <element class="org.skfiy.typhon.spi.item.SimpleItemCompleter"/>
+        <element class="org.skfiy.typhon.spi.item.ComplexItemCompleter"/>
+    </multi-set>
     
     <multi-set type="org.skfiy.typhon.session.SessionListener">
         <element class="org.skfiy.typhon.spi.PlayerSessionListener"/>
     </multi-set>
     
-    <multi-set type="org.skfiy.typhon.spi.RoleListener">
-        <element class="org.skfiy.typhon.spi.BasicRoleListener"/>
-        <element class="org.skfiy.typhon.spi.FinalRoleListener"/>
+    <multi-set type="org.skfiy.typhon.spi.role.RoleListener">
+        <element class="org.skfiy.typhon.spi.role.BasicRoleListener"/>
+        <element class="org.skfiy.typhon.spi.role.FinalRoleListener"/>
     </multi-set>
 
-    <multi-set type="org.skfiy.typhon.spi.RoleDatable">
-        <element class="org.skfiy.typhon.spi.NullRoleDatable"/>
+    <multi-set type="org.skfiy.typhon.spi.role.RoleDatable">
+        <element class="org.skfiy.typhon.spi.role.NullRoleDatable"/>
     </multi-set>
     
 </beans>

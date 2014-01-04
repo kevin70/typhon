@@ -41,6 +41,7 @@ limitations under the License.
     </scm>
     
     <modules>
+        <module>fastjson</module>
         <module>typhon-api</module>
         <module>typhon-assemblies</module>
         <module>typhon-agent</module>

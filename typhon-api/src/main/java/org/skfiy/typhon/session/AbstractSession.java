@@ -32,6 +32,12 @@ import org.skfiy.util.Assert;
  */
 public abstract class AbstractSession implements Session {
 
+    private static final byte[] LS_BYTES;
+
+    static {
+        LS_BYTES = System.getProperty("line.separator").getBytes();
+    }
+    
     private int sessionId;
     private String authType;
     private Map<String, Object> attributes;
@@ -61,7 +67,12 @@ public abstract class AbstractSession implements Session {
     }
 
     @Override
-    public Map<String, Object> getAttributeMap() {
+    public Object removeAttribute(String key) {
+        return attributes.remove(key);
+    }
+
+    @Override
+    public Map<String, Object> getAttributes() {
         return Collections.unmodifiableMap(attributes);
     }
 
@@ -88,8 +99,7 @@ public abstract class AbstractSession implements Session {
     @Override
     public void write(Packet packet) {
         Assert.notNull(packet);
-        Assert.notNull(packet.getNs(),
-                "[Assertion failed] - packet ns is required; it must not be null");
+        Assert.notNull(packet.getNs(), "[Assertion failed] - packet ns is required; it must not be null");
         
         write(packet.getNs(), JSON.toJSONString(packet));
     }
@@ -107,13 +117,17 @@ public abstract class AbstractSession implements Session {
         byte[] b0 = ns.getBytes(StandardCharsets.UTF_8);
         byte[] b1 = body.getBytes(StandardCharsets.UTF_8);
 
-        int nsSplitLen = b0.length + 1;
-        byte[] buf = new byte[nsSplitLen + b1.length];
-        System.arraycopy(b0, 0, buf, 0, b0.length);
-        // 命名空间与消息主体分隔符
-        buf[b0.length] = 0;
+        int l1 = b0.length + 1;
+        int l2 = l1 + b1.length;
         
-        System.arraycopy(b1, 0, buf, nsSplitLen, b1.length);
+        byte[] buf = new byte[l2 + LS_BYTES.length];
+        System.arraycopy(b0, 0, buf, 0, b0.length);
+        
+        // 命名空间与消息主体分隔符
+        buf[b0.length] = ':';
+        
+        System.arraycopy(b1, 0, buf, l1, b1.length);
+        System.arraycopy(LS_BYTES, 0, buf, l2, LS_BYTES.length);
         
         write(buf, 0, buf.length);
     }

@@ -31,7 +31,7 @@ import org.jboss.netty.handler.timeout.IdleStateEvent;
 public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
 
     private ProtocolHandler protocolHandler;
-    private static final byte SPLIT = 0;
+    private static final byte SPLIT = ':';
 
     public ProtocolHandler getProtocolHandler() {
         return protocolHandler;

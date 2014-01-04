@@ -24,6 +24,8 @@ import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
 import org.jboss.netty.channel.Channels;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
+import org.jboss.netty.handler.codec.frame.DelimiterBasedFrameDecoder;
+import org.jboss.netty.handler.codec.frame.Delimiters;
 import org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder;
 import org.jboss.netty.handler.codec.frame.LengthFieldPrepender;
 import org.jboss.netty.handler.logging.LoggingHandler;
@@ -130,9 +132,8 @@ public class NettyConnector extends AbstractMBeanLifecycle
                 ChannelPipeline pipeline = Channels.pipeline();
                 pipeline.addLast("IdleState", idleStateHandler);
                 pipeline.addLast("FrameDecoder",
-                        new LengthFieldBasedFrameDecoder(
-                        Integer.MAX_VALUE, 0, 4, 0, 4));
-                pipeline.addLast("FrameEncoder", new LengthFieldPrepender(4, false));
+                        new DelimiterBasedFrameDecoder(65535, Delimiters.lineDelimiter()));
+                // pipeline.addLast("FrameEncoder", new LengthFieldPrepender(4, false));
                 if (isLogEnabled()) {
                     pipeline.addLast("Logging", new LoggingHandler());
                 }

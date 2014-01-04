@@ -20,7 +20,6 @@ import org.skfiy.typhon.spi.auth.UserNotFoundException;
 import org.skfiy.typhon.spi.auth.DefaultAuthenticator;
 import org.skfiy.typhon.TestComponentBase;
 import org.skfiy.typhon.TestConstants;
-import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
 import org.skfiy.typhon.repository.impl.UserRepositoryImpl;
 import org.skfiy.typhon.session.SessionUtils;
@@ -48,7 +47,6 @@ public class DefaultAuthenticatorTest extends TestComponentBase {
     public void authenticNormal() {
         String username = TestConstants.USERNAME;
         int uid = userResposy.save(username, TestConstants.PASSWORD);
-        System.out.println("-------------------------------" + uid);
         Auth auth = new Auth();
         auth.setUsername(username);
         auth.setPassword(TestConstants.PASSWORD);
@@ -80,7 +78,6 @@ public class DefaultAuthenticatorTest extends TestComponentBase {
     @Test
     public void authenticPasswordError() {
         int uid = userResposy.save(TestConstants.USERNAME, TestConstants.PASSWORD + "x");
-        System.out.println("authentic2-----------------------------------------------" + uid);
         try {
             Auth auth = new Auth();
             auth.setUsername(TestConstants.USERNAME);

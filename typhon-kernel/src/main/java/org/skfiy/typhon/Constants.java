@@ -65,4 +65,9 @@ public interface Constants {
      * 数据库脚本目录.
      */
     String DATABASE_SCRIPTS_DIR = "typhon.database.scripts.dir";
+    
+    /**
+     * 基础数据存放目录.
+     */
+    String COMPONENT_DATAS_DIR = "typhon.component.datas.dir";
 }

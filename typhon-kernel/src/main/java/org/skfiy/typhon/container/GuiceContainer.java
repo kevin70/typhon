@@ -15,14 +15,19 @@
  */
 package org.skfiy.typhon.container;
 
+import com.google.common.collect.Lists;
 import org.skfiy.typhon.Container;
 import com.google.inject.AbstractModule;
+import com.google.inject.Binding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Key;
 import com.google.inject.Provider;
-import com.google.inject.Stage;
+import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Names;
+import com.google.inject.spi.TypeEncounter;
+import com.google.inject.spi.TypeListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -30,8 +35,10 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
+import javax.inject.Singleton;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.commons.modeler.Registry;
@@ -42,7 +49,6 @@ import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ConfigurationException;
 import org.skfiy.typhon.TyphonException;
-import org.skfiy.typhon.Typhons;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -56,27 +62,18 @@ import org.w3c.dom.NodeList;
  */
 public class GuiceContainer extends AbstractComponent implements Container {
 
-    private List<Component> components;
-    private List<Class> bindingClasses;
     private Injector injector;
-
-    /**
-     * 默认无参构造函数.
-     */
-    public GuiceContainer() {
-        components = new LinkedList<>();
-        bindingClasses = new LinkedList<>();
-    }
 
     @Override
     public void init() {
-        injector = Guice.createInjector(new XmlModule(),
+        injector = Guice.createInjector(new Jsr250Module(),
+                new XmlModule(),
                 new AbstractModule() {
-            @Override
-            protected void configure() {
-                bind(Container.class).toInstance(GuiceContainer.this);
-            }
-        });
+                    @Override
+                    protected void configure() {
+                        bind(Container.class).toInstance(GuiceContainer.this);
+                    }
+                });
         
         try {
             Registry.getRegistry(null, null).registerComponent(
@@ -88,9 +85,11 @@ public class GuiceContainer extends AbstractComponent implements Container {
 
     @Override
     public void destroy() {
-        // destroy components
-        for (Component component : components) {
-            component.destroy();
+        Destroyable destroyable = injector.getInstance(Destroyable.class);
+        Set<Map.Entry<Key<?>, Binding<?>>> entries = injector.getAllBindings().entrySet();
+        for (Map.Entry<Key<?>, Binding<?>> entry : entries) {
+            Binding<?> binding = entry.getValue();
+            destroyable.destroy(binding.getSource());
         }
 
         injector = null;
@@ -109,7 +108,13 @@ public class GuiceContainer extends AbstractComponent implements Container {
 
     @Override
     public Collection<Class> getAllBindingClasses() {
-        return Collections.unmodifiableCollection(bindingClasses);
+        List<Class> classes = Lists.newArrayList();
+        Set<Map.Entry<Key<?>, Binding<?>>> entries = injector.getAllBindings().entrySet();
+        for (Map.Entry<Key<?>, Binding<?>> entry : entries) {
+            Key<?> key = entry.getKey();
+            classes.add(key.getTypeLiteral().getRawType());
+        }
+        return classes;
     }
 
     @Override
@@ -128,32 +133,6 @@ public class GuiceContainer extends AbstractComponent implements Container {
      */
     public Injector getInjector() {
         return injector;
-    }
-
-    class ComponentBeanProvider implements Provider<Component> {
-
-        private Class clazz;
-        private Component component;
-
-        ComponentBeanProvider(Class clazz) {
-            this.clazz = clazz;
-        }
-
-        @Override
-        public synchronized Component get() {
-            if (component == null) {
-                try {
-                    component = (Component) clazz.newInstance();
-                } catch (Exception ex) {
-                    throw new ContainerException("初始化" + clazz.getName() + "错误", ex);
-                }
-                
-                injectMembers(component);
-                component.init();
-                components.add(component);
-            }
-            return component;
-        }
     }
 
     class XmlModule extends AbstractModule {
@@ -291,14 +270,6 @@ public class GuiceContainer extends AbstractComponent implements Container {
                         + " > class 属性值配置错误["
                         + classNode.getNodeValue() + "]", ex);
             }
-            
-            // 缓存被管理的Class
-            bindingClasses.add(clazz);
-            
-            if (Component.class.isAssignableFrom(clazz)) {
-                bindComponent(type, clazz);
-                return;
-            }
 
             // 如果没有接口，则直接绑定实现类
             if (type == null) {
@@ -341,14 +312,6 @@ public class GuiceContainer extends AbstractComponent implements Container {
                                 + typeStr + "]", ex);
                     }
                 }
-            }
-        }
-        
-        protected void bindComponent(Class type, Class clazz) {
-            if (type == null) {
-                bind(clazz).toProvider(new ComponentBeanProvider(clazz));
-            } else {
-                bind(type).toProvider(new ComponentBeanProvider(clazz));
             }
         }
     }

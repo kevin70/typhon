@@ -60,7 +60,7 @@ public abstract class AbstractAuthenticator implements Authenticator {
                 anotherSession.close();
                 
                 for (Map.Entry<String, Object> entry
-                        : anotherSession.getAttributeMap().entrySet()) {
+                        : anotherSession.getAttributes().entrySet()) {
                     session.setAttribute(entry.getKey(), entry.getValue());
                 }
             }

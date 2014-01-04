@@ -15,6 +15,8 @@
  */
 package org.skfiy.typhon;
 
+import com.alibaba.fastjson.parser.ParserConfig;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.com>
@@ -44,4 +46,14 @@ public final class Globals {
      * </pre>
      */
     public static final String CONSOLE_LOG_NAME = "console.out";
+    
+    /**
+     * 关闭Asm解析的Json Parse Config.
+     */
+    public static final ParserConfig NO_ENABLED_ASM_PARSE_CONFIG;
+    
+    static {
+        NO_ENABLED_ASM_PARSE_CONFIG = new ParserConfig();
+        NO_ENABLED_ASM_PARSE_CONFIG.setAsmEnable(false);
+    }
 }

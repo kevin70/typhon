@@ -18,6 +18,8 @@ package org.skfiy.typhon.database;
 import com.jolbox.bonecp.BoneCPDataSource;
 import java.io.InputStream;
 import java.util.Properties;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.inject.Singleton;
 import javax.sql.DataSource;
 import org.skfiy.typhon.ComponentException;

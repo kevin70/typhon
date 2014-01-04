@@ -22,15 +22,12 @@ package org.skfiy.typhon;
 public abstract class AbstractComponent implements Component {
 
     @Override
-    public void init() {
-    }
-
-    @Override
     public void reload() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public void destroy() {
     }
-    
+
 }

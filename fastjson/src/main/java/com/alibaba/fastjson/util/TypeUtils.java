@@ -734,7 +734,11 @@ public class TypeUtils {
             for (Map.Entry<String, FieldDeserializer> entry : setters.entrySet()) {
                 String key = entry.getKey();
                 Method method = entry.getValue().getMethod();
-
+                
+                if (isJSONTypeIgnore(clazz, key)) {
+                    continue;
+                }
+                
                 if (map.containsKey(key)) {
                     Object value = map.get(key);
                     value = cast(value, method.getGenericParameterTypes()[0], mapping);
@@ -899,10 +903,7 @@ public class TypeUtils {
                 }
 
                 String propertyName = Character.toLowerCase(methodName.charAt(3)) + methodName.substring(4);
-
-                boolean ignore = isJSONTypeIgnore(clazz, propertyName);
-
-                if (ignore) {
+                if (isJSONTypeIgnore(clazz, propertyName)) {
                     continue;
                 }
 
@@ -942,7 +943,10 @@ public class TypeUtils {
                 }
 
                 String propertyName = Character.toLowerCase(methodName.charAt(2)) + methodName.substring(3);
-
+                if (isJSONTypeIgnore(clazz, propertyName)) {
+                    continue;
+                }
+                
                 Field field = ParserConfig.getField(clazz, propertyName);
                 if (field != null) {
                     JSONField fieldAnnotation = field.getAnnotation(JSONField.class);
@@ -1040,7 +1044,6 @@ public class TypeUtils {
                 return true;
             }
         }
-
         return false;
     }
 

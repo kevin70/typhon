@@ -1,0 +1,34 @@
+{"datas": [
+    {
+        "id": "c001",
+        "type": "Complex",
+        "name": "ComplexItem1",
+        "icon": "",
+        "autoOpen": true,
+        "overlapping": 9999,
+        "price": 10.1,
+        "subitems": [{
+            "#item.id": "s001",
+            "count": 1
+        }]
+    },
+    {
+        "id": "c002",
+        "type": "Complex",
+        "name": "ComplexItem1",
+        "icon": "",
+        "autoOpen": true,
+        "overlapping": 9999,
+        "price": 10.1,
+        "subitems": [
+            {
+                "#item.id": "s001",
+                "count": 1
+            },
+            {
+                "#item.id": "s002",
+                "count": 1
+            }
+        ]
+    }
+]}

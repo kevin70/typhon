@@ -68,7 +68,8 @@ public abstract class JSON implements JSONStreamAware, JSONAware {
         features |= Feature.IgnoreNotMatch.getMask();
         DEFAULT_PARSER_FEATURE = features;
     }
-    public static String DEFFAULT_DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    
+    public static String DEFFAULT_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
     public static int DEFAULT_GENERATE_FEATURE;
 
     static {

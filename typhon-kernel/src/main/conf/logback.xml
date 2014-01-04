@@ -25,8 +25,8 @@ limitations under the License.
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${typhon.home}/logs/typhon.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>${typhon.home}/logs/typhon-%i.log</FileNamePattern>
-            <maxHistory>9</MaxHistory>
+            <fileNamePattern>typhon-%i.log</fileNamePattern>
+            <maxHistory>9</maxHistory>
         </rollingPolicy>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <maxFileSize>100MB</maxFileSize>
@@ -40,7 +40,7 @@ limitations under the License.
     <appender name="protected" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${user.home}/.logs/typhon-protected.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>${typhon.home}/logs/typhon-protected-%i.log</fileNamePattern>
+            <fileNamePattern>${typhon.home}/.logs/typhon-protected-%i.log</fileNamePattern>
             <maxHistory>9</maxHistory>
             <compressionMode>GZ</compressionMode>
         </rollingPolicy>

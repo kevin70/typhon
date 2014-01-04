@@ -27,33 +27,103 @@ import org.skfiy.typhon.packet.Packet;
  */
 public interface Session {
 
+    /**
+     * 
+     * @return 
+     */
     int getId();
     
+    /**
+     * 
+     * @param sessionId 
+     */
     void setId(int sessionId);
 
+    /**
+     * 
+     * @param key
+     * @param value 
+     */
     void setAttribute(String key, Object value);
     
+    /**
+     * 
+     * @param key
+     * @return 
+     */
     Object getAttribute(String key);
     
-    Map<String, Object> getAttributeMap();
+    /**
+     * 
+     * @param key
+     * @return 
+     */
+    Object removeAttribute(String key);
     
+    /**
+     * 
+     * @return 
+     */
+    Map<String, Object> getAttributes();
+    
+    /**
+     * 
+     * @return 
+     */
     Collection<Object> getAttributeValues();
     
+    /**
+     * 
+     * @return 
+     */
     Enumeration<String> getAttributeKeys();
     
+    /**
+     * 
+     * @return 
+     */
     String getAuthType();
     
+    /**
+     * 
+     * @param authType 
+     */
     void setAuthType(String authType);
     
+    /**
+     * 
+     * @return 
+     */
     long getCreationTime();
 
+    /**
+     * 
+     * @return 
+     */
     long getLastAccessedTime();
 
+    /**
+     * 
+     * @param packet 
+     */
     void write(Packet packet);
     
+    /**
+     * 
+     * @param ns
+     * @param json 
+     */
     void write(String ns, JSONObject json);
     
+    /**
+     * 
+     * @param ns
+     * @param body 
+     */
     void write(String ns, String body);
     
+    /**
+     * 
+     */
     void close();
 }

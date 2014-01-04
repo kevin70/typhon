@@ -19,12 +19,12 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import java.nio.charset.StandardCharsets;
+import org.apache.commons.lang3.SystemUtils;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.handler.codec.embedder.DecoderEmbedder;
-import org.jboss.netty.handler.codec.embedder.EncoderEmbedder;
-import org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder;
-import org.jboss.netty.handler.codec.frame.LengthFieldPrepender;
+import org.jboss.netty.handler.codec.frame.DelimiterBasedFrameDecoder;
+import org.jboss.netty.handler.codec.frame.Delimiters;
 import org.jboss.netty.handler.logging.LoggingHandler;
 import org.skfiy.typhon.net.ProtocolHandler;
 import org.skfiy.typhon.net.NettyEndpointHandler;
@@ -41,10 +41,11 @@ import org.testng.Assert;
 public class TestProtocolBase extends TestBase {
 
     private final static SerializeConfig SERIALIZE_CONFIG;
-    private final static DecoderEmbedder DECODER;
-    private final static EncoderEmbedder ENCODER;
+    private final static DecoderEmbedder SEND_EMBEDDER;
+    private static final byte[] LS_BYTES;
 
     static {
+        LS_BYTES = System.getProperty("line.separator").getBytes();
         SERIALIZE_CONFIG = new SerializeConfig();
         SERIALIZE_CONFIG.setAsmEnable(false);
         
@@ -52,17 +53,14 @@ public class TestProtocolBase extends TestBase {
         
         ProtocolHandler protocolHandler = new TestProtocolHandler();
         CONTAINER.injectMembers(protocolHandler);
-        //
         ((Component)protocolHandler).init();
+        
         handler.setProtocolHandler(protocolHandler);
 
-        DECODER = new DecoderEmbedder(
-                new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4),
+        SEND_EMBEDDER = new DecoderEmbedder(
+                new DelimiterBasedFrameDecoder(65535, Delimiters.lineDelimiter()),
                 new LoggingHandler(),
                 handler);
-
-        ENCODER = new EncoderEmbedder(
-                new LengthFieldPrepender(4, false));
     }
 
     /**
@@ -88,18 +86,24 @@ public class TestProtocolBase extends TestBase {
      * @param ns
      * @param msg 
      */
-    public final void offer(String ns, String msg) {
+    public final void offer(String ns, String body) {
         byte[] b0 = ns.getBytes(StandardCharsets.UTF_8);
-        byte[] b1 = msg.getBytes(StandardCharsets.UTF_8);
+        byte[] b1 = body.getBytes(StandardCharsets.UTF_8);
 
-        byte[] bytes = new byte[b0.length + b1.length + 1];
-        System.arraycopy(b0, 0, bytes, 0, b0.length);
-        // 命名空间与消息之间的分隔符
-        bytes[b0.length] = 0;
-        System.arraycopy(b1, 0, bytes, b0.length + 1, b1.length);
+        int l1 = b0.length + 1;
+        int l2 = l1 + b1.length;
+        
+        byte[] buf = new byte[l2 + LS_BYTES.length];
+        System.arraycopy(b0, 0, buf, 0, b0.length);
+        
+        // 命名空间与消息主体分隔符
+        buf[b0.length] = ':';
+        
+        System.arraycopy(b1, 0, buf, l1, b1.length);
+        System.arraycopy(LS_BYTES, 0, buf, l2, LS_BYTES.length);
         
         // send
-        offer(bytes);
+        offer(buf);
     }
 
     /**
@@ -107,30 +111,48 @@ public class TestProtocolBase extends TestBase {
      * @return 
      */
     public final Response poll() {
-        Object r = DECODER.poll();
-        if (r == null) {
+        ChannelBuffer buf = (ChannelBuffer) SEND_EMBEDDER.poll();
+        if (buf == null) {
             return null;
         }
         
-        ENCODER.offer(r);
-        ChannelBuffer buf = (ChannelBuffer) ENCODER.poll();
-        
-        buf.skipBytes(4); // 字节长度
+        int eol = findEndOfLine(buf);
+        ChannelBuffer frame = buf.factory().getBuffer(eol);
+        frame.writeBytes(buf, buf.readerIndex(), eol);
         
         // 获取命名空间
-        byte[] nsBytes = new byte[buf.indexOf(4, 32, (byte) 0) - 4];
-        buf.readBytes(nsBytes, 0, nsBytes.length);
+        byte[] nsBytes = new byte[frame.indexOf(0, 32, (byte) ':')];
+        frame.readBytes(nsBytes, 0, nsBytes.length);
         String ns = new String(nsBytes);
-        
-        // 路过命名空间与消息的分隔符
-        buf.skipBytes(1);
+        // 跳过命名空间与消息的分隔符
+        frame.skipBytes(1);
         
         // 消息长度
-        byte[] dataBytes = new byte[buf.readableBytes()];
-        buf.readBytes(dataBytes, 0, dataBytes.length);
+        byte[] dataBytes = new byte[frame.readableBytes()];
+        frame.readBytes(dataBytes, 0, dataBytes.length);
         return (new Response(ns, (JSONObject) JSON.parse(dataBytes)));
     }
     
+    /**
+     * Returns the index in the buffer of the end of line found.
+     * Returns -1 if no end of line was found in the buffer.
+     */
+    private int findEndOfLine(final ChannelBuffer buffer) {
+        final int n = buffer.writerIndex();
+        for (int i = buffer.readerIndex(); i < n; i ++) {
+            final byte b = buffer.getByte(i);
+            if (b == '\n') {
+                return i;
+            } else if (b == '\r' && i < n - 1 && buffer.getByte(i + 1) == '\n') {
+                return i;  // \r\n
+            }
+        }
+        return -1;  // Not found.
+    }
+    
+    /**
+     * 
+     */
     protected void auth() {
         String pid = generateId();
         Auth auth = new Auth();
@@ -153,11 +175,7 @@ public class TestProtocolBase extends TestBase {
      * 
      */
     protected void removalOverMessage() {
-        for (;;) {
-            if (poll() == null) {
-                break;
-            }
-        }
+        SEND_EMBEDDER.pollAll();
     }
     
     /**
@@ -169,10 +187,9 @@ public class TestProtocolBase extends TestBase {
     }
     
     private void offer(byte[] bytes) {
-        ChannelBuffer buf = ChannelBuffers.buffer(bytes.length + 4);
-        buf.writeInt(bytes.length);
+        ChannelBuffer buf = ChannelBuffers.buffer(bytes.length );
         buf.writeBytes(bytes);
-        DECODER.offer(buf);
+        SEND_EMBEDDER.offer(buf);
     }
     
 }

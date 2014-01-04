@@ -42,23 +42,22 @@ public class TyphonTest {
     }
     
     // 测试使用Socket方式停止服务
-    @Test(dependsOnGroups = "daemon")
-    public void start2() {
-        Thread thread = new Thread() {
-            @Override
-            public void run() {
-                Typhon typhon = new Typhon();
-                typhon.setAwait(true);
-                
-                typhon.start();
-            }
-        };
-        thread.start();
-    }
-
-    @Test(dependsOnMethods = "start2")
-    public void stop2() throws LifecycleException {
-        Typhon typhon = new Typhon();
-        typhon.stop();
-    }
+//    @Test(dependsOnGroups = "daemon")
+//    public void start2() {
+//        Thread thread = new Thread() {
+//            @Override
+//            public void run() {
+//                Typhon typhon = new Typhon();
+//                typhon.setAwait(true);
+//                typhon.start();
+//            }
+//        };
+//        thread.start();
+//    }
+//
+//    @Test(dependsOnMethods = "start2")
+//    public void stop2() throws LifecycleException {
+//        Typhon typhon = new Typhon();
+//        typhon.stop();
+//    }
 }

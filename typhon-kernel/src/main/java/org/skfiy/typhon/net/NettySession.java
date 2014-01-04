@@ -26,7 +26,7 @@ import org.skfiy.typhon.session.AbstractSession;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 class NettySession extends AbstractSession {
-
+    
     private Channel channel;
     private long creationTime;
     private long lastAccessedTime;

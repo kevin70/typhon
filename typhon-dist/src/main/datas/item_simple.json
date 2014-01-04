@@ -1,0 +1,52 @@
+{"datas": [
+    {
+        "id": "s001",
+        "type": "Simple",
+        "name": "SimpleItem1",
+        "icon": "",
+        "autoOpen": true,
+        "overlapping": 9999,
+        "price": 10.1
+    },
+    {
+        "id": "s002",
+        "type": "Simple",
+        "name": "SimpleItem1",
+        "icon": "",
+        "autoOpen": true,
+        "overlapping": 9999,
+        "price": 10.1
+    },
+    {
+        "id": "s003",
+        "type": "Simple",
+        "name": "SimpleItem1",
+        "icon": "",
+        "autoOpen": true,
+        "overlapping": 9999,
+        "price": 10.1
+    },
+    {
+        "id": "s004",
+        "type": "Simple",
+        "name": "SimpleItem2",
+        "overlapping": 10000,
+        "price": 11.1
+    },
+    {
+        "id": "s005",
+        "type": "Simple",
+        "name": "SimpleItem3",
+        "autoOpen": true,
+        "overlapping": 10001,
+        "price": 12.1
+    },
+    {
+        "id": "s006",
+        "type": "Simple",
+        "name": "SimpleItem4",
+        "autoOpen": true,
+        "overlapping": 10002,
+        "price": 13.1
+    }
+]}
