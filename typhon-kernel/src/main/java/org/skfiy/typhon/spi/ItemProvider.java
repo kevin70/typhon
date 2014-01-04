@@ -24,14 +24,17 @@ import java.io.FileInputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import org.apache.commons.beanutils.BeanUtils;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
@@ -41,7 +44,9 @@ import org.skfiy.typhon.domain.item.StaticItem;
 import org.skfiy.typhon.domain.item.StaticSimpleItem;
 import org.skfiy.typhon.domain.item.Subitem;
 import org.skfiy.typhon.spi.item.ItemCompleter;
+import org.skfiy.typhon.spi.item.NotFoundItemException;
 import org.skfiy.util.AntPathMatcher;
+import org.skfiy.util.Assert;
 import org.skfiy.util.PathMatcher;
 import org.skfiy.util.StreamUtils;
 import org.slf4j.Logger;
@@ -55,36 +60,63 @@ import org.slf4j.LoggerFactory;
 public class ItemProvider implements Component {
 
     private static final Logger LOG = LoggerFactory.getLogger(ItemProvider.class);
-    private final Map<String, StaticItem> items = new HashMap<>();
+    private Map<String, StaticItem> items = new HashMap<>();
+    
     @Inject
     private Set<ItemCompleter> itemCompleters;
 
+    /**
+     * 
+     * @param <T>
+     * @param id
+     * @return 
+     */
     public <T extends StaticItem> T getItem(String id) {
-        return (T) items.get(id);
+        Assert.notNull(id,
+                "[Assertion failed] - item \"id\" argument is required; it must not be null");
+        T item = (T) items.get(id);
+        if (item == null) {
+            throw new NotFoundItemException("Not found item [id=" + id + "]");
+        }
+        return item;
     }
 
     @Override
     public void init() {
-        items.putAll(initInternal());
+        items.putAll(loadItems());
         
-        LOG.debug("item provider init...");
+        LOG.info("item init successful.");
     }
 
     @Override
     public void reload() {
-        LOG.debug("item provider reload...");
+        Map<String, StaticItem> itemMap = loadItems();
+        for (Map.Entry<String, StaticItem> entry : itemMap.entrySet()) {
+            StaticItem oldItem = items.get(entry.getKey());
+            if (oldItem == null) {
+                items.put(entry.getKey(), entry.getValue());
+            } else {
+                try {
+                    BeanUtils.copyProperties(oldItem, entry.getValue());
+                } catch (Exception ex) {
+                    LOG.error("resetting item[id={}] failed.", entry.getKey(), ex);
+                    throw new ComponentException(ex);
+                }
+            }
+        }
         
-        // FIXME
-        
-        destroy();
-        init();
+        LOG.info("item reload successful.");
     }
 
     @Override
     public void destroy() {
+        items.clear();
+        items = null;
+        
+        LOG.info("item destroy successful.");
     }
 
-    private Map<String, StaticItem> initInternal() {
+    private Map<String, StaticItem> loadItems() {
         File[] itemFiles = findItemFiles();
         JSONArray jsonArray = new JSONArray();
 
