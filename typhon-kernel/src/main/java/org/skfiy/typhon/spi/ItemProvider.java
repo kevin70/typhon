@@ -28,12 +28,17 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.management.ObjectName;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.modeler.Registry;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
+import org.skfiy.typhon.Globals;
+import org.skfiy.typhon.Typhons;
 import org.skfiy.typhon.domain.item.StaticItem;
 import org.skfiy.typhon.spi.item.ItemCompleter;
 import org.skfiy.typhon.spi.item.NotFoundItemException;
@@ -56,6 +61,7 @@ public class ItemProvider implements Component {
     
     @Inject
     private Set<ItemCompleter> itemCompleters;
+    private ObjectName oname;
 
     /**
      * 
@@ -77,6 +83,14 @@ public class ItemProvider implements Component {
     public void init() {
         items.putAll(loadItems());
         
+        oname = Typhons.newObjectName(
+                Globals.DEFAULT_MBEAN_DOMAIN + ".spi:name=ItemProvider");
+        try {
+            Registry.getRegistry(null, null).registerComponent(this, oname, null);
+        } catch (Exception ex) {
+            LOG.error("registry component: {}", oname, ex);
+            throw new ComponentException(ex);
+        }
         LOG.info("item init successful.");
     }
 
@@ -105,6 +119,9 @@ public class ItemProvider implements Component {
         items.clear();
         items = null;
         
+        if (oname != null) {
+            Registry.getRegistry(null, null).unregisterComponent(oname);
+        }
         LOG.info("item destroy successful.");
     }
 

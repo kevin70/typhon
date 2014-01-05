@@ -123,8 +123,6 @@ public class StandardServer extends AbstractMBeanLifecycle implements Server {
     
     @Override
     protected void startInternal() throws LifecycleException {
-        System.out.println("STARTED.....");
-        
         setState(LifecycleState.STARTING);
         fireLifecycleListener(START_EVENT);
         
@@ -138,7 +136,6 @@ public class StandardServer extends AbstractMBeanLifecycle implements Server {
     protected void stopInternal() throws LifecycleException {
         setState(LifecycleState.STOPPING);
         fireLifecycleListener(STOP_EVENT);
-        System.out.println("STOPED.....");
         
         for (Service service : services) {
             service.stop();
