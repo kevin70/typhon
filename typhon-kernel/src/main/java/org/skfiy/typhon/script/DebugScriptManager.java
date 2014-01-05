@@ -38,7 +38,6 @@ import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import org.apache.commons.modeler.Registry;
-import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
@@ -58,7 +57,7 @@ import org.slf4j.LoggerFactory;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public final class DebugScriptManager extends AbstractComponent implements ScriptManager {
+public final class DebugScriptManager implements Component, ScriptManager {
 
     private static final Logger LOG = LoggerFactory.getLogger(DebugScriptManager.class);
     

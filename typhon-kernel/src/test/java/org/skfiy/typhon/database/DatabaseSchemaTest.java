@@ -15,10 +15,8 @@
  */
 package org.skfiy.typhon.database;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.sql.Connection;
-import org.skfiy.typhon.ConnectionProvider;
 import org.skfiy.typhon.util.DbUtils;
 import org.skfiy.util.ResourceUtils;
 import org.testng.annotations.AfterClass;
@@ -31,7 +29,7 @@ import org.testng.annotations.Test;
  */
 public class DatabaseSchemaTest {
 
-    private ConnectionProvider connectionProvider;
+    private SimpleConnectionProvider connectionProvider;
 
     @BeforeClass
     public void setup() {

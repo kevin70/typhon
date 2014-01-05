@@ -22,6 +22,7 @@ import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.handler.timeout.IdleState;
 import org.jboss.netty.handler.timeout.IdleStateAwareChannelHandler;
 import org.jboss.netty.handler.timeout.IdleStateEvent;
+import org.skfiy.typhon.session.AbstractSession;
 
 /**
  * Netty 3 端点处理器实现.
@@ -31,7 +32,6 @@ import org.jboss.netty.handler.timeout.IdleStateEvent;
 public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
 
     private ProtocolHandler protocolHandler;
-    private static final byte SPLIT = ':';
 
     public ProtocolHandler getProtocolHandler() {
         return protocolHandler;
@@ -74,10 +74,8 @@ public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
         ChannelBuffer buf = (ChannelBuffer) e.getMessage();
         
         // read namespace
-        byte[] nsBytes = new byte[buf.indexOf(0, 32, SPLIT)];
+        byte[] nsBytes = new byte[buf.indexOf(0, 32, AbstractSession.NS_SEPARTOR)];
         buf.readBytes(nsBytes, 0, nsBytes.length);
-        // String ns = new String(nsBytes, StandardCharsets.UTF_8);
-
         buf.skipBytes(1);
         byte[] dataBytes = new byte[buf.readableBytes()];
         buf.readBytes(dataBytes, 0, dataBytes.length);

@@ -23,7 +23,7 @@ import javax.sql.DataSource;
  *
  * @author Kevin Zou <<kevinz@skfiy.org>>
  */
-public interface ConnectionProvider extends Component {
+public interface ConnectionProvider {
 
     /**
      * 

@@ -21,9 +21,16 @@ package org.skfiy.typhon.spi;
  */
 public class NoAttributeDefException extends RuntimeException {
 
+    /**
+     * 
+     */
     public NoAttributeDefException() {
     }
 
+    /**
+     * 
+     * @param message 
+     */
     public NoAttributeDefException(String message) {
         super(message);
     }

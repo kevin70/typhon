@@ -32,15 +32,12 @@ import org.skfiy.util.Assert;
  */
 public abstract class AbstractSession implements Session {
 
-    private static final byte[] LS_BYTES;
-
-    static {
-        LS_BYTES = System.getProperty("line.separator").getBytes();
-    }
+    public static final byte NS_SEPARTOR = ':';
+    public static final byte MSG_SEPARTOR = '\n';
     
     private int sessionId;
     private String authType;
-    private Map<String, Object> attributes;
+    private final Map<String, Object> attributes;
 
     public AbstractSession() {
         attributes = new ConcurrentHashMap<>();
@@ -99,7 +96,7 @@ public abstract class AbstractSession implements Session {
     @Override
     public void write(Packet packet) {
         Assert.notNull(packet);
-        Assert.notNull(packet.getNs(), "[Assertion failed] - packet ns is required; it must not be null");
+        Assert.notNull(packet.getNs());
         
         write(packet.getNs(), JSON.toJSONString(packet));
     }
@@ -120,17 +117,22 @@ public abstract class AbstractSession implements Session {
         int l1 = b0.length + 1;
         int l2 = l1 + b1.length;
         
-        byte[] buf = new byte[l2 + LS_BYTES.length];
+        byte[] buf = new byte[l2 + 1];
         System.arraycopy(b0, 0, buf, 0, b0.length);
-        
+
         // 命名空间与消息主体分隔符
-        buf[b0.length] = ':';
-        
+        buf[b0.length] = NS_SEPARTOR;
+
         System.arraycopy(b1, 0, buf, l1, b1.length);
-        System.arraycopy(LS_BYTES, 0, buf, l2, LS_BYTES.length);
-        
+        buf[l2] = MSG_SEPARTOR;
         write(buf, 0, buf.length);
     }
 
+    /**
+     * 
+     * @param buf
+     * @param off
+     * @param len 
+     */
     protected abstract void write(byte[] buf, int off, int len);
 }

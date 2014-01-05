@@ -22,7 +22,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 import javax.sql.DataSource;
-import org.skfiy.typhon.AbstractComponent;
+import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ConnectionProvider;
 import org.skfiy.util.ClassUtils;
 import org.skfiy.util.ResourceUtils;
@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class SimpleConnectionProvider extends AbstractComponent implements ConnectionProvider {
+public class SimpleConnectionProvider implements Component, ConnectionProvider {
 
     private static final Logger LOG = LoggerFactory.getLogger(SimpleConnectionProvider.class);
     
@@ -71,6 +71,11 @@ public class SimpleConnectionProvider extends AbstractComponent implements Conne
         jdbcUrl = jdbcProps.getProperty("jdbc.url");
         username = jdbcProps.getProperty("jdbc.username");
         password = jdbcProps.getProperty("jdbc.password");
+    }
+
+    @Override
+    public void reload() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

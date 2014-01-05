@@ -22,30 +22,22 @@ import com.google.inject.Binding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
-import com.google.inject.Provider;
-import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Names;
-import com.google.inject.spi.TypeEncounter;
-import com.google.inject.spi.TypeListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
-import javax.inject.Singleton;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.commons.modeler.Registry;
 import org.reflections.Reflections;
 import org.reflections.scanners.ResourcesScanner;
 import org.reflections.util.ConfigurationBuilder;
-import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ConfigurationException;
 import org.skfiy.typhon.TyphonException;
@@ -60,7 +52,7 @@ import org.w3c.dom.NodeList;
  *
  * @author Kevin Zou <<kevinz@skfiy.org>>
  */
-public class GuiceContainer extends AbstractComponent implements Container {
+public class GuiceContainer implements Component, Container {
 
     private Injector injector;
 
@@ -81,6 +73,11 @@ public class GuiceContainer extends AbstractComponent implements Container {
         } catch (Exception ex) {
             throw new TyphonException("注册Container MBean失败 : " + ex);
         }
+    }
+
+    @Override
+    public void reload() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

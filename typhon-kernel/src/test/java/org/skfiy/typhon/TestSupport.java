@@ -23,7 +23,7 @@ import org.skfiy.typhon.container.GuiceContainer;
  */
 public abstract class TestSupport extends TestRoot {
 
-    public static final Container CONTAINER;
+    public static final GuiceContainer CONTAINER;
 
     static {
         CONTAINER = new GuiceContainer();

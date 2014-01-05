@@ -32,6 +32,7 @@ import org.skfiy.typhon.net.TestProtocolHandler;
 import org.skfiy.typhon.packet.Auth;
 import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.packet.Packet;
+import org.skfiy.typhon.session.AbstractSession;
 import org.testng.Assert;
 
 /**
@@ -42,10 +43,8 @@ public class TestProtocolBase extends TestBase {
 
     private final static SerializeConfig SERIALIZE_CONFIG;
     private final static DecoderEmbedder SEND_EMBEDDER;
-    private static final byte[] LS_BYTES;
 
     static {
-        LS_BYTES = System.getProperty("line.separator").getBytes();
         SERIALIZE_CONFIG = new SerializeConfig();
         SERIALIZE_CONFIG.setAsmEnable(false);
         
@@ -84,7 +83,7 @@ public class TestProtocolBase extends TestBase {
     /**
      * 
      * @param ns
-     * @param msg 
+     * @param body
      */
     public final void offer(String ns, String body) {
         byte[] b0 = ns.getBytes(StandardCharsets.UTF_8);
@@ -93,15 +92,14 @@ public class TestProtocolBase extends TestBase {
         int l1 = b0.length + 1;
         int l2 = l1 + b1.length;
         
-        byte[] buf = new byte[l2 + LS_BYTES.length];
+        byte[] buf = new byte[l2 + 1];
         System.arraycopy(b0, 0, buf, 0, b0.length);
         
         // 命名空间与消息主体分隔符
-        buf[b0.length] = ':';
+        buf[b0.length] = AbstractSession.NS_SEPARTOR;
         
         System.arraycopy(b1, 0, buf, l1, b1.length);
-        System.arraycopy(LS_BYTES, 0, buf, l2, LS_BYTES.length);
-        
+        buf[l2] = AbstractSession.MSG_SEPARTOR;
         // send
         offer(buf);
     }

@@ -26,7 +26,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import org.skfiy.typhon.AbstractComponent;
+import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.dispatcher.Dispatcher;
 import org.skfiy.typhon.dispatcher.DispatcherFactory;
@@ -41,7 +41,7 @@ import org.skfiy.util.CustomizableThreadCreator;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public class JsonProtocolHandler extends AbstractComponent implements ProtocolHandler {
+public class JsonProtocolHandler implements Component, ProtocolHandler {
 
     @Inject
     protected DispatcherFactory dispatcherFactory;
@@ -76,6 +76,11 @@ public class JsonProtocolHandler extends AbstractComponent implements ProtocolHa
                 new ArrayBlockingQueue<Runnable>(Integer.getInteger("protocol.workQueueSize", 50)),
                 new CustomizableThreadFactory(),
                 new NewThreadPolicy());
+    }
+
+    @Override
+    public void reload() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

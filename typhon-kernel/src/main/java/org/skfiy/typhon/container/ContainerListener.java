@@ -15,11 +15,14 @@
  */
 package org.skfiy.typhon.container;
 
+import java.lang.reflect.Method;
 import org.skfiy.typhon.Container;
 import org.skfiy.typhon.Lifecycle;
 import org.skfiy.typhon.LifecycleEvent;
 import org.skfiy.typhon.LifecycleListener;
 import org.skfiy.typhon.TyphonException;
+import org.skfiy.util.ClassUtils;
+import org.skfiy.util.ReflectionUtils;
 
 /**
  * IoC容器初始/销毁监听器.
@@ -37,13 +40,15 @@ public class ContainerListener implements LifecycleListener {
             try {
                 Class clazz = Class.forName(impl);
                 container = (Container) clazz.newInstance();
+                Method m = ReflectionUtils.findMethod(clazz, "init");
+                m.invoke(container);
             } catch (Exception ex) {
-                throw new TyphonException("创建Container对象失败", ex);
+                throw new TyphonException("初始化[" + impl + "]失败", ex);
             }
-            container.init();
         } else if (Lifecycle.BEFORE_STOP_EVENT.equals(event.getEvent())) {
             if (container != null) {
-                container.destroy();
+                Method m = ReflectionUtils.findMethod(container.getClass(), "destroy");
+                ReflectionUtils.invokeMethod(m, container);
             }
         }
     }

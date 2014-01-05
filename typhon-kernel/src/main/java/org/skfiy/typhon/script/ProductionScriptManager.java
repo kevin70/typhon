@@ -20,7 +20,6 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Container;
@@ -36,7 +35,7 @@ import org.slf4j.LoggerFactory;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public class ProductionScriptManager extends AbstractComponent implements ScriptManager {
+public class ProductionScriptManager implements Component, ScriptManager {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProductionScriptManager.class);
     
@@ -58,6 +57,11 @@ public class ProductionScriptManager extends AbstractComponent implements Script
         
         status = Component.Status.INITIALIZED;
         LOG.debug("ProductionScriptManager inited successful...");
+    }
+
+    @Override
+    public void reload() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

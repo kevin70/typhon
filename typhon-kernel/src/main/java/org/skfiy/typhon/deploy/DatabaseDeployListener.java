@@ -58,18 +58,18 @@ public class DatabaseDeployListener implements LifecycleListener {
 
         if (Lifecycle.START_EVENT.equals(event.getEvent())) {
             // 部署数据库
-            ConnectionProvider connectionProvider = new SimpleConnectionProvider();
-            connectionProvider.init();
+            SimpleConnectionProvider scp = new SimpleConnectionProvider();
+            scp.init();
 
-            Version dbVersion = findVersion(connectionProvider);
+            Version dbVersion = findVersion(scp);
             int ct = Version.currentVersion().compareTo(dbVersion);
             
             // update database schema
             if (ct > 0) {
-                upgrade(connectionProvider, dbVersion);
+                upgrade(scp, dbVersion);
             }
             
-            connectionProvider.destroy();
+            scp.destroy();
         }
     }
     

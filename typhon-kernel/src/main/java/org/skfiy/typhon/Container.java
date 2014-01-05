@@ -31,7 +31,7 @@ import javax.management.ObjectName;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public interface Container extends Component {
+public interface Container {
 
     /**
      * {@code Container } 组件名称.

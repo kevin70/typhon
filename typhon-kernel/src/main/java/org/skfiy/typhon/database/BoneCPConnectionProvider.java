@@ -18,10 +18,9 @@ package org.skfiy.typhon.database;
 import com.jolbox.bonecp.BoneCPDataSource;
 import java.io.InputStream;
 import java.util.Properties;
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import javax.inject.Singleton;
 import javax.sql.DataSource;
+import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.ConnectionProvider;
 import org.skfiy.util.ResourceUtils;
@@ -31,7 +30,7 @@ import org.skfiy.util.ResourceUtils;
  * @author Kevin Zou <<kevinz@skfiy.org>>
  */
 @Singleton
-public class BoneCPConnectionProvider extends BoneCPDataSource implements
+public class BoneCPConnectionProvider extends BoneCPDataSource implements Component,
         ConnectionProvider {
 
     @Override
@@ -68,15 +67,8 @@ public class BoneCPConnectionProvider extends BoneCPDataSource implements
 
         // load jdbc.properties
         Properties jdbcProps = new Properties();
-        InputStream in = null;
-        try {
-
-            in = ResourceUtils.getURL("classpath:jdbc.properties").openStream();
+        try (InputStream in = ResourceUtils.getURL("classpath:jdbc.properties").openStream()) {
             jdbcProps.load(in);
-        } finally {
-            if (in != null) {
-                in.close();
-            }
         }
 
         // settings jdbc properties...
