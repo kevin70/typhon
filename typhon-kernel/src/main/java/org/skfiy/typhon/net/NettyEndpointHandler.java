@@ -56,10 +56,11 @@ public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
     @Override
     public void channelIdle(ChannelHandlerContext ctx, IdleStateEvent e) throws Exception {
         if (e.getState() == IdleState.READER_IDLE) {
-            e.getChannel().close();
-        } else if (e.getState() == IdleState.WRITER_IDLE) {
-            //e.getChannel().write(new PingMessage());
-            System.out.println("Writer idle");
+            // e.getChannel().close();
+            // 超时会话
+            NettySession session = (NettySession) ctx.getAttachment();
+//            protocolHandler.handle(session, nsBytes, dataBytes);
+            System.out.println("Read idle");
         }
     }
     

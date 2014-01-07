@@ -20,5 +20,13 @@ package org.skfiy.typhon.domain.item;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class StaticSimpleItem extends StaticItem {
+
+    @Override
+    public DynamicItem toDynamicItem() {
+        DynamicSimpleItem dynamicItem = new DynamicSimpleItem();
+        dynamicItem.setId(getId());
+        dynamicItem.setStaticItem(this);
+        return dynamicItem;
+    }
     
 }

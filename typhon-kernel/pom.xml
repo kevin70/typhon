@@ -152,11 +152,13 @@ limitations under the License.
             <artifactId>asm</artifactId>
             <version>4.1</version>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-all</artifactId>
             <version>4.1</version>
         </dependency>
+        -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
@@ -209,11 +211,6 @@ limitations under the License.
             <version>${jolokia.version}</version>
         </dependency>
         -->
-        <dependency>
-            <groupId>mx4j</groupId>
-            <artifactId>mx4j-tools</artifactId>
-            <version>2.1.1</version>
-        </dependency>
         <dependency>
             <groupId>com.jolbox</groupId>
             <artifactId>bonecp</artifactId>

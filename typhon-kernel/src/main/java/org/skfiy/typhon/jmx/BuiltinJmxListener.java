@@ -15,17 +15,26 @@
  */
 package org.skfiy.typhon.jmx;
 
+import java.io.File;
 import java.io.IOException;
+import java.lang.management.ManagementFactory;
 import java.net.MalformedURLException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import javax.management.MBeanServer;
 import javax.management.remote.JMXConnectorServer;
 import javax.management.remote.JMXConnectorServerFactory;
 import javax.management.remote.JMXServiceURL;
 import org.apache.commons.modeler.Registry;
+import org.skfiy.typhon.Constants;
+import org.skfiy.typhon.Globals;
 import org.skfiy.typhon.Lifecycle;
 import org.skfiy.typhon.LifecycleEvent;
 import org.skfiy.typhon.LifecycleListener;
+import org.skfiy.typhon.TyphonException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,27 +47,55 @@ public class BuiltinJmxListener implements LifecycleListener {
     private static final Logger LOG = LoggerFactory.getLogger(BuiltinJmxListener.class);
 
     private String host = "localhost";
-    private int port = 9090;
+    private int port = 1090;
 
-    private JMXConnectorServer connectorServer;
+    private JMXConnectorServer jcs;
 
     @Override
     public void execute(LifecycleEvent event) {
-        if (Lifecycle.AFTER_INIT_EVENT.equals(event.getEvent())) {
-            MBeanServer mbeanServer = Registry.getRegistry(null, null).getMBeanServer();
+        if (Lifecycle.BEFORE_INIT_EVENT.equals(event.getEvent())) {
+            
+            MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+            Registry.getRegistry(null, null).setMBeanServer(mbs);
+        } else if (Lifecycle.AFTER_INIT_EVENT.equals(event.getEvent())) {
+            // Ensure cryptographically strong random number generator used
+            // to choose the object number - see java.rmi.server.ObjID
+            //
+            System.setProperty("java.rmi.server.randomIDs", "true");
+            
+            // Start an RMI registry on port.
             try {
-                connectorServer = JMXConnectorServerFactory.newJMXConnectorServer(
-                        newJmxUrl(), null, mbeanServer);
-                connectorServer.start();
+                LocateRegistry.createRegistry(port);
+                LOG.info("Create RMI registry on port {}", port);
+            } catch (RemoteException ex) {
+                LOG.error("Create RMI registry error", ex);
+                throw new TyphonException(ex);
+            }
+
+            Map<String, Object> env = new HashMap<>();
+            
+            // Provide the password file used by the connector server to
+            // perform user authentication. The password file is a properties
+            // based text file specifying username/password pairs.
+            //
+            // File file = new File(System.getProperty("typhon.home"), "bin/jmxremote.password");
+            // env.put("com.sun.management.jmxremote.password.file", file.getAbsolutePath());
+            
+            try {
+                jcs = JMXConnectorServerFactory.newJMXConnectorServer(newUrl(), env,
+                        ManagementFactory.getPlatformMBeanServer());
+                jcs.start();
             } catch (IOException ex) {
                 LOG.error("start JMXConnectorServer...", ex);
+                throw new TyphonException(ex);
             }
         } else if (Lifecycle.AFTER_DESTROY_EVENT.equals(event.getEvent())) {
-            if (connectorServer != null) {
+            if (jcs != null) {
                 try {
-                    connectorServer.stop();
+                    jcs.stop();
                 } catch (IOException ex) {
                     LOG.error("stop JMXConnectorServer...", ex);
+                    throw new TyphonException(ex);
                 }
             }
         }
@@ -80,10 +117,10 @@ public class BuiltinJmxListener implements LifecycleListener {
         this.port = port;
     }
 
-    private JMXServiceURL newJmxUrl() {
+    private JMXServiceURL newUrl() {
         try {
             return new JMXServiceURL("service:jmx:rmi:///jndi/rmi://"
-                    + host + ":" + port + "/server");
+                    + host + ":" + port + "/jmxrmi");
         } catch (MalformedURLException ex) {
             throw new IllegalArgumentException(ex);
         }

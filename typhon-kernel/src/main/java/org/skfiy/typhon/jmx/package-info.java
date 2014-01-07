@@ -15,6 +15,6 @@
  */
 
 /**
- * JMX管理器实现.
+ * JMX连接服务器.
  */
 package org.skfiy.typhon.jmx;

@@ -1,10 +1,5 @@
-package test.debug;
-
-import org.skfiy.typhon.script.Script;
-import org.skfiy.typhon.session.Session;
-
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +13,5 @@ import org.skfiy.typhon.session.Session;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- *
- * @author Kevin Zou <kevinz@skfiy.org>
- */
-public class TestScript1 implements Script {
 
-    @Override
-    public void invoke(Session session, Object obj) {
-        session.setAttribute("TEST_KEY", -7899198809176734580L);
-    }
-}
+package org.skfiy.typhon.spi;

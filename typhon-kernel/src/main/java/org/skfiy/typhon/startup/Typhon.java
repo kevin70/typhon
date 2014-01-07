@@ -307,11 +307,9 @@ public final class Typhon {
                 byte[] cur = server.getShutdown().getBytes(StandardCharsets.UTF_8);
                 byte[] buf = new byte[cur.length];
                 int l = in.read(buf);
-                if (l != buf.length) {
-                    // 接收到退出命令
-                    if (Arrays.equals(cur, buf)) {
-                        break;
-                    }
+                // 接收到退出命令
+                if (l == cur.length && Arrays.equals(cur, buf)) {
+                    break;
                 }
             } catch (IOException e) {
             } finally {

@@ -17,14 +17,13 @@ package org.skfiy.typhon.domain.item;
 
 import com.alibaba.fastjson.annotation.JSONType;
 import org.skfiy.typhon.script.Script;
-import org.skfiy.typhon.domain.item.Item;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  * @param <S>
  */
-@JSONType(ignores = {"autoOpen", "overlapping", "price", "script"})
+@JSONType(ignores = {"autoOpen", "overlapping", "price", "script", "staticItem"})
 public abstract class DynamicItem<S extends Item> extends Item {
 
     private S staticItem;
@@ -35,6 +34,10 @@ public abstract class DynamicItem<S extends Item> extends Item {
 
     public void setStaticItem(S staticItem) {
         this.staticItem = staticItem;
+
+        if (getId() == null) {
+            setId(staticItem.getId());
+        }
     }
 
     @Override

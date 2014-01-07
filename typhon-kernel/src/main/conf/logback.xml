@@ -17,7 +17,7 @@ limitations under the License.
 <configuration scan="true">
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d [%thread]  %M - %msg%n%ex{full}</pattern>
+            <pattern>%d [%thread] - %msg%n%ex{full}</pattern>
             <charset>UTF-8</charset>
         </encoder>
     </appender>

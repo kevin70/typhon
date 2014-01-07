@@ -39,4 +39,12 @@ public class StaticComplexItem extends StaticItem {
         this.subitems = ArrayUtils.addAll(this.subitems, subitems);
     }
 
+    @Override
+    public DynamicItem toDynamicItem() {
+        DynamicComplexItem dynamicItem = new DynamicComplexItem();
+        dynamicItem.setId(getId());
+        dynamicItem.setStaticItem(this);
+        return dynamicItem;
+    }
+
 }

@@ -17,7 +17,6 @@ package org.skfiy.typhon.domain.item;
 
 import com.alibaba.fastjson.annotation.JSONType;
 import org.skfiy.typhon.script.Script;
-import org.skfiy.typhon.domain.item.Item;
 
 /**
  *
@@ -67,4 +66,6 @@ public abstract class StaticItem extends Item {
         return script;
     }
 
+    public abstract DynamicItem toDynamicItem();
+    
 }

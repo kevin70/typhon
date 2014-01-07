@@ -17,13 +17,10 @@ package org.skfiy.typhon.spi;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.management.ObjectName;
 import org.apache.commons.modeler.Registry;
 import org.skfiy.typhon.Component;

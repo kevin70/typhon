@@ -125,7 +125,7 @@ public class NettyConnector extends AbstractMBeanLifecycle
         nettyServer.setPipelineFactory(new ChannelPipelineFactory() {
             
             private final Timer timer = new HashedWheelTimer();
-            private final ChannelHandler idleStateHandler = new IdleStateHandler(timer, 60, 30, 0);
+            private final ChannelHandler idleStateHandler = new IdleStateHandler(timer, 60, 0, 0);
             
             @Override
             public ChannelPipeline getPipeline() throws Exception {

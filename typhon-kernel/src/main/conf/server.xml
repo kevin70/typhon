@@ -16,9 +16,7 @@ limitations under the License.
 -->
 <Server port="7870" shutdown="SHUTDOWN">
     
-    <!--
-    <Listener className="org.skfiy.typhon.jmx.BuiltinJmxListener" port="9090"/>
-    -->
+    <Listener className="org.skfiy.typhon.jmx.BuiltinJmxListener"/>
     <Listener className="org.skfiy.typhon.deploy.DatabaseDeployListener"/>
     
     <Service name="Typhon">

@@ -211,8 +211,6 @@ shift
 goto setArgs
 :doneSetArgs
 
-set ACTION=%ACTION% >> typhon.out
-
 rem Execute Java with the applicable properties
 if not "%JPDA%" == "" goto doJpda
 if not "%SECURITY_POLICY_FILE%" == "" goto doSecurity
