@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONException;
+import com.alibaba.fastjson.annotation.JSONType;
 import com.alibaba.fastjson.util.FieldInfo;
 import com.alibaba.fastjson.util.TypeUtils;
 
@@ -123,7 +124,15 @@ public class JavaBeanSerializer implements ObjectSerializer {
                 Class<?> objClass = object.getClass();
                 if (objClass != fieldType) {
                     out.writeFieldName("@type");
-                    serializer.write(object.getClass());
+                    
+                    // Kevin Zou
+                    // 序列化时检查JSONType中是否有定义shortType如果有则采用shortType作为@type的值反之采用class.getName()
+                    JSONType jsonType = object.getClass().getAnnotation(JSONType.class);
+                    if (jsonType != null && !"".equals(jsonType.shortType())) {
+                        serializer.write(jsonType.shortType());
+                    } else {
+                        serializer.write(object.getClass().getName());
+                    }
                     commaFlag = true;
                 }
             }

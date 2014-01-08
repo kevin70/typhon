@@ -22,9 +22,11 @@ import org.apache.commons.lang3.ArrayUtils;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = "subitems")
+@JSONType(ignores = "subitems", shortType = StaticComplexItem.JSON_SHORT_TYPE)
 public class StaticComplexItem extends StaticItem {
 
+    public static final String JSON_SHORT_TYPE = "S$ComplexItem";
+    
     private Subitem[] subitems = new Subitem[0];
 
     public Subitem[] getSubitems() {

@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.skfiy.typhon.domain.item.DynamicItem;
 import org.skfiy.typhon.domain.item.StaticItem;
+import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.util.SortedList;
 import org.skfiy.util.Assert;
 
@@ -26,61 +27,62 @@ import org.skfiy.util.Assert;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class Big {
+public class Big implements Changeable {
 
     private static final int MIN_POS = 1;
-    
+
     private final List<Node> nodeData = new SortedList<>();
     private int maxSize = 100;
+    
+    private Player player;
+
+    @Override
+    public String getNs() {
+        return Namespaces.BIG;
+    }
+
+    @Override
+    public Player getPlayer() {
+        return player;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public List<Node> getNodes() {
         return nodeData;
     }
 
     /**
-     * 
-     * @param nodes 
+     *
+     * @param nodes
      */
     public void setNodes(List<Node> nodes) {
         this.nodeData.addAll(nodes);
     }
 
     /**
-     * 
-     * @return 
-     */
-    public int size() {
-        return nodeData.size();
-    }
-    
-    /**
-     * 
-     * @return 
-     */
-    public boolean isFull() {
-        return (maxSize == size());
-    }
-
-    /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public int getMaxSize() {
         return maxSize;
     }
 
     /**
-     * 
-     * @param maxSize 
+     *
+     * @param maxSize
      */
     public void setMaxSize(int maxSize) {
         this.maxSize = maxSize;
     }
-    
+
     /**
      *
      * @param staticItem
@@ -89,7 +91,7 @@ public class Big {
     public boolean intoItem(StaticItem staticItem) {
         return intoItem(staticItem, 1);
     }
-    
+
     /**
      *
      * @param staticItem
@@ -137,11 +139,11 @@ public class Big {
         nodeData.add(node);
         return true;
     }
-    
+
     /**
-     * 
+     *
      * @param pos
-     * @return 
+     * @return
      */
     public Node findNode(int pos) {
         for (Node node : nodeData) {
@@ -151,11 +153,11 @@ public class Big {
         }
         return null;
     }
-    
+
     /**
-     * 
+     *
      * @param iid
-     * @return 
+     * @return
      */
     public Node findNode(String iid) {
         for (Node node : nodeData) {
@@ -165,11 +167,11 @@ public class Big {
         }
         return null;
     }
-    
+
     /**
-     * 
+     *
      * @param iid
-     * @return 
+     * @return
      */
     public Node[] findNodes(String iid) {
         List<Node> ns = new ArrayList<>();
@@ -178,16 +180,16 @@ public class Big {
                 ns.add(node);
             }
         }
-        
+
         Node[] nodeArray = new Node[ns.size()];
         ns.toArray(nodeArray);
         return nodeArray;
     }
-    
+
     /**
-     * 
+     *
      * @param pos
-     * @return 
+     * @return
      */
     public synchronized Node removeNode(int pos) {
         for (int i = 0; i < nodeData.size(); i++) {
@@ -198,21 +200,21 @@ public class Big {
         }
         return null;
     }
-    
+
     /**
-     * 
+     *
      * @param node
-     * @return 
+     * @return
      */
     public synchronized boolean removeNode(Node node) {
         return nodeData.remove(node);
     }
-    
+
     /**
      *
      * @param srcPos
      * @param destPost
-     * @return 
+     * @return
      */
     public synchronized boolean swap(int srcPos, int destPost) {
         if (destPost > maxSize) {
@@ -230,26 +232,26 @@ public class Big {
             nodeData.remove(destNode);
             nodeData.add(destNode);
         }
-        
+
         srcNode.setPos(destPost);
         nodeData.remove(srcNode);
         nodeData.add(srcNode);
         return true;
     }
-    
+
     /**
-     * 
+     *
      * @param node
      * @param count
-     * @return 
+     * @return
      */
     public synchronized boolean decrementTotal(Node node, int count) {
         Assert.notNull(node);
-        
+
         if (node.getTotal() < count) {
             return false;
         }
-        
+
         int newTotal = node.getTotal() - count;
         if (newTotal <= 0) {
             removeNode(node);
@@ -258,7 +260,7 @@ public class Big {
         }
         return true;
     }
-    
+
     /**
      *
      * @param iid
@@ -267,22 +269,22 @@ public class Big {
      */
     public synchronized boolean decrementTotal(String iid, int count) {
         Node[] nodes = findNodes(iid);
-        
+
         int allCount = 0;
         for (Node node : nodes) {
             allCount += node.getTotal();
         }
-        
+
         if (allCount < count) {
             return false;
         }
-        
+
         int newTotal;
         for (Node node : nodes) {
             newTotal = node.getTotal() - count;
             if (newTotal <= 0) {
                 removeNode(node);
-                
+
                 if (newTotal == 0) {
                     break;
                 }
@@ -294,16 +296,32 @@ public class Big {
         }
         return true;
     }
+
+    /**
+     *
+     * @return
+     */
+    public int size() {
+        return nodeData.size();
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean isFull() {
+        return (maxSize == size());
+    }
     
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     private int nextPos() {
         if (nodeData.isEmpty()) {
             return MIN_POS;
         }
-        
+
         Node prevNode = null;
         for (int i = 0; i < nodeData.size(); i++) {
             Node node = nodeData.get(i);
@@ -314,30 +332,30 @@ public class Big {
                 }
             } else {
                 // 如果当前节点与上一个节点的pos差距大于1则返回之间的pos
-                if ((node.getPos() - prevNode.getPos()) > 1) { 
+                if ((node.getPos() - prevNode.getPos()) > 1) {
                     return prevNode.getPos() + 1;
                 }
             }
             prevNode = node;
         }
-        
+
         if (prevNode.getPos() < maxSize) {
             return (prevNode.getPos() + 1);
         }
         return -1;
     }
-    
+
     /**
-     * 
+     *
      * @param staticItem
-     * @return 
+     * @return
      */
     private boolean isOverlapped(StaticItem staticItem) {
         return (staticItem.getOverlapping() != 1);
     }
-    
+
     /**
-     * 
+     *
      */
     public static class Node implements Comparable<Node> {
 

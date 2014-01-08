@@ -22,6 +22,7 @@ import com.google.inject.Binding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
+import com.google.inject.binder.ScopedBindingBuilder;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Names;
 import java.io.IOException;
@@ -243,38 +244,50 @@ public class GuiceContainer implements Component, Container {
 
         protected void bindBean(Node node) {
             NamedNodeMap attrMap = node.getAttributes();
-            Node typeNode = attrMap.getNamedItem("type");
-            Node classNode = attrMap.getNamedItem("class");
-
-            Class type = null;
-            if (typeNode != null) {
+            Node typeAttr = attrMap.getNamedItem("type");
+            Node classAttr = attrMap.getNamedItem("class");
+            Node lazyAttr = attrMap.getNamedItem("lazy");
+            boolean lazy = false;
+            if (lazyAttr != null) {
                 try {
-                    type = Class.forName(typeNode.getNodeValue());
+                    lazy = Boolean.valueOf(lazyAttr.getNodeValue());
+                } catch (Exception e) {
+                }
+            }
+            
+            Class type = null;
+            if (typeAttr != null) {
+                try {
+                    type = Class.forName(typeAttr.getNodeValue());
                 } catch (ClassNotFoundException ex) {
                     throw new ConfigurationException(
-                            typeNode.getNodeName()
+                            typeAttr.getNodeName()
                             + " > type 属性值配置错误["
-                            + typeNode.getNodeValue() + "]", ex);
+                            + typeAttr.getNodeValue() + "]", ex);
                 }
             }
 
             Class clazz = null;
             try {
-                clazz = Class.forName(classNode.getNodeValue());
+                clazz = Class.forName(classAttr.getNodeValue());
             } catch (ClassNotFoundException ex) {
                 throw new ConfigurationException(
-                        classNode.getNodeName()
+                        classAttr.getNodeName()
                         + " > class 属性值配置错误["
-                        + classNode.getNodeValue() + "]", ex);
+                        + classAttr.getNodeValue() + "]", ex);
             }
 
             // 如果没有接口，则直接绑定实现类
+            ScopedBindingBuilder sbber;
             if (type == null) {
-                bind(clazz);
-                return;
+                sbber = bind(clazz);
+            } else {
+                sbber = bind(type).to(clazz);
             }
-
-            bind(type).to(clazz);
+            
+            if (!lazy) {
+                sbber.asEagerSingleton();
+            }
         }
         
         protected void bindSetBean(Node node) {

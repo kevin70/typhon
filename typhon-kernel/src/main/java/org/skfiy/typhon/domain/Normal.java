@@ -15,10 +15,38 @@
  */
 package org.skfiy.typhon.domain;
 
+import com.alibaba.fastjson.annotation.JSONType;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class Normal {
+@JSONType(ignores = "player")
+public class Normal implements Changeable {
+
+    private Player player;
+    
+    @Override
+    public String getNs() {
+        return "normal";
+    }
+
+    @Override
+    public Player getPlayer() {
+        return player;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+    
+    public int getLevel() {
+        return player.getRole().getLevel();
+    }
+
+    public void setLevel(int level) {
+        player.getRole().setLevel(level);
+    }
     
 }
