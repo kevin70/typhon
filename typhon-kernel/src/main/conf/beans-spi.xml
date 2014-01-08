@@ -24,6 +24,7 @@ limitations under the License.
     <bean type="org.skfiy.typhon.spi.auth.Authenticator"
           class="org.skfiy.typhon.spi.auth.DefaultAuthenticator"/>
     
+    <bean class="org.skfiy.typhon.spi.ConfigurationLoader"/>
     <bean class="org.skfiy.typhon.spi.RoleProvider"/>
     <bean class="org.skfiy.typhon.spi.ItemProvider"/>
     

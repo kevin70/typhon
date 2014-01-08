@@ -23,4 +23,10 @@ public @interface JSONType {
     SerializerFeature[] serialzeFeatures() default {};
 
     boolean alphabetic() default true;
+    
+    /**
+     * 
+     * @return 
+     */
+    String shortType() default "";
 }

@@ -15,12 +15,15 @@
  */
 package org.skfiy.typhon.domain.item;
 
-import org.skfiy.typhon.domain.item.StaticSimpleItem;
+import com.alibaba.fastjson.annotation.JSONType;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
+@JSONType(shortType = DynamicSimpleItem.JSON_SHORT_TYPE)
 public class DynamicSimpleItem extends DynamicItem<StaticSimpleItem> {
+
+    public static final String JSON_SHORT_TYPE = "D$SimpleItem";
 
 }

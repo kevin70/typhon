@@ -15,17 +15,22 @@
  */
 package org.skfiy.typhon.domain;
 
+import com.alibaba.fastjson.annotation.JSONType;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class Role {
+@JSONType(ignores = "player")
+public class Role implements Changeable {
 
     private int rid;
     private String name;
     private int level = 1;
     private long creationTime = -1L;
     private long lastAccessedTime;
+    
+    private Player player;
 
     public int getRid() {
         return rid;
@@ -66,4 +71,20 @@ public class Role {
     public void setLastAccessedTime(long lastAccessedTime) {
         this.lastAccessedTime = lastAccessedTime;
     }
+
+    @Override
+    public String getNs() {
+        return "role";
+    }
+
+    @Override
+    public Player getPlayer() {
+        return player;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
 }

@@ -148,9 +148,9 @@ limitations under the License.
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>4.1</version>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.1</version>
         </dependency>
         <!--
         <dependency>
@@ -334,8 +334,8 @@ limitations under the License.
     <reporting>
         <plugins>
             <!--
-            ### Findbugs 需要预先编译代码，如果report则应该使用
-            ### mvn compile site方式，Findbugs才会report
+            ### Findbugs 闇�棰勫厛缂栬瘧浠ｇ爜锛屽鏋渞eport鍒欏簲璇ヤ娇鐢�
+            ### mvn compile site鏂瑰紡锛孎indbugs鎵嶄細report
             -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -344,5 +344,4 @@ limitations under the License.
             </plugin>
         </plugins>
     </reporting>
-    
 </project>

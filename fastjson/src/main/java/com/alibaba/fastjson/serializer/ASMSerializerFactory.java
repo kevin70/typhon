@@ -29,7 +29,7 @@ import org.objectweb.asm.Opcodes;
 
 public class ASMSerializerFactory implements Opcodes {
 
-    private ASMClassLoader classLoader = new ASMClassLoader();
+    private final ASMClassLoader classLoader = new ASMClassLoader();
 
     public ObjectSerializer createJavaBeanSerializer(Class<?> clazz) throws Exception {
         return createJavaBeanSerializer(clazz, (Map<String, String>) null);
@@ -364,7 +364,16 @@ public class ASMSerializerFactory implements Opcodes {
 
             mw.visitLabel(writeClass_);
             mw.visitVarInsn(ALOAD, context.var("out"));
-            mw.visitLdcInsn("{\"@type\":\"" + clazz.getName() + "\"");
+            
+            // Kevin Zou
+            // 序列化时检查JSONType中是否有定义shortType如果有则采用shortType作为@type的值反之采用class.getName()
+            String clazzName = clazz.getName();
+            JSONType jsonType = clazz.getAnnotation(JSONType.class);
+            if (jsonType != null && !"".equals(jsonType.shortType())) {
+                clazzName = jsonType.shortType();
+            }
+            mw.visitLdcInsn("{\"@type\":\"" + clazzName + "\"");
+            
             mw.visitMethodInsn(INVOKEVIRTUAL, getType(SerializeWriter.class), "write", "(Ljava/lang/String;)V");
             mw.visitVarInsn(BIPUSH, ',');
             mw.visitJumpInsn(GOTO, end_);

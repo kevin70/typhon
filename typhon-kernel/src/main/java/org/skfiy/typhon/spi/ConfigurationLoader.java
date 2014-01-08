@@ -15,6 +15,8 @@
  */
 package org.skfiy.typhon.spi;
 
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.util.TypeUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -28,7 +30,12 @@ import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Globals;
 import org.skfiy.typhon.Typhons;
+import org.skfiy.typhon.domain.item.DynamicComplexItem;
+import org.skfiy.typhon.domain.item.DynamicSimpleItem;
+import org.skfiy.typhon.domain.item.StaticComplexItem;
+import org.skfiy.typhon.domain.item.StaticSimpleItem;
 import org.skfiy.util.SystemPropertyUtils;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
@@ -37,7 +44,7 @@ import org.slf4j.LoggerFactory;
  */
 public class ConfigurationLoader implements Component {
 
-    private static final org.slf4j.Logger LOG = LoggerFactory.getLogger(ConfigurationLoader.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ConfigurationLoader.class);
     
     private ObjectName oname;
     
@@ -45,6 +52,13 @@ public class ConfigurationLoader implements Component {
     public void init() {
         initInertal();
         
+        // Fastjson 配置
+        TypeUtils.addClassMapping(StaticSimpleItem.JSON_SHORT_TYPE, JSONObject.class);
+        TypeUtils.addClassMapping(StaticComplexItem.JSON_SHORT_TYPE, JSONObject.class);
+        TypeUtils.addClassMapping(DynamicSimpleItem.JSON_SHORT_TYPE, DynamicSimpleItem.class);
+        TypeUtils.addClassMapping(DynamicComplexItem.JSON_SHORT_TYPE, DynamicComplexItem.class);
+        
+        // MBean 注册
         oname = Typhons.newObjectName(
                 Globals.DEFAULT_MBEAN_DOMAIN + ".spi:name=ConfigurationLoader");
         try {

@@ -16,16 +16,19 @@
 package org.skfiy.typhon.domain.item;
 
 import com.alibaba.fastjson.annotation.JSONType;
-import org.skfiy.typhon.domain.item.StaticComplexItem;
-import org.skfiy.typhon.domain.item.Subitem;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = "subitems")
+@JSONType(ignores = "subitems", shortType = DynamicComplexItem.JSON_SHORT_TYPE)
 public class DynamicComplexItem extends DynamicItem<StaticComplexItem> {
 
+    /**
+     * 
+     */
+    public static final String JSON_SHORT_TYPE = "D$ComplexItem";
+    
     public Subitem[] getSubitems() {
         return getStaticItem().getSubitems();
     }

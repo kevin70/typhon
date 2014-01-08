@@ -40,11 +40,12 @@ public class BasicRoleListener extends AbstractRoleListener {
 
     @Override
     public void roleCreated(Role role) {
-        Player player = new Player();
-        player.setRole(role);
-
         // 首次初始化角色信息
         Session session = SessionContext.getSession();
+        
+        Player player = new Player(session);
+        player.setRole(role);
+
         session.setAttribute(SessionUtils.ATTR_PLAYER, player);
     }
 
@@ -53,7 +54,7 @@ public class BasicRoleListener extends AbstractRoleListener {
         Session session = SessionContext.getSession();
         Player player = (Player) session.getAttribute(SessionUtils.ATTR_PLAYER);
         if (player == null) {
-            player = new Player();
+            player = new Player(session);
             player.setRole(role);
             
             RoleData roleData = roleReposy.loadRoleData(role.getRid());

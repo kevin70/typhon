@@ -66,4 +66,9 @@ public interface Namespaces {
      * 心跳消息命名空间.
      */
     String PING = "ping";
+    
+    /**
+     * 背包命令空间.
+     */
+    String BIG = "big";
 }
