@@ -42,12 +42,12 @@ public class Big implements Changeable {
     }
 
     @Override
-    public Player getPlayer() {
+    public final Player getPlayer() {
         return player;
     }
 
     @Override
-    public void setPlayer(Player player) {
+    public final void setPlayer(Player player) {
         this.player = player;
     }
 
@@ -55,7 +55,7 @@ public class Big implements Changeable {
      *
      * @return
      */
-    public List<Node> getNodes() {
+    public final List<Node> getNodes() {
         return nodeData;
     }
 
@@ -325,13 +325,13 @@ public class Big implements Changeable {
         Node prevNode = null;
         for (int i = 0; i < nodeData.size(); i++) {
             Node node = nodeData.get(i);
-            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS开始的
+            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS�?���?
             if (prevNode == null) {
                 if (node.getPos() > MIN_POS) {
                     return MIN_POS;
                 }
             } else {
-                // 如果当前节点与上一个节点的pos差距大于1则返回之间的pos
+                // 如果当前节点与上�?��节点的pos差距大于1则返回之间的pos
                 if ((node.getPos() - prevNode.getPos()) > 1) {
                     return prevNode.getPos() + 1;
                 }

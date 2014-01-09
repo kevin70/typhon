@@ -71,4 +71,9 @@ public interface Namespaces {
      * 背包命令空间.
      */
     String BIG = "big";
+    
+    /**
+     * 
+     */
+    String BIG_NOTES = "big.notes";
 }

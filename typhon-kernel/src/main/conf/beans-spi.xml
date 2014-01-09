@@ -43,7 +43,8 @@ limitations under the License.
     </multi-set>
 
     <multi-set type="org.skfiy.typhon.spi.role.RoleDatable">
-        <element class="org.skfiy.typhon.spi.role.NullRoleDatable"/>
+        <element class="org.skfiy.typhon.spi.role.NormalRoleDatable"/>
+        <element class="org.skfiy.typhon.spi.role.BigRoleDatable"/>
     </multi-set>
     
 </beans>

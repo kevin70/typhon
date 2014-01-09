@@ -27,24 +27,31 @@ public class Normal implements Changeable {
     private Player player;
     
     @Override
-    public String getNs() {
+    public final String getNs() {
         return "normal";
     }
 
     @Override
-    public Player getPlayer() {
+    public final Player getPlayer() {
         return player;
     }
 
-    @Override
-    public void setPlayer(Player player) {
+    public final void setPlayer(Player player) {
         this.player = player;
     }
     
-    public int getLevel() {
+    /**
+     * 
+     * @return 
+     */
+    public final int getLevel() {
         return player.getRole().getLevel();
     }
 
+    /**
+     * 
+     * @param level 
+     */
     public void setLevel(int level) {
         player.getRole().setLevel(level);
     }

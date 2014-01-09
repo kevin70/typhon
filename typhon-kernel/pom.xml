@@ -334,8 +334,8 @@ limitations under the License.
     <reporting>
         <plugins>
             <!--
-            ### Findbugs 闇�棰勫厛缂栬瘧浠ｇ爜锛屽鏋渞eport鍒欏簲璇ヤ娇鐢�
-            ### mvn compile site鏂瑰紡锛孎indbugs鎵嶄細report
+            ### Findbugs 需要预先编译代码，如果report则应该使用
+            ### mvn compile site方式，Findbugs才会report
             -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

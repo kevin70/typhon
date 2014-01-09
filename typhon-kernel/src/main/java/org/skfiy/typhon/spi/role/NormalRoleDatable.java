@@ -18,8 +18,6 @@ package org.skfiy.typhon.spi.role;
 import com.alibaba.fastjson.JSON;
 import org.skfiy.typhon.spi.cglib.CglibPlayerCallbackFilter;
 import java.lang.reflect.Method;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import net.sf.cglib.proxy.Callback;
 import net.sf.cglib.proxy.Enhancer;
 import org.skfiy.typhon.domain.Normal;
@@ -35,21 +33,22 @@ import org.skfiy.util.StringUtils;
  */
 public class NormalRoleDatable implements RoleDatable {
 
-    private final Enhancer enhancer;
-    private final Class<Normal> cglibClass;
+    private final Class<Normal> proxyClass;
 
     public NormalRoleDatable() {
-        enhancer = new Enhancer();
+        Enhancer enhancer = new Enhancer();
+        enhancer.setUseCache(false);
+        enhancer.setUseFactory(false);
         enhancer.setSuperclass(Normal.class);
         enhancer.setCallbackFilter(CglibPlayerCallbackFilter.INSTANCE);
         
         Class[] callbackTypes = {Callback.class, Callback.class};
         enhancer.setCallbackTypes(callbackTypes);
-        cglibClass = enhancer.createClass();
+        proxyClass = enhancer.createClass();
         
-        Method m = ReflectionUtils.findMethod(cglibClass, "CGLIB$SET_STATIC_CALLBACKS");
+        Method m = ReflectionUtils.findMethod(proxyClass, "CGLIB$SET_STATIC_CALLBACKS");
         Object[] callbacks = {null, DomainProxyCallback.INSTANCE};
-        ReflectionUtils.invokeMethod(m, cglibClass, callbacks);
+        ReflectionUtils.invokeMethod(m, proxyClass, callbacks);
     }
 
     @Override
@@ -63,12 +62,12 @@ public class NormalRoleDatable implements RoleDatable {
         Normal normal;
         if (StringUtils.isEmpty(data)) {
             try {
-                normal = cglibClass.newInstance();
+                normal = proxyClass.newInstance();
             } catch (Exception ex) {
                 throw new RuntimeException("cglib: normal class", ex);
             }
         } else {
-            normal = JSON.parseObject(data, cglibClass);
+            normal = JSON.parseObject(data, proxyClass);
         }
         player.setNormal(normal);
     }

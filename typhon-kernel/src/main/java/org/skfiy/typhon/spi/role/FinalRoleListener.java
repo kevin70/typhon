@@ -45,7 +45,7 @@ public class FinalRoleListener extends AbstractRoleListener {
 
         // send player
         player.setNs(Namespaces.PLAYER_INFO);
-        player.setType(Packet.Type.set);
+        player.setType(Packet.Type.st);
         session.write(player);
     }
 
