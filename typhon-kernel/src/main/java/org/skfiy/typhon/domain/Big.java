@@ -42,12 +42,12 @@ public class Big implements Changeable {
     }
 
     @Override
-    public Player getPlayer() {
+    public final Player getPlayer() {
         return player;
     }
 
     @Override
-    public void setPlayer(Player player) {
+    public final void setPlayer(Player player) {
         this.player = player;
     }
 
@@ -55,7 +55,7 @@ public class Big implements Changeable {
      *
      * @return
      */
-    public List<Node> getNodes() {
+    public final List<Node> getNodes() {
         return nodeData;
     }
 

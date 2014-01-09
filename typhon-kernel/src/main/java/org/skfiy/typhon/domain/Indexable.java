@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,48 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.domain;
 
-import com.alibaba.fastjson.annotation.JSONType;
+package org.skfiy.typhon.domain;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = "player")
-public class Normal implements Changeable {
-
-    private Player player;
-    
-    @Override
-    public final String getNs() {
-        return "normal";
-    }
-
-    @Override
-    public final Player getPlayer() {
-        return player;
-    }
-
-    @Override
-    public final void setPlayer(Player player) {
-        this.player = player;
-    }
+public interface Indexable extends Changeable{
     
     /**
      * 
      * @return 
      */
-    public final int getLevel() {
-        return player.getRole().getLevel();
-    }
-
+    public int getIndex();
+    
     /**
      * 
-     * @param level 
+     * @param idx 
      */
-    public void setLevel(int level) {
-        player.getRole().setLevel(level);
-    }
+    public void setIndex(int idx);
     
 }

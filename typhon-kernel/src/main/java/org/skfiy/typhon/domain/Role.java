@@ -21,7 +21,7 @@ import com.alibaba.fastjson.annotation.JSONType;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = "player")
+@JSONType(ignores = {"player", "level"})
 public class Role implements Changeable {
 
     private int rid;

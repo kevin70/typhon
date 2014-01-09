@@ -50,13 +50,13 @@ public abstract class Packet {
     }
 
     /**
-     * 
+     *
      * @param in
-     * @param out 
+     * @param out
      */
     protected void assignIdAndType(Packet in, Packet out) {
         out.setId(in.getId());
-        out.setType(Type.result);
+        out.setType(Type.rs);
     }
 
     /**
@@ -64,6 +64,25 @@ public abstract class Packet {
      */
     public enum Type {
 
-        set, get, result
+        /**
+         * The full name is "set".
+         */
+        st,
+        /**
+         * The full name is "get".
+         */
+        gt,
+        /**
+         * The full name is "add".
+         */
+        ad,
+        /**
+         * The full name is "remove".
+         */
+        rm,
+        /**
+         * The full name is "result".
+         */
+        rs
     }
 }
