@@ -28,20 +28,21 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import java.util.logging.Level;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import org.apache.commons.beanutils.BeanUtils;
-import org.apache.commons.modeler.Registry;
+import org.apache.commons.modeler.ManagedBean;
+import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
-import org.skfiy.typhon.Globals;
-import org.skfiy.typhon.Typhons;
-import org.skfiy.typhon.domain.item.StaticItem;
+import org.skfiy.typhon.Container;
+import org.skfiy.typhon.dobj.ItemDobj;
 import org.skfiy.typhon.spi.item.ItemCompleter;
 import org.skfiy.typhon.spi.item.NotFoundItemException;
+import org.skfiy.typhon.util.MBeanUtils;
 import org.skfiy.util.AntPathMatcher;
 import org.skfiy.util.Assert;
 import org.skfiy.util.PathMatcher;
@@ -54,14 +55,15 @@ import org.slf4j.LoggerFactory;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public class ItemProvider implements Component {
+public class ItemProvider extends AbstractComponent {
 
     private static final Logger LOG = LoggerFactory.getLogger(ItemProvider.class);
-    private Map<String, StaticItem> items = new HashMap<>();
+    
+    private ObjectName oname;
+    private Map<String, ItemDobj> items = new HashMap<>();
     
     @Inject
     private Set<ItemCompleter> itemCompleters;
-    private ObjectName oname;
 
     /**
      * 
@@ -69,7 +71,7 @@ public class ItemProvider implements Component {
      * @param id
      * @return 
      */
-    public <T extends StaticItem> T getItem(String id) {
+    public <T extends ItemDobj> T getItem(String id) {
         Assert.notNull(id,
                 "[Assertion failed] - item \"id\" argument is required; it must not be null");
         T item = (T) items.get(id);
@@ -80,25 +82,20 @@ public class ItemProvider implements Component {
     }
 
     @Override
-    public void init() {
+    public void doInit() {
         items.putAll(loadItems());
         
-        oname = Typhons.newObjectName(
-                Globals.DEFAULT_MBEAN_DOMAIN + ".spi:name=ItemProvider");
-        try {
-            Registry.getRegistry(null, null).registerComponent(this, oname, null);
-        } catch (Exception ex) {
-            LOG.error("registry component: {}", oname, ex);
-            throw new ComponentException(ex);
-        }
+        ManagedBean managedBean = MBeanUtils.findManagedBean(getClass());
+        MBeanUtils.registerComponent(this, managedBean);
+        
         LOG.info("item init successful.");
     }
 
     @Override
-    public void reload() {
-        Map<String, StaticItem> itemMap = loadItems();
-        for (Map.Entry<String, StaticItem> entry : itemMap.entrySet()) {
-            StaticItem oldItem = items.get(entry.getKey());
+    public void doReload() {
+        Map<String, ItemDobj> itemMap = loadItems();
+        for (Map.Entry<String, ItemDobj> entry : itemMap.entrySet()) {
+            ItemDobj oldItem = items.get(entry.getKey());
             if (oldItem == null) {
                 items.put(entry.getKey(), entry.getValue());
             } else {
@@ -115,17 +112,17 @@ public class ItemProvider implements Component {
     }
 
     @Override
-    public void destroy() {
+    public void doDestroy() {
         items.clear();
         items = null;
         
         if (oname != null) {
-            Registry.getRegistry(null, null).unregisterComponent(oname);
+            MBeanUtils.REGISTRY.unregisterComponent(oname);
         }
         LOG.info("item destroy successful.");
     }
 
-    private Map<String, StaticItem> loadItems() {
+    private Map<String, ItemDobj> loadItems() {
         File[] itemFiles = findItemFiles();
         JSONArray jsonArray = new JSONArray();
 
@@ -148,11 +145,11 @@ public class ItemProvider implements Component {
             }
         }
 
-        Map<String, StaticItem> itemMap = new HashMap<>();
+        Map<String, ItemDobj> itemMap = new HashMap<>();
         for (Iterator<Object> it = jsonArray.iterator(); it.hasNext();) {
             JSONObject json = (JSONObject) it.next();
             ItemCompleter itemCompleter = findItemCompleter(json.getString("type"));
-            StaticItem staticItem = itemCompleter.prepare(json);
+            ItemDobj staticItem = itemCompleter.prepare(json);
             itemMap.put(staticItem.getId(), staticItem);
         }
 
@@ -186,4 +183,35 @@ public class ItemProvider implements Component {
         throw new IllegalArgumentException("Not found [" + type + "] ItemCompleter");
     }
 
+    /**
+     * 
+     */
+    private static final class Holder {
+        
+        private ItemProvider itemProvider;
+        
+        /**
+         * 
+         * @return 
+         */
+        public ItemProvider getItemProvider() {
+            synchronized (Holder.class) {
+                if (itemProvider == null) {
+                    MBeanServer mbs = MBeanUtils.REGISTRY.getMBeanServer();
+                    try {
+                        itemProvider = (ItemProvider) mbs.invoke(Container.OBJECT_NAME,
+                                "getInstance",
+                                new Object[]{ItemProvider.class},
+                                new String[]{Class.class.getName()});
+                    } catch (Exception ex) {
+                        throw new ComponentException(
+                                "get " + ItemProvider.class + " fail", ex);
+                    }
+                }
+            }
+            return itemProvider;
+        }
+        
+    }
+    
 }

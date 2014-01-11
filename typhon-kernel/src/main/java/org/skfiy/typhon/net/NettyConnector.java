@@ -40,6 +40,7 @@ import org.skfiy.typhon.Service;
 import org.skfiy.typhon.Container;
 import org.skfiy.typhon.Globals;
 import org.skfiy.typhon.TyphonException;
+import org.skfiy.typhon.util.MBeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -145,10 +146,10 @@ public class NettyConnector extends AbstractMBeanLifecycle
         nettyServer.bind(new InetSocketAddress(host, port));
         CLOG.debug("NettyConnector started on port {}", port);
         
-        MBeanServer mbeanServer = Registry.getRegistry(null, null).getMBeanServer();
+        MBeanServer mbs = MBeanUtils.REGISTRY.getMBeanServer();
         Object obj = null;
         try {
-            obj = mbeanServer.invoke(Container.OBJECT_NAME,
+            obj = mbs.invoke(Container.OBJECT_NAME,
                     "getInstance",
                     new Object[]{ProtocolHandler.class},
                     new String[]{Class.class.getName()});

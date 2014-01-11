@@ -28,6 +28,9 @@ limitations under the License.
     <bean class="org.skfiy.typhon.spi.RoleProvider"/>
     <bean class="org.skfiy.typhon.spi.ItemProvider"/>
     
+    <!--
+        
+    -->
     <multi-set type="org.skfiy.typhon.spi.item.ItemCompleter">
         <element class="org.skfiy.typhon.spi.item.SimpleItemCompleter"/>
         <element class="org.skfiy.typhon.spi.item.ComplexItemCompleter"/>
@@ -39,6 +42,7 @@ limitations under the License.
     
     <multi-set type="org.skfiy.typhon.spi.role.RoleListener">
         <element class="org.skfiy.typhon.spi.role.BasicRoleListener"/>
+        <element class="org.skfiy.typhon.spi.role.ScheduledRoleListener"/>
         <element class="org.skfiy.typhon.spi.role.FinalRoleListener"/>
     </multi-set>
 

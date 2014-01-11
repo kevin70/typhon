@@ -25,7 +25,10 @@ import com.alibaba.fastjson.annotation.JSONType;
 public class Normal implements Changeable {
 
     private Player player;
-    
+
+    private int vigor;
+    private long lastRevigorTime;
+
     @Override
     public final String getNs() {
         return "normal";
@@ -36,24 +39,41 @@ public class Normal implements Changeable {
         return player;
     }
 
+    @Override
     public final void setPlayer(Player player) {
         this.player = player;
     }
-    
+
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
-    public final int getLevel() {
+    public int getLevel() {
         return player.getRole().getLevel();
     }
 
     /**
-     * 
-     * @param level 
+     *
+     * @param level
      */
     public void setLevel(int level) {
         player.getRole().setLevel(level);
     }
-    
+
+    public int getVigor() {
+        return vigor;
+    }
+
+    public void setVigor(int vigor) {
+        this.vigor = vigor;
+    }
+
+    public long getLastRevigorTime() {
+        return lastRevigorTime;
+    }
+
+    public void setLastRevigorTime(long lastRevigorTime) {
+        this.lastRevigorTime = lastRevigorTime;
+    }
+
 }

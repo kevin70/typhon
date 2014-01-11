@@ -13,25 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.spi;
+package org.skfiy.typhon.dobj;
 
-import javax.inject.Inject;
-import org.skfiy.typhon.TestComponentBase;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import com.alibaba.fastjson.annotation.JSONType;
+import org.skfiy.typhon.domain.item.AbstractItem;
+import org.skfiy.typhon.domain.item.SimpleItem;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class ItemProviderTest extends TestComponentBase {
+@JSONType(shortType = SimpleItemDobj.JSON_SHORT_TYPE)
+public class SimpleItemDobj extends ItemDobj {
 
-    @Inject
-    ItemProvider itemProvider;
-
-    @Test
-    public void init() {
-        // nothing
+    public static final String JSON_SHORT_TYPE = "S$SimpleItem";
+    
+    @Override
+    public AbstractItem toDynamicItem() {
+        SimpleItem dynamicItem = new SimpleItem();
+        dynamicItem.setId(getId());
+        dynamicItem.setItemDobj(this);
+        return dynamicItem;
     }
-
+    
 }

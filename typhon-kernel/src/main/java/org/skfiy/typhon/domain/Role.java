@@ -32,6 +32,21 @@ public class Role implements Changeable {
     
     private Player player;
 
+    @Override
+    public String getNs() {
+        return "role";
+    }
+
+    @Override
+    public Player getPlayer() {
+        return player;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+    
     public int getRid() {
         return rid;
     }
@@ -70,21 +85,6 @@ public class Role implements Changeable {
 
     public void setLastAccessedTime(long lastAccessedTime) {
         this.lastAccessedTime = lastAccessedTime;
-    }
-
-    @Override
-    public String getNs() {
-        return "role";
-    }
-
-    @Override
-    public Player getPlayer() {
-        return player;
-    }
-
-    @Override
-    public void setPlayer(Player player) {
-        this.player = player;
     }
 
 }

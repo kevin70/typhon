@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,24 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.domain.item;
 
-import com.alibaba.fastjson.annotation.JSONType;
-
-/**
- *
- * @author Kevin Zou <kevinz@skfiy.org>
- */
-@JSONType(ignores = "subitems", shortType = DynamicComplexItem.JSON_SHORT_TYPE)
-public class DynamicComplexItem extends DynamicItem<StaticComplexItem> {
-
-    /**
-     * 
-     */
-    public static final String JSON_SHORT_TYPE = "D$ComplexItem";
-    
-    public Subitem[] getSubitems() {
-        return getStaticItem().getSubitems();
-    }
-
-}
+package org.skfiy.typhon.dobj;

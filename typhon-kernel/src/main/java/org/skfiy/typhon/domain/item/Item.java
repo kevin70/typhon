@@ -25,19 +25,43 @@ public abstract class Item {
 
     private String id;
 
+    /**
+     * 
+     * @return 
+     */
     public final String getId() {
         return id;
     }
 
+    /**
+     * 
+     * @param id 
+     */
     public final void setId(String id) {
         this.id = id;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public abstract boolean isAutoOpen();
 
+    /**
+     * 
+     * @return 
+     */
     public abstract int getOverlapping();
 
+    /**
+     * 
+     * @return 
+     */
     public abstract int getPrice();
 
+    /**
+     * 
+     * @return 
+     */
     public abstract Script getScript();
 }

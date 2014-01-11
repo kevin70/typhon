@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 The Skfiy Open Association.
+ * Copyright 2013 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,36 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.spi.item;
+package org.skfiy.typhon.domain.item;
 
-import com.alibaba.fastjson.JSONObject;
-import java.util.Map;
-import org.skfiy.typhon.dobj.ItemDobj;
+import org.skfiy.typhon.dobj.ComplexItemDobj;
+import com.alibaba.fastjson.annotation.JSONType;
 
 /**
  *
- * @author kevin
+ * @author Kevin Zou <kevinz@skfiy.org>
  */
-public interface ItemCompleter {
+@JSONType(ignores = "subitems", shortType = ComplexItem.JSON_SHORT_TYPE)
+public class ComplexItem extends AbstractItem<ComplexItemDobj> {
 
     /**
      * 
-     * @return 
      */
-    String getType();
+    public static final String JSON_SHORT_TYPE = "D$ComplexItem";
     
     /**
      * 
-     * @param json
      * @return 
      */
-    ItemDobj prepare(JSONObject json);
-
-    /**
-     * 
-     * @param items
-     * @param json 
-     */
-    void complete(Map<String, ItemDobj> items, JSONObject json);
+    public final Subitem[] getSubitems() {
+        return getItemDobj().getSubitems();
+    }
 
 }

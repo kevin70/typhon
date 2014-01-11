@@ -19,8 +19,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.util.TypeUtils;
 import java.util.Map;
 import org.skfiy.typhon.Globals;
-import org.skfiy.typhon.domain.item.StaticItem;
-import org.skfiy.typhon.domain.item.StaticSimpleItem;
+import org.skfiy.typhon.dobj.ItemDobj;
+import org.skfiy.typhon.dobj.SimpleItemDobj;
 
 /**
  *
@@ -34,12 +34,12 @@ public class SimpleItemCompleter implements ItemCompleter {
     }
 
     @Override
-    public StaticItem prepare(JSONObject json) {
-        return TypeUtils.cast(json, StaticSimpleItem.class, Globals.NO_ENABLED_ASM_PARSE_CONFIG);
+    public ItemDobj prepare(JSONObject json) {
+        return TypeUtils.cast(json, SimpleItemDobj.class, Globals.NO_ENABLED_ASM_PARSE_CONFIG);
     }
 
     @Override
-    public void complete(Map<String, StaticItem> items, JSONObject json) {
+    public void complete(Map<String, ItemDobj> items, JSONObject json) {
     }
 
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 The Skfiy Open Association.
+ * Copyright 2013 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,36 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.domain;
+package org.skfiy.typhon.domain.item;
 
 import org.skfiy.typhon.dobj.SimpleItemDobj;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import com.alibaba.fastjson.annotation.JSONType;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class BigTest {
+@JSONType(shortType = SimpleItem.JSON_SHORT_TYPE)
+public class SimpleItem extends AbstractItem<SimpleItemDobj> {
 
-    @Test
-    public void execute() {
-        Big big = new Big();
-
-        SimpleItemDobj si1 = new SimpleItemDobj();
-        si1.setId("a001");
-        si1.setAutoOpen(false);
-        si1.setOverlapping(1);
-        si1.setPrice(1000);
-        
-        big.intoItem(si1);
-        big.intoItem(si1);
-        
-        //
-        big.swap(2, 5);
-        
-        big.intoItem(si1);
-        Assert.assertEquals(big.size(), 3);
-    }
+    /**
+     * 
+     */
+    public static final String JSON_SHORT_TYPE = "D$SimpleItem";
 
 }

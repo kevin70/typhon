@@ -15,17 +15,24 @@
  */
 package org.skfiy.typhon.domain.item;
 
+import org.skfiy.typhon.dobj.ItemDobj;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class Subitem {
 
-    private final StaticItem staticItem;
+    private final ItemDobj itemDobj;
     private final int count;
 
-    public Subitem(StaticItem staticItem, int count) {
-        this.staticItem = staticItem;
+    /**
+     * 
+     * @param itemDobj
+     * @param count 
+     */
+    public Subitem(ItemDobj itemDobj, int count) {
+        this.itemDobj = itemDobj;
         if (count <= 0) {
             this.count = 1;
         } else {
@@ -33,10 +40,18 @@ public class Subitem {
         }
     }
 
-    public StaticItem getStaticItem() {
-        return staticItem;
+    /**
+     * 
+     * @return 
+     */
+    public ItemDobj getItemDobj() {
+        return itemDobj;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public int getCount() {
         return count;
     }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,23 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.spi.role;
 
-import org.skfiy.typhon.domain.Player;
-import org.skfiy.typhon.domain.RoleData;
-
-/**
- *
- * @author Kevin Zou <kevinz@skfiy.org>
- */
-public class NullRoleDatable implements RoleDatable {
-
-    @Override
-    public void serialize(Player player, RoleData roleData) {
-    }
-
-    @Override
-    public void deserialize(RoleData roleData, Player player) {
-    }
-
-}
+package org.skfiy.typhon.domain.item;

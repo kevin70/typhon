@@ -17,27 +17,40 @@ limitations under the License.
 <!DOCTYPE mbeans-descriptors PUBLIC
 	 "-//Apache Software Foundation//DTD Model MBeans Configuration File"
 	 "http://skfiy.googlecode.com/files/mbeans-descriptors.dtd">
-         
 <mbeans-descriptors>
     
     <mbean name="ConfigurationLoader"
-           description="基础配置数据加载器"
-           domain="org.skfiy.typhon"
+           description="基础配置 ConfigurationLoader"
+           domain="org.skfiy.typhon.spi"
            type="org.skfiy.typhon.spi.ConfigurationLoader">
-        
+        <operation name="init"
+                   description="初始化 ConfigurationLoader"
+                   impact="ACTION"
+                   returnType="void"/>
         <operation name="reload"
-                   description="reload this ConfigurationLoader"
+                   description="重新加载 ConfigurationLoader"
+                   impact="ACTION"
+                   returnType="void"/>
+        <operation name="destroy"
+                   description="销毁 ConfigurationLoader"
                    impact="ACTION"
                    returnType="void"/>
     </mbean>
     
     <mbean name="ItemProvider"
-           description="道具提供对象"
-           domain="org.skfiy.typhon"
+           description="道具配置管理 ItemProvider"
+           domain="org.skfiy.typhon.spi"
            type="org.skfiy.typhon.spi.ItemProvider">
-        
+        <operation name="init"
+                   description="初始化 ItemProvider"
+                   impact="ACTION"
+                   returnType="void"/>
         <operation name="reload"
-                   description="reload this ItemProvider"
+                   description="重新加载 ItemProvider"
+                   impact="ACTION"
+                   returnType="void"/>
+        <operation name="destroy"
+                   description="销毁 ItemProvider"
                    impact="ACTION"
                    returnType="void"/>
     </mbean>

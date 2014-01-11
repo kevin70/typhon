@@ -36,7 +36,7 @@ public final class Globals {
     /**
      * Typhon默认MBean Domain.
      */
-    public static final String DEFAULT_MBEAN_DOMAIN = "Typhon";
+    public static final String DEFAULT_MBEAN_DOMAIN = "org.skfiy.typhon";
     
     /**
      * 打印日志到控制台的名称.

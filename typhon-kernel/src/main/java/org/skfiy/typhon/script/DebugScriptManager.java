@@ -37,12 +37,12 @@ import javax.tools.JavaCompiler.CompilationTask;
 import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
-import org.apache.commons.modeler.Registry;
-import org.skfiy.typhon.Component;
+import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Container;
 import org.skfiy.typhon.Typhons;
+import org.skfiy.typhon.util.MBeanUtils;
 import org.skfiy.util.Assert;
 import org.skfiy.util.StreamUtils;
 import org.slf4j.Logger;
@@ -57,7 +57,7 @@ import org.slf4j.LoggerFactory;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public final class DebugScriptManager implements Component, ScriptManager {
+public final class DebugScriptManager extends AbstractComponent implements ScriptManager {
 
     private static final Logger LOG = LoggerFactory.getLogger(DebugScriptManager.class);
     
@@ -70,10 +70,9 @@ public final class DebugScriptManager implements Component, ScriptManager {
     
     private final Map<String, ScriptWapper> scripts = new ConcurrentHashMap<>();
     private ScriptClassLoader scriptClassLoader = new ScriptClassLoader();
-    private Component.Status status;
 
     @Override
-    public void init() {
+    public void doInit() {
         sourceDir = new File(Typhons.getProperty(Constants.SCRIPTS_DIR));
         targetDir = new File(Typhons.getProperty(Constants.SCRIPTS_OUT_DIR,
                 Typhons.getProperty(Constants.SCRIPTS_DIR)));
@@ -90,20 +89,12 @@ public final class DebugScriptManager implements Component, ScriptManager {
         initClassLoader(targetDir);
         initScripts(targetDir);
               
-        try {
-            Registry.getRegistry(null, null).registerComponent(
-                    this, OBJECT_NAME, null);
-        } catch (Exception ex) {
-            LOG.error("注册MBean[{}]错误", OBJECT_NAME, ex);
-            throw new ComponentException(ex);
-        }
-        
-        status = Component.Status.INITIALIZED;
+        MBeanUtils.registerComponent(this, OBJECT_NAME, null);
         LOG.debug("DebugScriptManager inited successful...");
     }
 
     @Override
-    public void reload() {
+    public void doReload() {
         if (instrumentation == null) {
             loadAgent();
         }
@@ -139,20 +130,17 @@ public final class DebugScriptManager implements Component, ScriptManager {
     }
 
     @Override
-    public void destroy() {
-        status = Component.Status.DESTROYED;
+    public void doDestroy() {
         scripts.clear();
         container = null;
         targetDir = null;
         scriptClassLoader = null;
-        Registry.getRegistry(null, null).unregisterComponent(OBJECT_NAME);
+        MBeanUtils.REGISTRY.unregisterComponent(OBJECT_NAME);
     }
 
     @Override
     public <T extends Script> T getScript(String name) {
         Assert.notNull(name);
-        Assert.state(status == Component.Status.INITIALIZED,
-                "[Assertion failed] - this state invariant must be initialized");
         
         ScriptWapper wapper = scripts.get(name);
         if (wapper == null) {

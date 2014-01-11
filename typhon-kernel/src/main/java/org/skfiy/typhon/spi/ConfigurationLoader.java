@@ -24,16 +24,17 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
 import javax.management.ObjectName;
-import org.apache.commons.modeler.Registry;
+import org.apache.commons.modeler.ManagedBean;
+import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
-import org.skfiy.typhon.Globals;
 import org.skfiy.typhon.Typhons;
-import org.skfiy.typhon.domain.item.DynamicComplexItem;
-import org.skfiy.typhon.domain.item.DynamicSimpleItem;
-import org.skfiy.typhon.domain.item.StaticComplexItem;
-import org.skfiy.typhon.domain.item.StaticSimpleItem;
+import org.skfiy.typhon.domain.item.ComplexItem;
+import org.skfiy.typhon.domain.item.SimpleItem;
+import org.skfiy.typhon.dobj.ComplexItemDobj;
+import org.skfiy.typhon.dobj.SimpleItemDobj;
+import org.skfiy.typhon.util.MBeanUtils;
 import org.skfiy.util.SystemPropertyUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,47 +43,39 @@ import org.slf4j.LoggerFactory;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class ConfigurationLoader implements Component {
+public class ConfigurationLoader extends AbstractComponent {
 
     private static final Logger LOG = LoggerFactory.getLogger(ConfigurationLoader.class);
-    
     private ObjectName oname;
     
     @Override
-    public void init() {
-        initInertal();
+    public void doInit() {
+        init0();
         
         // Fastjson 配置
-        TypeUtils.addClassMapping(StaticSimpleItem.JSON_SHORT_TYPE, JSONObject.class);
-        TypeUtils.addClassMapping(StaticComplexItem.JSON_SHORT_TYPE, JSONObject.class);
-        TypeUtils.addClassMapping(DynamicSimpleItem.JSON_SHORT_TYPE, DynamicSimpleItem.class);
-        TypeUtils.addClassMapping(DynamicComplexItem.JSON_SHORT_TYPE, DynamicComplexItem.class);
+        TypeUtils.addClassMapping(SimpleItemDobj.JSON_SHORT_TYPE, JSONObject.class);
+        TypeUtils.addClassMapping(ComplexItemDobj.JSON_SHORT_TYPE, JSONObject.class);
+        TypeUtils.addClassMapping(SimpleItem.JSON_SHORT_TYPE, SimpleItem.class);
+        TypeUtils.addClassMapping(ComplexItem.JSON_SHORT_TYPE, ComplexItem.class);
         
-        // MBean 注册
-        oname = Typhons.newObjectName(
-                Globals.DEFAULT_MBEAN_DOMAIN + ".spi:name=ConfigurationLoader");
-        try {
-            Registry.getRegistry(null, null).registerComponent(this, oname, null);
-        } catch (Exception ex) {
-            LOG.error("registry component: {}", oname, ex);
-            throw new ComponentException(ex);
-        }
+        ManagedBean managedBean = MBeanUtils.findManagedBean(getClass());
+        oname = MBeanUtils.registerComponent(this, managedBean);
     }
 
     @Override
-    public void reload() {
-        initInertal();
+    public void doReload() {
+        init0();
         Typhons.refresh();
     }
 
     @Override
-    public void destroy() {
+    public void doDestroy() {
         if (oname != null) {
-            Registry.getRegistry(null, null).unregisterComponent(oname);
+            MBeanUtils.REGISTRY.unregisterComponent(oname);
         }
     }
 
-    private void initInertal() {
+    private void init0() {
         Properties props = loadConfig();
         System.getProperties().putAll(props);
         

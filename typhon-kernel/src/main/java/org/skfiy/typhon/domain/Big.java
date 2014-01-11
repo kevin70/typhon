@@ -17,8 +17,8 @@ package org.skfiy.typhon.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.skfiy.typhon.domain.item.DynamicItem;
-import org.skfiy.typhon.domain.item.StaticItem;
+import org.skfiy.typhon.domain.item.AbstractItem;
+import org.skfiy.typhon.dobj.ItemDobj;
 import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.util.SortedList;
 import org.skfiy.util.Assert;
@@ -55,7 +55,7 @@ public class Big implements Changeable {
      *
      * @return
      */
-    public final List<Node> getNodes() {
+    public List<Node> getNodes() {
         return nodeData;
     }
 
@@ -85,23 +85,23 @@ public class Big implements Changeable {
 
     /**
      *
-     * @param staticItem
+     * @param itemDobj
      * @return
      */
-    public boolean intoItem(StaticItem staticItem) {
-        return intoItem(staticItem, 1);
+    public boolean intoItem(ItemDobj itemDobj) {
+        return intoItem(itemDobj, 1);
     }
 
     /**
      *
-     * @param staticItem
+     * @param itemDobj
      * @param count
      * @return
      */
-    public synchronized boolean intoItem(StaticItem staticItem, int count) {
+    public synchronized boolean intoItem(ItemDobj itemDobj, int count) {
         int c = count;
-        if (isOverlapped(staticItem)) {
-            Node[] nodes = findNodes(staticItem.getId());
+        if (isOverlapped(itemDobj)) {
+            Node[] nodes = findNodes(itemDobj.getId());
             if (nodes.length > 0) {
                 for (Node n : nodes) {
                     int av = n.item.getOverlapping() - n.total;
@@ -134,7 +134,7 @@ public class Big implements Changeable {
 
         Node node = new Node();
         node.setPos(pos);
-        node.setItem(staticItem.toDynamicItem());
+        node.setItem(itemDobj.toDynamicItem());
         node.setTotal(count);
         nodeData.add(node);
         return true;
@@ -325,13 +325,13 @@ public class Big implements Changeable {
         Node prevNode = null;
         for (int i = 0; i < nodeData.size(); i++) {
             Node node = nodeData.get(i);
-            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS�?���?
+            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS�?���?
             if (prevNode == null) {
                 if (node.getPos() > MIN_POS) {
                     return MIN_POS;
                 }
             } else {
-                // 如果当前节点与上�?��节点的pos差距大于1则返回之间的pos
+                // 如果当前节点与上�?��节点的pos差距大于1则返回之间的pos
                 if ((node.getPos() - prevNode.getPos()) > 1) {
                     return prevNode.getPos() + 1;
                 }
@@ -350,7 +350,7 @@ public class Big implements Changeable {
      * @param staticItem
      * @return
      */
-    private boolean isOverlapped(StaticItem staticItem) {
+    private boolean isOverlapped(ItemDobj staticItem) {
         return (staticItem.getOverlapping() != 1);
     }
 
@@ -360,7 +360,7 @@ public class Big implements Changeable {
     public static class Node implements Comparable<Node> {
 
         private int pos;
-        private DynamicItem item;
+        private AbstractItem item;
         private int total;
 
         public int getPos() {
@@ -371,11 +371,11 @@ public class Big implements Changeable {
             this.pos = pos;
         }
 
-        public DynamicItem getItem() {
+        public AbstractItem getItem() {
             return item;
         }
 
-        public void setItem(DynamicItem item) {
+        public void setItem(AbstractItem item) {
             this.item = item;
         }
 

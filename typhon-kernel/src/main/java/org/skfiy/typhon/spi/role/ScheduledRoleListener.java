@@ -13,36 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.domain;
+package org.skfiy.typhon.spi.role;
 
-import org.skfiy.typhon.dobj.SimpleItemDobj;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import java.util.Timer;
+import org.skfiy.typhon.domain.Role;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class BigTest {
+public class ScheduledRoleListener implements RoleListener {
 
-    @Test
-    public void execute() {
-        Big big = new Big();
+    private final Timer TIMER = new Timer("Timer-Role-Vigor", true);
+    
+    @Override
+    public void roleCreated(Role role) {
+        
+    }
 
-        SimpleItemDobj si1 = new SimpleItemDobj();
-        si1.setId("a001");
-        si1.setAutoOpen(false);
-        si1.setOverlapping(1);
-        si1.setPrice(1000);
-        
-        big.intoItem(si1);
-        big.intoItem(si1);
-        
-        //
-        big.swap(2, 5);
-        
-        big.intoItem(si1);
-        Assert.assertEquals(big.size(), 3);
+    @Override
+    public void roleLoaded(Role role) {
+    }
+
+    @Override
+    public void roleUnloaded(Role role) {
+    }
+
+    @Override
+    public void roleDestroyed(Role role) {
     }
 
 }

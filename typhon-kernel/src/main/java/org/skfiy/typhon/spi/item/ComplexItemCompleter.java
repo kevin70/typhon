@@ -21,8 +21,8 @@ import com.alibaba.fastjson.util.TypeUtils;
 import java.util.Iterator;
 import java.util.Map;
 import org.skfiy.typhon.Globals;
-import org.skfiy.typhon.domain.item.StaticComplexItem;
-import org.skfiy.typhon.domain.item.StaticItem;
+import org.skfiy.typhon.dobj.ComplexItemDobj;
+import org.skfiy.typhon.dobj.ItemDobj;
 import org.skfiy.typhon.domain.item.Subitem;
 
 /**
@@ -37,19 +37,19 @@ public class ComplexItemCompleter implements ItemCompleter {
     }
 
     @Override
-    public StaticItem prepare(JSONObject json) {
-        return TypeUtils.cast(json, StaticComplexItem.class, Globals.NO_ENABLED_ASM_PARSE_CONFIG);
+    public ItemDobj prepare(JSONObject json) {
+        return TypeUtils.cast(json, ComplexItemDobj.class, Globals.NO_ENABLED_ASM_PARSE_CONFIG);
     }
 
     @Override
-    public void complete(Map<String, StaticItem> items, JSONObject json) {
+    public void complete(Map<String, ItemDobj> items, JSONObject json) {
         String id = json.getString("id");
-        StaticComplexItem complexItem = (StaticComplexItem) items.get(id);
+        ComplexItemDobj complexItem = (ComplexItemDobj) items.get(id);
         JSONArray subitemArray = json.getJSONArray("subitems");
 
         for (Iterator<Object> it = subitemArray.iterator(); it.hasNext();) {
             JSONObject subitemJson = (JSONObject) it.next();
-            StaticItem subitem = items.get(subitemJson.getString("#item.id"));
+            ItemDobj subitem = items.get(subitemJson.getString("#item.id"));
             int count = subitemJson.getIntValue("count");
             complexItem.addSubitems(new Subitem(subitem, count));
         }
