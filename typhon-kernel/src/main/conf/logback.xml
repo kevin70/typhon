@@ -16,13 +16,14 @@ limitations under the License.
 -->
 <configuration scan="true">
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <charset>UTF-8</charset>
         <encoder>
             <pattern>%d [%thread] - %msg%n%ex{full}</pattern>
-            <charset>UTF-8</charset>
         </encoder>
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <charset>UTF-8</charset>
         <file>${typhon.home}/logs/typhon.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>typhon-%i.log</fileNamePattern>
@@ -33,11 +34,11 @@ limitations under the License.
         </triggeringPolicy>
         <encoder>
             <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
-            <charset>UTF-8</charset>
         </encoder>
     </appender>
     
     <appender name="protected" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <charset>UTF-8</charset>
         <file>${user.home}/.logs/typhon-protected.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>${typhon.home}/.logs/typhon-protected-%i.log</fileNamePattern>
@@ -49,7 +50,6 @@ limitations under the License.
         </triggeringPolicy>
         <encoder>
             <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
-            <charset>UTF-8</charset>
         </encoder>
     </appender>
 

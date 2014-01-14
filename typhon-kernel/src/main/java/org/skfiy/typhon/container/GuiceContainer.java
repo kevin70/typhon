@@ -33,6 +33,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
+import javax.inject.Inject;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.commons.modeler.Registry;
@@ -41,7 +42,7 @@ import org.reflections.scanners.ResourcesScanner;
 import org.reflections.util.ConfigurationBuilder;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ConfigurationException;
-import org.skfiy.typhon.TyphonException;
+import org.skfiy.typhon.util.MBeanUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -55,25 +56,20 @@ import org.w3c.dom.NodeList;
  */
 public class GuiceContainer implements Component, Container {
 
+    @Inject
     private Injector injector;
 
     @Override
     public void init() {
-        injector = Guice.createInjector(new Jsr250Module(),
-                new XmlModule(),
-                new AbstractModule() {
-                    @Override
-                    protected void configure() {
-                        bind(Container.class).toInstance(GuiceContainer.this);
-                    }
-                });
+        Injector inj = Guice.createInjector(new AbstractModule() {
+            @Override
+            protected void configure() {
+                bind(Container.class).toInstance(GuiceContainer.this);
+            }
+        }, new Jsr250Module(), new XmlModule()
+        );
         
-        try {
-            Registry.getRegistry(null, null).registerComponent(
-                    this, OBJECT_NAME, null);
-        } catch (Exception ex) {
-            throw new TyphonException("注册Container MBean失败 : " + ex);
-        }
+        MBeanUtils.registerComponent(this, OBJECT_NAME, null);
     }
 
     @Override

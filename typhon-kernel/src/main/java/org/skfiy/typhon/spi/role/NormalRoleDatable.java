@@ -20,6 +20,7 @@ import org.skfiy.typhon.spi.cglib.CglibPlayerCallbackFilter;
 import java.lang.reflect.Method;
 import net.sf.cglib.proxy.Callback;
 import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.NoOp;
 import org.skfiy.typhon.domain.Normal;
 import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.domain.RoleData;
@@ -42,13 +43,18 @@ public class NormalRoleDatable implements RoleDatable {
         enhancer.setSuperclass(Normal.class);
         enhancer.setCallbackFilter(CglibPlayerCallbackFilter.INSTANCE);
         
-        Class[] callbackTypes = {Callback.class, Callback.class};
+        Class[] callbackTypes = {NoOp.class, DomainProxyCallback.class};
         enhancer.setCallbackTypes(callbackTypes);
         proxyClass = enhancer.createClass();
         
-        Method m = ReflectionUtils.findMethod(proxyClass, "CGLIB$SET_STATIC_CALLBACKS");
-        Object[] callbacks = {null, DomainProxyCallback.INSTANCE};
-        ReflectionUtils.invokeMethod(m, proxyClass, callbacks);
+        for (Method mm : ReflectionUtils.getUniqueDeclaredMethods(proxyClass)) {
+            System.out.println(mm);
+        }
+        
+        Callback[] callbacks = new Callback[]{NoOp.INSTANCE, DomainProxyCallback.INSTANCE};
+        Method m = ReflectionUtils.findMethod(proxyClass, "CGLIB$SET_STATIC_CALLBACKS",
+                callbacks.getClass());
+        ReflectionUtils.invokeMethod(m, null, new Object[]{callbacks});
     }
 
     @Override
