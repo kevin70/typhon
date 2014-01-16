@@ -19,7 +19,7 @@ package org.skfiy.typhon.packet;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public abstract class Packet {
+public class Packet {
 
     private String ns;
     private String id;

@@ -13,39 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon.spi;
 
-import org.skfiy.typhon.TestBase;
-import org.skfiy.typhon.TestRoot;
-import org.testng.annotations.BeforeClass;
+package org.skfiy.typhon.action;
+
+import org.skfiy.typhon.Response;
+import org.skfiy.typhon.TestProtocolBase;
+import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.Packet;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class ConfigurationLoaderTest extends TestRoot {
-
-    private ConfigurationLoader configurationLoader;
-
-    @BeforeClass
-    public void setup() {
-        configurationLoader = new ConfigurationLoader();
-    }
-
+public class TimestampActionTest extends TestProtocolBase {
+    
     @Test
-    public void init() {
-        configurationLoader.init();
+    public void getTimestamp() {
+        Packet p = new Packet();
+        p.setNs(Namespaces.TIMESTAMP);
+        p.setId(generateId());
+        offer(p);
+        
+        Response resp = poll();
+        Assert.assertEquals(resp.getData().getString("id"), p.getId());
     }
-
-    @Test
-    public void reload() {
-        configurationLoader.reload();
-    }
-
-    @Test(dependsOnMethods = "reload")
-    public void destroy() {
-        configurationLoader.destroy();
-    }
-
+    
 }

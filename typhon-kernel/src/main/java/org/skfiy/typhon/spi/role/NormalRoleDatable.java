@@ -47,10 +47,6 @@ public class NormalRoleDatable implements RoleDatable {
         enhancer.setCallbackTypes(callbackTypes);
         proxyClass = enhancer.createClass();
         
-        for (Method mm : ReflectionUtils.getUniqueDeclaredMethods(proxyClass)) {
-            System.out.println(mm);
-        }
-        
         Callback[] callbacks = new Callback[]{NoOp.INSTANCE, DomainProxyCallback.INSTANCE};
         Method m = ReflectionUtils.findMethod(proxyClass, "CGLIB$SET_STATIC_CALLBACKS",
                 callbacks.getClass());

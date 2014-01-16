@@ -23,6 +23,11 @@ package org.skfiy.typhon.packet;
 public interface Namespaces {
 
     /**
+     * 获取服务器Timestamp.
+     */
+    String TIMESTAMP = "timestamp";
+    
+    /**
      * 
      */
     String ERROR = "error";
