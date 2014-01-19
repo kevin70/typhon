@@ -52,6 +52,7 @@ public class BasicRoleListener extends AbstractRoleListener {
     @Override
     public void roleLoaded(Role role) {
         Session session = SessionContext.getSession();
+        
         Player player = (Player) session.getAttribute(SessionUtils.ATTR_PLAYER);
         if (player == null) {
             player = new Player(session);

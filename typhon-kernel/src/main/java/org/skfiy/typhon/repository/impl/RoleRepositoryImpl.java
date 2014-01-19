@@ -37,12 +37,13 @@ import org.skfiy.typhon.util.DbUtils;
 public class RoleRepositoryImpl implements RoleRepository {
 
     private final String SAVE_ROLE_SQL = "insert into " + getRoleTableName()
-            + "(rid,name,level,creationTime)"
-            + " values(?,?,?,?)";
+            + "(rid,name,level,enabled,creationTime)"
+            + " values(?,?,?,?,?)";
     private final String UPDATE_ROLE_SQL = "update " + getRoleTableName()
             + " t set t.level=?,t.lastAccessedTime=? where t.rid=?";
     private final String DELETE_ROLE_SQL = "delete from " + getRoleTableName() + " where rid=?";
-    private final String GET_ROLE_SQL = "select t.name,t.level,t.creationTime,t.lastAccessedTime"
+    private final String GET_ROLE_SQL =
+            "select t.name,t.level,t.enabled,t.creationTime,t.lastAccessedTime"
             + " from t_role t where t.rid=?";
     private final String EXISTS_NAME_SQL = "select t.rid from t_role t where t.name=?";
     //=========================================================================================//
@@ -75,10 +76,12 @@ public class RoleRepositoryImpl implements RoleRepository {
 
             conn = connectionProvider.getConnection();
             ps = conn.prepareStatement(SAVE_ROLE_SQL);
-            ps.setInt(1, role.getRid());
-            ps.setString(2, role.getName());
-            ps.setInt(3, role.getLevel());
-            ps.setLong(4, System.currentTimeMillis());
+            int i = 1;
+            ps.setInt(i++, role.getRid());
+            ps.setString(i++, role.getName());
+            ps.setInt(i++, role.getLevel());
+            ps.setBoolean(i++, role.isEnabled());
+            ps.setLong(i++, System.currentTimeMillis());
 
             if (ps.executeUpdate() <= 0) {
                 throw new SQLException("保存Role失败 rid="
@@ -184,6 +187,8 @@ public class RoleRepositoryImpl implements RoleRepository {
                 role = new Role();
                 role.setRid(rid);
                 role.setName(rs.getString("name"));
+                role.setLevel(rs.getInt("level"));
+                role.setEnabled(rs.getBoolean("enabled"));
                 role.setCreationTime(rs.getLong("creationTime"));
                 role.setLastAccessedTime(rs.getLong("lastAccessedTime"));
             }

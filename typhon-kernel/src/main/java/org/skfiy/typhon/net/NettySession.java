@@ -18,6 +18,7 @@ package org.skfiy.typhon.net;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelFuture;
+import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.session.AbstractSession;
 
 /**
@@ -27,8 +28,8 @@ import org.skfiy.typhon.session.AbstractSession;
  */
 class NettySession extends AbstractSession {
     
-    private Channel channel;
-    private long creationTime;
+    private final Channel channel;
+    private final long creationTime;
     private long lastAccessedTime;
 
     /**
@@ -39,6 +40,11 @@ class NettySession extends AbstractSession {
     public NettySession(Channel channel) {
         this.channel = channel;
         this.creationTime = System.currentTimeMillis();
+    }
+
+    @Override
+    public int getId() {
+        return channel.getId();
     }
 
     @Override
@@ -63,7 +69,7 @@ class NettySession extends AbstractSession {
             // FIXME
         }
     }
-
+    
     /**
      * 更新最后访问时间.
      */

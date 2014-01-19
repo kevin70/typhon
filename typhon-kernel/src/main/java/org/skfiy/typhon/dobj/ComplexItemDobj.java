@@ -45,11 +45,11 @@ public class ComplexItemDobj extends ItemDobj {
     }
 
     @Override
-    public AbstractItem toDynamicItem() {
-        ComplexItem dynamicItem = new ComplexItem();
-        dynamicItem.setId(getId());
-        dynamicItem.setItemDobj(this);
-        return dynamicItem;
+    public AbstractItem toDomainItem() {
+        ComplexItem item = new ComplexItem();
+        item.setId(getId());
+        item.setItemDobj(this);
+        return item;
     }
 
 }

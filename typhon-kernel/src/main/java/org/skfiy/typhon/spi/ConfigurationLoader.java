@@ -26,7 +26,6 @@ import java.util.Properties;
 import javax.management.ObjectName;
 import org.apache.commons.modeler.ManagedBean;
 import org.skfiy.typhon.AbstractComponent;
-import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Typhons;
@@ -40,6 +39,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 加载默认基础配置.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
@@ -47,17 +47,17 @@ public class ConfigurationLoader extends AbstractComponent {
 
     private static final Logger LOG = LoggerFactory.getLogger(ConfigurationLoader.class);
     private ObjectName oname;
-    
+
     @Override
     public void doInit() {
         init0();
-        
+
         // Fastjson 配置
         TypeUtils.addClassMapping(SimpleItemDobj.JSON_SHORT_TYPE, JSONObject.class);
         TypeUtils.addClassMapping(ComplexItemDobj.JSON_SHORT_TYPE, JSONObject.class);
         TypeUtils.addClassMapping(SimpleItem.JSON_SHORT_TYPE, SimpleItem.class);
         TypeUtils.addClassMapping(ComplexItem.JSON_SHORT_TYPE, ComplexItem.class);
-        
+
         ManagedBean managedBean = MBeanUtils.findManagedBean(getClass());
         oname = MBeanUtils.registerComponent(this, managedBean);
     }
@@ -78,7 +78,7 @@ public class ConfigurationLoader extends AbstractComponent {
     private void init0() {
         Properties props = loadConfig();
         System.getProperties().putAll(props);
-        
+
         for (Map.Entry<Object, Object> entry : props.entrySet()) {
             String val = SystemPropertyUtils.resolvePlaceholders(
                     (String) entry.getValue());

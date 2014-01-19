@@ -18,6 +18,7 @@ package org.skfiy.typhon.net;
 import com.alibaba.fastjson.JSON;
 import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
+import java.util.Set;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.RejectedExecutionHandler;
@@ -32,6 +33,7 @@ import org.skfiy.typhon.dispatcher.Dispatcher;
 import org.skfiy.typhon.dispatcher.DispatcherFactory;
 import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.session.Session;
+import org.skfiy.typhon.session.SessionConstants;
 import org.skfiy.typhon.session.SessionContext;
 import org.skfiy.util.CustomizableThreadCreator;
 
@@ -45,6 +47,9 @@ public class JsonProtocolHandler implements Component, ProtocolHandler {
 
     @Inject
     protected DispatcherFactory dispatcherFactory;
+    @Inject
+    protected Set<SessionErrorHandler> sessionErrorHandlers;
+    
     protected Dispatcher dispatcher;
     protected ExecutorService executorService;
     protected CustomizableThreadCreator threadCreator;
@@ -90,19 +95,33 @@ public class JsonProtocolHandler implements Component, ProtocolHandler {
 
     @Override
     public void handle(final Session session, final byte[] nsbs, final byte[] datas) {
-        executorService.execute(new Runnable() {
-            @Override
-            public void run() {
-                synchronized (session) {
+        synchronized (session) {
+            executorService.execute(new Runnable() {
+                @Override
+                public void run() {
                     // 保存Session至上下文
                     _local_session.set(session);
-
-                    String ns = new String(nsbs, StandardCharsets.UTF_8);
-                    Packet packet = JSON.parseObject(datas, dispatcherFactory.getPacketClass(ns));
-                    dispatcher.dispatch(ns, packet);
+                    
+                    try {
+                        String ns = new String(nsbs, StandardCharsets.UTF_8);
+                        Packet packet = JSON.parseObject(datas,
+                                dispatcherFactory.getPacketClass(ns));
+                        
+                        session.setAttribute(SessionConstants.ATTR_CONTEXT_PACKET, packet);
+                        dispatcher.dispatch(ns, packet);
+                        session.removeAttribute(SessionConstants.ATTR_CONTEXT_PACKET);
+                    } catch (Throwable t) {
+                        for (SessionErrorHandler seh : sessionErrorHandlers) {
+                            if (t.getClass().isAssignableFrom(seh.getErrorType())) {
+                                seh.handleError(session, t);
+                                break;
+                            }
+                        }
+                    }
                 }
-            }
-        });
+            });
+            // End
+        }
     }
     
     private class CustomizableThreadFactory implements ThreadFactory {

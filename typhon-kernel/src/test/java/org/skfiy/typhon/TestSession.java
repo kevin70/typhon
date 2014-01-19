@@ -36,6 +36,12 @@ public class TestSession extends AbstractSession {
     }
 
     @Override
+    public int getId() {
+        // FIXME
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    
+    @Override
     public long getLastAccessedTime() {
         return lastAccessedTime;
     }

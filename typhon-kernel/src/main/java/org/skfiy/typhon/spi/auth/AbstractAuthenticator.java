@@ -52,7 +52,6 @@ public abstract class AbstractAuthenticator implements Authenticator {
         String lock = (user.getUsername() + "@add-session").intern();
         synchronized (lock) {
             Session session = SessionContext.getSession();
-            session.setId(user.getUid());
             
             // **
             Session anotherSession = sessionManager.getSession(user.getUid());

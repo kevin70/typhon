@@ -31,4 +31,8 @@ limitations under the License.
     <bean type="org.skfiy.typhon.script.ScriptManager"
           class="org.skfiy.typhon.script.DebugScriptManager"/>
     
+    <multi-set type="org.skfiy.typhon.net.SessionErrorHandler">
+        <element class="org.skfiy.typhon.net.LowestSessionErrorHandler"/>
+    </multi-set>
+    
 </beans>

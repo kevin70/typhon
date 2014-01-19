@@ -29,7 +29,7 @@ public class SimpleItemDobj extends ItemDobj {
     public static final String JSON_SHORT_TYPE = "S$SimpleItem";
     
     @Override
-    public AbstractItem toDynamicItem() {
+    public AbstractItem toDomainItem() {
         SimpleItem dynamicItem = new SimpleItem();
         dynamicItem.setId(getId());
         dynamicItem.setItemDobj(this);

@@ -16,6 +16,7 @@
 package org.skfiy.typhon;
 
 /**
+ * 抽象的{@code Component }实现. 该对象实现{@code Component }的基本状态定义.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
@@ -44,25 +45,26 @@ public abstract class AbstractComponent implements Component {
     }
 
     /**
-     * 
-     * @return 
+     * 获取当前{@code Component }的状态.
+     *
+     * @return 状态枚举
      */
     protected Status getStatus() {
         return status;
     }
-    
+
     /**
-     *
+     * 具体的初始化实现.
      */
     protected abstract void doInit();
 
     /**
-     *
+     * 具体的重加载实现. 执行该操作要求当前的{@code Component }状态值必须是{@link Status#INITIALIZED }.
      */
     protected abstract void doReload();
 
     /**
-     *
+     * 具体的销毁实现.
      */
     protected abstract void doDestroy();
 

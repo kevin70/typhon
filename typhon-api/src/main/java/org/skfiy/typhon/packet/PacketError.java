@@ -21,8 +21,8 @@ package org.skfiy.typhon.packet;
  */
 public class PacketError extends Packet {
 
-    public int code;
-    public String text;
+    private int code;
+    private String text;
 
     @Override
     public String getNs() {
@@ -86,6 +86,7 @@ public class PacketError extends Packet {
         not_authorized(401),
         payment_required(402),
         registration_required(407),
+        not_enabled_role(408),
         service_unavailable(503);
         
         private int code;

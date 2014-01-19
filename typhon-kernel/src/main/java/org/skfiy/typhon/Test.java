@@ -20,6 +20,7 @@ import com.google.inject.Binding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
+import com.google.inject.name.Names;
 import java.util.Map;
 import java.util.Set;
 import javax.inject.Inject;
@@ -38,12 +39,11 @@ public class Test {
 
             @Override
             protected void configure() {
-                bind(Test.class);
+                bind(Class.class).toInstance(Test.class);
                 
-                getProvider(Test.class).get().execute();
             }
         });
-        
+        System.out.println(inj.getInstance(Class.class));
 //        inj.getInstance(Test.class).execute();
     }
     

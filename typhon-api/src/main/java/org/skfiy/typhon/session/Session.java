@@ -36,13 +36,6 @@ public interface Session {
     int getId();
 
     /**
-     * 设置SessionId.
-     *
-     * @param sessionId SessionId
-     */
-    void setId(int sessionId);
-
-    /**
      * 设置Session属性. 如果已经存在对应key的属性则将会替换原有的值.
      *
      * @param key 键

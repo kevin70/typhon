@@ -68,6 +68,6 @@ public abstract class ItemDobj extends Item {
         return script;
     }
 
-    public abstract AbstractItem toDynamicItem();
+    public abstract AbstractItem toDomainItem();
     
 }

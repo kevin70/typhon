@@ -25,9 +25,9 @@ import org.skfiy.typhon.script.Script;
 public class ActivityDobj {
 
     private String id;
-    private Date beginDate;
-    private Date endDate;
-    private Date offlineDate;
+    private Date beginTime;
+    private Date endTime;
+    private Date offlineTime;
     private Script script;
 
     public String getId() {
@@ -38,28 +38,28 @@ public class ActivityDobj {
         this.id = id;
     }
 
-    public Date getBeginDate() {
-        return beginDate;
+    public Date getBeginTime() {
+        return beginTime;
     }
 
-    public void setBeginDate(Date beginDate) {
-        this.beginDate = beginDate;
+    public void setBeginTime(Date beginTime) {
+        this.beginTime = beginTime;
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public Date getEndTime() {
+        return endTime;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
     }
 
-    public Date getOfflineDate() {
-        return offlineDate;
+    public Date getOfflineTime() {
+        return offlineTime;
     }
 
-    public void setOfflineDate(Date offlineDate) {
-        this.offlineDate = offlineDate;
+    public void setOfflineTime(Date offlineTime) {
+        this.offlineTime = offlineTime;
     }
 
     public Script getScript() {

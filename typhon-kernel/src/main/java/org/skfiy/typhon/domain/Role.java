@@ -27,6 +27,7 @@ public class Role implements Changeable {
     private int rid;
     private String name;
     private int level = 1;
+    private boolean enabled;
     private long creationTime = -1L;
     private long lastAccessedTime;
     
@@ -69,6 +70,14 @@ public class Role implements Changeable {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
     public long getCreationTime() {

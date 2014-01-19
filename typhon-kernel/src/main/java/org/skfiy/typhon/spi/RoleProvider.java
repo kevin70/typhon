@@ -22,6 +22,7 @@ import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.PacketError;
 import org.skfiy.typhon.repository.RoleRepository;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionContext;
@@ -98,6 +99,16 @@ public class RoleProvider {
      * @param role
      */
     protected void load0(Role role) {
+        // 角色已经被禁用无法进入游戏
+        if (!role.isEnabled()) {
+            Session session = SessionContext.getSession();
+            PacketError error = PacketError.createError(PacketError.Condition.not_enabled_role);
+            error.setText("Not enabled role");
+            session.write(error);
+            // FIXME
+            return;
+        }
+        
         for (RoleListener roleListener : roleListeners) {
             roleListener.roleLoaded(role);
         }

@@ -35,7 +35,6 @@ public abstract class AbstractSession implements Session {
     public static final byte NS_SEPARTOR = ':';
     public static final byte MSG_SEPARTOR = '\n';
     
-    private int sessionId;
     private String authType;
     private final Map<String, Object> attributes;
 
@@ -43,16 +42,6 @@ public abstract class AbstractSession implements Session {
         attributes = new ConcurrentHashMap<>();
     }
 
-    @Override
-    public int getId() {
-        return sessionId;
-    }
-
-    @Override
-    public void setId(int sessionId) {
-        this.sessionId = sessionId;
-    }
-    
     @Override
     public void setAttribute(String key, Object value) {
         attributes.put(key, value);

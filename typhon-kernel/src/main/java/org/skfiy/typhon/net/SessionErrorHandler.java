@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.skfiy.typhon.net;
+
+import org.skfiy.typhon.session.Session;
+
 /**
- * Session相关实现.
+ * {@link Session }交互过程中的错误处理器.
+ *
+ * @author Kevin Zou <kevinz@skfiy.org>
  */
-package org.skfiy.typhon.session;
+public interface SessionErrorHandler {
+
+    /**
+     * 处理的错误类型.
+     *
+     * @return 错误类型
+     */
+    Class<?> getErrorType();
+
+    /**
+     * 处理错误.
+     *
+     * @param session 出现错误的会话
+     * @param t 错误对象
+     */
+    void handleError(Session session, Throwable t);
+
+}

@@ -48,7 +48,6 @@ public class NonAuthenticator implements Authenticator {
         userManager.updateLastAccessedTime(user.getUid());
 
         Session session = SessionContext.getSession();
-        session.setId(user.getUid());
         session.setAuthType("NON");
         session.setAttribute(SessionUtils.ATTR_USER, user);
 

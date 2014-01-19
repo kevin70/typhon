@@ -30,7 +30,7 @@ public class Player extends Packet {
     
     private Role role;
     private Normal normal;
-    private Big big;
+    private Bag bag;
 
     /**
      * 
@@ -52,26 +52,47 @@ public class Player extends Packet {
         return role;
     }
 
+    /**
+     * 
+     * @param role 
+     */
     public void setRole(Role role) {
         this.role = role;
-        this.big.setPlayer(this);
+        this.bag.setPlayer(this);
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Normal getNormal() {
         return normal;
     }
 
+    /**
+     * 
+     * @param normal 
+     */
     public void setNormal(Normal normal) {
         this.normal = normal;
+        this.normal.setPlayer(this);
     }
 
-    public Big getBig() {
-        return big;
+    /**
+     * 
+     * @return 
+     */
+    public Bag getBag() {
+        return bag;
     }
 
-    public void setBig(Big big) {
-        this.big = big;
-        this.big.setPlayer(this);
+    /**
+     * 
+     * @param bag 
+     */
+    public void setBag(Bag bag) {
+        this.bag = bag;
+        this.bag.setPlayer(this);
     }
 
 }
