@@ -120,7 +120,7 @@ public class ASMDeserializerFactory implements Opcodes {
     }
 
     void _deserialze(ClassWriter cw, Context context) {
-        if (context.getFieldInfoList().size() == 0) {
+        if (context.getFieldInfoList().isEmpty()) {
             return;
         }
 

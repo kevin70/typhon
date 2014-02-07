@@ -38,6 +38,9 @@ public class TimestampActionTest extends TestProtocolBase {
         
         Response resp = poll();
         Assert.assertEquals(resp.getData().getString("id"), p.getId());
+        
+        // 清理其它消息
+        removalOverMessage();
     }
     
 }

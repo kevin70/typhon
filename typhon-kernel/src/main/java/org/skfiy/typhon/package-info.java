@@ -14,4 +14,7 @@
  * limitations under the License.
  */
 
+/**
+ * Kernal系统基础接口包.
+ */
 package org.skfiy.typhon;

@@ -22,9 +22,11 @@ import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.packet.PacketError;
 import org.skfiy.typhon.repository.RoleRepository;
 import org.skfiy.typhon.session.Session;
+import org.skfiy.typhon.session.SessionConstants;
 import org.skfiy.typhon.session.SessionContext;
 import org.skfiy.typhon.session.SessionUtils;
 import org.skfiy.typhon.spi.role.RoleListener;
@@ -54,6 +56,7 @@ public class RoleProvider {
         Role role = new Role();
         role.setRid(SessionUtils.getUser().getUid());
         role.setName(name);
+        role.setEnabled(true);
         roleReposy.save(role);
 
         LOG.debug("create role [rid={}, name={}] successful", role.getRid(), role.getName());
@@ -102,7 +105,10 @@ public class RoleProvider {
         // 角色已经被禁用无法进入游戏
         if (!role.isEnabled()) {
             Session session = SessionContext.getSession();
-            PacketError error = PacketError.createError(PacketError.Condition.not_enabled_role);
+            Packet contextPacket = (Packet) session.getAttribute(
+                    SessionConstants.ATTR_CONTEXT_PACKET);
+            PacketError error = PacketError.createResult(contextPacket,
+                    PacketError.Condition.not_enabled_role);
             error.setText("Not enabled role");
             session.write(error);
             // FIXME

@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 /**
- * Kernal功能服务器接口包.
+ * 数据库连接池配置实现包.
  */
-package org.skfiy.typhon.spi;
+package org.skfiy.typhon.database;

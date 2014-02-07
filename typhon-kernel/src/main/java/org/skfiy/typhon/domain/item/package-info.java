@@ -13,5 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/**
+ * {@code Item }相关的实体对象定义包.
+ */
 package org.skfiy.typhon.domain.item;

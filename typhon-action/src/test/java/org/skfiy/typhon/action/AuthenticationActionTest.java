@@ -15,6 +15,7 @@
  */
 package org.skfiy.typhon.action;
 
+import org.skfiy.typhon.Response;
 import org.skfiy.typhon.TestProtocolBase;
 import org.skfiy.typhon.packet.Namespaces;
 import org.testng.Assert;
@@ -43,7 +44,9 @@ public class AuthenticationActionTest extends TestProtocolBase {
         initRole();
         auth();
         
-        Assert.assertEquals(poll().getNs(), Namespaces.PLAYER_INFO);
+        Response resp = poll();
+        System.out.println(resp);
+        Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
         cleanRole();
     }
 }

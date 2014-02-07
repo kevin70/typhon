@@ -25,7 +25,7 @@ public interface LifecycleListener {
     /**
      * {@code Lifecycle }改变状态时该方法被执行.
      *
-     * @param evnet 生命周期事件
+     * @param event 生命周期事件
      */
     void execute(LifecycleEvent event);
 }

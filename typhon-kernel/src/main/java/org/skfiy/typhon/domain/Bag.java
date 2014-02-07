@@ -26,6 +26,7 @@ import org.skfiy.typhon.util.SortedList;
 import org.skfiy.util.Assert;
 
 /**
+ * 背包实体对象设置.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
@@ -63,43 +64,49 @@ public class Bag implements Changeable {
     }
 
     /**
-     *
+     * 
      * @param nodes
      */
     public void setNodes(List<Node> nodes) {
+        this.nodeData.clear();
         this.nodeData.addAll(nodes);
     }
 
     /**
+     * 获取背包最大容易, 默认值为100.
      *
-     * @return
+     * @return 一个无符号的数字
      */
     public int getMaxSize() {
         return maxSize;
     }
 
     /**
+     * 设置背包最大容量.
      *
-     * @param maxSize
+     * @param maxSize 一个无符号的数字
      */
     public void setMaxSize(int maxSize) {
         this.maxSize = maxSize;
     }
 
     /**
-     *
-     * @param itemDobj
-     * @return
+     * 往背包里面放置一个道具并且返回是否放置成功.
+     * 
+     * @param itemDobj 道具对象
+     * @return 是否放置成功
      */
     public boolean intoItem(ItemDobj itemDobj) {
         return intoItem(itemDobj, 1);
     }
 
     /**
+     * 往背包里面放置指定道具数量并且返回是否放置成功. 该接口发现ItemDobj如果是可堆叠的会自动叠加到现有的
+     * 道具中去.
      *
-     * @param itemDobj
-     * @param count
-     * @return
+     * @param itemDobj 道具对象
+     * @param count 道具数量
+     * @return 是否放置成功
      */
     public synchronized boolean intoItem(ItemDobj itemDobj, int count) {
         int c = count;
@@ -144,9 +151,10 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 查询指定位置的道具信息.
      *
-     * @param pos
-     * @return
+     * @param pos 道具位置
+     * @return 道具信息
      */
     public Node findNode(int pos) {
         for (Node node : nodeData) {
@@ -158,9 +166,10 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 根据道具ID查询背包符合条件的第一个道具信息.
      *
-     * @param iid
-     * @return
+     * @param iid 道具ID
+     * @return 第一个符合条件的道具信息
      */
     public Node findNode(String iid) {
         for (Node node : nodeData) {
@@ -172,9 +181,10 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 根据道具ID查询背包里面的具体节点道具信息.
      *
-     * @param iid
-     * @return
+     * @param iid 道具ID
+     * @return 符合条件的背包节点道具
      */
     public Node[] findNodes(String iid) {
         List<Node> ns = new ArrayList<>();
@@ -190,9 +200,10 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 移除背包某个位置的道具并且返回该位置对应的具体道具对象.
      *
-     * @param pos
-     * @return
+     * @param pos 需要移除的位置
+     * @return {@code pos }位置对应的具体道具对象
      */
     public synchronized Node removeNode(int pos) {
         for (int i = 0; i < nodeData.size(); i++) {
@@ -205,19 +216,21 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 移除背包中的某个节点道具.
      *
-     * @param node
-     * @return
+     * @param node 具体的道具
+     * @return 是否移除成功
      */
     public synchronized boolean removeNode(Node node) {
         return nodeData.remove(node);
     }
 
     /**
+     * 交换两个位置的道具. {@code srcPos }必须是一个有效的位置并且该位置存在一个道具.
      *
-     * @param srcPos
-     * @param destPost
-     * @return
+     * @param srcPos 原始位置
+     * @param destPost 目标位置
+     * @return 是否交换成功
      */
     public synchronized boolean swap(int srcPos, int destPost) {
         if (destPost > maxSize) {
@@ -243,10 +256,11 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 减少某一个道具节点的数量.
      *
-     * @param node
-     * @param count
-     * @return
+     * @param node 被减少的道具
+     * @param count 减少的数量
+     * @return 是否减少成功
      */
     public synchronized boolean decrementTotal(Node node, int count) {
         Assert.notNull(node);
@@ -265,10 +279,11 @@ public class Bag implements Changeable {
     }
 
     /**
+     * 减少背包中某种道具类型的数量.
      *
-     * @param iid
-     * @param count
-     * @return
+     * @param iid 道具ID
+     * @param count 减少的数量
+     * @return 是否减少成功
      */
     public synchronized boolean decrementTotal(String iid, int count) {
         Node[] nodes = findNodes(iid);
@@ -301,24 +316,27 @@ public class Bag implements Changeable {
     }
 
     /**
-     *
-     * @return
+     * 背包道具的数量.
+     * 
+     * @return 数量
      */
     public int size() {
         return nodeData.size();
     }
 
     /**
-     *
-     * @return
+     * 背包是否已满.
+     * 
+     * @return 是/否
      */
     public boolean isFull() {
         return (maxSize == size());
     }
     
     /**
+     * 放置新道具的位置. 如果收到的返回值为-1则不是一个有效的位置, 此时背包无法容纳更多的道具.
      *
-     * @return
+     * @return 道具的位置, 返回值大于等于1并且小于等余{@link #getMaxSize() }时为一个有效索引
      */
     private int nextPos() {
         if (nodeData.isEmpty()) {
@@ -348,13 +366,8 @@ public class Bag implements Changeable {
         return -1;
     }
 
-    /**
-     *
-     * @param staticItem
-     * @return
-     */
-    private boolean isOverlapped(ItemDobj staticItem) {
-        return (staticItem.getOverlapping() != 1);
+    private boolean isOverlapped(ItemDobj itemDobj) {
+        return (itemDobj.getOverlapping() > 1);
     }
 
     /**

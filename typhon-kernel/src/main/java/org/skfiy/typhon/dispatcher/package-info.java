@@ -13,4 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/**
+ * 分发器接口定义实现包. 
+ */
 package org.skfiy.typhon.dispatcher;

@@ -15,8 +15,6 @@
  */
 package org.skfiy.typhon.util;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.management.ObjectName;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.modeler.ManagedBean;
@@ -27,17 +25,22 @@ import org.skfiy.typhon.Typhons;
 import org.skfiy.util.Assert;
 
 /**
+ * MBean工具类.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public final class MBeanUtils {
 
+    /**
+     * 默认的{@link Registry }实例.
+     */
     public static final Registry REGISTRY = Registry.getRegistry(null, null);
 
     /**
-     * 
-     * @param mb
-     * @return 
+     * 新建一个{@code ObjectName }实例.
+     *
+     * @param mb {@link ManagedBean }
+     * @return {@code ObjectName }
      */
     public static ObjectName newObjectName(ManagedBean mb) {
         Assert.notNull(mb.getName());
@@ -61,10 +64,11 @@ public final class MBeanUtils {
     }
 
     /**
+     * 注册一个Bean实例部件. 并返回注册成功的{@code ObjectName }对象.
      *
-     * @param obj
-     * @param mb
-     * @return 
+     * @param obj 目标实例
+     * @param mb {@link ManagedBean }
+     * @return 注册成功的{@code ObjectName }对象
      */
     public static ObjectName registerComponent(Object obj, ManagedBean mb) {
         ObjectName objName = newObjectName(mb);
@@ -73,10 +77,11 @@ public final class MBeanUtils {
     }
 
     /**
+     * 注册一个Bean实例部件.
      *
-     * @param obj
-     * @param objName
-     * @param type
+     * @param obj 目标实例
+     * @param objName {@code ObjectName }对象
+     * @param type 注册的类型
      */
     public static void registerComponent(Object obj, ObjectName objName, String type) {
         try {
@@ -85,11 +90,12 @@ public final class MBeanUtils {
             throw new TyphonException(objName.toString(), ex);
         }
     }
-    
+
     /**
-     * 
-     * @param clazz
-     * @return 
+     * 根据{@code Class }查询注册的{@link ManagedBean }实例.
+     *
+     * @param clazz 注册类型
+     * @return 符合的{@code ManagedBean }实例
      */
     public static ManagedBean findManagedBean(Class<?> clazz) {
         try {
@@ -98,5 +104,4 @@ public final class MBeanUtils {
             throw new TyphonException("findManagedBean: " + clazz.getName(), ex);
         }
     }
-
 }

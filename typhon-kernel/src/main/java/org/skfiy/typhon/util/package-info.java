@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 /**
- * Kernal功能服务器接口包.
+ * Kernal工具类集合包.
  */
-package org.skfiy.typhon.spi;
+package org.skfiy.typhon.util;

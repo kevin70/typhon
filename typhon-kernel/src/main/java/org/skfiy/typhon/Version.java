@@ -27,13 +27,22 @@ package org.skfiy.typhon;
 public final class Version implements Comparable<Version> {
 
     private static final Version CURRENT_VERSION = new Version();
-    private int[] vers = {0, 0, 0};
+    private final int[] vers = {0, 0, 0};
     private String qualifier;
 
+    /**
+     * 获取系统默认版本号创建{@code Version }实例.
+     * 默认版本号通过{@link Globals#PROP_VERSION }属性键在{@link System }中获取.
+     */
     private Version() {
         this(System.getProperty(Globals.PROP_VERSION));
     }
     
+    /**
+     * 通过已存在的版本号创建{@code Version }实例.
+     * 
+     * @param ver 已经存在的字符版本号
+     */
     public Version(String ver) {
         if (ver.indexOf("-") > 1) {
             String[] vals = ver.split("-");
@@ -48,7 +57,7 @@ public final class Version implements Comparable<Version> {
     }
     
     /**
-     * 构造Version实例.
+     * 构造{@code Version }实例.
      *
      * @param major 主版本号,一个无符号的整数
      * @param minor 次版本号,一个无符号的整数

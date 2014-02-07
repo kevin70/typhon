@@ -39,7 +39,7 @@ import org.testng.Assert;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public class TestProtocolBase extends TestBase {
+    public class TestProtocolBase extends TestBase {
 
     private final static SerializeConfig SERIALIZE_CONFIG;
     private final static DecoderEmbedder SEND_EMBEDDER;

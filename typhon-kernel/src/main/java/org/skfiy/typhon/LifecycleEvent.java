@@ -22,8 +22,8 @@ package org.skfiy.typhon;
  */
 public class LifecycleEvent {
 
-    private Object source;
-    private String event;
+    private final Object source;
+    private final String event;
 
     /**
      * 源对象与事件构造函数.

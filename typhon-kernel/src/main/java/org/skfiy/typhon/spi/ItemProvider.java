@@ -35,7 +35,6 @@ import javax.management.ObjectName;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.modeler.ManagedBean;
 import org.skfiy.typhon.AbstractComponent;
-import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Container;
@@ -181,37 +180,6 @@ public class ItemProvider extends AbstractComponent {
         }
 
         throw new IllegalArgumentException("Not found [" + type + "] ItemCompleter");
-    }
-
-    /**
-     * 
-     */
-    private static final class Holder {
-        
-        private ItemProvider itemProvider;
-        
-        /**
-         * 
-         * @return 
-         */
-        public ItemProvider getItemProvider() {
-            synchronized (Holder.class) {
-                if (itemProvider == null) {
-                    MBeanServer mbs = MBeanUtils.REGISTRY.getMBeanServer();
-                    try {
-                        itemProvider = (ItemProvider) mbs.invoke(Container.OBJECT_NAME,
-                                "getInstance",
-                                new Object[]{ItemProvider.class},
-                                new String[]{Class.class.getName()});
-                    } catch (Exception ex) {
-                        throw new ComponentException(
-                                "get " + ItemProvider.class + " fail", ex);
-                    }
-                }
-            }
-            return itemProvider;
-        }
-        
     }
     
 }
