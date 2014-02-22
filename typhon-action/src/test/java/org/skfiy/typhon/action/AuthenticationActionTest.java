@@ -45,7 +45,6 @@ public class AuthenticationActionTest extends TestProtocolBase {
         auth();
         
         Response resp = poll();
-        System.out.println(resp);
         Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
         cleanRole();
     }

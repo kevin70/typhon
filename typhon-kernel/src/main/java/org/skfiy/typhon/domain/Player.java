@@ -58,7 +58,7 @@ public class Player extends Packet {
      */
     public void setRole(Role role) {
         this.role = role;
-        this.bag.setPlayer(this);
+        this.role.setPlayer(this);
     }
 
     /**

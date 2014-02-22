@@ -48,5 +48,7 @@ public class RoleActionTest extends TestProtocolBase {
         roleResposy.delete(resp.getData().getJSONObject("role").getIntValue("rid"));
         
         Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
+        
+        removalOverMessage();
     }
 }

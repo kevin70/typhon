@@ -13,16 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.skfiy.typhon;
-
 /**
- *
- * @author Kevin Zou <kevinz@skfiy.org>
+ * {@code Packet }通过消息实体对象定义包.
  */
-public class ComponentStatusException extends RuntimeException {
-
-    public ComponentStatusException(String message) {
-        super(message);
-    }
-
-}
+package org.skfiy.typhon.packet;

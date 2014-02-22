@@ -20,21 +20,24 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 /**
+ * 数据库连接提供者.
  *
  * @author Kevin Zou <<kevinz@skfiy.org>>
  */
 public interface ConnectionProvider {
 
     /**
-     * 
-     * @return
-     * @throws SQLException 
+     * 获取一个数据库连接.
+     *
+     * @return 数据连接实例
+     * @throws SQLException 获取数据库连接失败
      */
     Connection getConnection() throws SQLException;
 
     /**
+     * 获取JDBC数据源.
      *
-     * @return
+     * @return JDBC数据源
      */
     DataSource getDataSource();
 }

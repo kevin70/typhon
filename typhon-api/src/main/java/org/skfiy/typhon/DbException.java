@@ -16,22 +16,42 @@
 package org.skfiy.typhon;
 
 /**
+ * {@code Database }例外类型.
  *
  * @author Kevin Zou <<kevinz@skfiy.org>>
  */
 public class DbException extends RuntimeException {
 
+    /**
+     * 默认构造函数.
+     */
     public DbException() {
     }
 
+    /**
+     * 具有详细信息的构造函数.
+     *
+     * @param message 详细信息
+     */
     public DbException(String message) {
         super(message);
     }
 
+    /**
+     * 具有详细信息且有目标例外的构造函数.
+     *
+     * @param message 详细信息
+     * @param cause 目标例外
+     */
     public DbException(String message, Throwable cause) {
         super(message, cause);
     }
 
+    /**
+     * 具有目标例外的构造函数.
+     *
+     * @param cause 目标例外
+     */
     public DbException(Throwable cause) {
         super(cause);
     }

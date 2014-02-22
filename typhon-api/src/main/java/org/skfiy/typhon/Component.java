@@ -28,17 +28,17 @@ public interface Component {
     void init();
 
     /**
-     * 
+     * 重载此{@code Component }实现.
      */
     void reload();
-    
+
     /**
      * 销毁实例数据. 在销毁实例之前被调用.
      */
     void destroy();
-    
+
     /**
-     * 
+     * {@code Component }状态.
      */
     enum Status {
 

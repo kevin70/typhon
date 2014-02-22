@@ -91,6 +91,7 @@ public abstract class TestBase extends TestSupport {
         Role role = new Role();
         role.setRid(uid);
         role.setName(TestConstants.ROLE_NAME);
+        role.setEnabled(true);
         roleResposy.save(role);
         rid = uid;
     }

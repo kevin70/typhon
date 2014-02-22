@@ -49,7 +49,7 @@ public abstract class AbstractComponent implements Component {
      *
      * @return 状态枚举
      */
-    protected Status getStatus() {
+    protected final Status getStatus() {
         return status;
     }
 
@@ -70,7 +70,7 @@ public abstract class AbstractComponent implements Component {
 
     private void checkStatus(Status expected) {
         if (status != expected) {
-            throw new ComponentStatusException(
+            throw new ComponentException(
                     "current status [" + status + "] exected status [" + expected + "]");
         }
     }

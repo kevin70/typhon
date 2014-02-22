@@ -16,22 +16,42 @@
 package org.skfiy.typhon;
 
 /**
+ * Typhon 运行时异常类型定义.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class TyphonException extends RuntimeException {
 
+    /**
+     * 默认构造函数.
+     */
     public TyphonException() {
     }
 
+    /**
+     * 具有详细信息的构造函数.
+     *
+     * @param message 详细信息
+     */
     public TyphonException(String message) {
         super(message);
     }
 
+    /**
+     * 具有目标例外的构造函数.
+     *
+     * @param cause 目标例外
+     */
     public TyphonException(Throwable cause) {
         super(cause);
     }
 
+    /**
+     * 具有详细信息且有目标例外的构造函数.
+     *
+     * @param message 详细信息
+     * @param cause 目标例外
+     */
     public TyphonException(String message, Throwable cause) {
         super(message, cause);
     }

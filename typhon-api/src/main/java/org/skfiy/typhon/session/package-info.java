@@ -13,4 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/**
+ * 会话接口定义包.
+ */
 package org.skfiy.typhon.session;

@@ -26,7 +26,11 @@ import javax.management.ObjectName;
 import org.skfiy.util.Assert;
 
 /**
- *
+ * {@code Typhons }可获取/设置{@link System }中的属性. 该类存在一个内部缓存. 当第一个使用某个键的
+ * 属性时该类会先从{@code System }中查找, 存在则加入缓存并返回, 当第二次使用到某个键时会直接从缓存中获取
+ * 参数值, 并不会从{@code System }中获取. 可通过该类的{@link #refresh() }刷新缓存, 该方法会重新从System
+ * 中加载已经缓存过键的属性值.
+ * 
  * @author Kevin Zou <kevinz@skfiy.com>
  */
 public final class Typhons {
@@ -94,168 +98,172 @@ public final class Typhons {
     }
     
     /**
+     * 获取指定的属性值
      *
-     * @param key
-     * @return
+     * @param key 一个字符串
+     * @return 字符串
      */
     public static String getProperty(String key) {
         return System.getProperty(key);
     }
 
     /**
-     *
-     * @param key
-     * @param def
-     * @return
+     * 获取指定键的属性值. 如果指定的键并没有对应的值则返回其指定的默认值.
+     * 
+     * @param key 一个字符串
+     * @param def 默认值
+     * @return 字符串
      */
     public static String getProperty(String key, String def) {
         return System.getProperty(key, def);
     }
 
     /**
-     *
-     * @param key
-     * @param value
-     * @return
+     * 设置指定键的属性值.
+     * 
+     * @param key 一个字符串
+     * @param value 字符串
+     * @return 设置的值
      */
     public static String setProperty(String key, String value) {
         return System.setProperty(key, value);
     }
 
     /**
-     *
-     * @param key
-     * @return
+     * 获取一个{@code boolean }属性值.
+     * 
+     * @param key 一个字符串
+     * @return {@code boolean }
      */
     public static boolean getBoolean(String key) {
         if (props.containsKey(key)) {
-            return (Boolean) props.get(key);
+            return (boolean) props.get(key);
         }
 
         return setBooleanFromSystem(key);
     }
 
     /**
-     *
-     * @param key
-     * @return
+     * 获取一个{@code int }属性值. 如果指定的键并不存在则默认返回{@code -1 }.
+     * 
+     * @param key 一个字符串
+     * @return 一个数值
      */
     public static int getInteger(String key) {
         return getInteger(key, -1);
     }
 
     /**
-     *
-     * @param key
-     * @param def
-     * @return
+     * 获取一个{@code int }值, 如果指定的键不存在则返回其指定的默认值.
+     * 
+     * @param key 一个字符串
+     * @param def 默认值
+     * @return 一个数值
      */
     public static int getInteger(String key, int def) {
         if (props.containsKey(key)) {
-            return (Integer) props.get(key);
+            return (int) props.get(key);
         }
 
         return setIntegerFromSystem(key, def);
     }
 
     /**
-     *
-     * @param key
-     * @return
+     * 获取一个{@code long }值, 如果指定的键不存在则默认返回{@code  -1L }.
+     * 
+     * @param key 一个字符串
+     * @return 一个长整型
      */
     public static long getLong(String key) {
         return getLong(key, -1L);
     }
 
     /**
-     *
-     * @param key
-     * @param def
-     * @return
+     * 获取一个{@code long }值, 如果指定的键不存在则返回其指定的默认值.
+     * 
+     * @param key 一个字符串
+     * @param def 默认值
+     * @return 长整数值
      */
     public static long getLong(String key, long def) {
         if (props.containsKey(key)) {
-            return (Long) props.get(key);
+            return (long) props.get(key);
         }
 
         return setLongFromSystem(key, def);
     }
 
     /**
-     *
-     * @param key
-     * @return
+     * 获取一个{@code float }属性值. 如果指定的键不存在则默认返回{@code 0,0F }.
+     * 
+     * @param key 属性键
+     * @return 浮点型数值
      */
     public static float getFloat(String key) {
         return getFloat(key, 0.0F);
     }
 
     /**
-     *
-     * @param key
-     * @param def
-     * @return
+     * 获取一个{@code float }属性值. 如果指定的键不存在则返回其设置的默认值.
+     * 
+     * @param key 属性键
+     * @param def 默认值
+     * @return 浮点型数值
      */
     public static float getFloat(String key, float def) {
         if (props.containsKey(key)) {
-            return (Float) props.get(key);
+            return (float) props.get(key);
         }
 
         return setFloatFromSystem(key, def);
     }
 
     /**
-     *
-     * @param key
-     * @return
+     * 获取一个{@code double }属性值. 如果指定的键不存在则默认返回{@code 0.0D }.
+     * 
+     * @param key 属性键
+     * @return {@code double }
      */
     public static double getDouble(String key) {
         return getDouble(key, 0.0D);
     }
 
     /**
-     *
-     * @param key
-     * @param def
-     * @return
+     * 获取一个{@code double }属性值. 如果指定的键不存在则返回其设置的默认值.
+     * 
+     * @param key 属性键
+     * @param def 默认值
+     * @return {@code double }
      */
     public static double getDouble(String key, double def) {
         if (props.containsKey(key)) {
-            return (Double) props.get(key);
+            return (double) props.get(key);
         }
 
         return setDoubleFromSystem(key, def);
     }
 
     /**
-     *
+     * 刷新缓存.
      */
     public static void refresh() {
         for (Map.Entry<String, Object> entry : props.entrySet()) {
             Class<?> clazz = entry.getKey().getClass();
-            if (clazz == Boolean.class) {
+            if (clazz == Boolean.class || clazz == Boolean.TYPE) {
                 setBooleanFromSystem(entry.getKey());
-            } else if (clazz == Integer.class) {
+            } else if (clazz == Integer.class || clazz == Integer.TYPE) {
                 setIntegerFromSystem(entry.getKey(), -1);
-            } else if (clazz == Long.class) {
+            } else if (clazz == Long.class || clazz == Long.TYPE) {
                 setLongFromSystem(entry.getKey(), -1L);
-            } else if (clazz == Float.class) {
+            } else if (clazz == Float.class || clazz == Float.TYPE) {
                 setFloatFromSystem(entry.getKey(), 0.0F);
-            } else if (clazz == Double.class) {
+            } else if (clazz == Double.class || clazz == Double.TYPE) {
                 setDoubleFromSystem(entry.getKey(), 0.0D);
             } else {
                 throw new UnsupportedOperationException("property no class ["
                         + clazz + "]");
             }
         }
-    }
-    
-    /**
-     * FIXME 
-     * @return 
-     */
-    public static boolean isDevMode() {
-        return Typhons.getBoolean(Globals.PROP_DEV_MODE);
     }
     
     private static boolean setBooleanFromSystem(String key) {

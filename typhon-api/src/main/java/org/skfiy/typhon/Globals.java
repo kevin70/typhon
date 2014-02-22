@@ -18,7 +18,8 @@ package org.skfiy.typhon;
 import com.alibaba.fastjson.parser.ParserConfig;
 
 /**
- *
+ * 全局常量定义类.
+ * 
  * @author Kevin Zou <kevinz@skfiy.com>
  */
 public final class Globals {
