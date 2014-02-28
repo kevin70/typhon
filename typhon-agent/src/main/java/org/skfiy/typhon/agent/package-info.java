@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 The Skfiy Open Association.
+ * Copyright 2014 The Skfiy Open Association.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /**
- * 启动接口实现.
+ * Java运行时代理实现.
  */
-package org.skfiy.typhon.startup;
+package org.skfiy.typhon.agent;

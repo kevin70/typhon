@@ -22,7 +22,8 @@ import java.net.URL;
 import java.net.URLClassLoader;
 
 /**
- *
+ * 程序启动入口.
+ * 
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class Bootstrap {
@@ -32,21 +33,42 @@ public class Bootstrap {
     private Class deamonClass;
     private Object deamonObject;
 
+    /**
+     * 通过Socket的方式停止应用.
+     * 
+     * @throws Exception 异常
+     */
     public void setAwait() throws Exception {
         Method m = deamonClass.getMethod("setAwait", new Class[]{Boolean.TYPE});
         m.invoke(deamonObject, new Object[]{true});
     }
     
+    /**
+     * 加载初始配置.
+     * 
+     * @throws Exception 异常 
+     */
     public void load() throws Exception {
         Method m = deamonClass.getMethod("load", new Class[]{});
         m.invoke(deamonObject, new Object[]{});
     }
     
+    /**
+     * 初始化应用配置.
+     * 
+     * @param args 所需参数
+     * @throws Exception 例外
+     */
     public void init(String[] args) throws Exception {
         init();
         load();
     }
     
+    /**
+     * 初始化{@code ClassLoader }信息及后台启动的{@code Class }.
+     * 
+     * @throws Exception 异常
+     */
     public void init() throws Exception {
         String home = System.getProperty("typhon.home");
         if (home != null && (new File(home)).isDirectory()) {
@@ -62,24 +84,47 @@ public class Bootstrap {
         deamonObject = deamonClass.newInstance();
     }
 
+    /**
+     * 启动应用.
+     * 
+     * @throws Exception 异常 
+     */
     public void start() throws Exception {
         Method m = deamonClass.getMethod("start", (Class[]) null);
         m.invoke(deamonObject, (Object[]) null);
     }
 
+    /**
+     * 停止应用.
+     * 
+     * @throws Exception 异常 
+     */
     public void stop() throws Exception {
         Method m = deamonClass.getMethod("stop", (Class[]) null);
         m.invoke(deamonObject, (Object[]) null);
     }
     
+    /**
+     * 销毁应用.
+     * 
+     * @throws Exception 异常
+     */
     public void destroy() throws Exception {
         System.exit(0);
     }
 
+    /**
+     * 命令使用说明.
+     */
     void usage() {
         // FIXME 
     }
 
+    /**
+     * Java入口.
+     * 
+     * @param args 命令行参数 
+     */
     public static void main(String[] args) {
         if (boot == null) {
             boot = new Bootstrap();

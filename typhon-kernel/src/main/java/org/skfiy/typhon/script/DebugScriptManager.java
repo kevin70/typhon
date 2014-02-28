@@ -150,8 +150,9 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
     }
 
     /**
+     * 设置{@link Instrumentation }实例.
      * 
-     * @param instrumentation 
+     * @param instrumentation {@link Instrumentation }实例
      */
     public void setInstrumentation(Instrumentation instrumentation) {
         this.instrumentation = instrumentation;
