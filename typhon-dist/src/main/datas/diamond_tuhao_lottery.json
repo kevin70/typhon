@@ -1,0 +1,37 @@
+{
+"__comment__": "#item.id: 道具ID\nprob: 抽中道具的概率",
+"datas": [
+{
+"#item.id": "w002",
+"prob": 70
+},
+{
+"#item.id": "w003",
+"prob": 20
+},
+{
+"#item.id": "w007",
+"prob": 200
+},
+{
+"#item.id": "w008",
+"prob": 150
+},
+{
+"#item.id": "w016",
+"prob": 90
+},
+{
+"#item.id": "w017",
+"prob": 30
+},
+{
+"#item.id": "t016",
+"prob": 180
+},
+{
+"#item.id": "t017",
+"prob": 100
+}
+]
+}

@@ -109,6 +109,12 @@ public interface Session {
     long getLastAccessedTime();
 
     /**
+     * 
+     * @return 
+     */
+    boolean isAvailable();
+    
+    /**
      * 向客户端写入一条消息.
      *
      * @param packet 写入的包

@@ -1,0 +1,82 @@
+[
+{
+"id": "OrganizeTeam",
+"lvLimit": 0,
+"needGuide":false
+},
+{
+"id": "MailLayer",
+"lvLimit": 0,
+"needGuide":false
+},
+{
+"id": "RankingLayer",
+"lvLimit": 12,
+"needGuide":true
+},
+{
+"id": "BarracksTraining",
+"lvLimit": 8,
+"needGuide":true
+},
+{
+"id": "TalentUI",
+"lvLimit": 0,
+"needGuide":false
+},
+{
+"id": "ShopLayer",
+"lvLimit": 4,
+"needGuide":true
+},
+{
+"id": "SocietyLayer",
+"lvLimit": 32,
+"needGuide":true
+},
+{
+"id": "JinNangLayer",
+"lvLimit": 30,
+"needGuide":true
+},
+{
+"id": "Pvp",
+"lvLimit": 10,
+"needGuide":true
+},
+{
+"id": "Enchant",
+"lvLimit": 22,
+"needGuide":true
+},
+{
+"id": "Chapter",
+"lvLimit": 0,
+"needGuide":false
+},
+{
+"id": "LmLayer",
+"lvLimit": 27,
+"needGuide":true
+},
+{
+"id": "Explore",
+"lvLimit": 40,
+"needGuide":false
+},
+{
+"id": "SaoDang",
+"lvLimit": 11,
+"needGuide":true
+},
+{
+"id": "Activity",
+"lvLimit": 15,
+"needGuide":true
+},
+	{
+"id": "15Combo",
+"lvLimit": 10,
+"needGuide":false
+}
+]

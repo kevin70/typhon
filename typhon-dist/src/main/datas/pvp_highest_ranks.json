@@ -1,0 +1,117 @@
+[
+    {
+        "beginRanking": 1,
+        "endRanking": 1,
+        "count": 50000
+    },
+    {
+        "beginRanking": 2,
+        "endRanking": 2,
+        "count": 45000
+    },
+    {
+        "beginRanking": 3,
+        "endRanking": 3,
+        "count": 40000
+    },
+    {
+        "beginRanking": 4,
+        "endRanking": 4,
+        "count": 35000
+    },
+    {
+        "beginRanking": 5,
+        "endRanking": 5,
+        "count": 30000
+    },
+    {
+        "beginRanking": 6,
+        "endRanking": 6,
+        "count": 25000
+    },
+    {
+        "beginRanking": 7,
+        "endRanking": 7,
+        "count": 20000
+    },
+    {
+        "beginRanking": 8,
+        "endRanking": 8,
+        "count": 15000
+    },
+    {
+        "beginRanking": 9,
+        "endRanking": 9,
+        "count": 10000
+    },
+    {
+        "beginRanking": 10,
+        "endRanking": 10,
+        "count": 5000
+    },
+    {
+        "beginRanking": 11,
+        "endRanking": 20,
+        "count": 1000
+    },
+    {
+        "beginRanking": 21,
+        "endRanking": 50,
+        "count": 800
+    },
+    {
+        "beginRanking": 51,
+        "endRanking": 70,
+        "count": 600
+    },
+    {
+        "beginRanking": 71,
+        "endRanking": 100,
+        "count": 400
+    },
+    {
+        "beginRanking": 101,
+        "endRanking": 200,
+        "count": 200
+    },
+    {
+        "beginRanking": 201,
+        "endRanking": 300,
+        "count": 100
+    },
+    {
+        "beginRanking": 301,
+        "endRanking": 400,
+        "count": 50
+    },
+    {
+        "beginRanking": 401,
+        "endRanking": 500,
+        "count": 20
+    },
+    {
+        "beginRanking": 501,
+        "endRanking": 1000,
+        "count": 5
+    },
+    {
+        "beginRanking": 1001,
+        "endRanking": 3000,
+        "count": 4
+    },
+    {
+        "beginRanking": 3001,
+        "endRanking": 10000,
+        "count": 3
+    },
+    {
+        "beginRanking": 10001,
+        "endRanking": 20000,
+        "count": 2
+    },
+    {
+        "beginRanking": 20000,
+        "endRanking": 80000,
+        "count": 1
+    }
+]

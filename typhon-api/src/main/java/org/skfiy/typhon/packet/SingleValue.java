@@ -44,6 +44,8 @@ public class SingleValue extends Packet {
         SingleValue result = new SingleValue();
         result.setId(packet.getId());
         result.setVal(val);
+        result.setType(Type.rs);
+        result.setNs(packet.getNs());
         return result;
     }
     

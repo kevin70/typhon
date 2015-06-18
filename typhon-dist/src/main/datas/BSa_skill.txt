@@ -1,0 +1,10 @@
+﻿id 必杀技技能ID
+type 必杀技类型
+animation 动画文件名
+animationCnt 动画帧数
+numOfAttackers 攻击者数量
+numOfTargets 目标个数，如果个数为1个则攻击当前选中目标 如果为2个并且目标大约2个 
+则其中一次攻击当前目标剩余次数在剩余目标中随机选择一个进行攻击，如果大于实际存在目标数则攻击所有存在目标 不懂问程序。。。
+numOfAttacks 攻击次数 填写几次就攻击几次
+parameter 参数 等同于必杀技技能伤害计算公式中的J
+fixedDamage 固伤（暂时删除）

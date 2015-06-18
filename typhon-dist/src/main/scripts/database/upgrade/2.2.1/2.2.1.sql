@@ -1,0 +1,1 @@
+INSERT INTO `t_global_data` VALUES('society_data','[]');

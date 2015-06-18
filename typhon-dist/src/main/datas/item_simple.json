@@ -1,52 +1,503 @@
-{"datas": [
+[
     {
-        "id": "s001",
+        "id": "w001",
         "type": "Simple",
-        "name": "SimpleItem1",
-        "icon": "",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X1",
+        "price": 5000
+    },
+    {
+        "id": "w002",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X2",
+        "price": 20000
+    },
+    {
+        "id": "w003",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X3",
+        "price": 100000
+    },
+    {
+        "id": "w004",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X4",
+        "price": 500000
+    },
+    {
+        "id": "w005",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5",
+        "price": 1000000
+    },
+    {
+        "id": "w006",
+        "type": "Simple",
+        "displayGroup": "Expendable",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X1",
+        "price": 500,
+        "script": "item.HeroExpItemScript",
+        "annex": 100
+    },
+    {
+        "id": "w007",
+        "type": "Simple",
+        "displayGroup": "Expendable",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X2",
+        "price": 1500,
+        "script": "item.HeroExpItemScript",
+        "annex": 500
+    },
+    {
+        "id": "w008",
+        "type": "Simple",
+        "displayGroup": "Expendable",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X3",
+        "price": 5000,
+        "script": "item.HeroExpItemScript",
+        "annex": 2000
+    },
+    {
+        "id": "w009",
+        "type": "Simple",
+        "displayGroup": "Expendable",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X4",
+        "price": 10000,
+        "script": "item.HeroExpItemScript",
+        "annex": 5000
+    },
+    {
+        "id": "w010",
+        "type": "Simple",
+        "displayGroup": "Expendable",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5",
+        "price": 20000,
+        "script": "item.HeroExpItemScript",
+        "annex": 20000
+    },
+    {
+        "id": "w011",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X1",
+        "price": 500,
+        "annex": 50
+    },
+    {
+        "id": "w012",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X2",
+        "price": 1500,
+        "annex": 200
+    },
+    {
+        "id": "w013",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X3",
+        "price": 5000,
+        "annex": 1000
+    },
+    {
+        "id": "w014",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X4",
+        "price": 10000,
+        "annex": 3000
+    },
+    {
+        "id": "w015",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5",
+        "price": 20000,
+        "annex": 10000
+    },
+    {
+        "id": "w016",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X1",
+        "price": 500,
+        "annex": 10
+    },
+    {
+        "id": "w017",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X2",
+        "price": 1500,
+        "annex": 50
+    },
+    {
+        "id": "w018",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X3",
+        "price": 5000,
+        "annex": 100
+    },
+    {
+        "id": "w019",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X4",
+        "price": 10000,
+        "annex": 200
+    },
+    {
+        "id": "w020",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5",
+        "price": 20000,
+        "annex": 400
+    },
+    {
+        "id": "w021",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
         "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 5
+    },
+    {
+        "id": "w022",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 10
+    },
+    {
+        "id": "w023",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 20
+    },
+    {
+        "id": "w024",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 50
+    },
+    {
+        "id": "w025",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 100
+    },
+    {
+        "id": "w026",
+        "type": "Simple",
+        "icon": "ui/itemicon/Exploit.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.ExploitItemScript",
+        "annex": 5
+    },
+    {
+        "id": "w027",
+        "type": "Simple",
+        "icon": "ui/itemicon/Exploit.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.ExploitItemScript",
+        "annex": 10
+    },
+    {
+        "id": "w028",
+        "type": "Simple",
+        "icon": "ui/itemicon/Exploit.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.ExploitItemScript",
+        "annex": 20
+    },
+    {
+        "id": "w029",
+        "type": "Simple",
+        "icon": "ui/itemicon/Exploit.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.ExploitItemScript",
+        "annex": 50
+    },
+    {
+        "id": "w030",
+        "type": "Simple",
+        "icon": "ui/itemicon/Exploit.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.ExploitItemScript",
+        "annex": 100
+    },
+    {
+        "id": "w031",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 1000
+    },
+    {
+        "id": "w032",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 5000
+    },
+    {
+        "id": "w033",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 10000
+    },
+    {
+        "id": "w034",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 50000
+    },
+    {
+        "id": "w035",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 100000
+    },
+    {
+        "id": "w036",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 1
+    },
+    {
+        "id": "w037",
+        "type": "Simple",
+        "icon": "ui/itemicon/Diamond-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.DiamondItemScript",
+        "annex": 9999999
+    },
+    {
+        "id": "w038",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 99999999
+    },
+    {
+        "id": "w039",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper-s.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 500
+    },
+    {
+        "id": "w040",
+        "type": "Simple",
+        "icon": "ui/itemicon/Society.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.SocietyItemScript",
+        "annex": 50
+    },
+    {
+        "id": "w041",
+        "type": "Simple",
+        "icon": "ui/itemicon/Copper.png",
+        "autoOpen": true,
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 5000
+    },
+    {
+        "id": "w042",
+        "type": "Simple",
+        "displayGroup": "Normal",
+        "icon": "ui/itemicon/w042_icon.png",
+        "autoOpen": false,
         "overlapping": 9999,
-        "price": 10.1
+        "star": "X5",
+        "price": 100
     },
     {
-        "id": "s002",
+        "id": "w043",
         "type": "Simple",
-        "name": "SimpleItem1",
-        "icon": "",
-        "autoOpen": true,
+        "displayGroup": "Normal",
+        "icon": "ui/itemicon/w043_icon.png",
+        "autoOpen": false,
         "overlapping": 9999,
-        "price": 10.1
+        "star": "X5",
+        "price": 100
     },
     {
-        "id": "s003",
+        "id": "w044",
         "type": "Simple",
-        "name": "SimpleItem1",
-        "icon": "",
-        "autoOpen": true,
+        "displayGroup": "Normal",
+        "icon": "ui/itemicon/w044_icon.png",
+        "autoOpen": false,
         "overlapping": 9999,
-        "price": 10.1
+        "star": "X5",
+        "price": 100
     },
     {
-        "id": "s004",
+        "id": "w045",
         "type": "Simple",
-        "name": "SimpleItem2",
-        "overlapping": 10000,
-        "price": 11.1
-    },
-    {
-        "id": "s005",
-        "type": "Simple",
-        "name": "SimpleItem3",
+        "icon": "ui/itemicon/Copper-s.png",
         "autoOpen": true,
-        "overlapping": 10001,
-        "price": 12.1
+        "star": "X3",
+        "script": "item.CopperItemScript",
+        "annex": 1
     },
     {
-        "id": "s006",
+        "id": "rb001",
         "type": "Simple",
-        "name": "SimpleItem4",
-        "autoOpen": true,
-        "overlapping": 10002,
-        "price": 13.1
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb002",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb003",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb004",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb005",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb006",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox2.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb007",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox3.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "rb008",
+        "type": "Simple",
+        "icon": "ui/itemicon/treasurebox1.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X5"
+    },
+    {
+        "id": "jr01",
+        "type": "Simple",
+        "icon": "ui/itemicon/jr01_icon.png",
+        "autoOpen": false,
+        "overlapping": 999,
+        "star": "X3",
+        "price": 10000
     }
-]}
+]

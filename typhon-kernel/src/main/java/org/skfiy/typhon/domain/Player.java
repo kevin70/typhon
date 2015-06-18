@@ -23,29 +23,33 @@ import org.skfiy.typhon.session.Session;
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = {"session"})
-public class Player extends Packet {
+@JSONType(ignores = {"session", "invisible"})
+public class Player extends Packet implements Changeable {
 
-    private final Session session;
-    
+    private Session session;
+
     private Role role;
     private Normal normal;
     private Bag bag;
+    // 英雄包
+    private Bag heroBag;
+    
+    private Invisible invisible;
+
+    /**
+     *
+     * @return
+     */
+    public Session getSession() {
+        return session;
+    }
 
     /**
      * 
      * @param session 
      */
-    public Player(Session session) {
+    public void setSession(Session session) {
         this.session = session;
-    }
-    
-    /**
-     * 
-     * @return 
-     */
-    public Session getSession() {
-        return session;
     }
 
     public Role getRole() {
@@ -53,46 +57,98 @@ public class Player extends Packet {
     }
 
     /**
-     * 
-     * @param role 
+     *
+     * @param role
      */
     public void setRole(Role role) {
         this.role = role;
-        this.role.setPlayer(this);
+        this.role.set(this, "role");
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public Normal getNormal() {
         return normal;
     }
 
     /**
-     * 
-     * @param normal 
+     *
+     * @param normal
      */
     public void setNormal(Normal normal) {
         this.normal = normal;
-        this.normal.setPlayer(this);
+        this.normal.set(this, "normal");
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public Bag getBag() {
         return bag;
     }
 
     /**
-     * 
-     * @param bag 
+     *
+     * @param bag
      */
     public void setBag(Bag bag) {
         this.bag = bag;
-        this.bag.setPlayer(this);
+        this.bag.set(this, "bag");
     }
 
+    /**
+     *
+     * @return
+     */
+    public Bag getHeroBag() {
+        return heroBag;
+    }
+
+    /**
+     *
+     * @param heroBag
+     */
+    public void setHeroBag(Bag heroBag) {
+        this.heroBag = heroBag;
+        this.heroBag.set(this, "heroBag");
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    public Invisible getInvisible() {
+        return invisible;
+    }
+
+    /**
+     * 
+     * @param invisible 
+     */
+    public void setInvisible(Invisible invisible) {
+        this.invisible = invisible;
+    }
+
+    @Override
+    public Changeable parent() {
+        return null;
+    }
+
+    @Override
+    public void set(Changeable parent, String parentPropertyName) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public String parentPropertyName() {
+        return null;
+    }
+
+    @Override
+    public Player player() {
+        return this;
+    }
 }

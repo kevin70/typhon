@@ -1,0 +1,21 @@
+﻿id              装备ID
+type            装备类型(Equipment)
+name            装备名称
+icon            装备ICON
+tong            装备增加的(统)
+wu              装备增加的(武)
+zhi             装备增加的(智)
+atk             装备增加的(攻击)
+def             装备增加的(防御)
+hp              装备增加的(血量)
+critRate        装备增加的(暴击率)
+critMagn        装备增加的(暴伤率)
+decritRate      装备增加的(韧性)
+parryRate       装备增加的(格挡率)
+parryValue      装备增加的(格档值)
+deparryRate     装备增加的(穿透率)
+overlapping     道具最大堆叠数
+price           道具的出售价格
+subitems        装备合成的子项
+expense         合成消耗费用
+displayGroup    (Equipment)装备, (Soul)灵魂石, (Scroll)卷轴, (Spall)碎片, (Normal)道具, (Expendable)消耗品

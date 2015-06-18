@@ -1,0 +1,1302 @@
+[
+{
+"level": 1,
+"maxVigor": 60,
+"presentVigor": 10,
+"exp": 6,
+"heroExp": 15,
+"heroMaxLevel": 20,
+"troopExp": 50,
+"troopMaxLevel": 1
+},
+{
+"level": 2,
+"maxVigor": 61,
+"presentVigor": 10,
+"exp": 15,
+"heroExp": 30,
+"heroMaxLevel": 20,
+"troopExp": 50,
+"troopMaxLevel": 2
+},
+{
+"level": 3,
+"maxVigor": 62,
+"presentVigor": 10,
+"exp": 20,
+"heroExp": 45,
+"heroMaxLevel": 20,
+"troopExp": 50,
+"troopMaxLevel": 3
+},
+{
+"level": 4,
+"maxVigor": 63,
+"presentVigor": 10,
+"exp": 25,
+"heroExp": 50,
+"heroMaxLevel": 20,
+"troopExp": 100,
+"troopMaxLevel": 4
+},
+{
+"level": 5,
+"maxVigor": 64,
+"presentVigor": 10,
+"exp": 30,
+"heroExp": 55,
+"heroMaxLevel": 20,
+"troopExp": 100,
+"troopMaxLevel": 5
+},
+{
+"level": 6,
+"maxVigor": 65,
+"presentVigor": 10,
+"exp": 45,
+"heroExp": 60,
+"heroMaxLevel": 20,
+"troopExp": 100,
+"troopMaxLevel": 6
+},
+{
+"level": 7,
+"maxVigor": 66,
+"presentVigor": 20,
+"exp": 55,
+"heroExp": 60,
+"heroMaxLevel": 20,
+"troopExp": 150,
+"troopMaxLevel": 7
+},
+{
+"level": 8,
+"maxVigor": 67,
+"presentVigor": 20,
+"exp": 60,
+"heroExp": 65,
+"heroMaxLevel": 20,
+"troopExp": 150,
+"troopMaxLevel": 8
+},
+{
+"level": 9,
+"maxVigor": 68,
+"presentVigor": 20,
+"exp": 65,
+"heroExp": 135,
+"heroMaxLevel": 20,
+"troopExp": 150,
+"troopMaxLevel": 9
+},
+{
+"level": 10,
+"maxVigor": 69,
+"presentVigor": 20,
+"exp": 70,
+"heroExp": 145,
+"heroMaxLevel": 20,
+"troopExp": 200,
+"troopMaxLevel": 10
+},
+{
+"level": 11,
+"maxVigor": 70,
+"presentVigor": 20,
+"exp": 75,
+"heroExp": 155,
+"heroMaxLevel": 20,
+"troopExp": 200,
+"troopMaxLevel": 11
+},
+{
+"level": 12,
+"maxVigor": 71,
+"presentVigor": 20,
+"exp": 80,
+"heroExp": 200,
+"heroMaxLevel": 20,
+"troopExp": 200,
+"troopMaxLevel": 12
+},
+{
+"level": 13,
+"maxVigor": 72,
+"presentVigor": 20,
+"exp": 85,
+"heroExp": 215,
+"heroMaxLevel": 20,
+"troopExp": 250,
+"troopMaxLevel": 13
+},
+{
+"level": 14,
+"maxVigor": 73,
+"presentVigor": 20,
+"exp": 90,
+"heroExp": 270,
+"heroMaxLevel": 20,
+"troopExp": 250,
+"troopMaxLevel": 14
+},
+{
+"level": 15,
+"maxVigor": 74,
+"presentVigor": 20,
+"exp": 95,
+"heroExp": 285,
+"heroMaxLevel": 20,
+"troopExp": 300,
+"troopMaxLevel": 15
+},
+{
+"level": 16,
+"maxVigor": 75,
+"presentVigor": 20,
+"exp": 100,
+"heroExp": 300,
+"heroMaxLevel": 20,
+"troopExp": 350,
+"troopMaxLevel": 16
+},
+{
+"level": 17,
+"maxVigor": 76,
+"presentVigor": 20,
+"exp": 110,
+"heroExp": 370,
+"heroMaxLevel": 20,
+"troopExp": 400,
+"troopMaxLevel": 17
+},
+{
+"level": 18,
+"maxVigor": 77,
+"presentVigor": 20,
+"exp": 120,
+"heroExp": 395,
+"heroMaxLevel": 20,
+"troopExp": 450,
+"troopMaxLevel": 18
+},
+{
+"level": 19,
+"maxVigor": 78,
+"presentVigor": 20,
+"exp": 130,
+"heroExp": 475,
+"heroMaxLevel": 20,
+"troopExp": 500,
+"troopMaxLevel": 19
+},
+{
+"level": 20,
+"maxVigor": 79,
+"presentVigor": 30,
+"exp": 140,
+"heroExp": 500,
+"heroMaxLevel": 20,
+"troopExp": 550,
+"troopMaxLevel": 20
+},
+{
+"level": 21,
+"maxVigor": 80,
+"presentVigor": 30,
+"exp": 170,
+"heroExp": 530,
+"heroMaxLevel": 21,
+"troopExp": 600,
+"troopMaxLevel": 21
+},
+{
+"level": 22,
+"maxVigor": 81,
+"presentVigor": 30,
+"exp": 175,
+"heroExp": 630,
+"heroMaxLevel": 22,
+"troopExp": 650,
+"troopMaxLevel": 22
+},
+{
+"level": 23,
+"maxVigor": 82,
+"presentVigor": 30,
+"exp": 180,
+"heroExp": 730,
+"heroMaxLevel": 23,
+"troopExp": 700,
+"troopMaxLevel": 23
+},
+{
+"level": 24,
+"maxVigor": 83,
+"presentVigor": 30,
+"exp": 185,
+"heroExp": 760,
+"heroMaxLevel": 24,
+"troopExp": 750,
+"troopMaxLevel": 24
+},
+{
+"level": 25,
+"maxVigor": 84,
+"presentVigor": 30,
+"exp": 190,
+"heroExp": 870,
+"heroMaxLevel": 25,
+"troopExp": 800,
+"troopMaxLevel": 25
+},
+{
+"level": 26,
+"maxVigor": 85,
+"presentVigor": 30,
+"exp": 200,
+"heroExp": 990,
+"heroMaxLevel": 26,
+"troopExp": 850,
+"troopMaxLevel": 26
+},
+{
+"level": 27,
+"maxVigor": 86,
+"presentVigor": 30,
+"exp": 210,
+"heroExp": 1115,
+"heroMaxLevel": 27,
+"troopExp": 900,
+"troopMaxLevel": 27
+},
+{
+"level": 28,
+"maxVigor": 87,
+"presentVigor": 30,
+"exp": 230,
+"heroExp": 1245,
+"heroMaxLevel": 28,
+"troopExp": 950,
+"troopMaxLevel": 28
+},
+{
+"level": 29,
+"maxVigor": 88,
+"presentVigor": 30,
+"exp": 260,
+"heroExp": 1390,
+"heroMaxLevel": 29,
+"troopExp": 1000,
+"troopMaxLevel": 29
+},
+{
+"level": 30,
+"maxVigor": 89,
+"presentVigor": 30,
+"exp": 300,
+"heroExp": 1445,
+"heroMaxLevel": 30,
+"troopExp": 1050,
+"troopMaxLevel": 30
+},
+{
+"level": 31,
+"maxVigor": 90,
+"presentVigor": 30,
+"exp": 400,
+"heroExp": 1600,
+"heroMaxLevel": 31,
+"troopExp": 1100,
+"troopMaxLevel": 31
+},
+{
+"level": 32,
+"maxVigor": 91,
+"presentVigor": 30,
+"exp": 500,
+"heroExp": 2080,
+"heroMaxLevel": 32,
+"troopExp": 1150,
+"troopMaxLevel": 32
+},
+{
+"level": 33,
+"maxVigor": 92,
+"presentVigor": 30,
+"exp": 500,
+"heroExp": 2600,
+"heroMaxLevel": 33,
+"troopExp": 1200,
+"troopMaxLevel": 33
+},
+{
+"level": 34,
+"maxVigor": 93,
+"presentVigor": 30,
+"exp": 500,
+"heroExp": 3150,
+"heroMaxLevel": 34,
+"troopExp": 1250,
+"troopMaxLevel": 34
+},
+{
+"level": 35,
+"maxVigor": 94,
+"presentVigor": 30,
+"exp": 500,
+"heroExp": 3515,
+"heroMaxLevel": 35,
+"troopExp": 1300,
+"troopMaxLevel": 35
+},
+{
+"level": 36,
+"maxVigor": 95,
+"presentVigor": 30,
+"exp": 500,
+"heroExp": 3775,
+"heroMaxLevel": 36,
+"troopExp": 1350,
+"troopMaxLevel": 36
+},
+{
+"level": 37,
+"maxVigor": 96,
+"presentVigor": 30,
+"exp": 600,
+"heroExp": 4055,
+"heroMaxLevel": 37,
+"troopExp": 1400,
+"troopMaxLevel": 37
+},
+{
+"level": 38,
+"maxVigor": 97,
+"presentVigor": 30,
+"exp": 700,
+"heroExp": 4615,
+"heroMaxLevel": 38,
+"troopExp": 1500,
+"troopMaxLevel": 38
+},
+{
+"level": 39,
+"maxVigor": 98,
+"presentVigor": 30,
+"exp": 800,
+"heroExp": 5355,
+"heroMaxLevel": 39,
+"troopExp": 1600,
+"troopMaxLevel": 39
+},
+{
+"level": 40,
+"maxVigor": 99,
+"presentVigor": 40,
+"exp": 900,
+"heroExp": 6430,
+"heroMaxLevel": 40,
+"troopExp": 1800,
+"troopMaxLevel": 40
+},
+{
+"level": 41,
+"maxVigor": 100,
+"presentVigor": 40,
+"exp": 1000,
+"heroExp": 6845,
+"heroMaxLevel": 41,
+"troopExp": 2000,
+"troopMaxLevel": 41
+},
+{
+"level": 42,
+"maxVigor": 101,
+"presentVigor": 40,
+"exp": 1100,
+"heroExp": 7750,
+"heroMaxLevel": 42,
+"troopExp": 2200,
+"troopMaxLevel": 42
+},
+{
+"level": 43,
+"maxVigor": 102,
+"presentVigor": 40,
+"exp": 1200,
+"heroExp": 8725,
+"heroMaxLevel": 43,
+"troopExp": 2400,
+"troopMaxLevel": 43
+},
+{
+"level": 44,
+"maxVigor": 103,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 9770,
+"heroMaxLevel": 44,
+"troopExp": 2600,
+"troopMaxLevel": 44
+},
+{
+"level": 45,
+"maxVigor": 104,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 10895,
+"heroMaxLevel": 45,
+"troopExp": 2800,
+"troopMaxLevel": 45
+},
+{
+"level": 46,
+"maxVigor": 105,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 12100,
+"heroMaxLevel": 46,
+"troopExp": 3000,
+"troopMaxLevel": 46
+},
+{
+"level": 47,
+"maxVigor": 106,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 13400,
+"heroMaxLevel": 47,
+"troopExp": 3500,
+"troopMaxLevel": 47
+},
+{
+"level": 48,
+"maxVigor": 107,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 14800,
+"heroMaxLevel": 48,
+"troopExp": 4000,
+"troopMaxLevel": 48
+},
+{
+"level": 49,
+"maxVigor": 108,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 12075,
+"heroMaxLevel": 49,
+"troopExp": 4500,
+"troopMaxLevel": 49
+},
+{
+"level": 50,
+"maxVigor": 109,
+"presentVigor": 40,
+"exp": 1300,
+"heroExp": 13125,
+"heroMaxLevel": 50,
+"troopExp": 5000,
+"troopMaxLevel": 50
+},
+{
+"level": 51,
+"maxVigor": 110,
+"presentVigor": 40,
+"exp": 1600,
+"heroExp": 14460,
+"heroMaxLevel": 51,
+"troopExp": 5500,
+"troopMaxLevel": 51
+},
+{
+"level": 52,
+"maxVigor": 111,
+"presentVigor": 40,
+"exp": 1900,
+"heroExp": 15910,
+"heroMaxLevel": 52,
+"troopExp": 6000,
+"troopMaxLevel": 52
+},
+{
+"level": 53,
+"maxVigor": 112,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 17495,
+"heroMaxLevel": 53,
+"troopExp": 6500,
+"troopMaxLevel": 53
+},
+{
+"level": 54,
+"maxVigor": 113,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 19225,
+"heroMaxLevel": 54,
+"troopExp": 7000,
+"troopMaxLevel": 54
+},
+{
+"level": 55,
+"maxVigor": 114,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 21115,
+"heroMaxLevel": 55,
+"troopExp": 7500,
+"troopMaxLevel": 55
+},
+{
+"level": 56,
+"maxVigor": 115,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 22325,
+"heroMaxLevel": 56,
+"troopExp": 8000,
+"troopMaxLevel": 56
+},
+{
+"level": 57,
+"maxVigor": 116,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 23335,
+"heroMaxLevel": 57,
+"troopExp": 8500,
+"troopMaxLevel": 57
+},
+{
+"level": 58,
+"maxVigor": 117,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 24370,
+"heroMaxLevel": 58,
+"troopExp": 9000,
+"troopMaxLevel": 58
+},
+{
+"level": 59,
+"maxVigor": 118,
+"presentVigor": 40,
+"exp": 2000,
+"heroExp": 25425,
+"heroMaxLevel": 59,
+"troopExp": 9500,
+"troopMaxLevel": 59
+},
+{
+"level": 60,
+"maxVigor": 119,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 26500,
+"heroMaxLevel": 60,
+"troopExp": 10000,
+"troopMaxLevel": 60
+},
+{
+"level": 61,
+"maxVigor": 120,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 27600,
+"heroMaxLevel": 61,
+"troopExp": 11000,
+"troopMaxLevel": 61
+},
+{
+"level": 62,
+"maxVigor": 121,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 28725,
+"heroMaxLevel": 62,
+"troopExp": 12000,
+"troopMaxLevel": 62
+},
+{
+"level": 63,
+"maxVigor": 122,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 29870,
+"heroMaxLevel": 63,
+"troopExp": 13000,
+"troopMaxLevel": 63
+},
+{
+"level": 64,
+"maxVigor": 123,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 31035,
+"heroMaxLevel": 64,
+"troopExp": 14000,
+"troopMaxLevel": 64
+},
+{
+"level": 65,
+"maxVigor": 124,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 32225,
+"heroMaxLevel": 65,
+"troopExp": 15000,
+"troopMaxLevel": 65
+},
+{
+"level": 66,
+"maxVigor": 125,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 33720,
+"heroMaxLevel": 66,
+"troopExp": 16000,
+"troopMaxLevel": 66
+},
+{
+"level": 67,
+"maxVigor": 126,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 35245,
+"heroMaxLevel": 67,
+"troopExp": 17000,
+"troopMaxLevel": 67
+},
+{
+"level": 68,
+"maxVigor": 127,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 36810,
+"heroMaxLevel": 68,
+"troopExp": 18000,
+"troopMaxLevel": 68
+},
+{
+"level": 69,
+"maxVigor": 128,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 38400,
+"heroMaxLevel": 69,
+"troopExp": 19000,
+"troopMaxLevel": 69
+},
+{
+"level": 70,
+"maxVigor": 129,
+"presentVigor": 50,
+"exp": 2000,
+"heroExp": 40030,
+"heroMaxLevel": 70,
+"troopExp": 20000,
+"troopMaxLevel": 70
+},
+{
+"level": 71,
+"maxVigor": 130,
+"presentVigor": 50,
+"exp": 2100,
+"heroExp": 41690,
+"heroMaxLevel": 71,
+"troopExp": 22000,
+"troopMaxLevel": 71
+},
+{
+"level": 72,
+"maxVigor": 131,
+"presentVigor": 50,
+"exp": 2200,
+"heroExp": 43385,
+"heroMaxLevel": 72,
+"troopExp": 24000,
+"troopMaxLevel": 72
+},
+{
+"level": 73,
+"maxVigor": 132,
+"presentVigor": 50,
+"exp": 2300,
+"heroExp": 45115,
+"heroMaxLevel": 73,
+"troopExp": 26000,
+"troopMaxLevel": 73
+},
+{
+"level": 74,
+"maxVigor": 133,
+"presentVigor": 50,
+"exp": 2400,
+"heroExp": 46875,
+"heroMaxLevel": 74,
+"troopExp": 28000,
+"troopMaxLevel": 74
+},
+{
+"level": 75,
+"maxVigor": 134,
+"presentVigor": 50,
+"exp": 2500,
+"heroExp": 48670,
+"heroMaxLevel": 75,
+"troopExp": 30000,
+"troopMaxLevel": 75
+},
+{
+"level": 76,
+"maxVigor": 135,
+"presentVigor": 50,
+"exp": 2600,
+"heroExp": 50495,
+"heroMaxLevel": 76,
+"troopExp": 32000,
+"troopMaxLevel": 76
+},
+{
+"level": 77,
+"maxVigor": 136,
+"presentVigor": 50,
+"exp": 2700,
+"heroExp": 52360,
+"heroMaxLevel": 77,
+"troopExp": 34000,
+"troopMaxLevel": 77
+},
+{
+"level": 78,
+"maxVigor": 137,
+"presentVigor": 50,
+"exp": 2800,
+"heroExp": 54250,
+"heroMaxLevel": 78,
+"troopExp": 36000,
+"troopMaxLevel": 78
+},
+{
+"level": 79,
+"maxVigor": 138,
+"presentVigor": 50,
+"exp": 2900,
+"heroExp": 56535,
+"heroMaxLevel": 79,
+"troopExp": 38000,
+"troopMaxLevel": 79
+},
+{
+"level": 80,
+"maxVigor": 139,
+"presentVigor": 60,
+"exp": 3000,
+"heroExp": 58865,
+"heroMaxLevel": 80,
+"troopExp": 41000,
+"troopMaxLevel": 80
+},
+{
+"level": 81,
+"maxVigor": 140,
+"presentVigor": 60,
+"exp": 3100,
+"heroExp": 48990,
+"heroMaxLevel": 81,
+"troopExp": 44000,
+"troopMaxLevel": 81
+},
+{
+"level": 82,
+"maxVigor": 141,
+"presentVigor": 60,
+"exp": 3200,
+"heroExp": 51220,
+"heroMaxLevel": 82,
+"troopExp": 47000,
+"troopMaxLevel": 82
+},
+{
+"level": 83,
+"maxVigor": 142,
+"presentVigor": 60,
+"exp": 3300,
+"heroExp": 53495,
+"heroMaxLevel": 83,
+"troopExp": 50000,
+"troopMaxLevel": 83
+},
+{
+"level": 84,
+"maxVigor": 143,
+"presentVigor": 60,
+"exp": 3400,
+"heroExp": 55815,
+"heroMaxLevel": 84,
+"troopExp": 53000,
+"troopMaxLevel": 84
+},
+{
+"level": 85,
+"maxVigor": 144,
+"presentVigor": 60,
+"exp": 3500,
+"heroExp": 58180,
+"heroMaxLevel": 85,
+"troopExp": 56000,
+"troopMaxLevel": 85
+},
+{
+"level": 86,
+"maxVigor": 145,
+"presentVigor": 60,
+"exp": 3600,
+"heroExp": 60590,
+"heroMaxLevel": 86,
+"troopExp": 59000,
+"troopMaxLevel": 86
+},
+{
+"level": 87,
+"maxVigor": 146,
+"presentVigor": 60,
+"exp": 3700,
+"heroExp": 63360,
+"heroMaxLevel": 87,
+"troopExp": 62000,
+"troopMaxLevel": 87
+},
+{
+"level": 88,
+"maxVigor": 147,
+"presentVigor": 60,
+"exp": 3800,
+"heroExp": 66190,
+"heroMaxLevel": 88,
+"troopExp": 65000,
+"troopMaxLevel": 88
+},
+{
+"level": 89,
+"maxVigor": 148,
+"presentVigor": 60,
+"exp": 3900,
+"heroExp": 69070,
+"heroMaxLevel": 89,
+"troopExp": 68000,
+"troopMaxLevel": 89
+},
+{
+"level": 90,
+"maxVigor": 149,
+"presentVigor": 60,
+"exp": 4000,
+"heroExp": 72000,
+"heroMaxLevel": 90,
+"troopExp": 72000,
+"troopMaxLevel": 90
+},
+{
+"level": 91,
+"maxVigor": 150,
+"presentVigor": 60,
+"exp": 4100,
+"heroExp": 74990,
+"heroMaxLevel": 91,
+"troopExp": 76000,
+"troopMaxLevel": 91
+},
+{
+"level": 92,
+"maxVigor": 151,
+"presentVigor": 60,
+"exp": 4200,
+"heroExp": 78030,
+"heroMaxLevel": 92,
+"troopExp": 80000,
+"troopMaxLevel": 92
+},
+{
+"level": 93,
+"maxVigor": 152,
+"presentVigor": 60,
+"exp": 4300,
+"heroExp": 81120,
+"heroMaxLevel": 93,
+"troopExp": 84000,
+"troopMaxLevel": 93
+},
+{
+"level": 94,
+"maxVigor": 153,
+"presentVigor": 60,
+"exp": 4400,
+"heroExp": 84270,
+"heroMaxLevel": 94,
+"troopExp": 88000,
+"troopMaxLevel": 94
+},
+{
+"level": 95,
+"maxVigor": 154,
+"presentVigor": 60,
+"exp": 4500,
+"heroExp": 87470,
+"heroMaxLevel": 95,
+"troopExp": 92000,
+"troopMaxLevel": 95
+},
+{
+"level": 96,
+"maxVigor": 155,
+"presentVigor": 60,
+"exp": 4600,
+"heroExp": 90720,
+"heroMaxLevel": 96,
+"troopExp": 96000,
+"troopMaxLevel": 96
+},
+{
+"level": 97,
+"maxVigor": 156,
+"presentVigor": 60,
+"exp": 4700,
+"heroExp": 94030,
+"heroMaxLevel": 97,
+"troopExp": 100000,
+"troopMaxLevel": 97
+},
+{
+"level": 98,
+"maxVigor": 157,
+"presentVigor": 60,
+"exp": 4800,
+"heroExp": 97390,
+"heroMaxLevel": 98,
+"troopExp": 104000,
+"troopMaxLevel": 98
+},
+{
+"level": 99,
+"maxVigor": 158,
+"presentVigor": 60,
+"exp": 4900,
+"heroExp": 100800,
+"heroMaxLevel": 99,
+"troopExp": 108000,
+"troopMaxLevel": 99
+},
+{
+"level": 100,
+"maxVigor": 159,
+"presentVigor": 70,
+"exp": 5000,
+"heroExp": 104880,
+"heroMaxLevel": 100,
+"troopExp": 114000,
+"troopMaxLevel": 100
+},
+{
+"level": 101,
+"maxVigor": 160,
+"presentVigor": 70,
+"exp": 5100,
+"heroExp": 109040,
+"heroMaxLevel": 101,
+"troopExp": 120000,
+"troopMaxLevel": 101
+},
+{
+"level": 102,
+"maxVigor": 161,
+"presentVigor": 70,
+"exp": 5200,
+"heroExp": 113280,
+"heroMaxLevel": 102,
+"troopExp": 126000,
+"troopMaxLevel": 102
+},
+{
+"level": 103,
+"maxVigor": 162,
+"presentVigor": 70,
+"exp": 5300,
+"heroExp": 117600,
+"heroMaxLevel": 103,
+"troopExp": 132000,
+"troopMaxLevel": 103
+},
+{
+"level": 104,
+"maxVigor": 163,
+"presentVigor": 70,
+"exp": 5400,
+"heroExp": 122000,
+"heroMaxLevel": 104,
+"troopExp": 138000,
+"troopMaxLevel": 104
+},
+{
+"level": 105,
+"maxVigor": 164,
+"presentVigor": 70,
+"exp": 5500,
+"heroExp": 126480,
+"heroMaxLevel": 105,
+"troopExp": 144000,
+"troopMaxLevel": 105
+},
+{
+"level": 106,
+"maxVigor": 165,
+"presentVigor": 70,
+"exp": 5600,
+"heroExp": 131040,
+"heroMaxLevel": 106,
+"troopExp": 150000,
+"troopMaxLevel": 106
+},
+{
+"level": 107,
+"maxVigor": 166,
+"presentVigor": 70,
+"exp": 5700,
+"heroExp": 135680,
+"heroMaxLevel": 107,
+"troopExp": 156000,
+"troopMaxLevel": 107
+},
+{
+"level": 108,
+"maxVigor": 167,
+"presentVigor": 70,
+"exp": 5800,
+"heroExp": 140400,
+"heroMaxLevel": 108,
+"troopExp": 162000,
+"troopMaxLevel": 108
+},
+{
+"level": 109,
+"maxVigor": 168,
+"presentVigor": 70,
+"exp": 5900,
+"heroExp": 145200,
+"heroMaxLevel": 109,
+"troopExp": 168000,
+"troopMaxLevel": 109
+},
+{
+"level": 110,
+"maxVigor": 169,
+"presentVigor": 70,
+"exp": 6000,
+"heroExp": 150080,
+"heroMaxLevel": 110,
+"troopExp": 174000,
+"troopMaxLevel": 110
+},
+{
+"level": 111,
+"maxVigor": 170,
+"presentVigor": 70,
+"exp": 6100,
+"heroExp": 155040,
+"heroMaxLevel": 111,
+"troopExp": 182000,
+"troopMaxLevel": 111
+},
+{
+"level": 112,
+"maxVigor": 171,
+"presentVigor": 70,
+"exp": 6200,
+"heroExp": 160080,
+"heroMaxLevel": 112,
+"troopExp": 190000,
+"troopMaxLevel": 112
+},
+{
+"level": 113,
+"maxVigor": 172,
+"presentVigor": 70,
+"exp": 6300,
+"heroExp": 165200,
+"heroMaxLevel": 113,
+"troopExp": 198000,
+"troopMaxLevel": 113
+},
+{
+"level": 114,
+"maxVigor": 173,
+"presentVigor": 70,
+"exp": 6400,
+"heroExp": 170400,
+"heroMaxLevel": 114,
+"troopExp": 206000,
+"troopMaxLevel": 114
+},
+{
+"level": 115,
+"maxVigor": 174,
+"presentVigor": 70,
+"exp": 6500,
+"heroExp": 175680,
+"heroMaxLevel": 115,
+"troopExp": 214000,
+"troopMaxLevel": 115
+},
+{
+"level": 116,
+"maxVigor": 175,
+"presentVigor": 70,
+"exp": 6600,
+"heroExp": 181040,
+"heroMaxLevel": 116,
+"troopExp": 222000,
+"troopMaxLevel": 116
+},
+{
+"level": 117,
+"maxVigor": 176,
+"presentVigor": 70,
+"exp": 6700,
+"heroExp": 186480,
+"heroMaxLevel": 117,
+"troopExp": 230000,
+"troopMaxLevel": 117
+},
+{
+"level": 118,
+"maxVigor": 177,
+"presentVigor": 70,
+"exp": 6800,
+"heroExp": 192000,
+"heroMaxLevel": 118,
+"troopExp": 238000,
+"troopMaxLevel": 118
+},
+{
+"level": 119,
+"maxVigor": 178,
+"presentVigor": 70,
+"exp": 6900,
+"heroExp": 197600,
+"heroMaxLevel": 119,
+"troopExp": 246000,
+"troopMaxLevel": 119
+},
+{
+"level": 120,
+"maxVigor": 179,
+"presentVigor": 80,
+"exp": 7000,
+"heroExp": 203280,
+"heroMaxLevel": 120,
+"troopExp": 254000,
+"troopMaxLevel": 120
+},
+{
+"level": 121,
+"maxVigor": 180,
+"presentVigor": 80,
+"exp": 7100,
+"heroExp": 209040,
+"heroMaxLevel": 121,
+"troopExp": 264000,
+"troopMaxLevel": 121
+},
+{
+"level": 122,
+"maxVigor": 181,
+"presentVigor": 80,
+"exp": 7200,
+"heroExp": 214880,
+"heroMaxLevel": 122,
+"troopExp": 274000,
+"troopMaxLevel": 122
+},
+{
+"level": 123,
+"maxVigor": 182,
+"presentVigor": 80,
+"exp": 7300,
+"heroExp": 220800,
+"heroMaxLevel": 123,
+"troopExp": 284000,
+"troopMaxLevel": 123
+},
+{
+"level": 124,
+"maxVigor": 183,
+"presentVigor": 80,
+"exp": 7400,
+"heroExp": 226800,
+"heroMaxLevel": 124,
+"troopExp": 294000,
+"troopMaxLevel": 124
+},
+{
+"level": 125,
+"maxVigor": 184,
+"presentVigor": 80,
+"exp": 7500,
+"heroExp": 232880,
+"heroMaxLevel": 125,
+"troopExp": 304000,
+"troopMaxLevel": 125
+},
+{
+"level": 126,
+"maxVigor": 185,
+"presentVigor": 80,
+"exp": 7600,
+"heroExp": 239040,
+"heroMaxLevel": 126,
+"troopExp": 314000,
+"troopMaxLevel": 126
+},
+{
+"level": 127,
+"maxVigor": 186,
+"presentVigor": 80,
+"exp": 7700,
+"heroExp": 245280,
+"heroMaxLevel": 127,
+"troopExp": 324000,
+"troopMaxLevel": 127
+},
+{
+"level": 128,
+"maxVigor": 187,
+"presentVigor": 80,
+"exp": 7800,
+"heroExp": 251600,
+"heroMaxLevel": 128,
+"troopExp": 334000,
+"troopMaxLevel": 128
+},
+{
+"level": 129,
+"maxVigor": 188,
+"presentVigor": 80,
+"exp": 7900,
+"heroExp": 258000,
+"heroMaxLevel": 129,
+"troopExp": 344000,
+"troopMaxLevel": 129
+},
+{
+"level": 130,
+"maxVigor": 189,
+"presentVigor": 80,
+"exp": 8000,
+"heroExp": 264480,
+"heroMaxLevel": 130,
+"troopExp": 354000,
+"troopMaxLevel": 130
+}
+]

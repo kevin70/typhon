@@ -40,7 +40,7 @@ public class MultipleValue extends Packet {
     }
 
     public void addAllVal(Collection<Object> vals) {
-        vals.addAll(vals);
+        this.vals.addAll(vals);
     }
 
     /**
@@ -51,6 +51,7 @@ public class MultipleValue extends Packet {
     public static MultipleValue createResult(Packet packet) {
         MultipleValue result = new MultipleValue();
         result.setId(packet.getId());
+        result.setNs(packet.getNs());
         return result;
     }
 }

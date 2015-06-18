@@ -24,12 +24,15 @@ import java.util.Map;
 import java.util.Properties;
 import org.skfiy.util.ResourceUtils;
 import org.skfiy.util.SystemPropertyUtils;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public abstract class TestRoot {
+@ContextConfiguration(locations = {"classpath*:beans-*.xml"})
+public abstract class TestRoot extends AbstractTestNGSpringContextTests {
 
     static {
         System.setProperty(Globals.PROP_DEV_MODE, "true");

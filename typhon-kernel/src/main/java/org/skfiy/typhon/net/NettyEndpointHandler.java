@@ -18,10 +18,12 @@ package org.skfiy.typhon.net;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelStateEvent;
+import org.jboss.netty.channel.ExceptionEvent;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.handler.timeout.IdleState;
 import org.jboss.netty.handler.timeout.IdleStateAwareChannelHandler;
 import org.jboss.netty.handler.timeout.IdleStateEvent;
+import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.session.AbstractSession;
 
 /**
@@ -51,6 +53,11 @@ public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
     @Override
     public void channelDisconnected(ChannelHandlerContext ctx, ChannelStateEvent e)
             throws Exception {
+        // 登出
+        NettySession session = (NettySession) ctx.getAttachment();
+        if (session.isAvailable()) {
+            protocolHandler.handle(session, Namespaces.LOGOUT.getBytes(), "{}".getBytes());
+        }
     }
 
     @Override
@@ -60,22 +67,29 @@ public class NettyEndpointHandler extends IdleStateAwareChannelHandler {
             // 超时会话
             NettySession session = (NettySession) ctx.getAttachment();
 //            protocolHandler.handle(session, nsBytes, dataBytes);
-            System.out.println("Read idle");
         }
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) throws Exception {
     }
     
     @Override
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e)
             throws Exception {
+        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
         NettySession session = (NettySession) ctx.getAttachment();
 
         // 更新最后访问时间
-        session.updateLastAccessTime();
+        session.updateLastAccessedTime();
 
-        ChannelBuffer buf = (ChannelBuffer) e.getMessage();
-        
         // read namespace
-        byte[] nsBytes = new byte[buf.indexOf(0, 32, AbstractSession.NS_SEPARTOR)];
+        int len = buf.indexOf(0, 32, AbstractSession.NS_SEPARTOR);
+        if (len <= 0) {
+            return;
+        }
+        
+        byte[] nsBytes = new byte[len];
         buf.readBytes(nsBytes, 0, nsBytes.length);
         buf.skipBytes(1);
         byte[] dataBytes = new byte[buf.readableBytes()];

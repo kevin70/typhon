@@ -1,0 +1,1 @@
+ALTER TABLE `t_role_data` ADD COLUMN `invisibleData` longtext NULL AFTER `heroBagData`;

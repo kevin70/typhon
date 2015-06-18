@@ -29,6 +29,7 @@ public interface DispatcherFactory {
     
     /**
      * 
+     * @param ns
      * @return 
      */
     Class<?> getPacketClass(String ns);

@@ -15,6 +15,9 @@
  */
 package org.skfiy.typhon;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 /**
  * 抽象的{@code Component }实现. 该对象实现{@code Component }的基本状态定义.
  *
@@ -24,6 +27,7 @@ public abstract class AbstractComponent implements Component {
 
     private Status status;
 
+    @PostConstruct
     @Override
     public final void init() {
         checkStatus(null);
@@ -37,6 +41,7 @@ public abstract class AbstractComponent implements Component {
         doReload();
     }
 
+    @PreDestroy
     @Override
     public final void destroy() {
         checkStatus(Status.INITIALIZED);

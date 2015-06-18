@@ -1,0 +1,8000 @@
+[
+{
+"id": "z027",
+"parts": [
+{
+"id": "z027p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s826",
+"s766",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1042,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 31,
+"hcidx": 4,
+"hpidx": 0,
+"limitId": "L_001|L_009|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d040",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z027p1b1",
+"backgroundImage": "ui/largepicture/ping003.jpg",
+"members": [{
+"#monster.id": "L206",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z027p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s826",
+"s766",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1182,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 53,
+"hcidx": 14,
+"hpidx": 2,
+"limitId": "L_001|L_009|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d040",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z027p2b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L207",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A1"]
+}]
+}]
+},
+{
+"id": "z027p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s826",
+"s766",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1252,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 65,
+"hcidx": 18,
+"hpidx": 1,
+"limitId": "L_001|L_009|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d040",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z027p3b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L208",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L209",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z028",
+"parts": [
+{
+"id": "z028p1",
+"terrain": "SLing",
+"minLevel": 1,
+"atlasloots": [
+"s828",
+"s768",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1046,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 31,
+"hcidx": 4,
+"hpidx": 1,
+"limitId": "L_001|L_010|L_018",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d041",
+"#fru3.item.id": "d080",
+"steps": [{
+"sid": "z028p1b1",
+"backgroundImage": "ui/largepicture/sen001.jpg",
+"members": [
+{
+"#monster.id": "L210",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L211",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L212",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z028p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s828",
+"s768",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1200,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 56,
+"hcidx": 16,
+"hpidx": 0,
+"limitId": "L_001|L_010|L_018",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d041",
+"#fru3.item.id": "d080",
+"steps": [{
+"sid": "z028p2b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L213",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A3"]
+}]
+}]
+},
+{
+"id": "z028p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s828",
+"s768",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1878,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 76,
+"hcidx": 22,
+"hpidx": 0,
+"limitId": "L_001|L_010|L_018",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d041",
+"#fru3.item.id": "d080",
+"steps": [{
+"sid": "z028p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L214",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L215",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z015",
+"parts": [
+{
+"id": "z015p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s847",
+"s787",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1052,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 32,
+"hcidx": 4,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z015p1b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [{
+"#monster.id": "L114",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+},
+{
+"id": "z015p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s847",
+"s787",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1092,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 38,
+"hcidx": 7,
+"hpidx": 0,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z015p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L115",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L116",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L117",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L118",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L119",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A1"]
+}
+]
+}]
+},
+{
+"id": "z015p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s847",
+"s787",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1230,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 61,
+"hcidx": 17,
+"hpidx": 0,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z015p3b1",
+"backgroundImage": "ui/largepicture/guan001.jpg",
+"members": [{
+"#monster.id": "L120",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+}
+]
+},
+{
+"id": "z016",
+"parts": [
+{
+"id": "z016p1",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s848",
+"s788",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1056,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 32,
+"hcidx": 5,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z016p1b1",
+"backgroundImage": "ui/largepicture/shan003.jpg",
+"members": [{
+"#monster.id": "L121",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A1"]
+}]
+}]
+},
+{
+"id": "z016p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s848",
+"s788",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2066,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 78,
+"hcidx": 22,
+"hpidx": 2,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z016p2b1",
+"backgroundImage": "ui/largepicture/ping003.jpg",
+"members": [{
+"#monster.id": "L122",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z016p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s848",
+"s788",
+"s878",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 14540,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 162,
+"hcidx": 38,
+"hpidx": 6,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z016p3b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [{
+"#monster.id": "L123",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B4"]
+}]
+}]
+}
+]
+},
+{
+"id": "z018",
+"parts": [
+{
+"id": "z018p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s850",
+"s790",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1062,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 33,
+"hcidx": 5,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z018p1b1",
+"backgroundImage": "ui/largepicture/shui001.jpg",
+"members": [{
+"#monster.id": "L130",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z018p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s850",
+"s790",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1206,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 57,
+"hcidx": 16,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z018p2b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L131",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L132",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z018p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s850",
+"s790",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3266,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 102,
+"hcidx": 27,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z018p3b1",
+"backgroundImage": "ui/largepicture/ping003.jpg",
+"members": [{
+"#monster.id": "L133",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+}
+]
+},
+{
+"id": "z020",
+"parts": [
+{
+"id": "z020p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s854",
+"s794",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1068,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 34,
+"hcidx": 5,
+"hpidx": 2,
+"limitId": "L_001|L_004|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z020p1b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L141",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L142",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z020p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s854",
+"s794",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1136,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 46,
+"hcidx": 11,
+"hpidx": 0,
+"limitId": "L_001|L_004|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z020p2b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L143",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L144",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L145",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z020p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s854",
+"s794",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1224,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 60,
+"hcidx": 16,
+"hpidx": 5,
+"limitId": "L_001|L_004|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z020p3b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L146",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L147",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L148",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L149",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L150",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["B4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z022",
+"parts": [
+{
+"id": "z022p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s825",
+"s765",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1074,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 35,
+"hcidx": 6,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z022p1b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L156",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L157",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z022p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s825",
+"s765",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1272,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 68,
+"hcidx": 19,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z022p2b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L158",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L159",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L160",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L161",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L162",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z022p3",
+"terrain": "SLing",
+"minLevel": 1,
+"atlasloots": [
+"s825",
+"s765",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4274,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 114,
+"hcidx": 29,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z022p3b1",
+"backgroundImage": "ui/largepicture/sen003.jpg",
+"members": [{
+"#monster.id": "L163",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+}
+]
+},
+{
+"id": "z030",
+"parts": [
+{
+"id": "z030p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s904",
+"s915",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1080,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 36,
+"hcidx": 6,
+"hpidx": 1,
+"limitId": "L_001|L_012|L_020",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d043",
+"#fru3.item.id": "d082",
+"steps": [{
+"sid": "z030p1b1",
+"backgroundImage": "ui/largepicture/shui002.jpg",
+"members": [{
+"#monster.id": "L222",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B4"]
+}]
+}]
+},
+{
+"id": "z030p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s904",
+"s915",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1234,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 62,
+"hcidx": 17,
+"hpidx": 2,
+"limitId": "L_001|L_012|L_020",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d043",
+"#fru3.item.id": "d082",
+"steps": [{
+"sid": "z030p2b1",
+"backgroundImage": "ui/largepicture/ban003.jpg",
+"members": [
+{
+"#monster.id": "L223",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L224",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L225",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z030p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s904",
+"s915",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2196,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 80,
+"hcidx": 23,
+"hpidx": 1,
+"limitId": "L_001|L_012|L_020",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d043",
+"#fru3.item.id": "d082",
+"steps": [{
+"sid": "z030p3b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L226",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B4"]
+},
+{
+"#monster.id": "L227",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z017",
+"parts": [
+{
+"id": "z017p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s849",
+"s789",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1086,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 37,
+"hcidx": 6,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z017p1b1",
+"backgroundImage": "ui/largepicture/ping001.jpg",
+"members": [
+{
+"#monster.id": "L124",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L125",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z017p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s849",
+"s789",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1204,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 57,
+"hcidx": 16,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z017p2b1",
+"backgroundImage": "ui/largepicture/shan001.jpg",
+"members": [
+{
+"#monster.id": "L126",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L127",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L128",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z017p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s849",
+"s789",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3176,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 100,
+"hcidx": 27,
+"hpidx": 0,
+"limitId": "L_001|L_005|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z017p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [{
+"#monster.id": "L129",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+}
+]
+},
+{
+"id": "z029",
+"parts": [
+{
+"id": "z029p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s860",
+"s800",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1098,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 39,
+"hcidx": 7,
+"hpidx": 1,
+"limitId": "L_001|L_011|L_019",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d042",
+"#fru3.item.id": "d081",
+"steps": [{
+"sid": "z029p1b1",
+"backgroundImage": "ui/largepicture/xue003.jpg",
+"members": [
+{
+"#monster.id": "L216",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L217",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A1"]
+}
+]
+}]
+},
+{
+"id": "z029p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s860",
+"s800",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1212,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 58,
+"hcidx": 16,
+"hpidx": 3,
+"limitId": "L_001|L_011|L_019",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d042",
+"#fru3.item.id": "d081",
+"steps": [{
+"sid": "z029p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [{
+"#monster.id": "L218",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+},
+{
+"id": "z029p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s860",
+"s800",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2150,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 80,
+"hcidx": 23,
+"hpidx": 0,
+"limitId": "L_001|L_011|L_019",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d042",
+"#fru3.item.id": "d081",
+"steps": [{
+"sid": "z029p3b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [
+{
+"#monster.id": "L219",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L220",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L221",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z006",
+"parts": [
+{
+"id": "z006p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s816",
+"s756",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1104,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 40,
+"hcidx": 7,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z006p1b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [{
+"#monster.id": "L048",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z006p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s816",
+"s756",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1254,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 65,
+"hcidx": 18,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z006p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [{
+"#monster.id": "L049",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A3"]
+}]
+}]
+},
+{
+"id": "z006p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s816",
+"s756",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2596,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 88,
+"hcidx": 24,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z006p3b1",
+"backgroundImage": "ui/largepicture/ban002.jpg",
+"members": [{
+"#monster.id": "L050",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+}
+]
+},
+{
+"id": "z012",
+"parts": [
+{
+"id": "z012p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s823",
+"s763",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1106,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 41,
+"hcidx": 8,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z012p1b1",
+"backgroundImage": "ui/largepicture/guan001.jpg",
+"members": [
+{
+"#monster.id": "L097",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L098",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z012p2",
+"terrain": "SLing",
+"minLevel": 1,
+"atlasloots": [
+"s823",
+"s763",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1170,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 51,
+"hcidx": 13,
+"hpidx": 1,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z012p2b1",
+"backgroundImage": "ui/largepicture/sen003.jpg",
+"members": [{
+"#monster.id": "L099",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+},
+{
+"id": "z012p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s823",
+"s763",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3956,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 110,
+"hcidx": 28,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z012p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L100",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L101",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L102",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z007",
+"parts": [
+{
+"id": "z007p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s813",
+"s753",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1110,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 41,
+"hcidx": 8,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z007p1b1",
+"backgroundImage": "ui/largepicture/ping001.jpg",
+"members": [
+{
+"#monster.id": "L051",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L052",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L053",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L054",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L055",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z007p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s813",
+"s753",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 6614,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 128,
+"hcidx": 31,
+"hpidx": 7,
+"limitId": "L_001|L_005|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z007p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L056",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L057",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L058",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z007p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s813",
+"s753",
+"s878",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 12798,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 156,
+"hcidx": 37,
+"hpidx": 5,
+"limitId": "L_001|L_005|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z007p3b1",
+"backgroundImage": "ui/largepicture/qiao001.jpg",
+"members": [
+{
+"#monster.id": "L059",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L060",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L061",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z009",
+"parts": [
+{
+"id": "z009p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s838",
+"s778",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1114,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 42,
+"hcidx": 8,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z009p1b1",
+"backgroundImage": "ui/largepicture/ban002.jpg",
+"members": [
+{
+"#monster.id": "L070",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L071",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L072",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z009p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s838",
+"s778",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2534,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 88,
+"hcidx": 24,
+"hpidx": 1,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z009p2b1",
+"backgroundImage": "ui/largepicture/ban003.jpg",
+"members": [
+{
+"#monster.id": "L073",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L074",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L075",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L076",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L077",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z009p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s838",
+"s778",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 8000,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 138,
+"hcidx": 33,
+"hpidx": 3,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z009p3b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L078",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L079",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L080",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z009p4",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s838",
+"s778",
+"s878",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 18206,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 180,
+"hcidx": 39,
+"hpidx": 4,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z009p4b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L081",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L082",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L083",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z023",
+"parts": [
+{
+"id": "z023p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s804",
+"s744",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1116,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 42,
+"hcidx": 9,
+"hpidx": 0,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z023p1b1",
+"backgroundImage": "ui/largepicture/qiao002.jpg",
+"members": [
+{
+"#monster.id": "L164",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L165",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A3"]
+}
+]
+}]
+},
+{
+"id": "z023p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s804",
+"s744",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2806,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 94,
+"hcidx": 25,
+"hpidx": 3,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z023p2b1",
+"backgroundImage": "ui/largepicture/shan003.jpg",
+"members": [
+{
+"#monster.id": "L166",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L167",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L168",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z023p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s804",
+"s744",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4530,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 116,
+"hcidx": 30,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z023p3b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L169",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L170",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L171",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L172",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L173",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z023p4",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s804",
+"s744",
+"s878",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 15630,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 166,
+"hcidx": 38,
+"hpidx": 10,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z023p4b1",
+"backgroundImage": "ui/largepicture/guan003.jpg",
+"members": [
+{
+"#monster.id": "L174",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L175",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z011",
+"parts": [
+{
+"id": "z011p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s840",
+"s780",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1120,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 43,
+"hcidx": 9,
+"hpidx": 1,
+"limitId": "L_001|L_004|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z011p1b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L093",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+},
+{
+"id": "z011p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s840",
+"s780",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1890,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 76,
+"hcidx": 22,
+"hpidx": 1,
+"limitId": "L_001|L_004|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z011p2b1",
+"backgroundImage": "ui/largepicture/cheng001.jpg",
+"members": [{
+"#monster.id": "L094",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A4"]
+}]
+}]
+},
+{
+"id": "z011p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s840",
+"s780",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4196,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 112,
+"hcidx": 29,
+"hpidx": 1,
+"limitId": "L_001|L_004|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d035",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z011p3b1",
+"backgroundImage": "ui/largepicture/cheng001.jpg",
+"members": [
+{
+"#monster.id": "L095",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L096",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z019",
+"parts": [
+{
+"id": "z019p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s853",
+"s793",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1122,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 43,
+"hcidx": 9,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z019p1b1",
+"backgroundImage": "ui/largepicture/ni001.jpg",
+"members": [{
+"#monster.id": "L134",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A1"]
+}]
+}]
+},
+{
+"id": "z019p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s853",
+"s793",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1174,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 52,
+"hcidx": 13,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z019p2b1",
+"backgroundImage": "ui/largepicture/ni002.jpg",
+"members": [
+{
+"#monster.id": "L135",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L136",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L137",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z019p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s853",
+"s793",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3604,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 106,
+"hcidx": 28,
+"hpidx": 0,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z019p3b1",
+"backgroundImage": "ui/largepicture/ban002.jpg",
+"members": [
+{
+"#monster.id": "L138",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L139",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L140",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z026",
+"parts": [
+{
+"id": "z026p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s851",
+"s791",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1126,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 44,
+"hcidx": 10,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z026p1b1",
+"backgroundImage": "ui/largepicture/guan003.jpg",
+"members": [
+{
+"#monster.id": "L195",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L196",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B3"]
+},
+{
+"#monster.id": "L197",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z026p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s851",
+"s791",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1188,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 54,
+"hcidx": 15,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z026p2b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [
+{
+"#monster.id": "L198",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L199",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L200",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L201",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L202",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z026p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s851",
+"s791",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2310,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 90,
+"hcidx": 24,
+"hpidx": 3,
+"limitId": "L_001|L_007|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z026p3b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L203",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L204",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z026p4",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s851",
+"s791",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2640,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 120,
+"hcidx": 30,
+"hpidx": 6,
+"limitId": "L_001|L_007|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z026p4b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L205",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+}
+]
+},
+{
+"id": "z031",
+"parts": [
+{
+"id": "z031p1",
+"terrain": "SLing",
+"minLevel": 1,
+"atlasloots": [
+"s822",
+"s762",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1128,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 44,
+"hcidx": 10,
+"hpidx": 1,
+"limitId": "L_001|L_013|L_021",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d044",
+"#fru3.item.id": "d083",
+"steps": [{
+"sid": "z031p1b1",
+"backgroundImage": "ui/largepicture/sen001.jpg",
+"members": [
+{
+"#monster.id": "L228",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L229",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L230",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z031p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s822",
+"s762",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1236,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 62,
+"hcidx": 17,
+"hpidx": 3,
+"limitId": "L_001|L_013|L_021",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d044",
+"#fru3.item.id": "d083",
+"steps": [{
+"sid": "z031p2b1",
+"backgroundImage": "ui/largepicture/shui002.jpg",
+"members": [
+{
+"#monster.id": "L231",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["B4"]
+},
+{
+"#monster.id": "L232",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L233",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z031p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s822",
+"s762",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2996,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 98,
+"hcidx": 26,
+"hpidx": 1,
+"limitId": "L_001|L_013|L_021",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d044",
+"#fru3.item.id": "d083",
+"steps": [{
+"sid": "z031p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L234",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L235",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A3"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z001",
+"parts": [
+{
+"id": "z001p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s801",
+"s741",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1134,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 45,
+"hcidx": 10,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z001p1b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [
+{
+"#monster.id": "L001",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L002",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L003",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z001p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s801",
+"s741",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1176,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 52,
+"hcidx": 14,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z001p2b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L004",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L005",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L006",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A3"]
+}
+]
+}]
+},
+{
+"id": "z001p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s801",
+"s741",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1606,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 72,
+"hcidx": 21,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z001p3b1",
+"backgroundImage": "ui/largepicture/ban001.jpg",
+"members": [
+{
+"#monster.id": "L007",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L008",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z021",
+"parts": [
+{
+"id": "z021p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s837",
+"s777",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1140,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 46,
+"hcidx": 11,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z021p1b1",
+"backgroundImage": "ui/largepicture/ping001.jpg",
+"members": [{
+"#monster.id": "L151",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z021p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s837",
+"s777",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3290,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 102,
+"hcidx": 27,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z021p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [{
+"#monster.id": "L152",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A4"]
+}]
+}]
+},
+{
+"id": "z021p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s837",
+"s777",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 7520,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 134,
+"hcidx": 32,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z021p3b1",
+"backgroundImage": "ui/largepicture/guan003.jpg",
+"members": [
+{
+"#monster.id": "L153",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L154",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z021p4",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s837",
+"s777",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 9578,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 144,
+"hcidx": 35,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z021p4b1",
+"backgroundImage": "ui/largepicture/shan003.jpg",
+"members": [{
+"#monster.id": "L155",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+}
+]
+},
+{
+"id": "z032",
+"parts": [
+{
+"id": "z032p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s852",
+"s792",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1146,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 47,
+"hcidx": 11,
+"hpidx": 2,
+"limitId": "L_001|L_009|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d040",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z032p1b1",
+"backgroundImage": "ui/largepicture/xue002.jpg",
+"members": [
+{
+"#monster.id": "L236",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L237",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L238",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z032p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s852",
+"s792",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2212,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 82,
+"hcidx": 23,
+"hpidx": 2,
+"limitId": "L_001|L_010|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d041",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z032p2b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [
+{
+"#monster.id": "L239",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L240",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B4"]
+},
+{
+"#monster.id": "L241",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z032p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s852",
+"s792",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4646,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 118,
+"hcidx": 30,
+"hpidx": 4,
+"limitId": "L_001|L_011|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d042",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z032p3b1",
+"backgroundImage": "ui/largepicture/cheng001.jpg",
+"members": [
+{
+"#monster.id": "L242",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L243",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B3"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z004",
+"parts": [
+{
+"id": "z004p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s835",
+"s775",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1152,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 48,
+"hcidx": 12,
+"hpidx": 0,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z004p1b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L027",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L028",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A3"]
+}
+]
+}]
+},
+{
+"id": "z004p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s835",
+"s775",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1242,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 63,
+"hcidx": 17,
+"hpidx": 4,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z004p2b1",
+"backgroundImage": "ui/largepicture/ping003.jpg",
+"members": [
+{
+"#monster.id": "L029",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L030",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L031",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": [
+"N5",
+"R1",
+"A3"
+]
+}
+]
+}]
+},
+{
+"id": "z004p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s835",
+"s775",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1396,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 69,
+"hcidx": 20,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z004p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L032",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L033",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L034",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L035",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L036",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["B1"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z005",
+"parts": [
+{
+"id": "z005p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s841",
+"s781",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1156,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 49,
+"hcidx": 12,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z005p1b1",
+"backgroundImage": "ui/largepicture/ban003.jpg",
+"members": [
+{
+"#monster.id": "L037",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L038",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L039",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z005p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s841",
+"s781",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1218,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 59,
+"hcidx": 16,
+"hpidx": 4,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z005p2b1",
+"backgroundImage": "ui/largepicture/shan001.jpg",
+"members": [
+{
+"#monster.id": "L040",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L041",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L042",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A1"]
+}
+]
+}]
+},
+{
+"id": "z005p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s841",
+"s781",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2700,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 92,
+"hcidx": 25,
+"hpidx": 1,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z005p3b1",
+"backgroundImage": "ui/largepicture/ni003.jpg",
+"members": [
+{
+"#monster.id": "L043",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L044",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z005p4",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s841",
+"s781",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4606,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 118,
+"hcidx": 30,
+"hpidx": 3,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z005p4b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [
+{
+"#monster.id": "L045",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L046",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L047",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z002",
+"parts": [
+{
+"id": "z002p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s802",
+"s742",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1158,
+"coinCnt": 28,
+"exp": 12,
+"heroExp": 49,
+"hcidx": 12,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z002p1b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [
+{
+"#monster.id": "L009",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L010",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L011",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z002p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s802",
+"s742",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1194,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 55,
+"hcidx": 15,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z002p2b1",
+"backgroundImage": "ui/largepicture/shui003.jpg",
+"members": [
+{
+"#monster.id": "L012",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L013",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L014",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L015",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L016",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z002p3",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s802",
+"s742",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1756,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 74,
+"hcidx": 21,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z002p3b1",
+"backgroundImage": "ui/largepicture/qiao002.jpg",
+"members": [{
+"#monster.id": "L017",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z002p4",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s802",
+"s742",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2796,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 94,
+"hcidx": 25,
+"hpidx": 2,
+"limitId": "L_001|L_005|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d036",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z002p4b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L018",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L019",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L020",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L021",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L022",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z010",
+"parts": [
+{
+"id": "z010p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s831",
+"s771",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1164,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 50,
+"hcidx": 12,
+"hpidx": 3,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z010p1b1",
+"backgroundImage": "ui/largepicture/shui001.jpg",
+"members": [
+{
+"#monster.id": "L084",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L085",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L086",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z010p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s831",
+"s771",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1192,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 55,
+"hcidx": 15,
+"hpidx": 1,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z010p2b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L087",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A4"]
+}]
+}]
+},
+{
+"id": "z010p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s831",
+"s771",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4096,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 112,
+"hcidx": 29,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_016",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d078",
+"steps": [{
+"sid": "z010p3b1",
+"backgroundImage": "ui/largepicture/cheng001.jpg",
+"members": [
+{
+"#monster.id": "L088",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L089",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L090",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L091",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B3"]
+},
+{
+"#monster.id": "L092",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["B3"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z013",
+"parts": [
+{
+"id": "z013p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s814",
+"s754",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1168,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 51,
+"hcidx": 13,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z013p1b1",
+"backgroundImage": "ui/largepicture/cheng001.jpg",
+"members": [{
+"#monster.id": "L103",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B4"]
+}]
+}]
+},
+{
+"id": "z013p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s814",
+"s754",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1232,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 62,
+"hcidx": 17,
+"hpidx": 1,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z013p2b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [
+{
+"#monster.id": "L104",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L105",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B1"]
+}
+]
+}]
+},
+{
+"id": "z013p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s814",
+"s754",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1260,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 66,
+"hcidx": 19,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z013p3b1",
+"backgroundImage": "ui/largepicture/cheng003.jpg",
+"members": [
+{
+"#monster.id": "L106",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A3"]
+},
+{
+"#monster.id": "L107",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L108",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A2"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z024",
+"parts": [
+{
+"id": "z024p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s898",
+"s909",
+"s877",
+"s881"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1180,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 53,
+"hcidx": 14,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z024p1b1",
+"backgroundImage": "ui/largepicture/guan001.jpg",
+"members": [
+{
+"#monster.id": "L176",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L177",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+},
+{
+"id": "z024p2",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s898",
+"s909",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1394,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 69,
+"hcidx": 20,
+"hpidx": 0,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z024p2b1",
+"backgroundImage": "ui/largepicture/ping002.jpg",
+"members": [
+{
+"#monster.id": "L178",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L179",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L180",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z024p3",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s898",
+"s909",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1712,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 74,
+"hcidx": 21,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z024p3b1",
+"backgroundImage": "ui/largepicture/shui002.jpg",
+"members": [
+{
+"#monster.id": "L181",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L182",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L183",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z024p4",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s898",
+"s909",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2354,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 84,
+"hcidx": 23,
+"hpidx": 4,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z024p4b1",
+"backgroundImage": "ui/largepicture/ban003.jpg",
+"members": [
+{
+"#monster.id": "L184",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L185",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L186",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L187",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L188",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z014",
+"parts": [
+{
+"id": "z014p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s906",
+"s917",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1248,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 64,
+"hcidx": 18,
+"hpidx": 0,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z014p1b1",
+"backgroundImage": "ui/largepicture/ping003.jpg",
+"members": [{
+"#monster.id": "L109",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B4"]
+}]
+}]
+},
+{
+"id": "z014p2",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s906",
+"s917",
+"s877",
+"s882"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1266,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 67,
+"hcidx": 19,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z014p2b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [
+{
+"#monster.id": "L110",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L111",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B4"]
+}
+]
+}]
+},
+{
+"id": "z014p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s906",
+"s917",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2894,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 96,
+"hcidx": 26,
+"hpidx": 0,
+"limitId": "L_001|L_006|L_017",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d079",
+"steps": [{
+"sid": "z014p3b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [
+{
+"#monster.id": "L112",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L113",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["B4"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z003",
+"parts": [
+{
+"id": "z003p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s818",
+"s758",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 1506,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 70,
+"hcidx": 20,
+"hpidx": 2,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z003p1b1",
+"backgroundImage": "ui/largepicture/qiao002.jpg",
+"members": [{
+"#monster.id": "L023",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A4"]
+}]
+}]
+},
+{
+"id": "z003p2",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s818",
+"s758",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2686,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 92,
+"hcidx": 25,
+"hpidx": 0,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z003p2b1",
+"backgroundImage": "ui/largepicture/shui002.jpg",
+"members": [{
+"#monster.id": "L024",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z003p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s818",
+"s758",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4444,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 116,
+"hcidx": 30,
+"hpidx": 1,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z003p3b1",
+"backgroundImage": "ui/largepicture/guan002.jpg",
+"members": [{
+"#monster.id": "L025",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B4"]
+}]
+}]
+},
+{
+"id": "z003p4",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s818",
+"s758",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4822,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 120,
+"hcidx": 30,
+"hpidx": 5,
+"limitId": "L_001|L_006|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d037",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z003p4b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [{
+"#monster.id": "L026",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B1"]
+}]
+}]
+}
+]
+},
+{
+"id": "z025",
+"parts": [
+{
+"id": "z025p1",
+"terrain": "PYuan",
+"minLevel": 1,
+"atlasloots": [
+"s811",
+"s751",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2378,
+"coinCnt": 24,
+"exp": 12,
+"heroExp": 84,
+"hcidx": 23,
+"hpidx": 5,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z025p1b1",
+"backgroundImage": "ui/largepicture/ping001.jpg",
+"members": [
+{
+"#monster.id": "L189",
+"monsterPos": {
+"x": 90,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 90,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 90,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L190",
+"monsterPos": {
+"x": 390,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 390,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 390,
+"y": 540
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L191",
+"monsterPos": {
+"x": 240,
+"y": 660
+},
+"monsterZorder": 4,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 560
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 660
+},
+"ais": ["A4"]
+}
+]
+}]
+},
+{
+"id": "z025p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s811",
+"s751",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 4362,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 114,
+"hcidx": 30,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z025p2b1",
+"backgroundImage": "ui/largepicture/shan003.jpg",
+"members": [{
+"#monster.id": "L192",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A4"]
+}]
+}]
+},
+{
+"id": "z025p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s811",
+"s751",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 10180,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 146,
+"hcidx": 36,
+"hpidx": 0,
+"limitId": "L_001|L_008|L_014",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d076",
+"steps": [{
+"sid": "z025p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L193",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L194",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A3"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z008",
+"parts": [
+{
+"id": "z008p1",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s821",
+"s761",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 3426,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 104,
+"hcidx": 27,
+"hpidx": 3,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z008p1b1",
+"backgroundImage": "ui/largepicture/guan001.jpg",
+"members": [{
+"#monster.id": "L062",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z008p2",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s821",
+"s761",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 9636,
+"coinCnt": 40,
+"exp": 12,
+"heroExp": 144,
+"hcidx": 35,
+"hpidx": 2,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z008p2b1",
+"backgroundImage": "ui/largepicture/shan003.jpg",
+"members": [
+{
+"#monster.id": "L063",
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": ["B1"]
+},
+{
+"#monster.id": "L064",
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 4,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 5,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": ["A1"]
+},
+{
+"#monster.id": "L065",
+"monsterPos": {
+"x": 150,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L066",
+"monsterPos": {
+"x": 330,
+"y": 660
+},
+"monsterZorder": 1,
+"scale": 0.25,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L067",
+"monsterPos": {
+"x": 240,
+"y": 540
+},
+"monsterZorder": 5,
+"scale": 0.3,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": ["A3"]
+}
+]
+}]
+},
+{
+"id": "z008p3",
+"terrain": "SDi",
+"minLevel": 1,
+"atlasloots": [
+"s821",
+"s761",
+"s878",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 12690,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 156,
+"hcidx": 37,
+"hpidx": 4,
+"limitId": "L_001|L_008|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d039",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z008p3b1",
+"backgroundImage": "ui/largepicture/shan002.jpg",
+"members": [
+{
+"#monster.id": "L068",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A2"]
+},
+{
+"#monster.id": "L069",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A3"]
+}
+]
+}]
+}
+]
+},
+{
+"id": "z033",
+"parts": [
+{
+"id": "z033p1",
+"terrain": "SLu",
+"minLevel": 1,
+"atlasloots": [
+"s832",
+"s772",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 2296,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 82,
+"hcidx": 23,
+"hpidx": 3,
+"limitId": "L_001|L_007|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z033p1b1",
+"backgroundImage": "ui/largepicture/shui001.jpg",
+"members": [{
+"#monster.id": "L244",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["A2"]
+}]
+}]
+},
+{
+"id": "z033p2",
+"terrain": "SLing",
+"minLevel": 1,
+"atlasloots": [
+"s832",
+"s772",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 5011,
+"coinCnt": 8,
+"exp": 12,
+"heroExp": 123,
+"hcidx": 31,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z033p2b1",
+"backgroundImage": "ui/largepicture/sen001.jpg",
+"members": [{
+"#monster.id": "L245",
+"monsterPos": {
+"x": 240,
+"y": 590
+},
+"monsterZorder": 3,
+"scale": 0.7,
+"hpBarPos": {
+"x": 240,
+"y": 430
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 590
+},
+"ais": ["B3"]
+}]
+}]
+},
+{
+"id": "z033p3",
+"terrain": "CGuan",
+"minLevel": 1,
+"atlasloots": [
+"s832",
+"s772",
+"s877",
+"s883"
+],
+"previgor": 1,
+"postvigor": 11,
+"count": 3,
+"copper": 9300,
+"coinCnt": 16,
+"exp": 12,
+"heroExp": 142,
+"hcidx": 35,
+"hpidx": 0,
+"limitId": "L_001|L_007|L_015",
+"#fru1.item.id": "d001",
+"#fru2.item.id": "d038",
+"#fru3.item.id": "d077",
+"steps": [{
+"sid": "z033p3b1",
+"backgroundImage": "ui/largepicture/cheng002.jpg",
+"members": [
+{
+"#monster.id": "L246",
+"monsterPos": {
+"x": 150,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 150,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 150,
+"y": 580
+},
+"ais": ["A4"]
+},
+{
+"#monster.id": "L247",
+"monsterPos": {
+"x": 330,
+"y": 580
+},
+"monsterZorder": 3,
+"scale": 0.4,
+"hpBarPos": {
+"x": 330,
+"y": 465
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 330,
+"y": 580
+},
+"ais": ["A2"]
+}
+]
+}]
+}
+]
+}
+]

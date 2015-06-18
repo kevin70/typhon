@@ -23,7 +23,7 @@ limitations under the License.
     <mbean name="Container"
            description="The Typhon IoC Container"
            domain="org.skfiy.typhon"
-           type="org.skfiy.typhon.container.GuiceContainer">
+           type="org.skfiy.typhon.container.SpringContainer">
         
         <operation name="init"
                    description="init this Container"
@@ -35,6 +35,12 @@ limitations under the License.
                    impact="ACTION"
                    returnType="java.lang.Object">
             <parameter name="clazz" type="java.lang.Class"/>
+        </operation>
+        
+        <operation name="getAllBindingClasses"
+                   description="getAllBindingClasses"
+                   impact="ACTION"
+                   returnType="java.util.Collection">
         </operation>
         
         <operation name="injectMembers"

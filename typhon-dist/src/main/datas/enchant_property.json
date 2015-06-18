@@ -1,0 +1,34 @@
+[
+{
+"tongUp": 200,
+"wuUp": 200,
+"zhiUp": 200,
+"atkUp": 200,
+"matkUp": 200,
+"defUp": 200,
+"mdefUp": 200,
+"hpUp": 4,
+"critRateUp": 200,
+"critMagnUp": 400,
+"decritRateUp": 200,
+"parryRateUp": 200,
+"parryValueUp": 20,
+"deparryRateUp": 200
+},
+{
+"tongUp": 200,
+"wuUp": 200,
+"zhiUp": 200,
+"atkUp": 200,
+"matkUp": 200,
+"defUp": 200,
+"mdefUp": 200,
+"hpUp": 5,
+"critRateUp": 160,
+"critMagnUp": 400,
+"decritRateUp": 160,
+"parryRateUp": 160,
+"parryValueUp": 16,
+"deparryRateUp": 160
+}
+]

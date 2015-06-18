@@ -1,0 +1,122 @@
+[
+{
+"id": "Joint001",
+"jointArea": "Shu",
+"animation": "j001",
+"attackerCntNeeded": 3,
+"numOfTargets": 5,
+"parameter": 1.7
+},
+{
+"id": "Joint002",
+"jointArea": "Shu",
+"animation": "j002",
+"attackerCntNeeded": 4,
+"numOfTargets": 5,
+"parameter": 1.9
+},
+{
+"id": "Joint003",
+"jointArea": "Shu",
+"animation": "j003",
+"attackerCntNeeded": 5,
+"numOfTargets": 5,
+"parameter": 2.1
+},
+{
+"id": "Joint004",
+"jointArea": "none",
+"animation": "j004",
+"attackerCntNeeded": 3,
+"numOfTargets": 5,
+"parameter": 1.7
+},
+{
+"id": "Joint005",
+"jointArea": "none",
+"animation": "j005",
+"attackerCntNeeded": 4,
+"numOfTargets": 5,
+"parameter": 1.9
+},
+{
+"id": "Joint006",
+"jointArea": "none",
+"animation": "j006",
+"attackerCntNeeded": 5,
+"numOfTargets": 5,
+"parameter": 2.1
+},
+{
+"id": "Joint007",
+"jointArea": "Wu",
+"animation": "j009",
+"attackerCntNeeded": 3,
+"numOfTargets": 5,
+"parameter": 1.7
+},
+{
+"id": "Joint008",
+"jointArea": "Wu",
+"animation": "j008",
+"attackerCntNeeded": 4,
+"numOfTargets": 5,
+"parameter": 1.9
+},
+{
+"id": "Joint009",
+"jointArea": "Wu",
+"animation": "j007",
+"attackerCntNeeded": 5,
+"numOfTargets": 5,
+"parameter": 2.1
+},
+{
+"id": "Joint010",
+"jointArea": "QXiong",
+"animation": "j012",
+"attackerCntNeeded": 3,
+"numOfTargets": 5,
+"parameter": 1.7
+},
+{
+"id": "Joint011",
+"jointArea": "QXiong",
+"animation": "j010",
+"attackerCntNeeded": 4,
+"numOfTargets": 5,
+"parameter": 1.9
+},
+{
+"id": "Joint012",
+"jointArea": "QXiong",
+"animation": "j011",
+"attackerCntNeeded": 5,
+"numOfTargets": 5,
+"parameter": 2.1
+},
+{
+"id": "Joint013",
+"jointArea": "Wei",
+"animation": "j013",
+"attackerCntNeeded": 3,
+"numOfTargets": 5,
+"parameter": 1.7
+},
+{
+"id": "Joint014",
+"jointArea": "Wei",
+"animation": "j014",
+"attackerCntNeeded": 4,
+"numOfTargets": 5,
+"parameter": 1.9
+},
+{
+"id": "Joint015",
+"jointArea": "Wei",
+"animation": "j015",
+"attackerCntNeeded": 5,
+"numOfTargets": 5,
+"parameter": 2.1
+}
+]

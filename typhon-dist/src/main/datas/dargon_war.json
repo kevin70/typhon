@@ -1,0 +1,22 @@
+[
+    {
+        "factor": 0.95,
+        "rewards": 50
+    },
+    {
+        "factor": 1,
+        "rewards": 100
+    },
+    {
+        "factor": 1.05,
+        "rewards": 200
+    },
+    {
+        "factor": 1.1,
+        "rewards": 300
+    },
+    {
+        "factor": 1.15,
+        "rewards": 400
+    }
+]

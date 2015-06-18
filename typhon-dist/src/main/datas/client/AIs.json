@@ -1,0 +1,832 @@
+[
+{
+"id": "N1",
+"priorityId": "AI_011",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 0,
+"changePerRound": 0
+}
+]
+},
+{
+"id": "N2",
+"priorityId": "AI_010",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 0,
+"changePerRound": 0
+}
+]
+},
+{
+"id": "N3",
+"priorityId": "AI_009",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 0,
+"changePerRound": 0
+}
+]
+},
+{
+"id": "N4",
+"priorityId": "AI_008",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 0,
+"changePerRound": 0
+}
+]
+},
+{
+"id": "N5",
+"priorityId": "AI_007",
+"resetSlot": "BSa",
+"config": [{
+"slot": "Q7",
+"ratio": 0,
+"changePerRound": 0
+}]
+},
+{
+"id": "N6",
+"priorityId": "AI_011",
+"resetSlot": "BSa",
+"config": [{
+"slot": "BSa",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "N7",
+"priorityId": "AI_010",
+"resetSlot": "BSa",
+"config": [{
+"slot": "BSa",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "N8",
+"priorityId": "AI_009",
+"resetSlot": "BSa",
+"config": [{
+"slot": "BSa",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "N9",
+"priorityId": "AI_008",
+"resetSlot": "BSa",
+"config": [{
+"slot": "BSa",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "N10",
+"priorityId": "AI_007",
+"resetSlot": "BSa",
+"config": [{
+"slot": "Q7",
+"ratio": 0,
+"changePerRound": 0
+}]
+},
+{
+"id": "S1",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 60,
+"changePerRound": -6
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 10,
+"changePerRound": -1
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S2",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 20,
+"changePerRound": -2
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S3",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S4",
+"priorityId": "AI_014",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "BSa",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "S5",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 20,
+"changePerRound": -2
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S6",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "QXi",
+"ratio": 20,
+"changePerRound": -2
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S7",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S8",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 7
+}
+]
+},
+{
+"id": "S9",
+"priorityId": "AI_014",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "QXi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "BSa",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "S10",
+"priorityId": "AI_018",
+"resetSlot": "QXi",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "S11",
+"priorityId": "AI_019",
+"resetSlot": "QXi",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "A1",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 60,
+"changePerRound": -6
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "A2",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "A3",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 70,
+"changePerRound": -3
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 3
+}
+]
+},
+{
+"id": "A4",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "B1",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 60,
+"changePerRound": -6
+},
+{
+"slot": "QXi",
+"ratio": 30,
+"changePerRound": -3
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "B2",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "B3",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 70,
+"changePerRound": -3
+},
+{
+"slot": "QXi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "BSa",
+"ratio": 30,
+"changePerRound": 3
+}
+]
+},
+{
+"id": "B4",
+"priorityId": "AI_001",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 50,
+"changePerRound": -5
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "R1",
+"priorityId": "AI_014",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 80,
+"changePerRound": -8
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 10,
+"changePerRound": -1
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "R2",
+"priorityId": "AI_015",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "JCe",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "BSa",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "R6",
+"priorityId": "AI_014",
+"resetSlot": "BSa",
+"config": [
+{
+"slot": "GJi",
+"ratio": 0,
+"changePerRound": 0
+},
+{
+"slot": "JCe",
+"ratio": 80,
+"changePerRound": -8
+},
+{
+"slot": "QXi",
+"ratio": 10,
+"changePerRound": -1
+},
+{
+"slot": "BSa",
+"ratio": 10,
+"changePerRound": 9
+}
+]
+},
+{
+"id": "C1",
+"resetSlot": "BSa",
+"config": [{
+"slot": "BSa",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "C2",
+"resetSlot": "BSa",
+"config": [{
+"slot": "GJi",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "X1",
+"resetSlot": "Q7",
+"config": [{
+"slot": "Q7",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "X2",
+"resetSlot": "QXi",
+"config": [{
+"slot": "QXi",
+"ratio": 100,
+"changePerRound": 0
+}]
+},
+{
+"id": "X3",
+"resetSlot": "GJi",
+"config": [
+{
+"slot": "GJi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "Q7",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+},
+{
+"id": "X4",
+"resetSlot": "GJi",
+"config": [
+{
+"slot": "JCe",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "QXi",
+"ratio": 40,
+"changePerRound": -4
+},
+{
+"slot": "Q7",
+"ratio": 20,
+"changePerRound": 8
+}
+]
+}
+]

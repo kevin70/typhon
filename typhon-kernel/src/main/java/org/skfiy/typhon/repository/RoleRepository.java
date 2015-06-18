@@ -16,8 +16,11 @@
 
 package org.skfiy.typhon.repository;
 
+import java.util.List;
+
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.RoleData;
+import org.skfiy.typhon.domain.VacantData;
 
 /**
  *
@@ -36,7 +39,7 @@ public interface RoleRepository {
      * @param name
      * @return
      */
-    boolean existsName(String name);
+    int existsName(String name);
 
     /**
      *
@@ -65,7 +68,35 @@ public interface RoleRepository {
      * @param role
      */
     void update(Role role);
-
+    
+    /**
+     * 更新角色名称.
+     *
+     * @param rid 角色ID
+     * @param newName 新的角色名称
+     */
+    void updateRoleName(int rid, String newName);
+    
+    /**
+     * 
+     * @param rid
+     * @param diamond 
+     */
+    void updateDiamond(int rid, int diamond);
+    
+    /**
+     *
+     * @param rid
+     */
+    void updateLastLoginedTime(int rid);
+    
+    /**
+     * 
+     * @param roleName
+     * @return list<role>
+     */
+    List<Role> findRoles(String roleName,int number);
+    
     //=========================================================================================//
     //=========================================================================================//
     //===========================           Role Data             =============================//
@@ -73,4 +104,10 @@ public interface RoleRepository {
     //=========================================================================================//
     void update(RoleData roleData);
     
+    /**
+     *
+     * @param rid
+     * @return
+     */
+    VacantData loadVacantData(int rid);
 }

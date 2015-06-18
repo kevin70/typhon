@@ -57,6 +57,7 @@ public class PacketError extends Packet {
      */
     public static PacketError createError(Condition cond) {
         PacketError result = new PacketError();
+        result.setNs(Namespaces.ERROR);
         result.setCode(cond.getCode());
         return result;
     }
@@ -76,20 +77,44 @@ public class PacketError extends Packet {
     public enum Condition {
 
         bat_request(400),
-        conflict(409),
-        feature_not_implemented(501),
-        forbidden(403),
-        internal_server_error(500),
-        item_not_found(404),
-        not_acceptable(406),
-        not_allowed(405),
         not_authorized(401),
         payment_required(402),
+        forbidden(403),
+        item_not_found(404),
+        not_allowed(405),
+        not_acceptable(406),
         registration_required(407),
         not_enabled_role(408),
+        conflict(409),
+        level_limit(410),
+        vigor_not_enough(411),
+        pvp_ranking_changed(412),
+        size_limit(413),
+        not_online(414),
+        time_platform_over(418),
+        batch_error(419),
+        cdkey_error(420),
+        time_over(421),
+        receive_over(423),
+        no_exist(424),
+        
+        /**
+         * 无法连接到对方对战.
+         */
+        opvp_unable_connect(415),
+        /**
+         * 非法的公会名称.
+         */
+        society_name_illegal(416),
+        /**
+         * 用户在其它终端上线.
+         */
+        other_online(417),
+        internal_server_error(500),
+        feature_not_implemented(501),
         service_unavailable(503);
         
-        private int code;
+        private final int code;
 
         Condition(int c) {
             code = c;

@@ -17,6 +17,7 @@ package org.skfiy.typhon.session;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.Collections;
@@ -34,7 +35,7 @@ public abstract class AbstractSession implements Session {
 
     public static final byte NS_SEPARTOR = ':';
     public static final byte MSG_SEPARTOR = '\n';
-    
+
     private String authType;
     private final Map<String, Object> attributes;
 
@@ -46,7 +47,7 @@ public abstract class AbstractSession implements Session {
     public void setAttribute(String key, Object value) {
         attributes.put(key, value);
     }
-    
+
     @Override
     public Object getAttribute(String key) {
         return attributes.get(key);
@@ -86,15 +87,15 @@ public abstract class AbstractSession implements Session {
     public void write(Packet packet) {
         Assert.notNull(packet);
         Assert.notNull(packet.getNs());
-        
-        write(packet.getNs(), JSON.toJSONString(packet));
+
+        write(packet.getNs(), JSON.toJSONString(packet, SerializerFeature.DisableCircularReferenceDetect));
     }
 
     @Override
     public void write(String ns, JSONObject json) {
         Assert.notNull(ns);
         Assert.notNull(json);
-        
+
         write(ns, json.toJSONString());
     }
 
@@ -105,23 +106,22 @@ public abstract class AbstractSession implements Session {
 
         int l1 = b0.length + 1;
         int l2 = l1 + b1.length;
-        
-        byte[] buf = new byte[l2 + 1];
+
+        byte[] buf = new byte[l2];
         System.arraycopy(b0, 0, buf, 0, b0.length);
 
         // 命名空间与消息主体分隔符
         buf[b0.length] = NS_SEPARTOR;
 
         System.arraycopy(b1, 0, buf, l1, b1.length);
-        buf[l2] = MSG_SEPARTOR;
         write(buf, 0, buf.length);
     }
 
     /**
-     * 
+     *
      * @param buf
      * @param off
-     * @param len 
+     * @param len
      */
     protected abstract void write(byte[] buf, int off, int len);
 }

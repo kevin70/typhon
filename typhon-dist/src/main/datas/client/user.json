@@ -1,0 +1,9 @@
+{
+    "name": "kevin",
+    "age": 25,
+    "langs": {
+        "java": 5,
+        "c": 2,
+        "python": 4
+    }
+}

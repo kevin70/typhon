@@ -17,12 +17,13 @@ package org.skfiy.typhon.packet;
 
 /**
  *
- * @author Kevin Zou <<kevinz@skfiy.org>>
+ * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class Auth extends Packet {
 
     private String username;
     private String password;
+    private Platform platform = Platform.none;
 
     public String getUsername() {
         return username;
@@ -39,4 +40,13 @@ public class Auth extends Packet {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public Platform getPlatform() {
+        return platform;
+    }
+
+    public void setPlatform(Platform platform) {
+        this.platform = platform;
+    }
+
 }

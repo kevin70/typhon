@@ -1,0 +1,1002 @@
+[
+{
+"critprob": 10,
+"gold": 0,
+"cost": 10
+},
+{
+"critprob": 10,
+"gold": 2000,
+"cost": 20
+},
+{
+"critprob": 10,
+"gold": 2000,
+"cost": 20
+},
+{
+"critprob": 10,
+"gold": 2000,
+"cost": 20
+},
+{
+"critprob": 10,
+"gold": 2000,
+"cost": 20
+},
+{
+"critprob": 100,
+"gold": 1500,
+"cost": 40
+},
+{
+"critprob": 10,
+"gold": 1500,
+"cost": 40
+},
+{
+"critprob": 10,
+"gold": 1500,
+"cost": 40
+},
+{
+"critprob": 10,
+"gold": 1500,
+"cost": 40
+},
+{
+"critprob": 10,
+"gold": 1500,
+"cost": 40
+},
+{
+"critprob": 100,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 100,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 10,
+"gold": 1000,
+"cost": 100
+},
+{
+"critprob": 100,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 10,
+"gold": 500,
+"cost": 200
+},
+{
+"critprob": 100,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+},
+{
+"critprob": 10,
+"gold": 250,
+"cost": 400
+}
+]

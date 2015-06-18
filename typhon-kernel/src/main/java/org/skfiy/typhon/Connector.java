@@ -83,7 +83,7 @@ public interface Connector extends Lifecycle {
      * 设置日志模式默认为<b>{@code true}</b>开启状态.
      * 如果需要关闭日志记录需要在{@link #start()}方法执行之前设置.
      *
-     * @param on {@code true}开启, {@code false}关闭
+     * @param enabled {@code true}开启, {@code false}关闭
      */
     void setLogEnabled(boolean enabled);
 

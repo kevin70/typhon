@@ -1,0 +1,25 @@
+[
+{
+"enchantX1Exp": 20,
+"enchantX2Exp": 30,
+"enchantX3Exp": 40,
+"enchantX4Exp": 50,
+"enchantX5Exp": 60
+},
+{
+"enchantX2Exp": 50,
+"enchantX3Exp": 70,
+"enchantX4Exp": 90,
+"enchantX5Exp": 110
+},
+{
+"enchantX3Exp": 100,
+"enchantX4Exp": 130,
+"enchantX5Exp": 160
+},
+{
+"enchantX4Exp": 170,
+"enchantX5Exp": 210
+},
+{"enchantX5Exp": 260}
+]

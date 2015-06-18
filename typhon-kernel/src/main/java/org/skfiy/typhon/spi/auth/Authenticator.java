@@ -15,7 +15,6 @@
  */
 package org.skfiy.typhon.spi.auth;
 
-import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
 
 /**
@@ -24,5 +23,9 @@ import org.skfiy.typhon.packet.Auth;
  */
 public interface Authenticator {
 
+    /**
+     * 
+     * @param auth 
+     */
     void authentic(Auth auth);
 }

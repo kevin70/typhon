@@ -1,0 +1,53 @@
+[
+{
+"levelLimit": 30,
+"items": [
+{
+"#item.id": "w024",
+"count": 1
+},
+{
+"#item.id": "e026",
+"count": 2
+},
+{
+"#item.id": "w016",
+"count": 5
+}
+]
+},
+{
+"levelLimit": 35,
+"items": [
+{
+"#item.id": "w025",
+"count": 1
+},
+{
+"#item.id": "e028",
+"count": 2
+},
+{
+"#item.id": "e029",
+"count": 2
+}
+]
+},
+{
+"levelLimit": 40,
+"items": [
+{
+"#item.id": "hb11",
+"count": 1
+},
+{
+"#item.id": "e050",
+"count": 2
+},
+{
+"#item.id": "w013",
+"count": 5
+}
+]
+}
+]

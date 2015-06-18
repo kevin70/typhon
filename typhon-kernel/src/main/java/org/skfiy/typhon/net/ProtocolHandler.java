@@ -27,6 +27,7 @@ public interface ProtocolHandler {
     /**
      * 处理协议.
      *
+     * @param session
      * @param nsbs 消息命名空间
      * @param datas 消息主体
      */

@@ -1,0 +1,439 @@
+{
+"__comment__": "#item.id: 道具ID\nprob: 抽中道具的概率",
+"datas": [
+[
+{
+"#item.id": "sa02",
+"prob": 33
+},
+{
+"#item.id": "sd15",
+"prob": 33
+},
+{
+"#item.id": "sa16",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd09",
+"prob": 33
+},
+{
+"#item.id": "sc03",
+"prob": 33
+},
+{
+"#item.id": "sd18",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb04",
+"prob": 33
+},
+{
+"#item.id": "sd15",
+"prob": 33
+},
+{
+"#item.id": "sc17",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc09",
+"prob": 33
+},
+{
+"#item.id": "sb17",
+"prob": 33
+},
+{
+"#item.id": "sa15",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa04",
+"prob": 33
+},
+{
+"#item.id": "sc16",
+"prob": 33
+},
+{
+"#item.id": "sa17",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc07",
+"prob": 33
+},
+{
+"#item.id": "sb17",
+"prob": 33
+},
+{
+"#item.id": "sd16",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd12",
+"prob": 33
+},
+{
+"#item.id": "sd04",
+"prob": 33
+},
+{
+"#item.id": "sc04",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb10",
+"prob": 33
+},
+{
+"#item.id": "sd15",
+"prob": 33
+},
+{
+"#item.id": "sb16",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc15",
+"prob": 33
+},
+{
+"#item.id": "sc03",
+"prob": 33
+},
+{
+"#item.id": "sa16",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa10",
+"prob": 33
+},
+{
+"#item.id": "sa12",
+"prob": 33
+},
+{
+"#item.id": "sb15",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb11",
+"prob": 33
+},
+{
+"#item.id": "sd04",
+"prob": 33
+},
+{
+"#item.id": "sd05",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb11",
+"prob": 33
+},
+{
+"#item.id": "sc11",
+"prob": 33
+},
+{
+"#item.id": "sc05",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd19",
+"prob": 33
+},
+{
+"#item.id": "sd04",
+"prob": 33
+},
+{
+"#item.id": "sd16",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd19",
+"prob": 33
+},
+{
+"#item.id": "sc16",
+"prob": 33
+},
+{
+"#item.id": "sa15",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd14",
+"prob": 33
+},
+{
+"#item.id": "sa01",
+"prob": 33
+},
+{
+"#item.id": "sd06",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa09",
+"prob": 33
+},
+{
+"#item.id": "sa10",
+"prob": 33
+},
+{
+"#item.id": "sb09",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb07",
+"prob": 33
+},
+{
+"#item.id": "sa10",
+"prob": 33
+},
+{
+"#item.id": "sa17",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb08",
+"prob": 33
+},
+{
+"#item.id": "sc13",
+"prob": 33
+},
+{
+"#item.id": "sd11",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc10",
+"prob": 33
+},
+{
+"#item.id": "sb10",
+"prob": 33
+},
+{
+"#item.id": "sd08",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb02",
+"prob": 33
+},
+{
+"#item.id": "sb17",
+"prob": 33
+},
+{
+"#item.id": "sd06",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa11",
+"prob": 33
+},
+{
+"#item.id": "sd04",
+"prob": 33
+},
+{
+"#item.id": "sd11",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc11",
+"prob": 33
+},
+{
+"#item.id": "sa13",
+"prob": 33
+},
+{
+"#item.id": "sd03",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc15",
+"prob": 33
+},
+{
+"#item.id": "sa14",
+"prob": 33
+},
+{
+"#item.id": "sb12",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa12",
+"prob": 33
+},
+{
+"#item.id": "sc03",
+"prob": 33
+},
+{
+"#item.id": "sd10",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sd19",
+"prob": 33
+},
+{
+"#item.id": "sc03",
+"prob": 33
+},
+{
+"#item.id": "sc05",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa13",
+"prob": 33
+},
+{
+"#item.id": "sb10",
+"prob": 33
+},
+{
+"#item.id": "sd06",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa01",
+"prob": 33
+},
+{
+"#item.id": "sc13",
+"prob": 33
+},
+{
+"#item.id": "sb14",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sa10",
+"prob": 33
+},
+{
+"#item.id": "sa13",
+"prob": 33
+},
+{
+"#item.id": "sc05",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sb05",
+"prob": 33
+},
+{
+"#item.id": "sb17",
+"prob": 33
+},
+{
+"#item.id": "sd07",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc06",
+"prob": 33
+},
+{
+"#item.id": "sc15",
+"prob": 33
+},
+{
+"#item.id": "sc12",
+"prob": 34
+}
+],
+[
+{
+"#item.id": "sc06",
+"prob": 33
+},
+{
+"#item.id": "sa13",
+"prob": 33
+},
+{
+"#item.id": "sa17",
+"prob": 34
+}
+]
+]
+}

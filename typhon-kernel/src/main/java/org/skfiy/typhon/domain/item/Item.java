@@ -17,13 +17,14 @@ package org.skfiy.typhon.domain.item;
 
 import org.skfiy.typhon.script.Script;
 
-/**
+/** 
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public abstract class Item {
 
     private String id;
+    private Star star;
 
     /**
      * 
@@ -41,6 +42,22 @@ public abstract class Item {
         this.id = id;
     }
 
+    /**
+     * 
+     * @return 
+     */
+    public Star getStar() {
+        return star;
+    }
+
+    /**
+     * 
+     * @param star 
+     */
+    public void setStar(Star star) {
+        this.star = star;
+    }
+    
     /**
      * 
      * @return 
@@ -64,4 +81,33 @@ public abstract class Item {
      * @return 
      */
     public abstract Script getScript();
+    
+    /**
+     * 
+     * @return 
+     */
+    public abstract Object getAnnex();
+    
+    /**
+     * 道具品质.
+     */
+    public enum Star {
+
+        X1("typhon.domain.hero.X1.factor"),
+        X2("typhon.domain.hero.X2.factor"),
+        X3("typhon.domain.hero.X3.factor"),
+        X4("typhon.domain.hero.X4.factor"),
+        X5("typhon.domain.hero.X5.factor");
+
+        private final String heroFactorKey;
+
+        Star(String k1) {
+            heroFactorKey = k1;
+        }
+
+        public String getHeroFactorKey() {
+            return heroFactorKey;
+        }
+
+    }
 }

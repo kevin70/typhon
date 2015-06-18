@@ -14,8 +14,28 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<beans>
-    <bean class="org.skfiy.typhon.action.TimestampAction"/>
-    <bean class="org.skfiy.typhon.action.AuthenticationAction"/>
-    <bean class="org.skfiy.typhon.action.RoleAction"/>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    
+    <bean id="timestampAction" class="org.skfiy.typhon.action.TimestampAction"/>
+    <bean id="authenticationAction" class="org.skfiy.typhon.action.AuthenticationAction"/>
+    <bean id="roleAction" class="org.skfiy.typhon.action.RoleAction"/>
+    <bean id="heroAction" class="org.skfiy.typhon.action.HeroAction"/>
+    <bean id="pveAction" class="org.skfiy.typhon.action.PveAction"/>
+    <bean id="pvpAction" class="org.skfiy.typhon.action.PvpAction"/>
+    <bean id="equipmentAction" class="org.skfiy.typhon.action.EquipmentAction"/>
+    <bean id="itemAction" class="org.skfiy.typhon.action.ItemAction"/>
+    <bean id="storeAction" class="org.skfiy.typhon.action.StoreAction"/>
+    <bean id="troopAction" class="org.skfiy.typhon.action.TroopAction"/>
+    <bean id="chatAction" class="org.skfiy.typhon.action.ChatAction"/>
+    <bean id="dargonAction" class="org.skfiy.typhon.action.DargonAction"/>
+    <bean id="societyAction" class="org.skfiy.typhon.action.SocietyAction"/>
+    <bean id="taskAction" class="org.skfiy.typhon.action.TaskAction"/>
+    <bean id="activityAction" class="org.skfiy.typhon.action.ActivityAction"/>
+    
 </beans>

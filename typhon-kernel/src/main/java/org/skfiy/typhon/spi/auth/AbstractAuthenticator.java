@@ -17,11 +17,13 @@ package org.skfiy.typhon.spi.auth;
 
 import java.util.Map;
 import javax.inject.Inject;
+
 import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
-import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
-import org.skfiy.typhon.repository.impl.UserRepositoryImpl;
+import org.skfiy.typhon.packet.PacketError;
+import org.skfiy.typhon.repository.UserRepository;
 import org.skfiy.typhon.session.Session;
+import org.skfiy.typhon.session.SessionConstants;
 import org.skfiy.typhon.session.SessionContext;
 import org.skfiy.typhon.session.SessionManager;
 import org.skfiy.typhon.session.SessionUtils;
@@ -35,44 +37,64 @@ public abstract class AbstractAuthenticator implements Authenticator {
     @Inject
     protected SessionManager sessionManager;
     @Inject
-    protected UserRepositoryImpl userResposy;
-    @Inject
-    protected RoleRepositoryImpl roleReposy;
+    protected UserRepository userResposy;
 
     @Override
     public void authentic(Auth auth) {
         prepare(doAuthentic(auth));
     }
-    
+
     /**
      *
      * @param user
      */
     protected void prepare(User user) {
-        String lock = (user.getUsername() + "@add-session").intern();
-        synchronized (lock) {
-            Session session = SessionContext.getSession();
-            
-            // **
-            Session anotherSession = sessionManager.getSession(user.getUid());
-            if (anotherSession != null) {
-                anotherSession.close();
-                
-                for (Map.Entry<String, Object> entry
-                        : anotherSession.getAttributes().entrySet()) {
+        Session session = SessionContext.getSession();
+        // **
+        Session anotherSession = sessionManager.getSession(user.getUid());
+        if (anotherSession != null) {
+
+            for (Map.Entry<String, Object> entry
+                    : anotherSession.getAttributes().entrySet()) {
+                if (SessionConstants.ATTR_PLAYER.equals(entry.getKey())
+                        || SessionConstants.ATTR_USER.equals(entry.getKey())
+                        || SessionConstants.ATTR_PLAYER_SL_KEY.equals(entry.getKey())) {
                     session.setAttribute(entry.getKey(), entry.getValue());
                 }
             }
+
+            //----------------------------------------------------------------------------------
+            PacketError error = PacketError.createError(PacketError.Condition.other_online);
+            anotherSession.write(error);
+            // 取消认证
+            anotherSession.setAuthType(null);
+            anotherSession.close();
             
-            session.setAttribute(SessionUtils.ATTR_USER, user);
-            sessionManager.addSession(user.getUid(), session);
+            sessionManager.removeSession(user.getUid());
+            try {
+                SessionUtils.getPlayer(session).setSession(session);
+            } catch (RuntimeException e) {
+                sessionManager.removeSession(user.getUid());
+                session.close();
+                throw e;
+            }
         }
+
+        session.setAuthType(getAuthType());
+        session.setAttribute(SessionUtils.ATTR_USER, user);
+        sessionManager.addSession(user.getUid(), session);
     }
 
     /**
-     * 
+     *
      * @param auth
-     * @return 
+     * @return
      */
     protected abstract User doAuthentic(Auth auth);
+
+    /**
+     *
+     * @return
+     */
+    protected abstract String getAuthType();
 }

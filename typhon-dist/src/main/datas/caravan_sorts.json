@@ -1,0 +1,677 @@
+[
+    {
+        "type": "T",
+        "grade": [
+            {
+                "level": 40,
+                "reward": [
+                    {
+                        "id": "w001",
+                        "count": 2
+                    },
+                    {
+                        "id": "w002",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 50,
+                "reward": [
+                    {
+                        "id": "w001",
+                        "count": 4
+                    },
+                    {
+                        "id": "w002",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 60,
+                "reward": [
+                    {
+                        "id": "w001",
+                        "count": 5
+                    },
+                    {
+                        "id": "w002",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 70,
+                "reward": [
+                    {
+                        "id": "w001",
+                        "count": 6
+                    },
+                    {
+                        "id": "w002",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "level": 80,
+                "reward": [
+                    {
+                        "id": "w001",
+                        "count": 10
+                    },
+                    {
+                        "id": "w002",
+                        "count": 8
+                    }
+                ]
+            },
+            {
+                "level": 90,
+                "reward": [
+                    {
+                        "id": "w002",
+                        "count": 6
+                    },
+                    {
+                        "id": "w003",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 100,
+                "reward": [
+                    {
+                        "id": "w002",
+                        "count": 8
+                    },
+                    {
+                        "id": "w003",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 110,
+                "reward": [
+                    {
+                        "id": "w002",
+                        "count": 10
+                    },
+                    {
+                        "id": "w003",
+                        "count": 7
+                    }
+                ]
+            },
+            {
+                "level": 120,
+                "reward": [
+                    {
+                        "id": "w003",
+                        "count": 2
+                    },
+                    {
+                        "id": "w004",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 130,
+                "reward": [
+                    {
+                        "id": "w003",
+                        "count": 4
+                    },
+                    {
+                        "id": "w004",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "L",
+        "grade": [
+            {
+                "level": 40,
+                "reward": [
+                    {
+                        "id": "w006",
+                        "count": 2
+                    },
+                    {
+                        "id": "w007",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 50,
+                "reward": [
+                    {
+                        "id": "w006",
+                        "count": 3
+                    },
+                    {
+                        "id": "w007",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 60,
+                "reward": [
+                    {
+                        "id": "w006",
+                        "count": 5
+                    },
+                    {
+                        "id": "w007",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 70,
+                "reward": [
+                    {
+                        "id": "w007",
+                        "count": 2
+                    },
+                    {
+                        "id": "w008",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 80,
+                "reward": [
+                    {
+                        "id": "w007",
+                        "count": 5
+                    },
+                    {
+                        "id": "w008",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 90,
+                "reward": [
+                    {
+                        "id": "w007",
+                        "count": 8
+                    },
+                    {
+                        "id": "w008",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 100,
+                "reward": [
+                    {
+                        "id": "w007",
+                        "count": 10
+                    },
+                    {
+                        "id": "w008",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 110,
+                "reward": [
+                    {
+                        "id": "w008",
+                        "count": 2
+                    },
+                    {
+                        "id": "w009",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 120,
+                "reward": [
+                    {
+                        "id": "w008",
+                        "count": 3
+                    },
+                    {
+                        "id": "w009",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 130,
+                "reward": [
+                    {
+                        "id": "w008",
+                        "count": 5
+                    },
+                    {
+                        "id": "w009",
+                        "count": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "X",
+        "grade": [
+            {
+                "level": 40,
+                "reward": [
+                    {
+                        "id": "w011",
+                        "count": 2
+                    },
+                    {
+                        "id": "w012",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 50,
+                "reward": [
+                    {
+                        "id": "w011",
+                        "count": 4
+                    },
+                    {
+                        "id": "w012",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "level": 60,
+                "reward": [
+                    {
+                        "id": "w012",
+                        "count": 2
+                    },
+                    {
+                        "id": "w013",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 70,
+                "reward": [
+                    {
+                        "id": "w012",
+                        "count": 4
+                    },
+                    {
+                        "id": "w013",
+                        "count": 6
+                    }
+                ]
+            },
+            {
+                "level": 80,
+                "reward": [
+                    {
+                        "id": "w013",
+                        "count": 4
+                    },
+                    {
+                        "id": "w014",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 90,
+                "reward": [
+                    {
+                        "id": "w013",
+                        "count": 6
+                    },
+                    {
+                        "id": "w014",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "level": 100,
+                "reward": [
+                    {
+                        "id": "w014",
+                        "count": 4
+                    },
+                    {
+                        "id": "w015",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 110,
+                "reward": [
+                    {
+                        "id": "w014",
+                        "count": 5
+                    },
+                    {
+                        "id": "w015",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 120,
+                "reward": [
+                    {
+                        "id": "w014",
+                        "count": 6
+                    },
+                    {
+                        "id": "w015",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 130,
+                "reward": [
+                    {
+                        "id": "w014",
+                        "count": 7
+                    },
+                    {
+                        "id": "w015",
+                        "count": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "Y",
+        "grade": [
+            {
+                "level": 40,
+                "reward": [
+                    {
+                        "id": "w016",
+                        "count": 2
+                    },
+                    {
+                        "id": "w017",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 50,
+                "reward": [
+                    {
+                        "id": "w016",
+                        "count": 3
+                    },
+                    {
+                        "id": "w017",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 60,
+                "reward": [
+                    {
+                        "id": "w016",
+                        "count": 3
+                    },
+                    {
+                        "id": "w017",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 70,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 2
+                    },
+                    {
+                        "id": "w018",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 80,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 3
+                    },
+                    {
+                        "id": "w018",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 90,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 3
+                    },
+                    {
+                        "id": "w018",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 100,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 4
+                    },
+                    {
+                        "id": "w018",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 110,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 5
+                    },
+                    {
+                        "id": "w018",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 120,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 6
+                    },
+                    {
+                        "id": "w018",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 130,
+                "reward": [
+                    {
+                        "id": "w017",
+                        "count": 6
+                    },
+                    {
+                        "id": "w018",
+                        "count": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "C",
+        "grade": [
+            {
+                "level": 40,
+                "reward": [
+                    {
+                        "id": "t016",
+                        "count": 2
+                    },
+                    {
+                        "id": "t017",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 50,
+                "reward": [
+                    {
+                        "id": "t016",
+                        "count": 3
+                    },
+                    {
+                        "id": "t017",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "level": 60,
+                "reward": [
+                    {
+                        "id": "t016",
+                        "count": 3
+                    },
+                    {
+                        "id": "t017",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 70,
+                "reward": [
+                    {
+                        "id": "t016",
+                        "count": 4
+                    },
+                    {
+                        "id": "t017",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 80,
+                "reward": [
+                    {
+                        "id": "t016",
+                        "count": 5
+                    },
+                    {
+                        "id": "t017",
+                        "count": 4
+                    }
+                ]
+            },
+            {
+                "level": 90,
+                "reward": [
+                    {
+                        "id": "t017",
+                        "count": 3
+                    },
+                    {
+                        "id": "t018",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "level": 100,
+                "reward": [
+                    {
+                        "id": "t018",
+                        "count": 4
+                    },
+                    {
+                        "id": "t019",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "level": 110,
+                "reward": [
+                    {
+                        "id": "t018",
+                        "count": 5
+                    },
+                    {
+                        "id": "t019",
+                        "count": 9
+                    }
+                ]
+            },
+            {
+                "level": 120,
+                "reward": [
+                    {
+                        "id": "t019",
+                        "count": 5
+                    },
+                    {
+                        "id": "t020",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "level": 130,
+                "reward": [
+                    {
+                        "id": "t019",
+                        "count": 5
+                    },
+                    {
+                        "id": "t020",
+                        "count": 4
+                    }
+                ]
+            }
+        ]
+    }
+]

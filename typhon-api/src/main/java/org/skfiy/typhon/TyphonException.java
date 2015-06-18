@@ -55,4 +55,5 @@ public class TyphonException extends RuntimeException {
     public TyphonException(String message, Throwable cause) {
         super(message, cause);
     }
+    
 }

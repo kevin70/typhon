@@ -1,0 +1,2002 @@
+[
+{
+"prefix": "专横的",
+"suffix": "乞丐"
+},
+{
+"prefix": "反制的",
+"suffix": "戏子"
+},
+{
+"prefix": "高傲的",
+"suffix": "剃头匠"
+},
+{
+"prefix": "桀骜的",
+"suffix": "鞋匠"
+},
+{
+"prefix": "无耻的",
+"suffix": "裁缝"
+},
+{
+"prefix": "无赖的",
+"suffix": "卖油翁"
+},
+{
+"prefix": "无畏的",
+"suffix": "卖炭翁"
+},
+{
+"prefix": "无法的",
+"suffix": "搓背师"
+},
+{
+"prefix": "机灵的",
+"suffix": "走卒"
+},
+{
+"prefix": "焦炭的",
+"suffix": "师爷"
+},
+{
+"prefix": "烧焦的",
+"suffix": "说书匠"
+},
+{
+"prefix": "炼狱的",
+"suffix": "牙医"
+},
+{
+"prefix": "嚣张的",
+"suffix": "衙役"
+},
+{
+"prefix": "游牧的",
+"suffix": "棋手"
+},
+{
+"prefix": "土著的",
+"suffix": "琴师"
+},
+{
+"prefix": "遮掩的",
+"suffix": "和尚"
+},
+{
+"prefix": "覆盖的",
+"suffix": "道士"
+},
+{
+"prefix": "降临的",
+"suffix": "尼姑"
+},
+{
+"prefix": "温暖的",
+"suffix": "风水师"
+},
+{
+"prefix": "暖冬的",
+"suffix": "医生"
+},
+{
+"prefix": "融化的",
+"suffix": "皮影师"
+},
+{
+"prefix": "冰川的",
+"suffix": "秀才"
+},
+{
+"prefix": "惊讶的",
+"suffix": "举人"
+},
+{
+"prefix": "接地的",
+"suffix": "状元"
+},
+{
+"prefix": "绝缘的",
+"suffix": "榜眼"
+},
+{
+"prefix": "沉默的",
+"suffix": "探花"
+},
+{
+"prefix": "骚乱的",
+"suffix": "及第"
+},
+{
+"prefix": "暴乱的",
+"suffix": "庄客"
+},
+{
+"prefix": "平息的",
+"suffix": "屠夫"
+},
+{
+"prefix": "混乱的",
+"suffix": "店小二"
+},
+{
+"prefix": "宁静的",
+"suffix": "文人"
+},
+{
+"prefix": "安详的",
+"suffix": "武士"
+},
+{
+"prefix": "翡翠的",
+"suffix": "隐士"
+},
+{
+"prefix": "纯洁的",
+"suffix": "硬汉"
+},
+{
+"prefix": "贞洁的",
+"suffix": "肌肉男"
+},
+{
+"prefix": "光泽的",
+"suffix": "狗贩子"
+},
+{
+"prefix": "原始的",
+"suffix": "工匠"
+},
+{
+"prefix": "无暇的",
+"suffix": "花匠"
+},
+{
+"prefix": "防护的",
+"suffix": "小吏"
+},
+{
+"prefix": "陶醉的",
+"suffix": "珠宝匠"
+},
+{
+"prefix": "割爱的",
+"suffix": "玉石匠"
+},
+{
+"prefix": "夺权的",
+"suffix": "贩米人"
+},
+{
+"prefix": "痛苦的",
+"suffix": "贩马人"
+},
+{
+"prefix": "精准的",
+"suffix": "猪倌"
+},
+{
+"prefix": "残忍的",
+"suffix": "皮匠"
+},
+{
+"prefix": "严酷的",
+"suffix": "丞相"
+},
+{
+"prefix": "恶毒的",
+"suffix": "宰相"
+},
+{
+"prefix": "败坏的",
+"suffix": "太尉"
+},
+{
+"prefix": "凶残的",
+"suffix": "大司马"
+},
+{
+"prefix": "冠军的",
+"suffix": "大司徒"
+},
+{
+"prefix": "全胜的",
+"suffix": "大司空"
+},
+{
+"prefix": "不胜的",
+"suffix": "卫尉"
+},
+{
+"prefix": "活力的",
+"suffix": "太常"
+},
+{
+"prefix": "无情的",
+"suffix": "太傅"
+},
+{
+"prefix": "血腥的",
+"suffix": "太仆"
+},
+{
+"prefix": "眼红的",
+"suffix": "廷尉"
+},
+{
+"prefix": "吝啬的",
+"suffix": "宗正"
+},
+{
+"prefix": "贪婪的",
+"suffix": "少府"
+},
+{
+"prefix": "贪心的",
+"suffix": "光禄勋"
+},
+{
+"prefix": "杀戮的",
+"suffix": "大司农"
+},
+{
+"prefix": "绝情的",
+"suffix": "大鸿胪"
+},
+{
+"prefix": "真实的",
+"suffix": "侍郎"
+},
+{
+"prefix": "坚定的",
+"suffix": "侍中"
+},
+{
+"prefix": "非凡的",
+"suffix": "中书令"
+},
+{
+"prefix": "荣耀的",
+"suffix": "大尚书"
+},
+{
+"prefix": "骄傲的",
+"suffix": "大长秋"
+},
+{
+"prefix": "炫耀的",
+"suffix": "执金吾"
+},
+{
+"prefix": "光荣的",
+"suffix": "京兆尹"
+},
+{
+"prefix": "著名的",
+"suffix": "左冯翊"
+},
+{
+"prefix": "野生的",
+"suffix": "右扶风"
+},
+{
+"prefix": "野性的",
+"suffix": "卫尉丞"
+},
+{
+"prefix": "强力的",
+"suffix": "太常丞"
+},
+{
+"prefix": "救赎的",
+"suffix": "太仆丞"
+},
+{
+"prefix": "搞笑的",
+"suffix": "廷尉丞"
+},
+{
+"prefix": "逗比的",
+"suffix": "宗正丞"
+},
+{
+"prefix": "神秘的",
+"suffix": "少府丞"
+},
+{
+"prefix": "少见的",
+"suffix": "打手"
+},
+{
+"prefix": "奇怪的",
+"suffix": "杀手"
+},
+{
+"prefix": "外向的",
+"suffix": "老鸨"
+},
+{
+"prefix": "善良的",
+"suffix": "御史大夫"
+},
+{
+"prefix": "开朗的",
+"suffix": "御史中丞"
+},
+{
+"prefix": "活泼的",
+"suffix": "丞相主薄"
+},
+{
+"prefix": "好动的",
+"suffix": "丞相长史"
+},
+{
+"prefix": "轻松的",
+"suffix": "光禄大夫"
+},
+{
+"prefix": "愉快的",
+"suffix": "中散大夫"
+},
+{
+"prefix": "可亲的",
+"suffix": "谏议大夫"
+},
+{
+"prefix": "热情的",
+"suffix": "礼官大夫"
+},
+{
+"prefix": "稳重的",
+"suffix": "黄门侍郎"
+},
+{
+"prefix": "幽默的",
+"suffix": "从事中郎"
+},
+{
+"prefix": "真诚的",
+"suffix": "议郎"
+},
+{
+"prefix": "豪爽的",
+"suffix": "郡史"
+},
+{
+"prefix": "耿直的",
+"suffix": "赞飨"
+},
+{
+"prefix": "成熟的",
+"suffix": "食监"
+},
+{
+"prefix": "独立的",
+"suffix": "祭酒"
+},
+{
+"prefix": "果断的",
+"suffix": "御史员"
+},
+{
+"prefix": "健谈的",
+"suffix": "右都侯"
+},
+{
+"prefix": "机敏的",
+"suffix": "左都侯"
+},
+{
+"prefix": "深沉的",
+"suffix": "左仆射"
+},
+{
+"prefix": "坚强的",
+"suffix": "右仆射"
+},
+{
+"prefix": "兴奋的",
+"suffix": "左长史"
+},
+{
+"prefix": "热情的",
+"suffix": "右长史"
+},
+{
+"prefix": "率直的",
+"suffix": "侍御史"
+},
+{
+"prefix": "毅力的",
+"suffix": "丞相史"
+},
+{
+"prefix": "友爱的",
+"suffix": "廷尉史"
+},
+{
+"prefix": "风趣的",
+"suffix": "五官掾"
+},
+{
+"prefix": "沉静的",
+"suffix": "东曹掾"
+},
+{
+"prefix": "谨慎的",
+"suffix": "西曹掾"
+},
+{
+"prefix": "忠诚的",
+"suffix": "文学掾"
+},
+{
+"prefix": "友善的",
+"suffix": "太常掾"
+},
+{
+"prefix": "严肃的",
+"suffix": "太史丞"
+},
+{
+"prefix": "忠心的",
+"suffix": "太乐丞"
+},
+{
+"prefix": "乐观的",
+"suffix": "太祝丞"
+},
+{
+"prefix": "坦率的",
+"suffix": "太卜丞"
+},
+{
+"prefix": "勇敢的",
+"suffix": "太医丞"
+},
+{
+"prefix": "自信的",
+"suffix": "中书丞"
+},
+{
+"prefix": "自立的",
+"suffix": "符节丞"
+},
+{
+"prefix": "沉著的",
+"suffix": "尚书丞"
+},
+{
+"prefix": "执著的",
+"suffix": "明堂丞"
+},
+{
+"prefix": "容忍的",
+"suffix": "灵台丞"
+},
+{
+"prefix": "体贴的",
+"suffix": "县尉"
+},
+{
+"prefix": "满足的",
+"suffix": "县丞"
+},
+{
+"prefix": "积极的",
+"suffix": "县史"
+},
+{
+"prefix": "有趣的",
+"suffix": "县长"
+},
+{
+"prefix": "知足的",
+"suffix": "县令"
+},
+{
+"prefix": "勤劳的",
+"suffix": "钟官"
+},
+{
+"prefix": "和气的",
+"suffix": "导官"
+},
+{
+"prefix": "无畏的",
+"suffix": "主事"
+},
+{
+"prefix": "务实的",
+"suffix": "御府"
+},
+{
+"prefix": "轻浮的",
+"suffix": "尚方"
+},
+{
+"prefix": "冲动的",
+"suffix": "议曹"
+},
+{
+"prefix": "幼稚的",
+"suffix": "辞曹"
+},
+{
+"prefix": "自私的",
+"suffix": "奏曹"
+},
+{
+"prefix": "依赖的",
+"suffix": "决曹"
+},
+{
+"prefix": "任性的",
+"suffix": "集曹"
+},
+{
+"prefix": "自负的",
+"suffix": "户曹"
+},
+{
+"prefix": "拜金的",
+"suffix": "法曹"
+},
+{
+"prefix": "暴躁的",
+"suffix": "仓曹"
+},
+{
+"prefix": "倔强的",
+"suffix": "金曹"
+},
+{
+"prefix": "虚伪的",
+"suffix": "侍曹"
+},
+{
+"prefix": "孤僻的",
+"suffix": "大将军"
+},
+{
+"prefix": "刻薄的",
+"suffix": "大都督"
+},
+{
+"prefix": "武断的",
+"suffix": "左都督"
+},
+{
+"prefix": "浮躁的",
+"suffix": "右都督"
+},
+{
+"prefix": "易怒的",
+"suffix": "卫将军"
+},
+{
+"prefix": "莽撞的",
+"suffix": "骠骑将军"
+},
+{
+"prefix": "轻率的",
+"suffix": "车骑将军"
+},
+{
+"prefix": "善变的",
+"suffix": "中军将军"
+},
+{
+"prefix": "狡猾的",
+"suffix": "抚军将军"
+},
+{
+"prefix": "易怒的",
+"suffix": "辅国将军"
+},
+{
+"prefix": "多疑的",
+"suffix": "镇国将军"
+},
+{
+"prefix": "懒惰的",
+"suffix": "辅军将军"
+},
+{
+"prefix": "专横的",
+"suffix": "镇军将军"
+},
+{
+"prefix": "顽固的",
+"suffix": "前将军"
+},
+{
+"prefix": "猜疑的",
+"suffix": "左将军"
+},
+{
+"prefix": "挑衅的",
+"suffix": "右将军"
+},
+{
+"prefix": "冷漠的",
+"suffix": "后将军"
+},
+{
+"prefix": "虚荣的",
+"suffix": "征东将军"
+},
+{
+"prefix": "冷淡的",
+"suffix": "征南将军"
+},
+{
+"prefix": "反覆的",
+"suffix": "征西将军"
+},
+{
+"prefix": "跋扈的",
+"suffix": "征北将军"
+},
+{
+"prefix": "自负的",
+"suffix": "镇东将军"
+},
+{
+"prefix": "逆反的",
+"suffix": "镇北将军"
+},
+{
+"prefix": "怨恨的",
+"suffix": "镇南将军"
+},
+{
+"prefix": "鲁莽的",
+"suffix": "镇西将军"
+},
+{
+"prefix": "放任的",
+"suffix": "安南将军"
+},
+{
+"prefix": "贫乏的",
+"suffix": "安东将军"
+},
+{
+"prefix": "固执的",
+"suffix": "安北将军"
+},
+{
+"prefix": "内向的",
+"suffix": "安西将军"
+},
+{
+"prefix": "脆弱的",
+"suffix": "平东将军"
+},
+{
+"prefix": "自卑的",
+"suffix": "平南将军"
+},
+{
+"prefix": "害羞的",
+"suffix": "平北将军"
+},
+{
+"prefix": "敏感的",
+"suffix": "平西将军"
+},
+{
+"prefix": "迟钝的",
+"suffix": "军师将军"
+},
+{
+"prefix": "柔弱的",
+"suffix": "领军将军"
+},
+{
+"prefix": "畏缩的",
+"suffix": "护军将军"
+},
+{
+"prefix": "顺从的",
+"suffix": "都护将军"
+},
+{
+"prefix": "胆小的",
+"suffix": "骁骑将军"
+},
+{
+"prefix": "安静的",
+"suffix": "越骑将军"
+},
+{
+"prefix": "寡言的",
+"suffix": "伏波将军"
+},
+{
+"prefix": "保守的",
+"suffix": "厉锋将军"
+},
+{
+"prefix": "被动的",
+"suffix": "武卫将军"
+},
+{
+"prefix": "忍让的",
+"suffix": "荡寇将军"
+},
+{
+"prefix": "抑郁的",
+"suffix": "讨寇将军"
+},
+{
+"prefix": "谨慎的",
+"suffix": "灭寇将军"
+},
+{
+"prefix": "胆怯的",
+"suffix": "游击将军"
+},
+{
+"prefix": "温和的",
+"suffix": "扬武将军"
+},
+{
+"prefix": "老实的",
+"suffix": "立义将军"
+},
+{
+"prefix": "平和的",
+"suffix": "秉忠将军"
+},
+{
+"prefix": "顺服的",
+"suffix": "翊军将军"
+},
+{
+"prefix": "含蓄的",
+"suffix": "镇远将军"
+},
+{
+"prefix": "迁就的",
+"suffix": "奉义将军"
+},
+{
+"prefix": "羞涩的",
+"suffix": "横江将军"
+},
+{
+"prefix": "忸怩的",
+"suffix": "威烈将军"
+},
+{
+"prefix": "缓慢的",
+"suffix": "讨逆将军"
+},
+{
+"prefix": "乏味的",
+"suffix": "征虏将军"
+},
+{
+"prefix": "散漫的",
+"suffix": "讨虏将军"
+},
+{
+"prefix": "迟缓的",
+"suffix": "扬威将军"
+},
+{
+"prefix": "罗嗦的",
+"suffix": "羽林郎将"
+},
+{
+"prefix": "悲观的",
+"suffix": "立武郎将"
+},
+{
+"prefix": "耐性的",
+"suffix": "立节郎将"
+},
+{
+"prefix": "消极的",
+"suffix": "绥南郎将"
+},
+{
+"prefix": "拖延的",
+"suffix": "五官郎将"
+},
+{
+"prefix": "烦躁的",
+"suffix": "左中郎将"
+},
+{
+"prefix": "妥协的",
+"suffix": "右中郎将"
+},
+{
+"prefix": "唠叨的",
+"suffix": "虎贲郎将"
+},
+{
+"prefix": "走马的",
+"suffix": "偏将军"
+},
+{
+"prefix": "旦夕的",
+"suffix": "裨将军"
+},
+{
+"prefix": "朝露的",
+"suffix": "门下督"
+},
+{
+"prefix": "流光的",
+"suffix": "武僧"
+},
+{
+"prefix": "痴情的",
+"suffix": "帐下督"
+},
+{
+"prefix": "失恋的",
+"suffix": "军师"
+},
+{
+"prefix": "一月的",
+"suffix": "长水"
+},
+{
+"prefix": "二月的",
+"suffix": "屯骑"
+},
+{
+"prefix": "三月的",
+"suffix": "掌屯骑"
+},
+{
+"prefix": "四月的",
+"suffix": "越骑校尉"
+},
+{
+"prefix": "五月的",
+"suffix": "掌越骑"
+},
+{
+"prefix": "六月的",
+"suffix": "步兵"
+},
+{
+"prefix": "七月的",
+"suffix": "射声"
+},
+{
+"prefix": "八月的",
+"suffix": "中垒"
+},
+{
+"prefix": "九月的",
+"suffix": "掌中垒"
+},
+{
+"prefix": "十月的",
+"suffix": "胡骑校尉"
+},
+{
+"prefix": "琼瑶的",
+"suffix": "典军校尉"
+},
+{
+"prefix": "瘦身的",
+"suffix": "上军校尉"
+},
+{
+"prefix": "闪婚的",
+"suffix": "中军校尉"
+},
+{
+"prefix": "恋歌的",
+"suffix": "下军校尉"
+},
+{
+"prefix": "猥琐的",
+"suffix": "左军校尉"
+},
+{
+"prefix": "畏缩的",
+"suffix": "右军校尉"
+},
+{
+"prefix": "吓唬的",
+"suffix": "助军校尉"
+},
+{
+"prefix": "心慌的",
+"suffix": "谒者仆射"
+},
+{
+"prefix": "心伤的",
+"suffix": "宾赞谒者"
+},
+{
+"prefix": "心寒的",
+"suffix": "监冶谒者"
+},
+{
+"prefix": "心怯的",
+"suffix": "郎中谒者"
+},
+{
+"prefix": "忧伤的",
+"suffix": "中宫谒者"
+},
+{
+"prefix": "畏惧的",
+"suffix": "给事谒者"
+},
+{
+"prefix": "受惊的",
+"suffix": "通事谒者"
+},
+{
+"prefix": "吓人的",
+"suffix": "中书谒者"
+},
+{
+"prefix": "可怕的",
+"suffix": "持书谒者"
+},
+{
+"prefix": "发毛的",
+"suffix": "持节谒者"
+},
+{
+"prefix": "寒心的",
+"suffix": "都尉"
+},
+{
+"prefix": "清脆的",
+"suffix": "郡尉"
+},
+{
+"prefix": "水嫩的",
+"suffix": "散骑"
+},
+{
+"prefix": "水灵的",
+"suffix": "黄门"
+},
+{
+"prefix": "纷乱的",
+"suffix": "武库"
+},
+{
+"prefix": "急促的",
+"suffix": "洗马"
+},
+{
+"prefix": "急骤的",
+"suffix": "督邮"
+},
+{
+"prefix": "繁杂的",
+"suffix": "若卢"
+},
+{
+"prefix": "霸王的",
+"suffix": "卫士"
+},
+{
+"prefix": "温柔的",
+"suffix": "长史"
+},
+{
+"prefix": "贤淑的",
+"suffix": "掾史属"
+},
+{
+"prefix": "可爱的",
+"suffix": "令史"
+},
+{
+"prefix": "腼腆的",
+"suffix": "御属"
+},
+{
+"prefix": "泼辣的",
+"suffix": "别驾从事"
+},
+{
+"prefix": "细腻的",
+"suffix": "都官从事"
+},
+{
+"prefix": "稚气的",
+"suffix": "功曹从事"
+},
+{
+"prefix": "憨厚的",
+"suffix": "簿曹从事"
+},
+{
+"prefix": "世故的",
+"suffix": "兵曹从事"
+},
+{
+"prefix": "精明的",
+"suffix": "治中从事"
+},
+{
+"prefix": "能干的",
+"suffix": "典学从事"
+},
+{
+"prefix": "活跃的",
+"suffix": "劝学从事"
+},
+{
+"prefix": "主动的",
+"suffix": "主记"
+},
+{
+"prefix": "灵巧的",
+"suffix": "记室"
+},
+{
+"prefix": "机敏的",
+"suffix": "参军"
+},
+{
+"prefix": "进取的",
+"suffix": "列侯"
+},
+{
+"prefix": "机灵的",
+"suffix": "县侯"
+},
+{
+"prefix": "雄心的",
+"suffix": "乡侯"
+},
+{
+"prefix": "壮志的",
+"suffix": "亭侯"
+},
+{
+"prefix": "和蔼的",
+"suffix": "都乡侯"
+},
+{
+"prefix": "可亲的",
+"suffix": "都亭侯"
+},
+{
+"prefix": "友好的",
+"suffix": "关内侯"
+},
+{
+"prefix": "志气的",
+"suffix": "名号侯"
+},
+{
+"prefix": "抱负的",
+"suffix": "建功侯"
+},
+{
+"prefix": "大胆的",
+"suffix": "关中侯"
+},
+{
+"prefix": "冒险的",
+"suffix": "刺史"
+},
+{
+"prefix": "才能的",
+"suffix": "好汉"
+},
+{
+"prefix": "仔细的",
+"suffix": "掌轻车"
+},
+{
+"prefix": "正直的",
+"suffix": "须眉"
+},
+{
+"prefix": "宽厚的",
+"suffix": "萧郎"
+},
+{
+"prefix": "胜任的",
+"suffix": "佳人"
+},
+{
+"prefix": "信心的",
+"suffix": "千金"
+},
+{
+"prefix": "认真的",
+"suffix": "庄稼汉"
+},
+{
+"prefix": "自觉的",
+"suffix": "贵妃"
+},
+{
+"prefix": "体贴的",
+"suffix": "贵人"
+},
+{
+"prefix": "沉思的",
+"suffix": "皇帝"
+},
+{
+"prefix": "合作的",
+"suffix": "博士"
+},
+{
+"prefix": "冲劲的",
+"suffix": "太监"
+},
+{
+"prefix": "拼搏的",
+"suffix": "仆射"
+},
+{
+"prefix": "献身的",
+"suffix": "议郎"
+},
+{
+"prefix": "可靠的",
+"suffix": "提督"
+},
+{
+"prefix": "老练的",
+"suffix": "中书令"
+},
+{
+"prefix": "策略的",
+"suffix": "司计"
+},
+{
+"prefix": "纪律的",
+"suffix": "校长"
+},
+{
+"prefix": "谨慎的",
+"suffix": "女御"
+},
+{
+"prefix": "尽职的",
+"suffix": "刽子手"
+},
+{
+"prefix": "精悍的",
+"suffix": "粗人"
+},
+{
+"prefix": "效率的",
+"suffix": "仵作"
+},
+{
+"prefix": "充沛的",
+"suffix": "肉肆匠"
+},
+{
+"prefix": "守信的",
+"suffix": "陶士匠"
+},
+{
+"prefix": "忠诚的",
+"suffix": "泥匠"
+},
+{
+"prefix": "坚强的",
+"suffix": "木匠"
+},
+{
+"prefix": "直率的",
+"suffix": "瓦匠"
+},
+{
+"prefix": "真诚的",
+"suffix": "芝麻官"
+},
+{
+"prefix": "俭朴的",
+"suffix": "按摩师"
+},
+{
+"prefix": "宽宏的",
+"suffix": "报童"
+},
+{
+"prefix": "大量的",
+"suffix": "酿酒师"
+},
+{
+"prefix": "教养的",
+"suffix": "造纸匠"
+},
+{
+"prefix": "礼貌的",
+"suffix": "药师"
+},
+{
+"prefix": "英俊的",
+"suffix": "茶师"
+},
+{
+"prefix": "勤劳的",
+"suffix": "染纺匠"
+},
+{
+"prefix": "饱满的",
+"suffix": "织布匠"
+},
+{
+"prefix": "诚实的",
+"suffix": "侠客"
+},
+{
+"prefix": "殷勤的",
+"suffix": "诗人"
+},
+{
+"prefix": "恭顺的",
+"suffix": "书生"
+},
+{
+"prefix": "公正的",
+"suffix": "名士"
+},
+{
+"prefix": "勤奋的",
+"suffix": "贤才"
+},
+{
+"prefix": "独创的",
+"suffix": "门卫"
+},
+{
+"prefix": "智力的",
+"suffix": "武卒"
+},
+{
+"prefix": "动脑的",
+"suffix": "麒麟"
+},
+{
+"prefix": "发明的",
+"suffix": "凤凰"
+},
+{
+"prefix": "好心的",
+"suffix": "青龙"
+},
+{
+"prefix": "见识的",
+"suffix": "白虎"
+},
+{
+"prefix": "精通的",
+"suffix": "朱雀"
+},
+{
+"prefix": "忠心的",
+"suffix": "玄武"
+},
+{
+"prefix": "条理的",
+"suffix": "角木蛟"
+},
+{
+"prefix": "谦虚的",
+"suffix": "亢金龙"
+},
+{
+"prefix": "明确的",
+"suffix": "氐土貉"
+},
+{
+"prefix": "消极的",
+"suffix": "房日兔"
+},
+{
+"prefix": "客观的",
+"suffix": "心月狐"
+},
+{
+"prefix": "虚心的",
+"suffix": "尾火虎"
+},
+{
+"prefix": "生长的",
+"suffix": "箕水豹"
+},
+{
+"prefix": "气愤的",
+"suffix": "井木犴"
+},
+{
+"prefix": "厌恶的",
+"suffix": "鬼金羊"
+},
+{
+"prefix": "显现的",
+"suffix": "柳土獐"
+},
+{
+"prefix": "幻灭的",
+"suffix": "星日马"
+},
+{
+"prefix": "高高的",
+"suffix": "张月鹿"
+},
+{
+"prefix": "胖胖的",
+"suffix": "翼火蛇"
+},
+{
+"prefix": "快乐的",
+"suffix": "轸水蚓"
+},
+{
+"prefix": "欢快的",
+"suffix": "奎木狼"
+},
+{
+"prefix": "欢喜的",
+"suffix": "娄金狗"
+},
+{
+"prefix": "喜悦的",
+"suffix": "胃土雉"
+},
+{
+"prefix": "愉快的",
+"suffix": "昂日鸡"
+},
+{
+"prefix": "夷愉的",
+"suffix": "毕月乌"
+},
+{
+"prefix": "首肯的",
+"suffix": "觜火猴"
+},
+{
+"prefix": "愿意的",
+"suffix": "参水猿"
+},
+{
+"prefix": "快活的",
+"suffix": "斗木獬"
+},
+{
+"prefix": "夷悦的",
+"suffix": "牛金牛"
+},
+{
+"prefix": "怡悦的",
+"suffix": "女土蝠"
+},
+{
+"prefix": "雀跃的",
+"suffix": "虚日鼠"
+},
+{
+"prefix": "忻悦的",
+"suffix": "危月燕"
+},
+{
+"prefix": "欣喜的",
+"suffix": "室火猪"
+},
+{
+"prefix": "欢腾的",
+"suffix": "壁水獐"
+},
+{
+"prefix": "兴奋的",
+"suffix": "牛头"
+},
+{
+"prefix": "欢跃的",
+"suffix": "马面"
+},
+{
+"prefix": "欢欣的",
+"suffix": "虾兵"
+},
+{
+"prefix": "欢畅的",
+"suffix": "蟹将"
+},
+{
+"prefix": "欢娱的",
+"suffix": "歪头"
+},
+{
+"prefix": "得意的",
+"suffix": "水法"
+},
+{
+"prefix": "痛快的",
+"suffix": "大师兄"
+},
+{
+"prefix": "康乐的",
+"suffix": "盘古"
+},
+{
+"prefix": "安乐的",
+"suffix": "西王母"
+},
+{
+"prefix": "称心的",
+"suffix": "天吴"
+},
+{
+"prefix": "得志的",
+"suffix": "毕方"
+},
+{
+"prefix": "满足的",
+"suffix": "据比"
+},
+{
+"prefix": "嘴馋的",
+"suffix": "竖亥"
+},
+{
+"prefix": "气愤的",
+"suffix": "烛阴"
+},
+{
+"prefix": "盛怒的",
+"suffix": "炎帝"
+},
+{
+"prefix": "不满的",
+"suffix": "祝融"
+},
+{
+"prefix": "不悦的",
+"suffix": "少昊"
+},
+{
+"prefix": "震怒的",
+"suffix": "共工"
+},
+{
+"prefix": "众怒的",
+"suffix": "颛顼"
+},
+{
+"prefix": "酸心的",
+"suffix": "禺强"
+},
+{
+"prefix": "哀愁的",
+"suffix": "玄冥"
+},
+{
+"prefix": "忧闷的",
+"suffix": "伏羲"
+},
+{
+"prefix": "忧郁的",
+"suffix": "华胥氏"
+},
+{
+"prefix": "畏惧的",
+"suffix": "句芒"
+},
+{
+"prefix": "胆寒的",
+"suffix": "陆吾"
+},
+{
+"prefix": "胆怯的",
+"suffix": "英招"
+},
+{
+"prefix": "惧怕的",
+"suffix": "离珠"
+},
+{
+"prefix": "畏怯的",
+"suffix": "金甲神"
+},
+{
+"prefix": "肥硕的",
+"suffix": "蚩尤"
+},
+{
+"prefix": "肥胖的",
+"suffix": "风伯"
+},
+{
+"prefix": "贼胖的",
+"suffix": "雨师"
+},
+{
+"prefix": "好胖的",
+"suffix": "赤松子"
+},
+{
+"prefix": "臃肿的",
+"suffix": "力牧"
+},
+{
+"prefix": "魁梧的",
+"suffix": "神皇"
+},
+{
+"prefix": "彪悍的",
+"suffix": "风后"
+},
+{
+"prefix": "健硕的",
+"suffix": "应龙"
+},
+{
+"prefix": "壮硕的",
+"suffix": "夸父"
+},
+{
+"prefix": "壮实的",
+"suffix": "神农"
+},
+{
+"prefix": "强壮的",
+"suffix": "女娃"
+},
+{
+"prefix": "粗壮的",
+"suffix": "精卫"
+},
+{
+"prefix": "丰腴的",
+"suffix": "瑶姬"
+},
+{
+"prefix": "丰盈的",
+"suffix": "虐鬼"
+},
+{
+"prefix": "丰满的",
+"suffix": "魍魉"
+},
+{
+"prefix": "富态的",
+"suffix": "老童"
+},
+{
+"prefix": "清瘦的",
+"suffix": "长琴"
+},
+{
+"prefix": "瘦削的",
+"suffix": "彭祖"
+},
+{
+"prefix": "瘦小的",
+"suffix": "重黎"
+},
+{
+"prefix": "瘦弱的",
+"suffix": "羲和"
+},
+{
+"prefix": "单薄的",
+"suffix": "帝俊"
+},
+{
+"prefix": "苗条的",
+"suffix": "少昊"
+},
+{
+"prefix": "精巧的",
+"suffix": "常羲"
+},
+{
+"prefix": "精瘦的",
+"suffix": "天尊"
+},
+{
+"prefix": "高挑的",
+"suffix": "顺风耳"
+},
+{
+"prefix": "曼妙的",
+"suffix": "千里眼"
+},
+{
+"prefix": "窈窕的",
+"suffix": "金童"
+},
+{
+"prefix": "风度的",
+"suffix": "玉女"
+},
+{
+"prefix": "翩翩的",
+"suffix": "雷公"
+},
+{
+"prefix": "诱人的",
+"suffix": "电母"
+},
+{
+"prefix": "艳丽的",
+"suffix": "游奕"
+},
+{
+"prefix": "俊美的",
+"suffix": "仙女"
+},
+{
+"prefix": "娇小的",
+"suffix": "嫦娥"
+},
+{
+"prefix": "优雅的",
+"suffix": "玉兔"
+},
+{
+"prefix": "纤小的",
+"suffix": "吴刚"
+},
+{
+"prefix": "秀眉的",
+"suffix": "金吒"
+},
+{
+"prefix": "浓眉的",
+"suffix": "木吒"
+},
+{
+"prefix": "红润的",
+"suffix": "月老"
+},
+{
+"prefix": "性感的",
+"suffix": "左辅"
+},
+{
+"prefix": "萌萌的",
+"suffix": "右弼"
+},
+{
+"prefix": "鹤发的",
+"suffix": "天聋"
+},
+{
+"prefix": "童颜的",
+"suffix": "地哑"
+},
+{
+"prefix": "冰肌的",
+"suffix": "值年神"
+},
+{
+"prefix": "玉骨的",
+"suffix": "值月神"
+},
+{
+"prefix": "闭月的",
+"suffix": "值日神"
+},
+{
+"prefix": "羞花的",
+"suffix": "值时神"
+},
+{
+"prefix": "沉鱼的",
+"suffix": "张道陵"
+},
+{
+"prefix": "落雁的",
+"suffix": "许逊"
+},
+{
+"prefix": "如花的",
+"suffix": "邱弘济"
+},
+{
+"prefix": "似玉的",
+"suffix": "葛洪"
+},
+{
+"prefix": "达观的",
+"suffix": "孟章"
+},
+{
+"prefix": "幼稚的",
+"suffix": "监兵"
+},
+{
+"prefix": "调皮的",
+"suffix": "陵光"
+},
+{
+"prefix": "悲观的",
+"suffix": "执明"
+},
+{
+"prefix": "患得的",
+"suffix": "黄河"
+},
+{
+"prefix": "患失的",
+"suffix": "长江"
+},
+{
+"prefix": "疑神的",
+"suffix": "淮河"
+},
+{
+"prefix": "疑鬼的",
+"suffix": "济水"
+},
+{
+"prefix": "洒脱的",
+"suffix": "河神"
+},
+{
+"prefix": "郁郁的",
+"suffix": "土地老"
+},
+{
+"prefix": "寡欢的",
+"suffix": "井龙王"
+},
+{
+"prefix": "好吃的",
+"suffix": "马天君"
+},
+{
+"prefix": "豪放的",
+"suffix": "财神爷"
+},
+{
+"prefix": "不羁的",
+"suffix": "灶神"
+},
+{
+"prefix": "思迁的",
+"suffix": "岁星"
+},
+{
+"prefix": "重色的",
+"suffix": "荧惑"
+},
+{
+"prefix": "轻友的",
+"suffix": "太白"
+},
+{
+"prefix": "负责的",
+"suffix": "辰星"
+},
+{
+"prefix": "暴躁的",
+"suffix": "镇星"
+},
+{
+"prefix": "刚正的",
+"suffix": "泰山神"
+},
+{
+"prefix": "面红的",
+"suffix": "衡山神"
+},
+{
+"prefix": "耳赤的",
+"suffix": "嵩山神"
+},
+{
+"prefix": "白净的",
+"suffix": "恒山神"
+},
+{
+"prefix": "柔嫩的",
+"suffix": "华山神"
+},
+{
+"prefix": "大眼的",
+"suffix": "阴神"
+},
+{
+"prefix": "慈眉的",
+"suffix": "丁卯神"
+},
+{
+"prefix": "善目的",
+"suffix": "丁已神"
+},
+{
+"prefix": "轩昂的",
+"suffix": "丁未神"
+},
+{
+"prefix": "飒爽的",
+"suffix": "丁酉神"
+},
+{
+"prefix": "得体的",
+"suffix": "丁亥神"
+},
+{
+"prefix": "破涕的",
+"suffix": "丁丑神"
+},
+{
+"prefix": "捧腹的",
+"suffix": "阳神"
+},
+{
+"prefix": "春风的",
+"suffix": "甲子神"
+},
+{
+"prefix": "悠然的",
+"suffix": "甲戌神"
+},
+{
+"prefix": "焕发的",
+"suffix": "甲申神"
+},
+{
+"prefix": "沮丧的",
+"suffix": "甲午神"
+},
+{
+"prefix": "愁眉的",
+"suffix": "甲辰神"
+},
+{
+"prefix": "怒放的",
+"suffix": "甲寅神"
+},
+{
+"prefix": "起伏的",
+"suffix": "司命星"
+},
+{
+"prefix": "悲痛的",
+"suffix": "司禄星"
+},
+{
+"prefix": "忐忑的",
+"suffix": "延寿星"
+},
+{
+"prefix": "蓬头的",
+"suffix": "益算星"
+},
+{
+"prefix": "面善的",
+"suffix": "度厄星"
+},
+{
+"prefix": "垢面的",
+"suffix": "上生星"
+},
+{
+"prefix": "嶙峋的",
+"suffix": "天府宫"
+},
+{
+"prefix": "刚毅的",
+"suffix": "天相宫"
+},
+{
+"prefix": "雅靓的",
+"suffix": "天梁宫"
+},
+{
+"prefix": "聪颖的",
+"suffix": "天同宫"
+},
+{
+"prefix": "至善的",
+"suffix": "天枢宫"
+},
+{
+"prefix": "尊贵的",
+"suffix": "天机宫"
+},
+{
+"prefix": "诙谐的",
+"suffix": "贪狼星"
+},
+{
+"prefix": "孝顺的",
+"suffix": "巨门星"
+},
+{
+"prefix": "不羁的",
+"suffix": "禄存星"
+},
+{
+"prefix": "粗犷的",
+"suffix": "文曲星"
+},
+{
+"prefix": "豪气的",
+"suffix": "廉贞星"
+},
+{
+"prefix": "老成的",
+"suffix": "武曲星"
+},
+{
+"prefix": "跋扈的",
+"suffix": "破军星"
+},
+{
+"prefix": "自恣的",
+"suffix": "福星"
+},
+{
+"prefix": "矜才的",
+"suffix": "禄星"
+},
+{
+"prefix": "刁钻的",
+"suffix": "寿星"
+},
+{
+"prefix": "古怪的",
+"suffix": "麻姑"
+},
+{
+"prefix": "光明的",
+"suffix": "真武"
+},
+{
+"prefix": "磊落的",
+"suffix": "降魔"
+},
+{
+"prefix": "心直的",
+"suffix": "马贩子"
+},
+{
+"prefix": "口快的",
+"suffix": "老千"
+},
+{
+"prefix": "口蜜的",
+"suffix": "女汉子"
+},
+{
+"prefix": "腹剑的",
+"suffix": "萝莉"
+},
+{
+"prefix": "赤胆的",
+"suffix": "正太"
+},
+{
+"prefix": "烂漫的",
+"suffix": "御姐"
+},
+{
+"prefix": "目空的",
+"suffix": "进士"
+},
+{
+"prefix": "自高的",
+"suffix": "贩枣人"
+},
+{
+"prefix": "失眠的",
+"suffix": "更夫"
+}
+]

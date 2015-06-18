@@ -1,0 +1,42 @@
+[
+{
+"costType":"C",
+"cost": 50000
+},
+{
+"costType":"D",
+"cost": 20
+},
+{
+"costType":"D",
+"cost": 25
+},
+{
+"costType":"D",
+"cost": 30
+},
+{
+"costType":"D",
+"cost": 35
+},
+{
+"costType":"D",
+"cost": 40
+},
+{
+"costType":"D",
+"cost": 45
+},
+{
+"costType":"D",
+"cost": 50
+},
+{
+"costType":"D",
+"cost": 55
+},
+{
+"costType":"D",
+"cost": 60
+}
+]

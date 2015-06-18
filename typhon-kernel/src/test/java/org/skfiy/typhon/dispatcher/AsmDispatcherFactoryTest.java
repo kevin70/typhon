@@ -15,7 +15,9 @@
  */
 package org.skfiy.typhon.dispatcher;
 
+import javax.inject.Inject;
 import org.skfiy.typhon.TestBase;
+import org.skfiy.typhon.container.ContainerWapper;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,7 +31,8 @@ public class AsmDispatcherFactoryTest extends TestBase {
     
     @Override
     protected void setup() {
-        adf = new AsmDispatcherFactory(CONTAINER);
+        adf = new AsmDispatcherFactory();
+        containerWapper.injectMembers(adf);
     }
 
     @Test

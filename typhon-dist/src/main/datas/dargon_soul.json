@@ -1,0 +1,426 @@
+[
+{
+"#item.id": "ha09",
+"prob": 4
+},
+{
+"#item.id": "hc06",
+"prob": 4
+},
+{
+"#item.id": "hd14",
+"prob": 4
+},
+{
+"#item.id": "ha02",
+"prob": 4
+},
+{
+"#item.id": "ha04",
+"prob": 4
+},
+{
+"#item.id": "ha11",
+"prob": 4
+},
+{
+"#item.id": "hb02",
+"prob": 4
+},
+{
+"#item.id": "hb04",
+"prob": 4
+},
+{
+"#item.id": "hb05",
+"prob": 4
+},
+{
+"#item.id": "hb07",
+"prob": 4
+},
+{
+"#item.id": "hb08",
+"prob": 4
+},
+{
+"#item.id": "hc07",
+"prob": 4
+},
+{
+"#item.id": "hc09",
+"prob": 4
+},
+{
+"#item.id": "hc10",
+"prob": 4
+},
+{
+"#item.id": "hd09",
+"prob": 4
+},
+{
+"#item.id": "hd12",
+"prob": 4
+},
+{
+"#item.id": "ha10",
+"prob": 7
+},
+{
+"#item.id": "ha12",
+"prob": 7
+},
+{
+"#item.id": "hb10",
+"prob": 7
+},
+{
+"#item.id": "hb17",
+"prob": 7
+},
+{
+"#item.id": "hc11",
+"prob": 7
+},
+{
+"#item.id": "hc15",
+"prob": 7
+},
+{
+"#item.id": "hd04",
+"prob": 7
+},
+{
+"#item.id": "hd15",
+"prob": 7
+},
+{
+"#item.id": "ha01",
+"prob": 7
+},
+{
+"#item.id": "ha13",
+"prob": 7
+},
+{
+"#item.id": "ha14",
+"prob": 7
+},
+{
+"#item.id": "hb11",
+"prob": 7
+},
+{
+"#item.id": "hc03",
+"prob": 7
+},
+{
+"#item.id": "hc13",
+"prob": 7
+},
+{
+"#item.id": "hc16",
+"prob": 7
+},
+{
+"#item.id": "hd19",
+"prob": 7
+},
+{
+"#item.id": "ha15",
+"prob": 18
+},
+{
+"#item.id": "ha16",
+"prob": 18
+},
+{
+"#item.id": "hb15",
+"prob": 18
+},
+{
+"#item.id": "hb16",
+"prob": 18
+},
+{
+"#item.id": "hc05",
+"prob": 18
+},
+{
+"#item.id": "hc17",
+"prob": 18
+},
+{
+"#item.id": "hd03",
+"prob": 18
+},
+{
+"#item.id": "hd16",
+"prob": 18
+},
+{
+"#item.id": "ha17",
+"prob": 18
+},
+{
+"#item.id": "hb09",
+"prob": 18
+},
+{
+"#item.id": "hb12",
+"prob": 18
+},
+{
+"#item.id": "hb14",
+"prob": 18
+},
+{
+"#item.id": "hc04",
+"prob": 18
+},
+{
+"#item.id": "hc12",
+"prob": 18
+},
+{
+"#item.id": "hd05",
+"prob": 18
+},
+{
+"#item.id": "hd06",
+"prob": 18
+},
+{
+"#item.id": "hd07",
+"prob": 18
+},
+{
+"#item.id": "hd08",
+"prob": 18
+},
+{
+"#item.id": "hd10",
+"prob": 18
+},
+{
+"#item.id": "hd11",
+"prob": 18
+},
+{
+"#item.id": "hd18",
+"prob": 18
+},
+{
+"#item.id": "sa09",
+"prob": 126
+},
+{
+"#item.id": "sc06",
+"prob": 126
+},
+{
+"#item.id": "sd14",
+"prob": 126
+},
+{
+"#item.id": "sa02",
+"prob": 126
+},
+{
+"#item.id": "sa04",
+"prob": 126
+},
+{
+"#item.id": "sa11",
+"prob": 126
+},
+{
+"#item.id": "sb02",
+"prob": 126
+},
+{
+"#item.id": "sb04",
+"prob": 126
+},
+{
+"#item.id": "sb05",
+"prob": 126
+},
+{
+"#item.id": "sb07",
+"prob": 126
+},
+{
+"#item.id": "sb08",
+"prob": 126
+},
+{
+"#item.id": "sc07",
+"prob": 126
+},
+{
+"#item.id": "sc09",
+"prob": 126
+},
+{
+"#item.id": "sc10",
+"prob": 126
+},
+{
+"#item.id": "sd09",
+"prob": 126
+},
+{
+"#item.id": "sd12",
+"prob": 126
+},
+{
+"#item.id": "sa10",
+"prob": 126
+},
+{
+"#item.id": "sa12",
+"prob": 126
+},
+{
+"#item.id": "sb10",
+"prob": 126
+},
+{
+"#item.id": "sb17",
+"prob": 126
+},
+{
+"#item.id": "sc11",
+"prob": 126
+},
+{
+"#item.id": "sc15",
+"prob": 126
+},
+{
+"#item.id": "sd04",
+"prob": 126
+},
+{
+"#item.id": "sd15",
+"prob": 126
+},
+{
+"#item.id": "sa01",
+"prob": 126
+},
+{
+"#item.id": "sa13",
+"prob": 126
+},
+{
+"#item.id": "sa14",
+"prob": 126
+},
+{
+"#item.id": "sb11",
+"prob": 126
+},
+{
+"#item.id": "sc03",
+"prob": 126
+},
+{
+"#item.id": "sc13",
+"prob": 126
+},
+{
+"#item.id": "sc16",
+"prob": 126
+},
+{
+"#item.id": "sd19",
+"prob": 126
+},
+{
+"#item.id": "sa15",
+"prob": 126
+},
+{
+"#item.id": "sa16",
+"prob": 126
+},
+{
+"#item.id": "sb15",
+"prob": 126
+},
+{
+"#item.id": "sb16",
+"prob": 126
+},
+{
+"#item.id": "sc05",
+"prob": 126
+},
+{
+"#item.id": "sc17",
+"prob": 126
+},
+{
+"#item.id": "sd03",
+"prob": 126
+},
+{
+"#item.id": "sd16",
+"prob": 126
+},
+{
+"#item.id": "sa17",
+"prob": 126
+},
+{
+"#item.id": "sb09",
+"prob": 126
+},
+{
+"#item.id": "sb12",
+"prob": 126
+},
+{
+"#item.id": "sb14",
+"prob": 126
+},
+{
+"#item.id": "sc04",
+"prob": 126
+},
+{
+"#item.id": "sc12",
+"prob": 126
+},
+{
+"#item.id": "sd05",
+"prob": 126
+},
+{
+"#item.id": "sd06",
+"prob": 126
+},
+{
+"#item.id": "sd07",
+"prob": 126
+},
+{
+"#item.id": "sd08",
+"prob": 126
+},
+{
+"#item.id": "sd10",
+"prob": 126
+},
+{
+"#item.id": "sd11",
+"prob": 126
+},
+{
+"#item.id": "sd18",
+"prob": 126
+}
+]

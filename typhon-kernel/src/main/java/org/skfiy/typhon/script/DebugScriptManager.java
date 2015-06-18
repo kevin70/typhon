@@ -16,13 +16,20 @@
 package org.skfiy.typhon.script;
 
 import com.sun.tools.attach.VirtualMachine;
+import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.lang.instrument.ClassDefinition;
 import java.lang.instrument.Instrumentation;
 import java.lang.management.ManagementFactory;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,8 +58,8 @@ import org.slf4j.LoggerFactory;
 /**
  * 调试版脚本管理器, 该对象支持重新定义{@code Script }字节码.
  * {@link #reload() }方法在执行前去尝试加载{@code Agent }实现(通过{@link Constants#AGENT_JAR_PATH }
- * 配置JAR路径), 获得{@code Instrumentation }实例之后会检查{@link Constants#SCRIPTS_DIR }对应的脚本
- * 源码, 然后重新编译被修改的脚本重定义到当前应用中.
+ * 配置JAR路径), 获得{@code Instrumentation }实例之后会检查{@link Constants#SCRIPTS_DIR }对应的脚本 源码,
+ * 然后重新编译被修改的脚本重定义到当前应用中.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
@@ -60,14 +67,14 @@ import org.slf4j.LoggerFactory;
 public final class DebugScriptManager extends AbstractComponent implements ScriptManager {
 
     private static final Logger LOG = LoggerFactory.getLogger(DebugScriptManager.class);
-    
+
     @Inject
     private Container container;
     private Instrumentation instrumentation;
-    
+
     private File sourceDir;
     private File targetDir;
-    
+
     private final Map<String, ScriptWapper> scripts = new ConcurrentHashMap<>();
     private ScriptClassLoader scriptClassLoader = new ScriptClassLoader();
 
@@ -79,7 +86,7 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
         if (!targetDir.exists()) {
             targetDir.mkdirs();
         }
-        
+
         // compiler
         List<File> javaSources = new ArrayList<>();
         findJavaSources(sourceDir, javaSources);
@@ -88,7 +95,7 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
         // init
         initClassLoader(targetDir);
         initScripts(targetDir);
-              
+
         MBeanUtils.registerComponent(this, OBJECT_NAME, null);
         LOG.debug("DebugScriptManager inited successful...");
     }
@@ -98,35 +105,13 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
         if (instrumentation == null) {
             loadAgent();
         }
-        
-        List<ScriptWapper> rescripts = new ArrayList<>();
-        List<File> files = new ArrayList<>();
-        for (Map.Entry<String, ScriptWapper> entry : scripts.entrySet()) {
-            ScriptWapper wapper = entry.getValue();
-            if (wapper.getLastModified() != wapper.getScriptSource().lastModified()) {
-                rescripts.add(wapper);
-                files.add(wapper.getScriptSource());
-            }
-        }
 
-        // recompile
-        compile(files.toArray(new File[]{}));
+        // compiler
+        List<File> javaSources = new ArrayList<>();
+        findJavaSources(sourceDir, javaSources);
+        compile(javaSources.toArray(new File[]{}));
 
-        for (ScriptWapper wapper : rescripts) {
-            try {
-                InputStream in = new FileInputStream(wapper.getScriptTarget());
-                byte[] buf = StreamUtils.copyToByteArray(in);
-                ClassDefinition cdef = new ClassDefinition(
-                        wapper.getScriptObject().getClass(), buf);
-                instrumentation.redefineClasses(cdef);
-                wapper.updateLastModified();
-            } catch (Exception ex) {
-                LOG.debug("重定义[{}]错误", wapper.getScriptTarget());
-                throw new ScriptException(ex);
-            }
-        }
-
-        LOG.debug("script: redefine {} classes.", rescripts.size());
+        redefineScripts(targetDir);
     }
 
     @Override
@@ -141,7 +126,7 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
     @Override
     public <T extends Script> T getScript(String name) {
         Assert.notNull(name);
-        
+
         ScriptWapper wapper = scripts.get(name);
         if (wapper == null) {
             throw new NotFoundScriptException(name);
@@ -151,13 +136,13 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
 
     /**
      * 设置{@link Instrumentation }实例.
-     * 
+     *
      * @param instrumentation {@link Instrumentation }实例
      */
     public void setInstrumentation(Instrumentation instrumentation) {
         this.instrumentation = instrumentation;
     }
-    
+
     private void initClassLoader(File dir) {
         scriptClassLoader.addFile(dir);
         if (dir.isDirectory()) {
@@ -167,7 +152,7 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
             }
         }
     }
-    
+
     private void initScripts(File dir) {
         File[] files = dir.listFiles();
         for (File f : files) {
@@ -179,16 +164,49 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
 
                 File source = new File(sourceDir, path + ".java");
                 File target = new File(targetDir, path + ".class");
-                ScriptWapper scriptWapper = new ScriptWapper(source, target, newScript(name));
+
+                Script script = newScript(name);
+                if (script == null) {
+                    continue;
+                }
+                ScriptWapper scriptWapper = new ScriptWapper(source, target, script);
                 scripts.put(name, scriptWapper);
+            }
+        }
+    }
+
+    private void redefineScripts(File dir) {
+        File[] files = dir.listFiles();
+        for (File f : files) {
+            if (f.isDirectory()) {
+                redefineScripts(f);
+            } else if (f.getName().endsWith(".class")) {
+                String name = getScriptCanonicalName(f);
+                String path = name.replaceAll("\\.", "/");
+                File target = new File(targetDir, path + ".class");
+
+                try {
+                    InputStream in = new FileInputStream(target);
+                    byte[] buf = StreamUtils.copyToByteArray(in);
+                    ClassDefinition cdef = new ClassDefinition(scriptClassLoader.loadClass(name), buf);
+                    instrumentation.redefineClasses(cdef);
+                } catch (Exception ex) {
+                    LOG.debug("重定义[{}]错误", name);
+                    throw new ScriptException(ex);
+                }
             }
         }
     }
 
     private Script newScript(String name) {
         try {
+
             Class clazz = scriptClassLoader.loadClass(name);
-            Script script  = (Script) clazz.newInstance();
+            if (!Script.class.isAssignableFrom(clazz)) {
+                return null;
+            }
+
+            Script script = (Script) clazz.newInstance();
             container.injectMembers(script);
             return script;
         } catch (Exception ex) {
@@ -220,12 +238,24 @@ public final class DebugScriptManager extends AbstractComponent implements Scrip
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(
                 null, Locale.CHINA, StandardCharsets.UTF_8);
         try {
-            
+
+            StringBuilder classpath = new StringBuilder();
+            if (this.getClass().getClassLoader() instanceof URLClassLoader) {
+                URLClassLoader urlClassLoader = (URLClassLoader) this.getClass().getClassLoader();
+                for (URL url : urlClassLoader.getURLs()) {
+                    classpath.append(url.getFile());
+                    classpath.append(File.pathSeparator);
+                }
+            }
+
             Iterable<? extends JavaFileObject> compilationUnits = fileManager.getJavaFileObjects(files);
             Iterable<String> options = Arrays.asList("-d", targetDir.getAbsolutePath(),
-                    "-encoding", "UTF-8");
+                    "-encoding", "UTF-8", "-classpath", classpath.toString(), "-g");
+            
+            OutputStream stream = new ByteArrayOutputStream();
+            Writer write = new OutputStreamWriter(stream);
             CompilationTask task = compiler.getTask(
-                    null, fileManager, null, options, null, compilationUnits);
+                    write, fileManager, null, options, null, compilationUnits);
             if (task.call()) {
                 LOG.debug("Scripts compilation successful...");
             }

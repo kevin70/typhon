@@ -150,7 +150,7 @@ public final class Typhons {
      * @return 一个数值
      */
     public static int getInteger(String key) {
-        return getInteger(key, -1);
+        return getInteger(key, 0);
     }
 
     /**
@@ -175,7 +175,7 @@ public final class Typhons {
      * @return 一个长整型
      */
     public static long getLong(String key) {
-        return getLong(key, -1L);
+        return getLong(key, 0L);
     }
 
     /**
@@ -248,13 +248,13 @@ public final class Typhons {
      */
     public static void refresh() {
         for (Map.Entry<String, Object> entry : props.entrySet()) {
-            Class<?> clazz = entry.getKey().getClass();
+            Class<?> clazz = entry.getValue().getClass();
             if (clazz == Boolean.class || clazz == Boolean.TYPE) {
                 setBooleanFromSystem(entry.getKey());
             } else if (clazz == Integer.class || clazz == Integer.TYPE) {
-                setIntegerFromSystem(entry.getKey(), -1);
+                setIntegerFromSystem(entry.getKey(), 0);
             } else if (clazz == Long.class || clazz == Long.TYPE) {
-                setLongFromSystem(entry.getKey(), -1L);
+                setLongFromSystem(entry.getKey(), 0L);
             } else if (clazz == Float.class || clazz == Float.TYPE) {
                 setFloatFromSystem(entry.getKey(), 0.0F);
             } else if (clazz == Double.class || clazz == Double.TYPE) {

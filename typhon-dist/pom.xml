@@ -22,7 +22,7 @@ limitations under the License.
     <parent>
         <groupId>org.skfiy.typhon</groupId>
         <artifactId>typhon-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>2.2.3</version>
     </parent>
 
     <groupId>org.skfiy.typhon</groupId>
@@ -36,6 +36,7 @@ limitations under the License.
     </properties>
     
     <build>
+        <sourceDirectory>src/main/scripts</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -59,6 +60,15 @@ limitations under the License.
             </plugin>
         </plugins>
     </build>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.skfiy.typhon</groupId>
+            <artifactId>typhon-kernel</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
     
     <profiles>
         <profile>
@@ -98,6 +108,21 @@ limitations under the License.
                                         <copy todir="${dist.dir}">
                                             <fileset dir="../typhon-action/target/typhon-action-${project.version}">
                                                 <include name="**/*"/>
+                                            </fileset>
+                                        </copy>
+                                        
+                                        <mkdir dir="${dist.dir}/datas"/>
+                                        <copy todir="${dist.dir}/datas">
+                                            <fileset dir="${basedir}/src/main/datas">
+                                                <include name="**/*.json"/>
+                                                <include name="**/*.xml"/>
+                                            </fileset>
+                                        </copy>
+                                        
+                                        <mkdir dir="${dist.dir}/scripts"/>
+                                        <copy todir="${dist.dir}/scripts">
+                                            <fileset dir="${basedir}/src/main/scripts">
+                                                <exclude name="**/test/**"/>
                                             </fileset>
                                         </copy>
                                         <chmod dir="${dist.dir}/bin" perm="755" includes="**/*.sh"/>

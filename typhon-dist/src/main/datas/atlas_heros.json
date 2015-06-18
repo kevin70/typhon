@@ -1,0 +1,374 @@
+[
+{
+"type": "b",
+"heroArea": "Wei",
+"heroCount": 5,
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "b",
+"heroArea": "Wei",
+"heroCount": 10,
+"wid": "sd02",
+"count": 10
+},
+{
+"type": "b",
+"heroArea": "Wei",
+"heroCount": 15,
+"wid": "sd02",
+"count": 15
+},
+{
+"type": "b",
+"heroArea": "Shu",
+"heroCount": 5,
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "b",
+"heroArea": "Shu",
+"heroCount": 10,
+"wid": "sd02",
+"count": 10
+},
+{
+"type": "b",
+"heroArea": "Shu",
+"heroCount": 15,
+"wid": "sd02",
+"count": 15
+},
+{
+"type": "b",
+"heroArea": "Wu",
+"heroCount": 5,
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "b",
+"heroArea": "Wu",
+"heroCount": 10,
+"wid": "sd02",
+"count": 10
+},
+{
+"type": "b",
+"heroArea": "Wu",
+"heroCount": 15,
+"wid": "sd02",
+"count": 15
+},
+{
+"type": "b",
+"heroArea": "QXiong",
+"heroCount": 5,
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "b",
+"heroArea": "QXiong",
+"heroCount": 10,
+"wid": "sd02",
+"count": 10
+},
+{
+"type": "b",
+"heroArea": "QXiong",
+"heroCount": 15,
+"wid": "sd02",
+"count": 15
+},
+{
+"type": "b",
+"Gender": "Female",
+"heroCount": 5,
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "b",
+"Gender": "Female",
+"heroCount": 10,
+"wid": "sd02",
+"count": 10
+},
+{
+"type": "a",
+"requirements": [
+"hb02",
+"hb01",
+"hb05",
+"hb06",
+"hb07"
+],
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "a",
+"requirements": [
+"ha02",
+"ha10",
+"ha15",
+"ha16",
+"ha05"
+],
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "a",
+"requirements": [
+"hc11",
+"hc17",
+"hc01",
+"hc16",
+"hc10"
+],
+"wid": "sd02",
+"count": 5
+},
+{
+"type": "a",
+"requirements": [
+"ha03",
+"ha07"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd07",
+"hd08"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hb03",
+"hb09",
+"hb11"
+],
+"wid": "sd02",
+"count": 3
+},
+{
+"type": "a",
+"requirements": [
+"hb15",
+"hb16"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hc02",
+"hc05"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd13",
+"hd11"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hc07",
+"hc04"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"ha13",
+"ha01"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"ha06",
+"hd06"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd01",
+"hd02"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hc14",
+"hc12"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hb13",
+"hb14"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"ha04",
+"ha11",
+"ha12"
+],
+"wid": "sd02",
+"count": 3
+},
+{
+"type": "a",
+"requirements": [
+"hb18",
+"ha17"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd17",
+"hd10"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd14",
+"hd05"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hc13",
+"hc15"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd12",
+"hd04",
+"hd18",
+"hd03"
+],
+"wid": "sd02",
+"count": 4
+},
+{
+"type": "a",
+"requirements": [
+"hc06",
+"hc03"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd16",
+"hc08"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hb17",
+"hb08"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd19",
+"ha14"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"ha08",
+"hc09"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hd09",
+"ha09"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hb04",
+"hb10"
+],
+"wid": "sd02",
+"count": 2
+},
+{
+"type": "a",
+"requirements": [
+"hb12",
+"hd15"
+],
+"wid": "sd02",
+"count": 2
+}
+]

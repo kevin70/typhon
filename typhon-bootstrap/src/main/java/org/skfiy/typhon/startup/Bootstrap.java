@@ -16,6 +16,7 @@
 package org.skfiy.typhon.startup;
 
 import java.io.File;
+import java.io.PrintStream;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -30,7 +31,7 @@ public class Bootstrap {
 
     private static Bootstrap boot;
     private ClassLoader classLoader;
-    private Class deamonClass;
+    private Class<?> deamonClass;
     private Object deamonObject;
 
     /**
@@ -74,6 +75,7 @@ public class Bootstrap {
         if (home != null && (new File(home)).isDirectory()) {
             classLoader = new BootstrapClassLoader(
                     Thread.currentThread().getContextClassLoader());
+            
             Thread.currentThread().setContextClassLoader(classLoader);
         } else {
             System.setProperty("typhon.home", System.getProperty("user.dir"));
@@ -131,7 +133,7 @@ public class Bootstrap {
             try {
                 boot.init();
             } catch (Exception e) {
-                e.printStackTrace();
+                printExceptionLog(e);
                 System.exit(1);
             }
         } else {
@@ -162,11 +164,29 @@ public class Bootstrap {
             }
 
         } catch (Exception e) {
-            //
-            e.printStackTrace();
+            printExceptionLog(e);
             System.exit(1);
         }
 
+    }
+    
+    private static void printExceptionLog(Throwable e) {
+        if (!System.getProperty("os.name").contains("Windows")) {
+            e.printStackTrace(System.out);
+        }
+        
+        try {
+            File file = new File("typhon-error.out");
+            if(!file.exists()) {
+                file.createNewFile();
+            }
+            
+            PrintStream out = new PrintStream(file);
+            e.printStackTrace(out);
+        } catch (Exception ex) {
+        }
+        
+        e.printStackTrace();
     }
 
     static class BootstrapClassLoader extends URLClassLoader {

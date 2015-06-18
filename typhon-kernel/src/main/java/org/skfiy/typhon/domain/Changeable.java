@@ -25,18 +25,24 @@ public interface Changeable {
      *
      * @return
      */
-    public String getNs();
-    
-    /**
-     * 
-     * @return 
-     */
-    public Player getPlayer();
-    
-    /**
-     * 
-     * @param player
-     */
-    public void setPlayer(Player player);
+    public Player player();
 
+    /**
+     *
+     * @return
+     */
+    public Changeable parent();
+
+    /**
+     *
+     * @return
+     */
+    public String parentPropertyName();
+
+    /**
+     *
+     * @param parent
+     * @param parentPropertyName
+     */
+    public void set(Changeable parent, String parentPropertyName);
 }

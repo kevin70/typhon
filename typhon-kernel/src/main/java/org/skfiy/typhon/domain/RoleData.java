@@ -15,6 +15,8 @@
  */
 package org.skfiy.typhon.domain;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
@@ -24,6 +26,9 @@ public class RoleData {
     private int rid;
     private String normalData;
     private String bagData;
+    private String heroEntitiesData;
+    private String invisibleData;
+    private String vacantData;
 
     public int getRid() {
         return rid;
@@ -49,4 +54,39 @@ public class RoleData {
         this.bagData = bagData;
     }
 
+    public String getHeroBagData() {
+        return heroEntitiesData;
+    }
+
+    public void setHeroBagData(String heroEntitiesData) {
+        this.heroEntitiesData = heroEntitiesData;
+    }
+
+    public String getInvisibleData() {
+        return invisibleData;
+    }
+
+    public void setInvisibleData(String invisibleData) {
+        this.invisibleData = invisibleData;
+    }
+
+    public String getVacantData() {
+        return vacantData;
+    }
+
+    public void setVacantData(String vacantData) {
+        this.vacantData = vacantData;
+    }
+
+    @Override
+    public String toString() {
+        ToStringBuilder tsb = new ToStringBuilder(this);
+        tsb.append("rid", rid).append("\n");
+        tsb.append("normalData", normalData).append("\n");
+        tsb.append("bagData", bagData).append("\n");
+        tsb.append("heroEntitiesData", heroEntitiesData).append("\n");
+        tsb.append("invisibleData", invisibleData).append("\n");
+        tsb.append("vacantData", vacantData).append("\n");
+        return tsb.toString();
+    }
 }

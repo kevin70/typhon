@@ -194,7 +194,7 @@ if [ "$1" = "jpda" ] ; then
   if [ -z "$JPDA_OPTS" ]; then
     JPDA_OPTS="-agentlib:jdwp=transport=$JPDA_TRANSPORT,address=$JPDA_ADDRESS,server=y,suspend=$JPDA_SUSPEND"
   fi
-  TYPHON_OPTS="$TYPHON_OPTS $JPDA_OPTS"
+  TYPHON_OPTS="$TYPHON_OPTS $JPDA_OPTS -Dfile.encoding=UTF-8"
   echo "Listening for transport dt_socket at address: $JPDA_ADDRESS"
   shift
 fi

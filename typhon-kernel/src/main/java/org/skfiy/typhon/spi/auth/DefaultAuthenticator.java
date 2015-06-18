@@ -18,8 +18,6 @@ package org.skfiy.typhon.spi.auth;
 import javax.inject.Singleton;
 import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.packet.Auth;
-import org.skfiy.typhon.session.Session;
-import org.skfiy.typhon.session.SessionContext;
 
 /**
  *
@@ -40,12 +38,12 @@ public class DefaultAuthenticator extends AbstractAuthenticator {
         }
 
         userResposy.updateLastAccessedTime(user.getUid());
-        
-        // 设置Session认证类型
-        Session session = SessionContext.getSession();
-        session.setAuthType("DEFAULT");
-        
         return user;
     }
 
+    @Override
+    protected String getAuthType() {
+        return "DEFAULT";
+    }
+    
 }

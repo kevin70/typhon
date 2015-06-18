@@ -1,0 +1,92 @@
+{
+"JS": [
+{
+"level": 1,
+"property": ["atkUp+matkUp"]
+},
+{
+"level": 21,
+"property": ["hpUp"]
+},
+{
+"level": 41,
+"property": ["mdefUp"]
+},
+{
+"level": 81,
+"property": ["defUp"]
+}
+],
+"XF": [
+{
+"level": 1,
+"property": ["hpUp"]
+},
+{
+"level": 21,
+"property": ["defUp"]
+},
+{
+"level": 41,
+"property": ["mdefUp"]
+},
+{
+"level": 81,
+"property": ["atkUp+matkUp"]
+}
+],
+"YB": [
+{
+"level": 1,
+"property": ["mdefUp"]
+},
+{
+"level": 21,
+"property": ["hpUp"]
+},
+{
+"level": 41,
+"property": ["defUp"]
+},
+{
+"level": 81,
+"property": ["atkUp+matkUp"]
+}
+],
+"ZJ": [
+{
+"level": 1,
+"property": ["atkUp+matkUp"]
+},
+{
+"level": 21,
+"property": ["mdefUp"]
+},
+{
+"level": 41,
+"property": ["hpUp"]
+},
+{
+"level": 81,
+"property": ["defUp"]
+}
+],
+"ZZ": [
+{
+"level": 1,
+"property": ["atkUp+matkUp"]
+},
+{
+"level": 21,
+"property": ["hpUp"]
+},
+{
+"level": 41,
+"property": ["defUp"]
+},
+{
+"level": 81,
+"property": ["mdefUp"]
+}
+]
+}

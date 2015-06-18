@@ -13,25 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.skfiy.typhon.domain;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-public interface Indexable extends Changeable{
-    
+public interface Indexable extends Changeable {
+
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
-    public int getIndex();
-    
+    public int index();
+
     /**
-     * 
-     * @param idx 
+     *
+     * @param parent
+     * @param parentPropertyName
+     * @param index
      */
-    public void setIndex(int idx);
-    
+    public void set(Changeable parent, String parentPropertyName, int index);
+
 }

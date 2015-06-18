@@ -25,7 +25,8 @@ import org.skfiy.typhon.session.Session;
 public class TestScript1 implements Script {
 
     @Override
-    public void invoke(Session session, Object obj) {
-        session.setAttribute("TEST_KEY", -5697136760521516388L);
+    public Object invoke(Session session, Object obj) {
+        session.setAttribute("TEST_KEY", -6947256868250810247L);
+        return null;
     }
 }

@@ -1,0 +1,47 @@
+[
+{
+"Name": "Ce",
+"SLu": 0.9,
+"SLing": 1,
+"PYuan": 1.1,
+"SDi": 0.8,
+"CGuan": 1.2,
+"None": 1
+},
+{
+"Name": "Bu",
+"SLu": 1.1,
+"SLing": 1.2,
+"PYuan": 1,
+"SDi": 0.9,
+"CGuan": 0.8,
+"None": 1
+},
+{
+"Name": "Qi",
+"SLu": 0.8,
+"SLing": 1.1,
+"PYuan": 1.2,
+"SDi": 1,
+"CGuan": 0.9,
+"None": 1
+},
+{
+"Name": "Che",
+"SLu": 0.9,
+"SLing": 0.8,
+"PYuan": 1,
+"SDi": 1.2,
+"CGuan": 1.1,
+"None": 1
+},
+{
+"Name": "Gong",
+"SLu": 1.2,
+"SLing": 0.8,
+"PYuan": 0.9,
+"SDi": 1.1,
+"CGuan": 1,
+"None": 1
+}
+]

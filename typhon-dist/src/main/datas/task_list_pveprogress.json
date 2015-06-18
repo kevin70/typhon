@@ -1,0 +1,573 @@
+[
+    [{
+        "mode": 0,
+        "subject": 1,
+        "cid": 1,
+        "pid": 1,
+        "#item.id": "sd10",
+        "count": 10,
+        "icon": "ui/itemicon/r036_icon.png",
+        "type": 1
+    }],
+    [
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 0,
+            "pid": 0,
+            "diamond": 5,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 1,
+            "pid": 0,
+            "diamond": 5,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 1,
+            "pid": 1,
+            "diamond": 5,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 2,
+            "pid": 0,
+            "diamond": 10,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 3,
+            "pid": 0,
+            "diamond": 10,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 3,
+            "pid": 1,
+            "diamond": 10,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 4,
+            "pid": 0,
+            "diamond": 15,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 5,
+            "pid": 0,
+            "diamond": 15,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 6,
+            "pid": 0,
+            "diamond": 15,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 7,
+            "pid": 0,
+            "diamond": 20,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 8,
+            "pid": 0,
+            "diamond": 20,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 9,
+            "pid": 0,
+            "diamond": 20,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 10,
+            "pid": 0,
+            "diamond": 25,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 11,
+            "pid": 0,
+            "diamond": 25,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 12,
+            "pid": 0,
+            "diamond": 25,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 13,
+            "pid": 0,
+            "diamond": 30,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 14,
+            "pid": 0,
+            "diamond": 30,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 15,
+            "pid": 0,
+            "diamond": 30,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 16,
+            "pid": 0,
+            "diamond": 35,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 16,
+            "pid": 1,
+            "diamond": 35,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 16,
+            "pid": 2,
+            "diamond": 35,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 17,
+            "pid": 0,
+            "diamond": 40,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 17,
+            "pid": 1,
+            "diamond": 40,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 18,
+            "pid": 0,
+            "diamond": 40,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 19,
+            "pid": 0,
+            "diamond": 45,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 20,
+            "pid": 0,
+            "diamond": 45,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 21,
+            "pid": 0,
+            "diamond": 45,
+            "icon": "ui/itemicon/r046_icon.png",
+            "type": 2
+        }
+    ],
+    [
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 0,
+            "pid": 1,
+            "#item.id": "e001",
+            "count": 1,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 1,
+            "#item.id": "e002",
+            "count": 1,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 3,
+            "#item.id": "e006",
+            "count": 1,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 6,
+            "#item.id": "e004",
+            "count": 1,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 4,
+            "pid": 0,
+            "#item.id": "e003",
+            "count": 1,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        }
+    ],
+    [
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 1,
+            "pid": 2,
+            "#item.id": "sd10",
+            "count": 5,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 2,
+            "pid": 2,
+            "#item.id": "sd10",
+            "count": 5,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 5,
+            "#item.id": "sd10",
+            "count": 5,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 0,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 5,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 1,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 1,
+            "pid": 1,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 2,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 3,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 3,
+            "pid": 1,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 4,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 5,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 6,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 7,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 8,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 9,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 10,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 11,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 12,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 13,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 14,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 15,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 16,
+            "pid": 0,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 1,
+            "subject": 1,
+            "cid": 16,
+            "pid": 1,
+            "#item.id": "sd10",
+            "count": 4,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        }
+    ],
+    [
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 0,
+            "#item.id": "w011",
+            "count": 10,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 1,
+            "#item.id": "w011",
+            "count": 10,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        },
+        {
+            "mode": 0,
+            "subject": 1,
+            "cid": 3,
+            "pid": 2,
+            "#item.id": "w011",
+            "count": 10,
+            "icon": "ui/itemicon/r036_icon.png",
+            "type": 1
+        }
+    ]
+]

@@ -33,6 +33,22 @@ limitations under the License.
             <maxFileSize>10MB</maxFileSize>
         </triggeringPolicy>
         <encoder>
+	<pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}
+	</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="rankfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${typhon.home}/protected-logs/typhon-rank.log</file>
+        <charset>UTF-8</charset>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${typhon.home}/protected-logs/typhon-rank%i.log</fileNamePattern>
+            <maxHistory>9</maxHistory>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
             <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
         </encoder>
     </appender>
@@ -44,4 +60,7 @@ limitations under the License.
         <appender-ref ref="stdout"/>
         <appender-ref ref="file"/>
     </root>
+    <logger name="repository.update.exception" level="warn" additivity="false">
+        <appender-ref ref="rankfile" />
+    </logger>
 </configuration>

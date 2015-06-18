@@ -1,0 +1,20 @@
+id              道具ID
+type            道具类型（固定值：Monster）
+displayName     显示名称（客户端专用）
+icon            怪物ICON（客户端专用）
+race            怪物兵种
+gender          性别(Male -> 男, Female -> 女)
+level           怪物的等级
+area            怪物种族
+atk             怪物初始攻击力
+def             怪物初始防御力
+hp              怪物初始血量
+maxFury         怪物最高怒气值
+critRate        怪物初始暴击率
+decritRate      怪物初始韧性百分比
+critMagn        增加暴击伤害比例
+parryRate       英雄格挡率
+deparryRate     英雄破挡率
+parryValue      格挡伤害值
+askill          怪物主动技能
+pskill          怪物被动技能

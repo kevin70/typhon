@@ -15,13 +15,16 @@
  */
 package org.skfiy.typhon.domain;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.skfiy.typhon.util.DomainUtils;
+
 import com.alibaba.fastjson.annotation.JSONType;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = {"player", "level"})
+@JSONType(ignores = {"parent", "player", "parentPropertyName"})
 public class Role implements Changeable {
 
     private int rid;
@@ -30,24 +33,17 @@ public class Role implements Changeable {
     private boolean enabled;
     private long creationTime = -1L;
     private long lastAccessedTime;
-    
-    private Player player;
+    private long lastLoginedTime;
+    private int diamond;
+
+    private Changeable _parent;
+    private String _parentPropertyName;
 
     @Override
-    public String getNs() {
-        return "role";
+    public Player player() {
+        return _parent.player();
     }
 
-    @Override
-    public Player getPlayer() {
-        return player;
-    }
-
-    @Override
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
-    
     public int getRid() {
         return rid;
     }
@@ -62,6 +58,7 @@ public class Role implements Changeable {
 
     public void setName(String name) {
         this.name = name;
+        DomainUtils.firePropertyChange(this, "name", this.name);
     }
 
     public int getLevel() {
@@ -70,6 +67,10 @@ public class Role implements Changeable {
 
     public void setLevel(int level) {
         this.level = level;
+
+        if (_parent != null) {
+            DomainUtils.firePropertyChange(this, "level", this.level);
+        }
     }
 
     public boolean isEnabled() {
@@ -86,6 +87,7 @@ public class Role implements Changeable {
 
     public void setCreationTime(long creationTime) {
         this.creationTime = creationTime;
+        DomainUtils.firePropertyChange(this, "creationTime", this.creationTime);
     }
 
     public long getLastAccessedTime() {
@@ -96,4 +98,50 @@ public class Role implements Changeable {
         this.lastAccessedTime = lastAccessedTime;
     }
 
+    public long getLastLoginedTime() {
+        return lastLoginedTime;
+    }
+
+    public void setLastLoginedTime(long lastLoginedTime) {
+        this.lastLoginedTime = lastLoginedTime;
+    }
+
+    public int getDiamond() {
+        return diamond;
+    }
+
+    public void setDiamond(int diamond) {
+        this.diamond = diamond;
+
+        if (_parent != null) {
+            DomainUtils.firePropertyChange(this, "diamond", this.diamond);
+        }
+    }
+
+    @Override
+    public Changeable parent() {
+        return _parent;
+    }
+
+    @Override
+    public void set(Changeable parent, String parentPropertyName) {
+        this._parent = parent;
+        this._parentPropertyName = parentPropertyName;
+    }
+
+    @Override
+    public String parentPropertyName() {
+        return _parentPropertyName;
+    }
+
+    @Override
+    public String toString() {
+        ToStringBuilder builder = new ToStringBuilder(this);
+        builder.append("rid", rid).append("\n");
+        builder.append("level", level).append("\n");
+        builder.append("creationTime", creationTime).append("\n");
+        builder.append("diamond", diamond).append("\n");
+        builder.append("currentTimeMillis", System.currentTimeMillis()).append("\n");
+        return builder.toString();
+    }
 }

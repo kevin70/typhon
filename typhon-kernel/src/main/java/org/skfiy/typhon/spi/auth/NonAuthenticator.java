@@ -17,41 +17,35 @@ package org.skfiy.typhon.spi.auth;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import org.skfiy.typhon.session.SessionUtils;
 import org.skfiy.typhon.domain.User;
 import org.skfiy.typhon.repository.impl.UserRepositoryImpl;
 import org.skfiy.typhon.packet.Auth;
-import org.skfiy.typhon.session.Session;
-import org.skfiy.typhon.session.SessionContext;
-import org.skfiy.typhon.session.SessionManager;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 @Singleton
-public class NonAuthenticator implements Authenticator {
+public class NonAuthenticator extends AbstractAuthenticator {
     
-    @Inject
-    private SessionManager sessionManager;
     @Inject
     private UserRepositoryImpl userManager;
 
     @Override
-    public void authentic(Auth auth) {
+    protected User doAuthentic(Auth auth) {
         User user = userManager.findByUsername(auth.getUsername());
         if (user == null) {
-            int uid = userManager.save(auth.getUsername(), auth.getPassword());
+            int uid = userManager.save(auth.getUsername(), auth.getPassword(), auth.getPlatform());
             user = userManager.findByUid(uid);
         }
-
+        
         userManager.updateLastAccessedTime(user.getUid());
+        return user;
+    }
 
-        Session session = SessionContext.getSession();
-        session.setAuthType("NON");
-        session.setAttribute(SessionUtils.ATTR_USER, user);
-
-        sessionManager.addSession(user.getUid(), session);
+    @Override
+    protected String getAuthType() {
+        return "NON";
     }
     
 }

@@ -1,0 +1,26 @@
+{
+"critRate": {
+"min": 6,
+"max": 8
+},
+"critMagn": {
+"min": 1,
+"max": 3
+},
+"decritRate": {
+"min": 6,
+"max": 8
+},
+"parryRate": {
+"min": 6,
+"max": 8
+},
+"parryValue": {
+"min": 11,
+"max": 13
+},
+"deparryRate": {
+"min": 7,
+"max": 9
+}
+}

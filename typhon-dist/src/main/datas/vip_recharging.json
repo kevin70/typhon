@@ -1,0 +1,50 @@
+[
+{
+"cash": 6,
+"diamond": 60,
+"present": 0,
+"firstExtraPresent": 60
+},
+{
+"cash": 25,
+"diamond": 300,
+"present": 0,
+"firstExtraPresent": 0
+},
+{
+"cash": 30,
+"diamond": 300,
+"present": 15,
+"firstExtraPresent": 285
+},
+{
+"cash": 98,
+"diamond": 980,
+"present": 80,
+"firstExtraPresent": 900
+},
+{
+"cash": 198,
+"diamond": 1980,
+"present": 300,
+"firstExtraPresent": 1680
+},
+{
+"cash": 328,
+"diamond": 3280,
+"present": 600,
+"firstExtraPresent": 2680
+},
+{
+"cash": 648,
+"diamond": 6480,
+"present": 2000,
+"firstExtraPresent": 4480
+},
+{
+"cash": 1998,
+"diamond": 20000,
+"present": 5000,
+"firstExtraPresent": 15000
+}
+]

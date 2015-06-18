@@ -1,0 +1,92 @@
+[
+{
+"terms": 6,
+"#item.id": "w006",
+"count": 3,
+"icon": "ui/itemicon/r066_icon.png"
+},
+{
+"terms": 7,
+"#item.id": "w006",
+"count": 5,
+"icon": "ui/itemicon/r067_icon.png"
+},
+{
+"terms": 8,
+"#item.id": "w006",
+"count": 7,
+"icon": "ui/itemicon/r068_icon.png"
+},
+{
+"terms": 9,
+"#item.id": "w007",
+"count": 3,
+"icon": "ui/itemicon/r069_icon.png"
+},
+{
+"terms": 10,
+"#item.id": "w007",
+"count": 5,
+"icon": "ui/itemicon/r070_icon.png"
+},
+{
+"terms": 15,
+"#item.id": "w007",
+"count": 8,
+"icon": "ui/itemicon/r071_icon.png"
+},
+{
+"terms": 20,
+"#item.id": "w008",
+"count": 1,
+"icon": "ui/itemicon/r072_icon.png"
+},
+{
+"terms": 25,
+"#item.id": "w008",
+"count": 2,
+"icon": "ui/itemicon/r073_icon.png"
+},
+{
+"terms": 30,
+"#item.id": "w008",
+"count": 3,
+"icon": "ui/itemicon/r074_icon.png"
+},
+{
+"terms": 35,
+"#item.id": "w008",
+"count": 5,
+"icon": "ui/itemicon/r075_icon.png"
+},
+{
+"terms": 40,
+"#item.id": "w008",
+"count": 8,
+"icon": "ui/itemicon/r076_icon.png"
+},
+{
+"terms": 45,
+"#item.id": "w009",
+"count": 1,
+"icon": "ui/itemicon/r077_icon.png"
+},
+{
+"terms": 50,
+"#item.id": "w009",
+"count": 2,
+"icon": "ui/itemicon/r078_icon.png"
+},
+{
+"terms": 55,
+"#item.id": "w009",
+"count": 3,
+"icon": "ui/itemicon/r079_icon.png"
+},
+{
+"terms": 60,
+"#item.id": "w009",
+"count": 5,
+"icon": "ui/itemicon/r080_icon.png"
+}
+]

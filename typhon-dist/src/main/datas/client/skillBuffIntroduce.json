@@ -1,0 +1,110 @@
+[
+{
+"id": "Sbi001",
+"skillBuff": "B_s006_buff"
+},
+{
+"id": "Sbi002",
+"skillBuff": "B_s009_buff"
+},
+{
+"id": "Sbi003",
+"skillBuff": "B_s010_buff"
+},
+{
+"id": "Sbi004",
+"skillBuff": "B_s018_buff"
+},
+{
+"id": "Sbi005",
+"skillBuff": "B_s021_debuff"
+},
+{
+"id": "Sbi006",
+"skillBuff": "B_s022_buff"
+},
+{
+"id": "Sbi007",
+"skillBuff": "B_s025_buff"
+},
+{
+"id": "Sbi008",
+"skillBuff": "B_s028_debuff"
+},
+{
+"id": "Sbi009",
+"skillBuff": "B_s030_debuff"
+},
+{
+"id": "Sbi010",
+"skillBuff": "B_s034_buff"
+},
+{
+"id": "Sbi011",
+"skillBuff": "B_s038_buff"
+},
+{
+"id": "Sbi012",
+"skillBuff": "B_s040_debuff"
+},
+{
+"id": "Sbi013",
+"skillBuff": "B_s042_buff"
+},
+{
+"id": "Sbi014",
+"skillBuff": "B_s046_buff"
+},
+{
+"id": "Sbi015",
+"skillBuff": "B_s048_buff"
+},
+{
+"id": "Sbi016",
+"skillBuff": "B_s049_buff"
+},
+{
+"id": "Sbi017",
+"skillBuff": "B_s053_buff"
+},
+{
+"id": "Sbi018",
+"skillBuff": "B_s054_debuff"
+},
+{
+"id": "Sbi019",
+"skillBuff": "B_s055_buff"
+},
+{
+"id": "Sbi020",
+"skillBuff": "B_s056_buff"
+},
+{
+"id": "Sbi021",
+"skillBuff": "B_s057_buff"
+},
+{
+"id": "Sbi022",
+"skillBuff": "B_s060_debuff"
+},
+{
+"id": "Sbi023",
+"skillBuff": "def_buff"
+},
+{
+"id": "Sbi024",
+"skillBuff": "Joint002_buff"
+},
+{
+"id": "Sbi025",
+"skillBuff": "Joint003_buff"
+},
+{
+"id": "Sbi026",
+"skillBuff": "LOSE_CONTROL_debuff"
+},
+{
+"id": "Sbi027",
+"skillBuff": "STOP_LABA_debuff"
+}
+]

@@ -29,7 +29,8 @@ public class ReflectionDispatcherFactoryTest extends TestBase {
 
     @Override
     protected void setup() {
-        adf = new ReflectionDispatcherFactory(CONTAINER);
+        adf = new ReflectionDispatcherFactory();
+        containerWapper.injectMembers(adf);
     }
 
     @Test

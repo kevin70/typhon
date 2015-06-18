@@ -19,33 +19,28 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import javax.inject.Inject;
+import javax.annotation.Resource;
 import javax.inject.Singleton;
-import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.modeler.ManagedBean;
 import org.skfiy.typhon.AbstractComponent;
 import org.skfiy.typhon.ComponentException;
 import org.skfiy.typhon.Constants;
-import org.skfiy.typhon.Container;
 import org.skfiy.typhon.dobj.ItemDobj;
+import org.skfiy.typhon.script.ScriptManager;
 import org.skfiy.typhon.spi.item.ItemCompleter;
 import org.skfiy.typhon.spi.item.NotFoundItemException;
+import org.skfiy.typhon.util.ComponentUtils;
 import org.skfiy.typhon.util.MBeanUtils;
 import org.skfiy.util.AntPathMatcher;
 import org.skfiy.util.Assert;
 import org.skfiy.util.PathMatcher;
-import org.skfiy.util.StreamUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -61,8 +56,10 @@ public class ItemProvider extends AbstractComponent {
     private ObjectName oname;
     private Map<String, ItemDobj> items = new HashMap<>();
     
-    @Inject
+    @Resource
     private Set<ItemCompleter> itemCompleters;
+    @Resource
+    private ScriptManager scriptManager;
 
     /**
      * 
@@ -75,7 +72,7 @@ public class ItemProvider extends AbstractComponent {
                 "[Assertion failed] - item \"id\" argument is required; it must not be null");
         T item = (T) items.get(id);
         if (item == null) {
-            throw new NotFoundItemException("Not found item [id=" + id + "]");
+            throw new NotFoundItemException("Not found item [" + id + "]");
         }
         return item;
     }
@@ -125,37 +122,38 @@ public class ItemProvider extends AbstractComponent {
         File[] itemFiles = findItemFiles();
         JSONArray jsonArray = new JSONArray();
 
-        InputStream in = null;
         for (File file : itemFiles) {
-            try {
-                in = new FileInputStream(file);
-                String text = StreamUtils.copyToString(in, StandardCharsets.UTF_8);
-                jsonArray.addAll(JSON.parseObject(text).getJSONArray("datas"));
-            } catch (IOException ex) {
-                LOG.debug("init item", ex);
-                throw new ComponentException(ex);
-            } finally {
-                if (in != null) {
-                    try {
-                        in.close();
-                    } catch (IOException ex) {
-                    }
-                }
-            }
+            jsonArray.addAll(JSON.parseArray(ComponentUtils.readDataFile(file)));
         }
 
         Map<String, ItemDobj> itemMap = new HashMap<>();
         for (Iterator<Object> it = jsonArray.iterator(); it.hasNext();) {
             JSONObject json = (JSONObject) it.next();
             ItemCompleter itemCompleter = findItemCompleter(json.getString("type"));
-            ItemDobj staticItem = itemCompleter.prepare(json);
-            itemMap.put(staticItem.getId(), staticItem);
+            
+            try {
+                ItemDobj staticItem = itemCompleter.prepare(json);
+                
+                if (json.containsKey("script")) {
+                    staticItem.setScript(scriptManager.getScript(json.getString("script")));
+                }
+                itemMap.put(staticItem.getId(), staticItem);
+            } catch (Exception e) {
+                LOG.error("item {}", json.toJSONString(), e);
+                throw new ComponentException(e);
+            }
         }
 
         for (Iterator<Object> it = jsonArray.iterator(); it.hasNext();) {
             JSONObject json = (JSONObject) it.next();
             ItemCompleter itemCompleter = findItemCompleter(json.getString("type"));
-            itemCompleter.complete(itemMap, json);
+            
+            try {
+                itemCompleter.complete(itemMap, json);
+            } catch (Exception e) {
+                LOG.error("item {}", json, e);
+                throw new ComponentException(e);
+            }
         }
         return itemMap;
     }
@@ -167,19 +165,21 @@ public class ItemProvider extends AbstractComponent {
 
             @Override
             public boolean accept(File dir, String name) {
-                return pathMatcher.match("item_*.json", name);
+                return (!"item_monster.json".equals(name)
+                        && pathMatcher.match("item_*.json", name));
             }
         });
     }
     
     private ItemCompleter findItemCompleter(String type) {
         for (ItemCompleter itemCompleter : itemCompleters) {
-            if (type.equals(itemCompleter.getType())) {
+            if (itemCompleter.getType().equals(type)) {
                 return itemCompleter;
             }
         }
 
-        throw new IllegalArgumentException("Not found [" + type + "] ItemCompleter");
+        throw new IllegalArgumentException("Not found ["
+                + type + "] ItemCompleter");
     }
     
 }

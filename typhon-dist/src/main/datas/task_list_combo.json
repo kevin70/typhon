@@ -1,0 +1,72 @@
+[
+{
+"terms": 2,
+"diamond": 15,
+"icon": "ui/itemicon/r063_icon.png"
+},
+{
+"terms": 3,
+"diamond": 20,
+"icon": "ui/itemicon/r060_icon.png"
+},
+{
+"terms": 4,
+"diamond": 25,
+"icon": "ui/itemicon/r064_icon.png"
+},
+{
+"terms": 5,
+"diamond": 30,
+"icon": "ui/itemicon/r065_icon.png"
+},
+{
+"terms": 6,
+"diamond": 35,
+"icon": "ui/itemicon/r081_icon.png"
+},
+{
+"terms": 7,
+"diamond": 40,
+"icon": "ui/itemicon/r082_icon.png"
+},
+{
+"terms": 8,
+"diamond": 45,
+"icon": "ui/itemicon/r083_icon.png"
+},
+{
+"terms": 9,
+"diamond": 50,
+"icon": "ui/itemicon/r084_icon.png"
+},
+{
+"terms": 10,
+"diamond": 55,
+"icon": "ui/itemicon/r085_icon.png"
+},
+{
+"terms": 11,
+"diamond": 60,
+"icon": "ui/itemicon/r086_icon.png"
+},
+{
+"terms": 12,
+"diamond": 65,
+"icon": "ui/itemicon/r087_icon.png"
+},
+{
+"terms": 13,
+"diamond": 70,
+"icon": "ui/itemicon/r088_icon.png"
+},
+{
+"terms": 14,
+"diamond": 75,
+"icon": "ui/itemicon/r089_icon.png"
+},
+{
+"terms": 15,
+"diamond": 100,
+"icon": "ui/itemicon/r090_icon.png"
+}
+]

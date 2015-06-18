@@ -44,11 +44,11 @@ public class RoleActionTest extends TestProtocolBase {
         
         // 收到创建角色响应信息
         Response resp = poll();
+        Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
+        removalOverMessage();
+        
+        // clean data
         cleanRole();
         roleResposy.delete(resp.getData().getJSONObject("role").getIntValue("rid"));
-        
-        Assert.assertEquals(resp.getNs(), Namespaces.PLAYER_INFO);
-        
-        removalOverMessage();
     }
 }

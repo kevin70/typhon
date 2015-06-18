@@ -1,0 +1,12 @@
+[
+    {
+        "beginHour": 12,
+        "endHour": 14,
+        "vigor": 120
+    },
+    {
+        "beginHour": 18,
+        "endHour": 20,
+        "vigor": 120
+    }
+]

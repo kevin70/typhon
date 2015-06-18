@@ -1,54 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Copyright 2013 The Skfiy Open Association.
+<!-- Copyright 2013 The Skfiy Open Association. Licensed under the Apache 
+	License, Version 2.0 (the "License"); you may not use this file except in 
+	compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+	<bean id="userRepository" class="org.skfiy.typhon.repository.impl.UserRepositoryImpl" />
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+	<bean id="roleRepository" class="org.skfiy.typhon.repository.impl.RoleRepositoryImpl" />
 
-     http://www.apache.org/licenses/LICENSE-2.0
+	<bean id="incidentRepository" class="org.skfiy.typhon.repository.impl.IncidentRepositoryImpl" />
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-<beans>
-        
-    <bean type="org.skfiy.typhon.repository.UserRepository"
-          class="org.skfiy.typhon.repository.impl.UserRepositoryImpl"/>
-    <bean type="org.skfiy.typhon.repository.RoleRepository"
-          class="org.skfiy.typhon.repository.impl.RoleRepositoryImpl"/>
-    
-    <bean type="org.skfiy.typhon.spi.auth.Authenticator"
-          class="org.skfiy.typhon.spi.auth.DefaultAuthenticator"/>
-    
-    <bean class="org.skfiy.typhon.spi.ConfigurationLoader"/>
-    <bean class="org.skfiy.typhon.spi.RoleProvider"/>
-    <bean class="org.skfiy.typhon.spi.ItemProvider"/>
-    
-    <!--
-        
-    -->
-    <multi-set type="org.skfiy.typhon.spi.item.ItemCompleter">
-        <element class="org.skfiy.typhon.spi.item.SimpleItemCompleter"/>
-        <element class="org.skfiy.typhon.spi.item.ComplexItemCompleter"/>
-    </multi-set>
-    
-    <multi-set type="org.skfiy.typhon.session.SessionListener">
-        <element class="org.skfiy.typhon.spi.PlayerSessionListener"/>
-    </multi-set>
-    
-    <multi-set type="org.skfiy.typhon.spi.role.RoleListener">
-        <element class="org.skfiy.typhon.spi.role.BasicRoleListener"/>
-        <element class="org.skfiy.typhon.spi.role.ScheduledRoleListener"/>
-        <element class="org.skfiy.typhon.spi.role.FinalRoleListener"/>
-    </multi-set>
+	<bean id="globalDataRepository"
+		class="org.skfiy.typhon.repository.impl.GlobalDataRepositoryImpl" />
 
-    <multi-set type="org.skfiy.typhon.spi.role.RoleDatable">
-        <element class="org.skfiy.typhon.spi.role.NormalRoleDatable"/>
-        <element class="org.skfiy.typhon.spi.role.BagRoleDatable"/>
-    </multi-set>
-    
+	<bean id="authenticator" class="org.skfiy.typhon.spi.auth.DefaultAuthenticator" />
+
+	<bean id="configurationLoader" class="org.skfiy.typhon.spi.ConfigurationLoader" />
+	<bean id="itemProvider" class="org.skfiy.typhon.spi.ItemProvider" />
+	<bean id="roleProvider" class="org.skfiy.typhon.spi.RoleProvider" />
+	<bean id="heroProvider" class="org.skfiy.typhon.spi.hero.HeroProvider" />
+	<bean id="heroExclusiveProvider" class="org.skfiy.typhon.spi.hero.HeroExclusiveProvider" />
+	<bean id="gmConsoleProvider" class="org.skfiy.typhon.spi.GMConsoleProvider" />
+	<bean id="warProvider" class="org.skfiy.typhon.spi.war.WarProvider" />
+	<bean id="pveProvider" class="org.skfiy.typhon.spi.pve.PveProvider" />
+	<bean id="pvpProvider" class="org.skfiy.typhon.spi.pvp.PvpProvider" />
+	<bean id="atlaslootProvider" class="org.skfiy.typhon.spi.atlasloot.AtlaslootProvider" />
+	<bean id="equipmentProvider" class="org.skfiy.typhon.spi.equipment.EquipmentProvider" />
+	<bean id="storeProvider" class="org.skfiy.typhon.spi.store.StoreProvider" />
+	<bean id="troopProvider" class="org.skfiy.typhon.spi.troop.TroopProvider" />
+	<bean id="signProvider" class="org.skfiy.typhon.spi.sign.SignProvider" />
+	<bean id="pvpStoreProvider" class="org.skfiy.typhon.spi.pvp.PvpStoreProvider" />
+	<bean id="noticeBoardProvider" class="org.skfiy.typhon.spi.NoticeBoardProvider" />
+	<bean id="societyProvider" class="org.skfiy.typhon.spi.society.SocietyProvider" />
+	<bean id="scriptManager" class="org.skfiy.typhon.script.DebugScriptManager" />
+	<bean id="pverankingProvider" class="org.skfiy.typhon.spi.ranking.PveRankingProvider" />
+	<bean id="heroStarRankingProvider" class="org.skfiy.typhon.spi.ranking.HeroStarRankingProvider" />
+	<bean id="pveDifficultRankingProvider"
+		class="org.skfiy.typhon.spi.ranking.PveDifficultRankingProvider" />
+	<bean id="powerguessRankingProvider" class="org.skfiy.typhon.spi.ranking.PowerguessRankingProvider" />
+	<bean id="levelRankingProcider" class="org.skfiy.typhon.spi.ranking.LevelRankingProvider" />
+	<bean id="dargonStoreProvider" class="org.skfiy.typhon.spi.dargon.DargonStoreProvider" />
+	<bean id="dargonProvider" class="org.skfiy.typhon.spi.dargon.DargonProvider" />
+	<bean id="updateRankinglist" class="org.skfiy.typhon.spi.ranking.UpdateRankingList" />
+	<bean id="taskPvpProvider" class="org.skfiy.typhon.spi.task.TaskPvpProvider" />
+	<bean id="taskHerosProvider" class="org.skfiy.typhon.spi.task.TaskHerosProvider" />
+	<bean id="taskLevelProvider" class="org.skfiy.typhon.spi.task.TaskLevelProvider" />
+	<bean id="taskComboProvider" class="org.skfiy.typhon.spi.task.TaskComboProvider" />
+	<bean id="taskdargonProvider" class="org.skfiy.typhon.spi.task.TaskDargonProvider" />
+	<bean id="taskProvider" class="org.skfiy.typhon.spi.task.TaskProvider" />
+	<bean id="taskPveProgressProvider" class="org.skfiy.typhon.spi.task.TaskPveProgressProvider" />
+	<bean id="marketStoreProvider" class="org.skfiy.typhon.spi.store.MarketStoreProvider" />
+	<bean id="westernStoreProvider" class="org.skfiy.typhon.spi.store.WesternStoreProvider" />
+	<bean id="activityProvider" class="org.skfiy.typhon.spi.activity.ActivityProvider" />
+	<bean id="taskPveStarProvider" class="org.skfiy.typhon.spi.task.TaskPveStarProvider" />
+	<bean id="societyStoreProvider" class="org.skfiy.typhon.spi.store.SocietyStoreProvider" />
+	<bean id="societyBossProvider" class="org.skfiy.typhon.spi.society.SocietyBossProvider" />
+	<bean id="caravanProvider" class="org.skfiy.typhon.spi.caravan.CaravanProvider" />
+        <bean id="taskManager" class="org.skfiy.typhon.spi.TaskManager"/>
+
+	<util:set id="itemCompleters" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.item.ItemCompleter">
+		<bean class="org.skfiy.typhon.spi.item.SimpleItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.ComplexItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.MonsterItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.HeroItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.SoulItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.EquipmentItemCompleter" />
+		<bean class="org.skfiy.typhon.spi.item.TroopItemCompleter" />
+	</util:set>
+
+	<util:set id="sessionListeners" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.session.SessionListener">
+		<bean class="org.skfiy.typhon.spi.ScheduledPlayerSessionListener" />
+	</util:set>
+
+	<util:set id="roleListeners" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.role.RoleListener">
+		<bean class="org.skfiy.typhon.spi.role.BasicRoleListener" />
+		<bean class="org.skfiy.typhon.spi.role.FinalRoleListener" />
+		<bean class="org.skfiy.typhon.spi.auth.p.UCRoleListener" />
+	</util:set>
+
+	<util:set id="roleDatables" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.role.RoleDatable">
+		<bean class="org.skfiy.typhon.spi.role.NormalRoleDatable" />
+		<bean class="org.skfiy.typhon.spi.role.BagRoleDatable" />
+		<bean class="org.skfiy.typhon.spi.role.HeroBagDatable" />
+		<bean class="org.skfiy.typhon.spi.role.InvisibleRoleDatable" />
+		<bean class="org.skfiy.typhon.spi.role.VacantDataRoleDatable" />
+		<bean class="org.skfiy.typhon.spi.role.StoreDatable" />
+		<bean class="org.skfiy.typhon.spi.role.PvpStoreDatable" />
+		<bean class="org.skfiy.typhon.spi.role.DargonStoreDatable" />
+		<bean class="org.skfiy.typhon.spi.role.SocietyStoreDatable" />
+		<bean class="org.skfiy.typhon.spi.role.IntegralDatable" />
+	</util:set>
+
+	<util:set id="everydayLoopEvents" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.Event">
+		<bean class="org.skfiy.typhon.spi.hero.ResetLotteryEvent" />
+		<bean class="org.skfiy.typhon.spi.role.ResetBuyVigorCountEvent" />
+		<bean class="org.skfiy.typhon.spi.pvp.ResetPvpCountEvent" />
+		<bean class="org.skfiy.typhon.spi.ResetPlayerPropertiesEvent" />
+		<bean class="org.skfiy.typhon.spi.pve.EverydayActivityEvent" />
+		<bean class="org.skfiy.typhon.spi.store.EverydayStoreEvent" />
+	</util:set>
+
+	<util:set id="playerEvents" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.IPlayerEvent">
+		<bean class="org.skfiy.typhon.spi.playerevent.FriendPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.FriendPlayerEventAccept" />
+		<bean class="org.skfiy.typhon.spi.playerevent.FriendPlayerEventDelete" />
+		<bean class="org.skfiy.typhon.spi.playerevent.MailPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.PvpReportPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.PvpRankingChangedPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.SetPlayerSocietyIdPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.UpdateFriendInformationEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.RechargingPlayerEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.AidReceiveVigorEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.ReceiveInviteRewardEvent" />
+		<bean class="org.skfiy.typhon.spi.playerevent.ResetBossCountEvent" />
+	</util:set>
+
+	<util:set id="iPlayerNameValidated" set-class="java.util.LinkedHashSet"
+		value-type="org.skfiy.typhon.spi.IPlayerNameValidated">
+		<bean class="org.skfiy.typhon.spi.pvp.PvpPlayerNameValidated" />
+		<bean class="org.skfiy.typhon.spi.role.DefaultPlayerNameValidated" />
+	</util:set>
+
+	<util:map id="oauthenticators" key-type="org.skfiy.typhon.packet.Platform"
+		map-class="java.util.HashMap">
+		<entry key="qihoo">
+			<bean class="org.skfiy.typhon.spi.auth.p.QihooAuthenticator" />
+		</entry>
+		<entry key="four399">
+			<bean class="org.skfiy.typhon.spi.auth.p.Four399Authenticator" />
+		</entry>
+		<entry key="uc">
+			<bean class="org.skfiy.typhon.spi.auth.p.UCAuthenticator" />
+		</entry>
+		<entry key="lj">
+			<bean class="org.skfiy.typhon.spi.auth.p.LJAuthenticator" />
+		</entry>
+	</util:map>
+
 </beans>

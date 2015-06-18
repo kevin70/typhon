@@ -16,31 +16,58 @@
 package org.skfiy.typhon.domain.item;
 
 import com.alibaba.fastjson.annotation.JSONType;
+import org.skfiy.typhon.domain.Changeable;
+import org.skfiy.typhon.domain.Player;
 import org.skfiy.typhon.script.Script;
+import org.skfiy.typhon.util.DomainUtils;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  * @param <S>
  */
-@JSONType(ignores = {"autoOpen", "overlapping", "price", "script", "itemDobj"})
-public abstract class AbstractItem<S extends Item> extends Item {
+@JSONType(ignores = {"autoOpen", "overlapping", "price", "script", "annex", "itemDobj", "parent"})
+public abstract class AbstractItem<S extends Item> extends Item implements Changeable {
+
+    private Changeable _parent;
+    private String _parentPropertyName;
 
     private S itemDobj;
 
+    @Override
+    public Player player() {
+        return _parent.player();
+    }
+
+    @Override
+    public Changeable parent() {
+        return _parent;
+    }
+
+    @Override
+    public String parentPropertyName() {
+        return _parentPropertyName;
+    }
+
+    @Override
+    public void set(Changeable parent, String parentPropertyName) {
+        this._parent = parent;
+        this._parentPropertyName = parentPropertyName;
+    }
+
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
-    public final S getItemDobj() {
+    public S getItemDobj() {
         return itemDobj;
     }
 
     /**
-     * 
-     * @param itemDobj 
+     *
+     * @param itemDobj
      */
-    public final void setItemDobj(S itemDobj) {
+    public void setItemDobj(S itemDobj) {
         this.itemDobj = itemDobj;
 
         if (getId() == null) {
@@ -66,6 +93,19 @@ public abstract class AbstractItem<S extends Item> extends Item {
     @Override
     public final Script getScript() {
         return itemDobj.getScript();
+    }
+
+    @Override
+    public Object getAnnex() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setStar(Star star) {
+        super.setStar(star);
+        if (star != null) {
+            DomainUtils.firePropertyChange(this, "star", star);
+        }
     }
 
 }

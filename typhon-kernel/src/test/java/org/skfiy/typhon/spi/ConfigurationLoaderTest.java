@@ -15,7 +15,6 @@
  */
 package org.skfiy.typhon.spi;
 
-import org.skfiy.typhon.TestBase;
 import org.skfiy.typhon.TestRoot;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

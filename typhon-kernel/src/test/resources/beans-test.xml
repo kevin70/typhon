@@ -14,9 +14,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<beans>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
     
-    <bean class="org.skfiy.typhon.dispatcher.TestAction1"/>
-    <bean class="org.skfiy.typhon.dispatcher.TestAction2"/>
+<!--     <bean id="testAction1" class="org.skfiy.typhon.dispatcher.TestAction1"/> -->
+<!--     <bean id="testAction2" class="org.skfiy.typhon.dispatcher.TestAction2"/> -->
     
 </beans>

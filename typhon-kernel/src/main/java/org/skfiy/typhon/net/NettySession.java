@@ -18,7 +18,6 @@ package org.skfiy.typhon.net;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelFuture;
-import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.session.AbstractSession;
 
 /**
@@ -58,12 +57,22 @@ class NettySession extends AbstractSession {
     }
 
     @Override
+    public boolean isAvailable() {
+        return channel.isConnected();
+    }
+
+    @Override
     public void write(byte[] buf, int off, int len) {
-        channel.write(ChannelBuffers.wrappedBuffer(buf, off, len));
+        if (channel.isConnected()) {
+            channel.write(ChannelBuffers.wrappedBuffer(buf, off, len));
+        } else {
+            // FIXME: wait......
+        }
     }
 
     @Override
     public void close() {
+        setAuthType(null);
         ChannelFuture future = channel.close();
         if (future.isSuccess()) {
             // FIXME
@@ -73,7 +82,7 @@ class NettySession extends AbstractSession {
     /**
      * 更新最后访问时间.
      */
-    void updateLastAccessTime() {
+    void updateLastAccessedTime() {
         lastAccessedTime = System.currentTimeMillis();
     }
 }

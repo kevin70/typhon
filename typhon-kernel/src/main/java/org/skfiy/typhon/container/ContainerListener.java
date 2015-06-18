@@ -17,12 +17,15 @@ package org.skfiy.typhon.container;
 
 import java.lang.reflect.Method;
 import org.skfiy.typhon.Container;
+import org.skfiy.typhon.Globals;
 import org.skfiy.typhon.Lifecycle;
 import org.skfiy.typhon.LifecycleEvent;
 import org.skfiy.typhon.LifecycleListener;
 import org.skfiy.typhon.TyphonException;
-import org.skfiy.util.ClassUtils;
+import org.skfiy.typhon.dispatcher.DispatcherFactory;
 import org.skfiy.util.ReflectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * IoC容器初始/销毁监听器.
@@ -31,6 +34,7 @@ import org.skfiy.util.ReflectionUtils;
  */
 public class ContainerListener implements LifecycleListener {
 
+    private static final Logger CLOG = LoggerFactory.getLogger(Globals.CONSOLE_LOG_NAME);
     private String impl;
     private Container container;
 
@@ -43,8 +47,12 @@ public class ContainerListener implements LifecycleListener {
                 Method m = ReflectionUtils.findMethod(clazz, "init");
                 m.invoke(container);
             } catch (Exception ex) {
-                throw new TyphonException("初始化[" + impl + "]失败", ex);
+                CLOG.error("Container init failed", ex);
+                throw new TyphonException(ex);
             }
+        } else if(Lifecycle.AFTER_START_EVENT.equals(event.getEvent())) {
+            
+            container.getInstance(DispatcherFactory.class).getDispatcher();
         } else if (Lifecycle.BEFORE_STOP_EVENT.equals(event.getEvent())) {
             if (container != null) {
                 Method m = ReflectionUtils.findMethod(container.getClass(), "destroy");

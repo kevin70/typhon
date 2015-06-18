@@ -1,0 +1,17 @@
+[
+{
+"terms": 1000,
+"diamond": 50,
+"icon": "ui/itemicon/r033_icon.png"
+},
+{
+"terms": 1100,
+"diamond": 75,
+"icon": "ui/itemicon/r034_icon.png"
+},
+{
+"terms": 1200,
+"diamond": 100,
+"icon": "ui/itemicon/r035_icon.png"
+}
+]

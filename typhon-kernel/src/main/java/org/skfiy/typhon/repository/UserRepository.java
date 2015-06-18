@@ -13,10 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.skfiy.typhon.repository;
 
+import org.skfiy.typhon.domain.CDKeyObject;
 import org.skfiy.typhon.domain.User;
+import org.skfiy.typhon.packet.Platform;
 
 /**
  *
@@ -45,12 +46,21 @@ public interface UserRepository {
     User findByUsername(final String username);
 
     /**
+     * 
+     * @param username
+     * @param password
+     * @return 
+     */
+    int save(final String username, final String password);
+    
+    /**
      *
      * @param username
      * @param password
+     * @param platform
      * @return
      */
-    int save(final String username, final String password);
+    int save(final String username, final String password, final Platform platform);
 
     /**
      *
@@ -59,4 +69,38 @@ public interface UserRepository {
      */
     boolean updateLastAccessedTime(int uid);
     
+    void updatePassowrd(int uid, String newPassword);
+
+    /**
+     *
+     * @param CDKEYObject
+     * @return
+     */
+//    void saveCDKEY(CDKeyObject object);
+    /**
+     *
+     * @param cdkey
+     * @return CDKeyObject
+     */
+    CDKeyObject findByCDKEY(String key);
+
+    /**
+     *
+     * @param cdkey
+     * @return
+     */
+    boolean updateCDKey(String key);
+
+    /**
+     *
+     * @param plog
+     * @return
+     */
+    void savePlayerLog(int uid, int changeValue, String changeType, String description);
+    
+    /**
+     * 
+     * @return 
+     */
+    int getNextTempId();
 }

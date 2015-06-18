@@ -22,12 +22,11 @@ limitations under the License.
     <parent>
         <groupId>org.skfiy.typhon</groupId>
         <artifactId>typhon-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>2.2.3</version>
     </parent>
     
     <groupId>org.skfiy.typhon</groupId>
     <artifactId>typhon-kernel</artifactId>
-    <version>1.0-SNAPSHOT</version>
     
     <name>Skfiy Typhon Kernel</name>
     
@@ -97,40 +96,18 @@ limitations under the License.
             <groupId>io.netty</groupId>
             <artifactId>netty</artifactId>
             <version>3.6.6.Final</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
-            <version>3.0</version>
-<!--            <classifier>no_aop</classifier>
-            <exclusions>
-                <exclusion>
-                    <groupId>aopalliance</groupId>
-                    <artifactId>aopalliance</artifactId>
-                </exclusion>
-            </exclusions>-->
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.0.19.Final</version>
         </dependency>
+        
         <dependency>
-            <groupId>com.google.inject.extensions</groupId>
-            <artifactId>guice-jmx</artifactId>
-            <version>3.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.inject</groupId>
-                    <artifactId>guice</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.google.inject.extensions</groupId>
-            <artifactId>guice-multibindings</artifactId>
-            <version>3.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.inject</groupId>
-                    <artifactId>guice</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.0.0.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.reflections</groupId>
@@ -148,17 +125,10 @@ limitations under the License.
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-            <version>3.1</version>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-jvm</artifactId>
+            <version>1.2.2</version>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm-all</artifactId>
-            <version>4.1</version>
-        </dependency>
-        -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
@@ -168,6 +138,11 @@ limitations under the License.
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>2.2</version>
         </dependency>
         <dependency>
             <groupId>commons-modeler</groupId>
@@ -184,37 +159,25 @@ limitations under the License.
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--
         <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>7.6.13.v20130916</version>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-jmx</artifactId>
-            <version>7.6.12.v20130726</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>7.6.12.v20130726</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jolokia</groupId>
-            <artifactId>jolokia-core</artifactId>
-            <version>${jolokia.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jolokia</groupId>
-            <artifactId>jolokia-jsr160</artifactId>
-            <version>${jolokia.version}</version>
-        </dependency>
-        -->
         <dependency>
             <groupId>com.jolbox</groupId>
             <artifactId>bonecp</artifactId>
             <version>0.8.0.RELEASE</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+          <version>4.3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.betfair.net.java.opendmk</groupId>
+            <artifactId>opendmk-core</artifactId>
+            <version>1.1</version>
         </dependency>
         <dependency>
             <groupId>jdk.tools</groupId>
@@ -239,6 +202,12 @@ limitations under the License.
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.0.0.RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -344,4 +313,5 @@ limitations under the License.
             </plugin>
         </plugins>
     </reporting>
+    
 </project>

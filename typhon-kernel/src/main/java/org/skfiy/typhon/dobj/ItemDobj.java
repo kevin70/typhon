@@ -30,7 +30,9 @@ public abstract class ItemDobj extends Item {
     private boolean autoOpen;
     private int overlapping;
     private int price;
+    private String displayGroup;
     private Script script;
+    private Object annex;
 
     public void setAutoOpen(boolean autoOpen) {
         this.autoOpen = autoOpen;
@@ -46,6 +48,16 @@ public abstract class ItemDobj extends Item {
 
     public void setScript(Script script) {
         this.script = script;
+    }
+
+    public void setAnnex(Object annex) {
+        this.annex = annex;
+    }
+    public String getDisplayGroup() {
+        return displayGroup;
+    }
+    public void setDisplayGroup(String displayGroup) {
+        this.displayGroup = displayGroup;
     }
 
     @Override
@@ -66,6 +78,11 @@ public abstract class ItemDobj extends Item {
     @Override
     public Script getScript() {
         return script;
+    }
+
+    @Override
+    public Object getAnnex() {
+        return annex;
     }
 
     public abstract AbstractItem toDomainItem();

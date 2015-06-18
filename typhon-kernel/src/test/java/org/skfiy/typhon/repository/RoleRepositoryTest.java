@@ -17,9 +17,12 @@ package org.skfiy.typhon.repository;
 
 import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
 import org.skfiy.typhon.repository.impl.UserRepositoryImpl;
+
 import javax.inject.Inject;
+
 import org.skfiy.typhon.TestBase;
 import org.skfiy.typhon.TestConstants;
+import org.skfiy.typhon.domain.Incident;
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.domain.RoleData;
 import org.testng.Assert;
@@ -35,7 +38,7 @@ public class RoleRepositoryTest extends TestBase {
     private UserRepositoryImpl userReposy;
     @Inject
     private RoleRepositoryImpl roleReposy;
-
+    
     @Test
     public void save() {
         initRole();
@@ -69,8 +72,8 @@ public class RoleRepositoryTest extends TestBase {
     @Test
     public void existsName() {
         initRole();
-        boolean r = roleReposy.existsName(TestConstants.ROLE_NAME);
-        Assert.assertTrue(r);
+        int rid = roleReposy.existsName(TestConstants.ROLE_NAME);
+        Assert.assertTrue(rid > 0);
         
         // clean
         cleanRole();
@@ -101,8 +104,7 @@ public class RoleRepositoryTest extends TestBase {
         
         RoleData newRoleData = roleReposy.loadRoleData(rid);
         Assert.assertEquals(roleData.getNormalData(), newRoleData.getNormalData());
-        Assert.assertEquals(roleData.getBagData(), newRoleData.getBagData());
-        
+        Assert.assertEquals(roleData.getBagData(), newRoleData.getBagData());        
         // clean
         cleanRole();
     }

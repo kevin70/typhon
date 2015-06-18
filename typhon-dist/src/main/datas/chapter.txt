@@ -1,0 +1,33 @@
+id              章ID
+displayName     章名称（客户端专用）
+parts           每单对应的小节数
+    [
+        pid             节的ID
+        displayName     每一小节对应的名称（客户端专用）
+        terrain         地形（SLing -> 树木, PYuan -> 平原, SDi -> 山地, CGuan -> 城关, SLu -> 水路, None -> 无区别）
+        minLevel        攻打关卡的最小等级
+        previgor        战前消耗体力
+        postvigor       战后消耗体力
+        count           副本可攻击次数(-1表示无限次数)
+        exp             攻打关卡成功获得的经验
+        copper          副本铜币              
+        heroExp         攻打关卡武将获得的经验
+        hcidx           列传篇对应的史实篇副本索引
+        hpidx           列传篇对应的史实篇副本下的小节索引
+        #fru1.item.id   第一个成就的道具ID
+        #fru2.item.id   第二个成就的道具ID
+        #fru3.item.id   第三个成就的道具ID
+        steps           第节的小步骤
+        [
+            sid                 第小步骤的ID
+            backgroundImage     第一小节对应的背景图片路径
+            members             怪物成员信息
+            [
+                #monster.id     引用的怪物ID（item_monster.json）
+                ais
+                [
+                                怪物AI(S1, S2, S3, A1, A2, B1, B2, C1, C2, D1, D2)
+                ]             
+            ]   
+        ]
+    ]

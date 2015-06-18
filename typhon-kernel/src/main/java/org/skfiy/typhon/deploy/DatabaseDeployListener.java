@@ -1,17 +1,15 @@
 /*
  * Copyright 2013 The Skfiy Open Association.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
  */
 package org.skfiy.typhon.deploy;
 
@@ -27,6 +25,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import org.skfiy.typhon.ConnectionProvider;
 import org.skfiy.typhon.Constants;
 import org.skfiy.typhon.Lifecycle;
@@ -42,7 +41,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- *
+ * 
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public class DatabaseDeployListener implements LifecycleListener {
@@ -51,10 +50,10 @@ public class DatabaseDeployListener implements LifecycleListener {
 
     @Override
     public void execute(LifecycleEvent event) {
-//        if (!Typhons.getBoolean(Constants.AUTO_UPGRADE_DATABASE)) {
-//            LOG.debug("No enabled auto upgrade database.");
-//            return;
-//        }
+        // if (!Typhons.getBoolean(Constants.AUTO_UPGRADE_DATABASE)) {
+        // LOG.debug("No enabled auto upgrade database.");
+        // return;
+        // }
 
         if (Lifecycle.START_EVENT.equals(event.getEvent())) {
             // 部署数据库
@@ -62,20 +61,32 @@ public class DatabaseDeployListener implements LifecycleListener {
             scp.init();
 
             Version dbVersion = findVersion(scp);
-            int ct = Version.currentVersion().compareTo(dbVersion);
+            if (dbVersion == null) {
+                dbVersion = new Version(0, 0, 0, null);
+                saveVersion(scp, dbVersion);
+            }
             
+            int ct = Version.currentVersion().compareTo(dbVersion);
+
             // update database schema
             if (ct > 0) {
                 upgrade(scp, dbVersion);
             }
-            
+
             scp.destroy();
         }
     }
-    
+
     private void upgrade(ConnectionProvider connectionProvider, Version dbVersion) {
         DatabaseSchema dbSchema = new DatabaseSchema();
 
+        Connection conn = null;
+        try {
+            conn = connectionProvider.getConnection();
+        } catch (SQLException ex) {
+            throw new TyphonException(ex);
+        }
+        
         for (Upgrade upg : loadUpgrades()) {
             // 当前升级脚本的版本号，大于当前应用版本号
             if (upg.getVersion().compareTo(Version.currentVersion()) > 0) {
@@ -89,13 +100,12 @@ public class DatabaseDeployListener implements LifecycleListener {
 
             for (File sqlFile : upg.getSqlFiles()) {
                 InputStream in = null;
-                Connection conn = null;
                 try {
                     in = new FileInputStream(sqlFile);
-                    conn = connectionProvider.getConnection();
                     dbSchema.executeSQLScript(conn, in);
                 } catch (SQLException | IOException ex) {
                     LOG.error(sqlFile.getAbsolutePath(), ex);
+                    DbUtils.rollbackQuietly(conn);
                     throw new TyphonException(ex);
                 } finally {
                     if (in != null) {
@@ -105,15 +115,15 @@ public class DatabaseDeployListener implements LifecycleListener {
                             // nothing
                         }
                     }
-                    DbUtils.commitAndCloseQuietly(conn);
                 }
             }
         }
 
+        DbUtils.commitAndCloseQuietly(conn);
         // 更新数据库版本号
         updateVersion(connectionProvider, Version.currentVersion());
     }
-    
+
     private List<Upgrade> loadUpgrades() {
         File upgradeDir = new File(Typhons.getProperty(Constants.DATABASE_SCRIPTS_DIR), "upgrade");
         File[] subDirs = upgradeDir.listFiles(new FileFilter() {
@@ -131,20 +141,47 @@ public class DatabaseDeployListener implements LifecycleListener {
         Collections.sort(upgrades);
         return upgrades;
     }
+
+    private void saveVersion(ConnectionProvider connectionProvider, Version version) {
+        Connection conn = null;
+        PreparedStatement ps = null;
+
+        try {
+            conn = connectionProvider.getConnection();
+            ps =
+                    conn.prepareStatement("insert into version(major,minor,incremental,qualifier) values(?,?,?,?)");
+            int i = 1;
+            ps.setInt(i++, version.getMajor());
+            ps.setInt(i++, version.getMinor());
+            ps.setInt(i++, version.getIncremental());
+            ps.setString(i++, version.getQualifier());
+            
+            if (ps.executeUpdate() <= 0) {
+                throw new SQLException("没有数据被更新");
+            }
+        } catch (SQLException e) {
+            LOG.error("如果数据库没有版本记录，添加最低版本", e);
+            throw new TyphonException("添加最低版本号失败", e);
+
+        } finally {
+            DbUtils.closeQuietly(ps);
+            DbUtils.commitAndCloseQuietly(conn);
+        }
+    }
     
     private void updateVersion(ConnectionProvider connectionProvider, Version version) {
         Connection conn = null;
         PreparedStatement ps = null;
-        
+
         try {
             conn = connectionProvider.getConnection();
-            ps = conn.prepareStatement(
-                    "update version set major=?,minor=?,incremental=?,qualifier=?");
+            ps =
+                    conn.prepareStatement("update version set major=?,minor=?,incremental=?,qualifier=?");
             ps.setInt(1, version.getMajor());
             ps.setInt(2, version.getMinor());
             ps.setInt(3, version.getIncremental());
             ps.setString(4, version.getQualifier());
-            
+
             if (ps.executeUpdate() <= 0) {
                 throw new SQLException("没有数据被更新");
             }
@@ -156,23 +193,23 @@ public class DatabaseDeployListener implements LifecycleListener {
             DbUtils.commitAndCloseQuietly(conn);
         }
     }
-    
+
     private Version findVersion(ConnectionProvider connectionProvider) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         Version version = null;
-        
+
         try {
             conn = connectionProvider.getConnection();
             ps = conn.prepareStatement("select major,minor,incremental,qualifier from version");
             rs = ps.executeQuery();
             if (rs.next()) {
-                version = new Version(rs.getInt("major"),
-                        rs.getInt("minor"),
-                        rs.getInt("incremental"),
-                        rs.getString("qualifier"));
+                version =
+                        new Version(rs.getInt("major"), rs.getInt("minor"),
+                                rs.getInt("incremental"), rs.getString("qualifier"));
             }
+           
         } catch (SQLException ex) {
             LOG.error("查询数据库Version失败", ex);
             throw new TyphonException("查询数据库Version失败", ex);

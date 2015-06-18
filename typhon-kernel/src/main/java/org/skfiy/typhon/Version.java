@@ -142,7 +142,6 @@ public final class Version implements Comparable<Version> {
 
     @Override
     public int hashCode() {
-        // FIXME
         return getMajor() + getMinor() + getIncremental();
     }
 

@@ -15,6 +15,8 @@
  */
 package org.skfiy.typhon.domain;
 
+import org.skfiy.typhon.packet.Platform;
+
 /**
  *
  * @author Kevin Zou <<kevinz@skfiy.org>>
@@ -26,6 +28,7 @@ public class User {
     private String password;
     private long creationTime;
     private long lastAccessedTime;
+    private Platform platform;
 
     public int getUid() {
         return uid;
@@ -65,5 +68,13 @@ public class User {
 
     public void setLastAccessedTime(long lastAccessedTime) {
         this.lastAccessedTime = lastAccessedTime;
+    }
+
+    public Platform getPlatform() {
+        return platform;
+    }
+
+    public void setPlatform(Platform platform) {
+        this.platform = platform;
     }
 }

@@ -17,7 +17,6 @@ package org.skfiy.typhon.spi;
 
 import javax.inject.Inject;
 import org.skfiy.typhon.TestComponentBase;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**

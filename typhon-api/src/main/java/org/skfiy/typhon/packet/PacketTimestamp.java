@@ -24,6 +24,7 @@ public class PacketTimestamp extends Packet {
     private long timeMillis;
     private int rawOffset;
     private String zone;
+    private long serverinitTime;
 
     public long getTimeMillis() {
         return timeMillis;
@@ -47,6 +48,15 @@ public class PacketTimestamp extends Packet {
 
     public void setZone(String zone) {
         this.zone = zone;
+    }
+    
+
+    public long getServerinitTime() {
+        return serverinitTime;
+    }
+
+    public void setServerinitTime(long serverinitTime) {
+        this.serverinitTime = serverinitTime;
     }
 
     /**

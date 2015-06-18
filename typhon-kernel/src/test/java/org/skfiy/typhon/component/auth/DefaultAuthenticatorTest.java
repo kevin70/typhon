@@ -40,7 +40,7 @@ public class DefaultAuthenticatorTest extends TestComponentBase {
     @Override
     protected void setup() {
         authenticatr = new DefaultAuthenticator();
-        CONTAINER.injectMembers(authenticatr);
+        containerWapper.injectMembers(authenticatr);
     }
 
     @Test

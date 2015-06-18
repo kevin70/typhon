@@ -102,7 +102,7 @@ public class ProductionScriptManager implements Component, ScriptManager {
         for (File f : files) {
             if (f.isDirectory()) {
                 initScripts(f);
-            } else if (f.getName().endsWith(".class")) {
+            } else if (!f.getName().contains("$") && f.getName().endsWith(".class")) {
                 String name = getScriptCanonicalName(f);
                 scripts.put(name, newScript(name));
             }

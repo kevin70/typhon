@@ -36,15 +36,13 @@ import org.skfiy.typhon.packet.Packet;
 public class AsmDispatcherFactory extends ClassLoader
         implements DispatcherFactory, Opcodes {
 
+    @Inject
     private Container container;
     private ActionHelper helper;
     private Dispatcher dispatcher;
     
-    @Inject
-    public AsmDispatcherFactory(Container container) {
+    public AsmDispatcherFactory() {
         super(Dispatcher.class.getClassLoader());
-        this.container = container;
-        helper = new ActionHelper(container);
     }
     
     @Override
@@ -53,6 +51,7 @@ public class AsmDispatcherFactory extends ClassLoader
             return dispatcher;
         }
         
+        helper = new ActionHelper(container);
         String packageName = this.getClass().getPackage().getName();
         String simpleName = "__Typhon__AsmDispatcher__";
         String proxyClassName = packageName + "." + simpleName;

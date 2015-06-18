@@ -18,20 +18,32 @@ package org.skfiy.typhon.session;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Set;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import javax.inject.Inject;
-import javax.inject.Singleton;
+
+import org.skfiy.typhon.Component;
+import org.skfiy.typhon.repository.UserRepository;
 import org.skfiy.util.v8.ConcurrentHashMapV8;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@Singleton
-public class DefaultSessionManager implements SessionManager {
+public class DefaultSessionManager implements SessionManager, Component {
+
+    private static final Logger LOG = LoggerFactory.getLogger(DefaultSessionManager.class);
 
     @Inject
+    private UserRepository userRepository;
+
+    @Resource
     private Set<SessionListener> sessionListeners;
-    private ConcurrentHashMapV8<Integer, Session> sessions;
+    private final ConcurrentHashMapV8<Integer, Session> sessions;
 
     public DefaultSessionManager() {
         sessions = new ConcurrentHashMapV8<>();
@@ -54,18 +66,31 @@ public class DefaultSessionManager implements SessionManager {
 
     @Override
     public void addSession(int sid, Session session) {
-        sessions.putIfAbsent(sid, session);
+        sessions.put(sid, session);
+
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("addSession-> sid: {} -- {}", sid, session);
+        }
+
         // fire
         for (SessionListener sessionListener : sessionListeners) {
             sessionListener.sessionCreated(session);
         }
     }
+
     @Override
     public Session removeSession(int sid) {
         Session session = sessions.remove(sid);
+
+        if (LOG.isInfoEnabled()) {
+            LOG.info("removeSession-> sid: {} -- {}", sid, session);
+        }
+
         // fire
-        for (SessionListener sessionListener : sessionListeners) {
-            sessionListener.sessionDestroyed(session);
+        if (session != null) {
+            for (SessionListener sessionListener : sessionListeners) {
+                sessionListener.sessionDestroyed(session);
+            }
         }
         return session;
     }
@@ -84,4 +109,25 @@ public class DefaultSessionManager implements SessionManager {
     public Collection<Session> findSessions() {
         return sessions.values();
     }
+
+    //==============================================================================================
+    @PostConstruct
+    @Override
+    public void init() {
+        SessionUtils.setUserRepository(userRepository);
+        BagUtils.setUserRepository(userRepository);
+    }
+
+    @Override
+    public void reload() {
+    }
+
+    @PreDestroy
+    @Override
+    public void destroy() {
+        for (int id : sessions.keySet()) {
+            removeSession(id);
+        }
+    }
+    //==============================================================================================
 }

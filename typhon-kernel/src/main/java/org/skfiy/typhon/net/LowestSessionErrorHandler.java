@@ -39,10 +39,15 @@ public class LowestSessionErrorHandler implements SessionErrorHandler {
     @Override
     public void handleError(Session session, Throwable t) {
         Packet contextPacket = (Packet) session.getAttribute(SessionConstants.ATTR_CONTEXT_PACKET);
-        LOG.error(contextPacket.toString(), t);
         
-        PacketError error = PacketError.createResult(contextPacket,
-                PacketError.Condition.internal_server_error);
+        PacketError error;
+        if (contextPacket == null) {
+            error = PacketError.createError(PacketError.Condition.bat_request);
+        } else {
+            LOG.error(String.valueOf(contextPacket), t);
+            error = PacketError.createResult(contextPacket, PacketError.Condition.internal_server_error);
+        }
+        
         error.setNs(Namespaces.ERROR);
         error.setText(t.getMessage());
         session.write(error);

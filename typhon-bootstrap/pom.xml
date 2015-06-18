@@ -22,7 +22,7 @@ limitations under the License.
     <parent>
         <groupId>org.skfiy.typhon</groupId>
         <artifactId>typhon-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>2.2.3</version>
     </parent>
 
     <groupId>org.skfiy.typhon</groupId>
@@ -41,8 +41,32 @@ limitations under the License.
                     <archive>
                         <manifest>
                             <mainClass>org.skfiy.typhon.startup.Bootstrap</mainClass>
-                        </manifest>
+                        </manifest>
                     </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>typhon-debug</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>-Dfile.encoding=${project.build.sourceEncoding}</argument>
+                        <argument>-Dtyphon.home=${basedir}/../typhon-dist/src/main</argument>
+                        <argument>-classpath</argument>
+                        <classpath/>
+                        <argument>-Xdebug</argument>
+                        <argument>-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9999</argument>
+                        <argument>org.skfiy.typhon.startup.Bootstrap</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
@@ -51,7 +75,7 @@ limitations under the License.
     <dependencies>
         <dependency>
             <groupId>org.skfiy.typhon</groupId>
-            <artifactId>typhon-kernel</artifactId>
+            <artifactId>typhon-action</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -61,7 +85,7 @@ limitations under the License.
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-        
+
     <profiles>
         <profile>
             <id>dist</id>

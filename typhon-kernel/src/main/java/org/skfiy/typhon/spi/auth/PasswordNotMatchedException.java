@@ -33,7 +33,7 @@ public class PasswordNotMatchedException extends RuntimeException {
      * Constructs an instance of
      * <code>PasswordNotMatchedException</code> with the specified detail message.
      *
-     * @param msg the detail message.
+     * @param message
      */
     public PasswordNotMatchedException(String message) {
         super(message);

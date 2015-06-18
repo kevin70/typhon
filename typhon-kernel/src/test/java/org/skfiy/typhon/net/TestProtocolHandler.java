@@ -35,7 +35,7 @@ public class TestProtocolHandler extends JsonProtocolHandler {
         String ns = new String(nsbs, StandardCharsets.UTF_8);
         Packet packet = JSON.parseObject(datas, dispatcherFactory.getPacketClass(ns));
         session.setAttribute(SessionConstants.ATTR_CONTEXT_PACKET, packet);
-        dispatcher.dispatch(ns, packet);
+        dispatcherFactory.getDispatcher().dispatch(ns, packet);
         session.removeAttribute(SessionConstants.ATTR_CONTEXT_PACKET);
     }
 

@@ -16,21 +16,23 @@
 package org.skfiy.typhon;
 
 import javax.inject.Inject;
+import org.skfiy.typhon.container.ContainerWapper;
 import org.skfiy.typhon.domain.Role;
 import org.skfiy.typhon.repository.RoleRepository;
 import org.skfiy.typhon.repository.UserRepository;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Guice;
 
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@Guice(moduleFactory = TestModuleFactory.class)
 public abstract class TestBase extends TestSupport {
 
+    @Inject
+    protected ContainerWapper containerWapper;
+    protected ITestContext testContext;
     protected int uid = -1;
     protected int rid = -1;
     
@@ -42,6 +44,7 @@ public abstract class TestBase extends TestSupport {
     @BeforeClass
     public final void beforeInvoke(ITestContext context) {
         setup();
+        testContext = context;
     }
 
     @AfterClass

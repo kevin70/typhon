@@ -16,6 +16,8 @@
 package org.skfiy.typhon.spi.role;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.parser.Feature;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import javax.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
 import org.skfiy.typhon.dobj.ItemDobj;
@@ -34,21 +36,36 @@ public class BagRoleDatable implements RoleDatable {
 
     @Inject
     private ItemProvider itemProvider;
-    
+
+    @Override
+    public void initialize(Player player) {
+        player.setBag(new Bag());
+    }
+
     @Override
     public void serialize(Player player, RoleData roleData) {
-        roleData.setBagData(JSON.toJSONString(player.getBag()));
+        if (player.getBag() == null) {
+            return;
+        }
+
+        roleData.setBagData(JSON.toJSONString(player.getBag(),
+                SerializerFeature.WriteClassName,
+                SerializerFeature.DisableCircularReferenceDetect));
     }
 
     @Override
     public void deserialize(RoleData roleData, Player player) {
-        String data = roleData.getNormalData();
+        String data = roleData.getBagData();
+        player.setBag(parseData(data));
+    }
+
+    protected Bag parseData(String data) {
         Bag big;
-        if (StringUtils.isEmpty(roleData.getBagData())) {
+        if (StringUtils.isEmpty(data)) {
             big = new Bag();
         } else {
-            big = JSON.parseObject(data, Bag.class);
-            
+            big = JSON.parseObject(data, Bag.class, Feature.DisableASM);
+
             ItemDobj itemDobj;
             AbstractItem aitem;
             for (Node node : big.getNodes()) {
@@ -57,7 +74,7 @@ public class BagRoleDatable implements RoleDatable {
                 aitem.setItemDobj(itemDobj);
             }
         }
-        player.setBag(big);
+        return big;
     }
 
 }

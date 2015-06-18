@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.skfiy.typhon.session;
 
 /**
@@ -21,9 +20,11 @@ package org.skfiy.typhon.session;
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public abstract class SessionConstants {
-    
+
     public static final String ATTR_CONTEXT_PACKET = "CONTEXT_PACKET";
     public static final String ATTR_USER = "USER";
     public static final String ATTR_PLAYER = "PLAYER";
     public static final String ATTR_OVER_PACKET_ID = "OVER_PACKET_ID";
+    public static final String ATTR_PLAYER_SL_KEY = "__PLAYER_SL_KEY";
+    // public static final String ATTR_PVE_SINGLE_ATLASLOOT_RECORDS = "PVE_SINGLE_ATLASLOOT_RECORDS";
 }

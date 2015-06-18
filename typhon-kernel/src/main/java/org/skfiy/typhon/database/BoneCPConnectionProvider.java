@@ -70,11 +70,12 @@ public class BoneCPConnectionProvider extends BoneCPDataSource implements Compon
         try (InputStream in = ResourceUtils.getURL("classpath:jdbc.properties").openStream()) {
             jdbcProps.load(in);
         }
-
+        
         // settings jdbc properties...
         setDriverClass(jdbcProps.getProperty("jdbc.driverClass"));
         setJdbcUrl(jdbcProps.getProperty("jdbc.url"));
         setUsername(jdbcProps.getProperty("jdbc.username"));
         setPassword(jdbcProps.getProperty("jdbc.password"));
+        setDisableConnectionTracking(true);
     }
 }

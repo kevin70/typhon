@@ -55,4 +55,96 @@ limitations under the License.
                    returnType="void"/>
     </mbean>
     
+    <mbean name="GMConsoleProvider"
+           description="GM控制台"
+           domain="org.skfiy.typhon.spi"
+           type="org.skfiy.typhon.spi.GMConsoleProvider">
+        <operation name="changeSystemProperties"
+                   description="(警告)修改系统属性"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="key" type="java.lang.String" description="属性键"/>
+            <parameter name="value" type="java.lang.String" description="属性名称"/>
+        </operation>
+        <operation name="changeProperty"
+                   description="修改玩家的数据信息"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="propertyName" type="java.lang.String"
+                       description="属性名称"/>
+            <parameter name="val" type="java.lang.String"
+                       description="属性值"/>
+        </operation>
+        <operation name="changeHeroLevel"
+                   description="修改指定英雄等级"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="iid" type="java.lang.String" description="英雄ID"/>
+            <parameter name="level" type="java.lang.String" description="武将等级"/>
+        </operation>
+        <operation name="pushHero"
+                   description="为指定玩家添加一个英雄"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="iid" type="java.lang.String"
+                       description="英雄的ID"/>
+        </operation>
+        <operation name="pushItem"
+                   description="为指定玩家添加一个道具"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="iid" type="java.lang.String" description="道具ID"/>
+        </operation>
+        <operation name="pushItem"
+                   description="为指定玩家添加指定数量道具"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="iid" type="java.lang.String" description="道具ID"/>
+            <parameter name="count" type="java.lang.String" description="道具数量"/>
+        </operation>
+        <operation name="openAllPve"
+                   description="为玩家打开所有的PVE关卡"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+        </operation>
+        
+        <!-- mail -->
+        <operation name="sendMail"
+                   description="给指定的玩家发送邮件"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="uid" type="java.lang.String"/>
+            <parameter name="title" type="java.lang.String" description="邮件标题"/>
+            <parameter name="content" type="java.lang.String" description="邮件内容"/>
+            <parameter name="appendix" type="java.lang.String" description="邮件附件(道具)"/>
+            <parameter name="count" type="java.lang.String" description="邮件附件个数"/>
+            <parameter name="type" type="java.lang.String"
+                       description="邮件类型,可选值(更新通知:1, 活动通知:2, 维护通知:3, 补偿通知:4, 奖励通知:5)"/>
+        </operation>
+        <operation name="sendAllMail"
+                   description="给该服的所有玩家发送邮件"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="title" type="java.lang.String" description="邮件标题"/>
+            <parameter name="content" type="java.lang.String" description="邮件内容"/>
+            <parameter name="appendix" type="java.lang.String" description="邮件附件(道具)"/>
+            <parameter name="count" type="java.lang.String" description="邮件附件个数"/>
+            <parameter name="type" type="java.lang.String"
+                       description="邮件类型,可选值(更新通知:1, 活动通知:2, 维护通知:3, 补偿通知:4, 奖励通知:5)"/>
+        </operation>
+        <operation name="recharge"
+                   description="通过RID给用户冲值"
+                   impact="ACTION"
+                   returnType="void">
+            <parameter name="rid" type="java.lang.String" description="角色ID"/>
+            <parameter name="cash" type="java.lang.String" description="金额(可选值参考:vip_recharging.json)"/>
+        </operation>
+    </mbean>
+    
 </mbeans-descriptors>

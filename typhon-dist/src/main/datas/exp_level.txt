@@ -1,0 +1,6 @@
+level           角色等级
+maxVigor        角色最大体力值
+presentVigor    升级送的体力值
+exp             角色升级所需经验
+heroExp         武将升级所需经验
+heroMaxLevel    武将最大等级

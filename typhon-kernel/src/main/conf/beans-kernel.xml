@@ -14,25 +14,30 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<beans>
-    
-    <bean type="org.skfiy.typhon.session.SessionManager"
-          class="org.skfiy.typhon.session.DefaultSessionManager"/>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd" default-lazy-init="false">
 
-    <bean type="org.skfiy.typhon.ConnectionProvider"
-          class="org.skfiy.typhon.database.BoneCPConnectionProvider"/>
-         
-    <bean type="org.skfiy.typhon.dispatcher.DispatcherFactory"
-          class="org.skfiy.typhon.dispatcher.ReflectionDispatcherFactory"/>
+    <context:annotation-config />
     
-    <bean type="org.skfiy.typhon.net.ProtocolHandler"
-          class="org.skfiy.typhon.net.JsonProtocolHandler"/>
+    <bean id="containerWapper" class="org.skfiy.typhon.container.ContainerWapper"/>
+
+    <bean id="sessionManager" class="org.skfiy.typhon.session.DefaultSessionManager"/>
     
-    <bean type="org.skfiy.typhon.script.ScriptManager"
-          class="org.skfiy.typhon.script.DebugScriptManager"/>
+    <bean id="connectionProvider" class="org.skfiy.typhon.database.BoneCPConnectionProvider"/>
     
-    <multi-set type="org.skfiy.typhon.net.SessionErrorHandler">
-        <element class="org.skfiy.typhon.net.LowestSessionErrorHandler"/>
-    </multi-set>
+    <bean id="dispatcherFactory" class="org.skfiy.typhon.dispatcher.AsmDispatcherFactory"/>
+    
+    <bean id="protocolHandler" class="org.skfiy.typhon.net.JsonProtocolHandler"/>
+    
+    <util:set id="sessionErrorHandlers" set-class="java.util.LinkedHashSet" value-type="org.skfiy.typhon.net.SessionErrorHandler">
+        <bean class="org.skfiy.typhon.session.NotEnoughResourceSessionErrorHandler"/>
+        <bean class="org.skfiy.typhon.spi.auth.OAuth2SessionErrorHandler"/>
+        <bean class="org.skfiy.typhon.net.LowestSessionErrorHandler"/>
+    </util:set>
     
 </beans>

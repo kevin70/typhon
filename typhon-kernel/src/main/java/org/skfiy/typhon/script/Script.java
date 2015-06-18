@@ -29,6 +29,7 @@ public interface Script {
      *
      * @param session 用户会话{@code Session }
      * @param obj 附加实例
+     * @return 
      */
-    void invoke(Session session, Object obj);
+    Object invoke(Session session, Object obj);
 }

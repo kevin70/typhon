@@ -17,8 +17,8 @@ package org.skfiy.typhon.net;
 
 import java.net.InetSocketAddress;
 import javax.management.MBeanServer;
-import org.apache.commons.modeler.Registry;
 import org.jboss.netty.bootstrap.ServerBootstrap;
+import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandler;
 import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
@@ -26,10 +26,9 @@ import org.jboss.netty.channel.Channels;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.jboss.netty.handler.codec.frame.DelimiterBasedFrameDecoder;
 import org.jboss.netty.handler.codec.frame.Delimiters;
-import org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder;
-import org.jboss.netty.handler.codec.frame.LengthFieldPrepender;
 import org.jboss.netty.handler.logging.LoggingHandler;
 import org.jboss.netty.handler.timeout.IdleStateHandler;
+import org.jboss.netty.util.ExternalResourceReleasable;
 import org.jboss.netty.util.HashedWheelTimer;
 import org.jboss.netty.util.Timer;
 import org.skfiy.typhon.AbstractMBeanLifecycle;
@@ -59,6 +58,7 @@ public class NettyConnector extends AbstractMBeanLifecycle
     private int port;
     private boolean logEnabled;
     private long connectionTimeout;
+    private Channel serverChannel;
     private ServerBootstrap nettyServer;
     
     @Override
@@ -122,28 +122,10 @@ public class NettyConnector extends AbstractMBeanLifecycle
         setState(LifecycleState.STARTING);
         fireLifecycleListener(START_EVENT);
         
-        final NettyEndpointHandler handler = new NettyEndpointHandler();
-        nettyServer.setPipelineFactory(new ChannelPipelineFactory() {
-            
-            private final Timer timer = new HashedWheelTimer();
-            private final ChannelHandler idleStateHandler = new IdleStateHandler(timer, 60, 0, 0);
-            
-            @Override
-            public ChannelPipeline getPipeline() throws Exception {
-                ChannelPipeline pipeline = Channels.pipeline();
-                pipeline.addLast("IdleState", idleStateHandler);
-                pipeline.addLast("FrameDecoder",
-                        new DelimiterBasedFrameDecoder(65535, Delimiters.lineDelimiter()));
-                // pipeline.addLast("FrameEncoder", new LengthFieldPrepender(4, false));
-                if (isLogEnabled()) {
-                    pipeline.addLast("Logging", new LoggingHandler());
-                }
-                pipeline.addLast("Endpoint-Inbound", handler);
-                return pipeline;
-            }
-        });
+        NettyEndpointHandler handler = new NettyEndpointHandler();
+        nettyServer.setPipelineFactory(new MyChannelPipelineFactory(handler));
         
-        nettyServer.bind(new InetSocketAddress(host, port));
+        serverChannel = nettyServer.bind(new InetSocketAddress(host, port));
         CLOG.debug("NettyConnector started on port {}", port);
         
         MBeanServer mbs = MBeanUtils.REGISTRY.getMBeanServer();
@@ -164,16 +146,11 @@ public class NettyConnector extends AbstractMBeanLifecycle
     protected void stopInternal() throws LifecycleException {
         setState(LifecycleState.STOPPING);
         fireLifecycleListener(STOP_EVENT);
-        
+
+        serverChannel.close();
         nettyServer.shutdown();
     }
-
-    @Override
-    protected void destroyInternal() throws LifecycleException {
-        super.destroyInternal();
-    }
     
-
     @Override
     protected String getMBeanDomain() {
         return "Connector";
@@ -182,5 +159,34 @@ public class NettyConnector extends AbstractMBeanLifecycle
     @Override
     protected String getObjectNameKeyProperties() {
         return "name=NettyConnector";
+    }
+    
+    private class MyChannelPipelineFactory implements ChannelPipelineFactory, ExternalResourceReleasable {
+
+        private final Timer timer = new HashedWheelTimer();
+        private final IdleStateHandler idleStateHandler = new IdleStateHandler(timer, 60, 0, 0);
+        private final ChannelHandler handler;
+
+        MyChannelPipelineFactory(ChannelHandler handler) {
+            this.handler = handler;
+        }
+
+        @Override
+        public ChannelPipeline getPipeline() throws Exception {
+            ChannelPipeline pipeline = Channels.pipeline();
+            pipeline.addLast("IdleState", idleStateHandler);
+            pipeline.addLast("FrameDecoder", new DelimiterBasedFrameDecoder(65535, Delimiters.lineDelimiter()));
+            // pipeline.addLast("FrameEncoder", new LengthFieldPrepender(4, false));
+            if (isLogEnabled()) {
+                pipeline.addLast("Logging", new LoggingHandler());
+            }
+            pipeline.addLast("Endpoint-Inbound", handler);
+            return pipeline;
+        }
+
+        @Override
+        public void releaseExternalResources() {
+            idleStateHandler.releaseExternalResources();
+        }
     }
 }

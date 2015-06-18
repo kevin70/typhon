@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2014 The Skfiy Open Association.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+    <context:component-scan base-package="org.skfiy.typhon.rnsd" />
+    
+    <!-- ++++++++++++++++++++ JDBC/Transaction begin +++++++++++++++++++++++ -->
+    <bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/rnsd?useUnicode=true&amp;characterEncoding=utf8"/>
+        <property name="username" value="rnsd"/>
+        <property name="password" value="rnsd"/>
+        <property name="partitionCount" value="2"/>
+        <property name="minConnectionsPerPartition" value="5"/>
+        <property name="maxConnectionsPerPartition" value="25"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="maxConnectionAgeInSeconds" value="3000"/>
+    </bean>
+    
+    <bean id="rechargingService" class="org.skfiy.typhon.rnsd.service.impl.RechargingServiceImpl">
+        <constructor-arg name="basicAuth" value="Basic c2h1aWZhOnNodWlmYQ=="/>
+    </bean>
+    
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <tx:annotation-driven transaction-manager="txManager"/>
+    <!-- ++++++++++++++++++++ JDBC/Transaction end +++++++++++++++++++++++++ -->
+
+    <util:map id="rechargingHandlers">
+        <entry key="lj">
+            <bean class="org.skfiy.typhon.rnsd.service.handler.LJRechargingHandler"/>
+        </entry>
+        <entry key="uc">
+            <bean class="org.skfiy.typhon.rnsd.service.handler.UCRechargingHandler"/>
+        </entry>
+        <entry key="googleplay">
+            <bean class="org.skfiy.typhon.rnsd.service.handler.GooglePlayRechargingHandler"/>
+        </entry>
+        <entry key="apple">
+            <bean class="org.skfiy.typhon.rnsd.service.handler.AppleRechargingHandler"/>
+        </entry>
+    </util:map>
+    
+    <util:map id="goodsPrices" key-type="java.lang.String" value-type="java.lang.Integer">
+        <entry key="120" value="120"/>
+        <entry key="360" value="360"/>
+        <entry key="720" value="720"/>
+        <entry key="1200" value="1200"/>
+        <entry key="2400" value="2400"/>
+        <entry key="6000" value="6000"/>
+        <entry key="7800" value="7800"/>
+        <entry key="11800" value="11800"/>
+        <entry key="20000" value="20000"/>
+    </util:map>
+    
+</beans>

@@ -1,0 +1,52 @@
+[
+{
+"aid": "a001",
+"comment": "核心战斗",
+"icon": "lm0101011.png"
+},
+{
+"aid": "a002",
+"comment": "随机战斗",
+"icon": "lm0101013.png"
+},
+{
+"aid": "a003",
+"comment": "答题考验",
+"icon": "lm0101014.png"
+},
+{
+"aid": "a004",
+"comment": "幸运宝箱",
+"icon": "lm0101017.png"
+},
+{
+"aid": "a005",
+"comment": "幸运金币",
+"icon": "lm0101012.png"
+},
+{
+"aid": "a006",
+"comment": "幸运事件",
+"icon": "lm0101012.png"
+},
+{
+"aid": "a007",
+"comment": "倒霉事件",
+"icon": "lm0101012.png"
+},
+{
+"aid": "a008",
+"comment": "英雄投奔",
+"icon": "lm0101018.png"
+},
+{
+"aid": "a009",
+"comment": "光芒万丈",
+"icon": "lm0101012.png"
+},
+{
+"aid": "a010",
+"comment": "回复体力",
+"icon": "lm0101012.png"
+}
+]

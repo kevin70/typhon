@@ -24,7 +24,7 @@ public final class SessionContext {
     /**
      * LOCAL_SESSION属性命名禁止修改.
      */
-    private final static InheritableThreadLocal<Session> LOCAL_SESSION = new InheritableThreadLocal<>();
+    final static InheritableThreadLocal<Session> LOCAL_SESSION = new InheritableThreadLocal<>();
 
     private SessionContext() {
         throw new AssertionError("SessionContext不能拥有实例");

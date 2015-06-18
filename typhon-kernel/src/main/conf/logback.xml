@@ -18,7 +18,7 @@ limitations under the License.
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <charset>UTF-8</charset>
         <encoder>
-            <pattern>%d [%thread] - %msg%n%ex{full}</pattern>
+            <pattern>%d [%thread] - %msg%n%rEx{full}</pattern>
         </encoder>
     </appender>
 
@@ -26,35 +26,54 @@ limitations under the License.
         <charset>UTF-8</charset>
         <file>${typhon.home}/logs/typhon.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>typhon-%i.log</fileNamePattern>
-            <maxHistory>9</maxHistory>
+            <fileNamePattern>${typhon.home}/logs/typhon-%i.log</fileNamePattern>
+            <maxIndex>50</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>200MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%rEx{full}</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="rankfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <charset>UTF-8</charset>
+        <file>${typhon.home}/protected-logs/typhon-ranking.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${typhon.home}/protected-logs/typhon-ranking%i.log</fileNamePattern>
+            <maxIndex>9</maxIndex>
         </rollingPolicy>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <maxFileSize>100MB</maxFileSize>
         </triggeringPolicy>
         <encoder>
-            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
+            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%rEx{full}</pattern>
         </encoder>
     </appender>
     
     <appender name="protected" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <charset>UTF-8</charset>
-        <file>${user.home}/.logs/typhon-protected.log</file>
+        <file>${typhon.home}/protected-logs/typhon-protected.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>${typhon.home}/.logs/typhon-protected-%i.log</fileNamePattern>
-            <maxHistory>9</maxHistory>
+            <fileNamePattern>${typhon.home}/protected-logs/typhon-protected-%i.log</fileNamePattern>
+            <maxIndex>9</maxIndex>
             <compressionMode>GZ</compressionMode>
         </rollingPolicy>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <maxFileSize>100MB</maxFileSize>
         </triggeringPolicy>
         <encoder>
-            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%ex{full}</pattern>
+            <pattern>%d [%thread] %-5level %logger{36} %L - %msg%n%rEx{full}</pattern>
         </encoder>
     </appender>
 
-    <logger name="org.apache.commons" level="error"/>
-    <logger name="org.reflections" level="error"/>
+<!--    <logger name="org.apache.commons" level="error"/>
+    <logger name="org.reflections" level="error"/>                                                                                                                                                                        
+    <logger name="org.springframework" level="error"/>
+    <logger name="io.netty.handler.logging" level="error"/>
+    <logger name="org.apache.http" level="error"/>
+    <logger name="org.skfiy.typhon" lelevel=vel="error"/>-->
     
     <logger name="console.out" level="trace" addtivity="false">
         <appender-ref ref="stdout"/>
@@ -63,4 +82,9 @@ limitations under the License.
     <root level="debug">
         <appender-ref ref="file"/>
     </root>
+    
+    <logger name="repository.update.exception" level="warn" additivity="false">
+        <appender-ref ref="rankfile" />
+    </logger>
+    
 </configuration>

@@ -9,15 +9,177 @@
                         <String>enable.project.master.files.support</String>
                         <Boolean>true</Boolean>
                     </entry>
+                    <entry>
+                        <String>search.resources.filter.history</String>
+                        <filterPanelHistoryItems>
+                            <field name="expressionsLists">
+                                <list>
+                                    <String>M0129</String>
+                                </list>
+                            </field>
+                        </filterPanelHistoryItems>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
                 </map>
             </serialized>
         </options>
     </meta>
     <projectTree name="typhon.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="addwishCounts.json"/>
+            <file name="answerDatabase.json"/>
+            <file name="atlas_heros.json"/>
+            <file name="basic_society_icon.json"/>
+            <file name="building_clock.json"/>
+            <file name="buy_vigor.json"/>
+            <file name="diamond_exchange_gold.json"/>
+            <file name="diamond_exchange_gold_crit.json"/>
+            <file name="exp_level.json"/>
+            <file name="exp_return.json"/>
+            <file name="first_recharging_diamond_gift.json"/>
+            <file name="growth_fund.json"/>
+            <file name="invite_reward.json"/>
+            <file name="login_gift.json"/>
+            <file name="month_sign.json"/>
+            <file name="properties.json"/>
+            <file name="random_boxs.json"/>
+            <file name="random_name.json"/>
+            <file name="shots.json"/>
+            <file name="sign_cost.json"/>
+            <file name="topup_luckeydraw.json"/>
+            <file name="upgrade_gift.json"/>
+            <file name="vip.json"/>
+            <file name="vip_activity_gift.json"/>
+            <file name="vip_day_gift.json"/>
+            <file name="vip_free_gift.json"/>
+            <file name="vip_recharging.json"/>
+            <file name="wish_cost.json"/>
+        </folder>
+        <folder name="atlasloot">
+            <file name="multiple_atlasloot.json"/>
+            <file name="single_atlasloot.json"/>
+        </folder>
+        <folder name="caravan">
+            <file name="caravan_race.json"/>
+            <file name="caravan_refresh.json"/>
+            <file name="caravan_sorts.json"/>
+        </folder>
+        <folder name="chapter">
+            <file name="chapter.txt"/>
+            <file name="chapter_activity.json"/>
+            <file name="chapter_dargon.json"/>
+            <file name="chapter_difficult_history.json"/>
+            <file name="chapter_history.json"/>
+            <file name="chapter_resetcount_cost.json"/>
+            <file name="chapter_story.json"/>
+            <file name="item_monster.json"/>
+        </folder>
+        <folder name="dargon">
+            <file name="dargon_box.json"/>
+            <file name="dargon_buy_counts.json"/>
+            <file name="dargon_events.json"/>
+            <file name="dargon_soul.json"/>
+            <file name="dargon_store.json"/>
+            <file name="dargon_store_refresh.json"/>
+            <file name="dargon_store_refresh_time.json"/>
+            <file name="dargon_war.json"/>
+        </folder>
+        <folder name="enchant">
+            <file name="enchant_consume.json"/>
+            <file name="enchant_exp_level.json"/>
+            <file name="enchant_property.json"/>
+            <file name="enchant_return.json"/>
+        </folder>
+        <folder name="hero">
+            <file name="copper_lottery.json"/>
+            <file name="diamond_exchange_gold.json"/>
+            <file name="diamond_exchange_gold_crit.json"/>
+            <file name="diamond_tuhao_day_lottery.json"/>
+            <file name="diamond_tuhao_lottery.json"/>
+            <file name="diamond_tuhao_week_lottery.json"/>
+            <file name="hero_ladder.json"/>
+            <file name="hero_ladder_properties.json"/>
+            <file name="hero_stars.json"/>
+            <file name="power_guess.json"/>
+        </folder>
         <folder name="item">
             <file name="item_complex.json"/>
+            <file name="item_equipment.json"/>
+            <file name="item_equipment.txt"/>
+            <file name="item_hero.json"/>
+            <file name="item_hero.txt"/>
+            <file name="item_monster.json"/>
+            <file name="item_monster.txt"/>
             <file name="item_simple.json"/>
+            <file name="item_soul.json"/>
+            <file name="item_troop.json"/>
         </folder>
-        <file name="properties.xml"/>
+        <folder name="pvp">
+            <file name="pvp_awards.json"/>
+            <file name="pvp_buy_count.json"/>
+            <file name="pvp_highest_ranks.json"/>
+            <file name="pvp_robots.json"/>
+            <file name="store_pvp.json"/>
+            <file name="store_pvp_refresh.json"/>
+            <file name="store_pvp_refresh_time.json"/>
+        </folder>
+        <folder name="shop">
+            <file name="refresh_time.json"/>
+            <file name="store_basic.json"/>
+            <file name="store_market.json"/>
+            <file name="store_refresh.json"/>
+            <file name="store_western.json"/>
+        </folder>
+        <folder name="skill">
+            <file name="BSa_skill.json"/>
+            <file name="BSa_skill.txt"/>
+            <file name="Joint_skill.json"/>
+            <file name="leader_skill.json"/>
+        </folder>
+        <folder name="society">
+            <file name="society_boss.json"/>
+            <file name="society_monster.json"/>
+            <file name="society_reward.json"/>
+            <file name="society_store.json"/>
+            <file name="society_store_refresh_cost.json"/>
+            <file name="society_store_refresh_time.json"/>
+        </folder>
+        <folder name="task">
+            <file name="task_list_combo.json"/>
+            <file name="task_list_dargon.json"/>
+            <file name="task_list_day.json"/>
+            <file name="task_list_heros.json"/>
+            <file name="task_list_level.json"/>
+            <file name="task_list_pveprogress.json"/>
+            <file name="task_list_pvp.json"/>
+            <file name="task_list_star.json"/>
+        </folder>
+        <folder name="troop">
+            <file name="troop_cost.json"/>
+            <file name="troop_js_property.json"/>
+            <file name="client/troop_property_level.json"/>
+            <file name="troop_strong_secondary_properties.json"/>
+            <file name="troop_xf_property.json"/>
+            <file name="troop_yb_property.json"/>
+            <file name="troop_zj_property.json"/>
+            <file name="troop_zz_property.json"/>
+        </folder>
+        <folder name="war">
+            <file name="fury_war_factor.json"/>
+            <file name="race_war_factor.json"/>
+            <file name="terrain_war_factor.json"/>
+        </folder>
+        <folder name="weapons">
+            <file name="exclusive_weapons.json"/>
+            <file name="weapons_build.json"/>
+            <file name="weapons_build_property.json"/>
+            <file name="weapons_intensify.json"/>
+            <file name="weapons_wash.json"/>
+        </folder>
+        <folder path="client/"/>
+        <file name="a.json"/>
     </projectTree>
 </project>

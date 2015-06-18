@@ -1,0 +1,4370 @@
+{
+    "c001": {
+        "id": "c001",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "c001p1": {
+        "id": "c001p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "c001p2": {
+        "id": "c001p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 771,
+            "y": 788
+        }
+    },
+    "c001p3": {
+        "id": "c001p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "c002": {
+        "id": "c002",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "c002p1": {
+        "id": "c002p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "c002p2": {
+        "id": "c002p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 777,
+            "y": 751
+        }
+    },
+    "c002p3": {
+        "id": "c002p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c003": {
+        "id": "c003",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c003p1": {
+        "id": "c003p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 837,
+            "y": 871
+        }
+    },
+    "c003p2": {
+        "id": "c003p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 787,
+            "y": 855
+        }
+    },
+    "c003p3": {
+        "id": "c003p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 781,
+            "y": 900
+        }
+    },
+    "c004": {
+        "id": "c004",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c004p1": {
+        "id": "c004p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 703,
+            "y": 905
+        }
+    },
+    "c004p2": {
+        "id": "c004p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 769,
+            "y": 859
+        }
+    },
+    "c004p3": {
+        "id": "c004p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 779,
+            "y": 823
+        }
+    },
+    "c004p4": {
+        "id": "c004p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c004p5": {
+        "id": "c004p5",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c004p6": {
+        "id": "c004p6",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c004p7": {
+        "id": "c004p7",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c005": {
+        "id": "c005",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c005p1": {
+        "id": "c005p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c005p2": {
+        "id": "c005p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c005p3": {
+        "id": "c005p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c006": {
+        "id": "c006",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "c006p1": {
+        "id": "c006p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 851,
+            "y": 871
+        }
+    },
+    "c006p2": {
+        "id": "c006p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 851,
+            "y": 871
+        }
+    },
+    "c006p3": {
+        "id": "c006p3",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 851,
+            "y": 871
+        }
+    },
+    "c007": {
+        "id": "c007",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c007p1": {
+        "id": "c007p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 867,
+            "y": 870
+        }
+    },
+    "c007p2": {
+        "id": "c007p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c007p3": {
+        "id": "c007p3",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c008": {
+        "id": "c008",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "c008p1": {
+        "id": "c008p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "c008p2": {
+        "id": "c008p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "c008p3": {
+        "id": "c008p3",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "c009": {
+        "id": "c009",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c009p1": {
+        "id": "c009p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c009p2": {
+        "id": "c009p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c009p3": {
+        "id": "c009p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c010": {
+        "id": "c010",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c010p1": {
+        "id": "c010p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c010p2": {
+        "id": "c010p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c010p3": {
+        "id": "c010p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "c011": {
+        "id": "c011",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c011p1": {
+        "id": "c011p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c011p2": {
+        "id": "c011p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c011p3": {
+        "id": "c011p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c012": {
+        "id": "c012",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c012p1": {
+        "id": "c012p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c012p2": {
+        "id": "c012p2",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c012p3": {
+        "id": "c012p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "c013": {
+        "id": "c013",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c013p1": {
+        "id": "c013p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c013p2": {
+        "id": "c013p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c013p3": {
+        "id": "c013p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c013p4": {
+        "id": "c013p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c014": {
+        "id": "c014",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c014p1": {
+        "id": "c014p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c014p2": {
+        "id": "c014p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 771,
+            "y": 788
+        }
+    },
+    "c014p3": {
+        "id": "c014p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c015": {
+        "id": "c015",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c015p1": {
+        "id": "c015p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c015p2": {
+        "id": "c015p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c015p3": {
+        "id": "c015p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c016": {
+        "id": "c016",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c016p1": {
+        "id": "c016p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c016p2": {
+        "id": "c016p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c016p3": {
+        "id": "c016p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c017": {
+        "id": "c017",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p1": {
+        "id": "c017p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p2": {
+        "id": "c017p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p3": {
+        "id": "c017p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p4": {
+        "id": "c017p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p5": {
+        "id": "c017p5",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c017p6": {
+        "id": "c017p6",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "c018": {
+        "id": "c018",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c018p1": {
+        "id": "c018p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c018p2": {
+        "id": "c018p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c018p3": {
+        "id": "c018p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c018p4": {
+        "id": "c018p4",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c018p5": {
+        "id": "c018p5",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 741,
+            "y": 839
+        }
+    },
+    "c019": {
+        "id": "c019",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c019p1": {
+        "id": "c019p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c019p2": {
+        "id": "c019p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c019p3": {
+        "id": "c019p3",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c020": {
+        "id": "c020",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c020p1": {
+        "id": "c020p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c020p2": {
+        "id": "c020p2",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c020p3": {
+        "id": "c020p3",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c021": {
+        "id": "c021",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c021p1": {
+        "id": "c021p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c021p2": {
+        "id": "c021p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c021p3": {
+        "id": "c021p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c022": {
+        "id": "c022",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c022p1": {
+        "id": "c022p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c022p2": {
+        "id": "c022p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c022p3": {
+        "id": "c022p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c023": {
+        "id": "c023",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c023p1": {
+        "id": "c023p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c023p2": {
+        "id": "c023p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c023p3": {
+        "id": "c023p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c024": {
+        "id": "c024",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p1": {
+        "id": "c024p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p2": {
+        "id": "c024p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p3": {
+        "id": "c024p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p4": {
+        "id": "c024p4",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p5": {
+        "id": "c024p5",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c024p6": {
+        "id": "c024p6",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "c025": {
+        "id": "c025",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c025p1": {
+        "id": "c025p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c025p2": {
+        "id": "c025p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c025p3": {
+        "id": "c025p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c025p4": {
+        "id": "c025p4",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c026": {
+        "id": "c026",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c026p1": {
+        "id": "c026p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c026p2": {
+        "id": "c026p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c026p3": {
+        "id": "c026p3",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c026p4": {
+        "id": "c026p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c027": {
+        "id": "c027",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c027p1": {
+        "id": "c027p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c027p2": {
+        "id": "c027p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c027p3": {
+        "id": "c027p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c028": {
+        "id": "c028",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "c028p1": {
+        "id": "c028p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "c028p2": {
+        "id": "c028p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "c028p3": {
+        "id": "c028p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "c028p4": {
+        "id": "c028p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "c029": {
+        "id": "c029",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c029p1": {
+        "id": "c029p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c029p2": {
+        "id": "c029p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c029p3": {
+        "id": "c029p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c030": {
+        "id": "c030",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c030p1": {
+        "id": "c030p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c030p2": {
+        "id": "c030p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c030p3": {
+        "id": "c030p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c031": {
+        "id": "c031",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p1": {
+        "id": "c031p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p2": {
+        "id": "c031p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p3": {
+        "id": "c031p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p4": {
+        "id": "c031p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p5": {
+        "id": "c031p5",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p6": {
+        "id": "c031p6",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c031p7": {
+        "id": "c031p7",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c032": {
+        "id": "c032",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p1": {
+        "id": "c032p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p2": {
+        "id": "c032p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p3": {
+        "id": "c032p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p4": {
+        "id": "c032p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p5": {
+        "id": "c032p5",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p6": {
+        "id": "c032p6",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p7": {
+        "id": "c032p7",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p8": {
+        "id": "c032p8",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p9": {
+        "id": "c032p9",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c032p10": {
+        "id": "c032p10",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c033": {
+        "id": "c033",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c033p1": {
+        "id": "c033p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c033p2": {
+        "id": "c033p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c033p3": {
+        "id": "c033p3",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c034": {
+        "id": "c034",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p1": {
+        "id": "c034p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p2": {
+        "id": "c034p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p3": {
+        "id": "c034p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p4": {
+        "id": "c034p4",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p5": {
+        "id": "c034p5",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c034p6": {
+        "id": "c034p6",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c035": {
+        "id": "c035",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c035p1": {
+        "id": "c035p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c035p2": {
+        "id": "c035p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c036": {
+        "id": "c036",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c036p1": {
+        "id": "c036p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c036p2": {
+        "id": "c036p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c036p3": {
+        "id": "c036p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c036p4": {
+        "id": "c036p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c037": {
+        "id": "c037",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c037p1": {
+        "id": "c037p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c037p2": {
+        "id": "c037p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c037p3": {
+        "id": "c037p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c037p4": {
+        "id": "c037p4",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038": {
+        "id": "c038",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p1": {
+        "id": "c038p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p2": {
+        "id": "c038p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p3": {
+        "id": "c038p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p4": {
+        "id": "c038p4",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p5": {
+        "id": "c038p5",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p6": {
+        "id": "c038p6",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c038p7": {
+        "id": "c038p7",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c039": {
+        "id": "c039",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p1": {
+        "id": "c039p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p2": {
+        "id": "c039p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p3": {
+        "id": "c039p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p4": {
+        "id": "c039p4",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p5": {
+        "id": "c039p5",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p6": {
+        "id": "c039p6",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p7": {
+        "id": "c039p7",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p8": {
+        "id": "c039p8",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p9": {
+        "id": "c039p9",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p10": {
+        "id": "c039p10",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p11": {
+        "id": "c039p11",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p12": {
+        "id": "c039p12",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p13": {
+        "id": "c039p13",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c039p14": {
+        "id": "c039p14",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040": {
+        "id": "c040",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p1": {
+        "id": "c040p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p2": {
+        "id": "c040p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p3": {
+        "id": "c040p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p4": {
+        "id": "c040p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p5": {
+        "id": "c040p5",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p6": {
+        "id": "c040p6",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c040p7": {
+        "id": "c040p7",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "c041": {
+        "id": "c041",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c041p1": {
+        "id": "c041p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c041p2": {
+        "id": "c041p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c041p3": {
+        "id": "c041p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c042": {
+        "id": "c042",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c042p1": {
+        "id": "c042p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c042p2": {
+        "id": "c042p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c042p3": {
+        "id": "c042p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c043": {
+        "id": "c043",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c043p1": {
+        "id": "c043p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c043p2": {
+        "id": "c043p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c043p3": {
+        "id": "c043p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "c043p4": {
+        "id": "c043p4",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c043p5": {
+        "id": "c043p5",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c044": {
+        "id": "c044",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c044p1": {
+        "id": "c044p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c044p2": {
+        "id": "c044p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c044p3": {
+        "id": "c044p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c045": {
+        "id": "c045",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p1": {
+        "id": "c045p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p2": {
+        "id": "c045p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p3": {
+        "id": "c045p3",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p4": {
+        "id": "c045p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p5": {
+        "id": "c045p5",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p6": {
+        "id": "c045p6",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p7": {
+        "id": "c045p7",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c045p8": {
+        "id": "c045p8",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "c046": {
+        "id": "c046",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 635,
+            "y": 727
+        }
+    },
+    "c046p1": {
+        "id": "c046p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 635,
+            "y": 727
+        }
+    },
+    "c046p2": {
+        "id": "c046p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 635,
+            "y": 727
+        }
+    },
+    "c046p3": {
+        "id": "c046p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 635,
+            "y": 727
+        }
+    },
+    "c047": {
+        "id": "c047",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 850,
+            "y": 739
+        }
+    },
+    "c047p1": {
+        "id": "c047p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 850,
+            "y": 739
+        }
+    },
+    "c047p2": {
+        "id": "c047p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 850,
+            "y": 739
+        }
+    },
+    "c047p3": {
+        "id": "c047p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 850,
+            "y": 739
+        }
+    },
+    "c048": {
+        "id": "c048",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c048p1": {
+        "id": "c048p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c048p2": {
+        "id": "c048p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c048p3": {
+        "id": "c048p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c049": {
+        "id": "c049",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c049p1": {
+        "id": "c049p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c049p2": {
+        "id": "c049p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c049p3": {
+        "id": "c049p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c050": {
+        "id": "c050",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c050p1": {
+        "id": "c050p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c050p2": {
+        "id": "c050p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c050p3": {
+        "id": "c050p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c051": {
+        "id": "c051",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c051p1": {
+        "id": "c051p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c051p2": {
+        "id": "c051p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c051p3": {
+        "id": "c051p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c052": {
+        "id": "c052",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c052p1": {
+        "id": "c052p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c052p2": {
+        "id": "c052p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c052p3": {
+        "id": "c052p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c052p4": {
+        "id": "c052p4",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 851
+        }
+    },
+    "c053": {
+        "id": "c053",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c053p1": {
+        "id": "c053p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c053p2": {
+        "id": "c053p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c053p3": {
+        "id": "c053p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c054": {
+        "id": "c054",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c054p1": {
+        "id": "c054p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c054p2": {
+        "id": "c054p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c054p3": {
+        "id": "c054p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 947,
+            "y": 1035
+        }
+    },
+    "c055": {
+        "id": "c055",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c055p1": {
+        "id": "c055p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c055p2": {
+        "id": "c055p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c055p3": {
+        "id": "c055p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "c056": {
+        "id": "c056",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c056p1": {
+        "id": "c056p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c056p2": {
+        "id": "c056p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c056p3": {
+        "id": "c056p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c057": {
+        "id": "c057",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c057p1": {
+        "id": "c057p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c057p2": {
+        "id": "c057p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c057p3": {
+        "id": "c057p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c058": {
+        "id": "c058",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c058p1": {
+        "id": "c058p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c058p2": {
+        "id": "c058p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c058p3": {
+        "id": "c058p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "c059": {
+        "id": "c059",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c059p1": {
+        "id": "c059p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c059p2": {
+        "id": "c059p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c059p3": {
+        "id": "c059p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c060": {
+        "id": "c060",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 723
+        }
+    },
+    "c060p1": {
+        "id": "c060p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 723
+        }
+    },
+    "c060p2": {
+        "id": "c060p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 723
+        }
+    },
+    "c060p3": {
+        "id": "c060p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 723
+        }
+    },
+    "c060p4": {
+        "id": "c060p4",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 530,
+            "y": 723
+        }
+    },
+    "c061": {
+        "id": "c061",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c061p1": {
+        "id": "c061p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c061p2": {
+        "id": "c061p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c061p3": {
+        "id": "c061p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 793,
+            "y": 731
+        }
+    },
+    "c062": {
+        "id": "c062",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c062p1": {
+        "id": "c062p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c062p2": {
+        "id": "c062p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c062p3": {
+        "id": "c062p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c063": {
+        "id": "c063",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c063p1": {
+        "id": "c063p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c063p2": {
+        "id": "c063p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "c063p3": {
+        "id": "c063p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c064": {
+        "id": "c064",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p1": {
+        "id": "c064p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "c064p2": {
+        "id": "c064p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "c064p3": {
+        "id": "c064p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "c064p4": {
+        "id": "c064p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "c064p5": {
+        "id": "c064p5",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p6": {
+        "id": "c064p6",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p7": {
+        "id": "c064p7",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p8": {
+        "id": "c064p8",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p9": {
+        "id": "c064p9",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "c064p10": {
+        "id": "c064p10",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z001": {
+        "id": "z001",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 773,
+            "y": 950
+        }
+    },
+    "z001p1": {
+        "id": "z001p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 777,
+            "y": 906
+        }
+    },
+    "z001p2": {
+        "id": "z001p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z001p3": {
+        "id": "z001p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z002": {
+        "id": "z002",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 753,
+            "y": 985
+        }
+    },
+    "z002p1": {
+        "id": "z002p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z002p2": {
+        "id": "z002p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z002p3": {
+        "id": "z002p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 741,
+            "y": 839
+        }
+    },
+    "z002p4": {
+        "id": "z002p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "z003": {
+        "id": "z003",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "z003p1": {
+        "id": "z003p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "z003p2": {
+        "id": "z003p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 789,
+            "y": 973
+        }
+    },
+    "z003p3": {
+        "id": "z003p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z003p4": {
+        "id": "z003p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z004": {
+        "id": "z004",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z004p1": {
+        "id": "z004p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z004p2": {
+        "id": "z004p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 939,
+            "y": 756
+        }
+    },
+    "z004p3": {
+        "id": "z004p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z005": {
+        "id": "z005",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 759,
+            "y": 748
+        }
+    },
+    "z005p1": {
+        "id": "z005p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z005p2": {
+        "id": "z005p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "z005p3": {
+        "id": "z005p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "z005p4": {
+        "id": "z005p4",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z006": {
+        "id": "z006",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 746,
+            "y": 910
+        }
+    },
+    "z006p1": {
+        "id": "z006p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z006p2": {
+        "id": "z006p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "z006p3": {
+        "id": "z006p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z007": {
+        "id": "z007",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 810,
+            "y": 816
+        }
+    },
+    "z007p1": {
+        "id": "z007p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z007p2": {
+        "id": "z007p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z007p3": {
+        "id": "z007p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 850,
+            "y": 739
+        }
+    },
+    "z008": {
+        "id": "z008",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z008p1": {
+        "id": "z008p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "z008p2": {
+        "id": "z008p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "z008p3": {
+        "id": "z008p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "z009": {
+        "id": "z009",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "z009p1": {
+        "id": "z009p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "z009p2": {
+        "id": "z009p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z009p3": {
+        "id": "z009p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "z009p4": {
+        "id": "z009p4",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z010": {
+        "id": "z010",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z010p1": {
+        "id": "z010p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z010p2": {
+        "id": "z010p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z010p3": {
+        "id": "z010p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z011": {
+        "id": "z011",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z011p1": {
+        "id": "z011p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z011p2": {
+        "id": "z011p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "z011p3": {
+        "id": "z011p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z012": {
+        "id": "z012",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "z012p1": {
+        "id": "z012p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z012p2": {
+        "id": "z012p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "z012p3": {
+        "id": "z012p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 533,
+            "y": 851
+        }
+    },
+    "z013": {
+        "id": "z013",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 759,
+            "y": 748
+        }
+    },
+    "z013p1": {
+        "id": "z013p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z013p2": {
+        "id": "z013p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z013p3": {
+        "id": "z013p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z014": {
+        "id": "z014",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "z014p1": {
+        "id": "z014p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 771,
+            "y": 788
+        }
+    },
+    "z014p2": {
+        "id": "z014p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "z014p3": {
+        "id": "z014p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z015": {
+        "id": "z015",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 482,
+            "y": 859
+        }
+    },
+    "z015p1": {
+        "id": "z015p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z015p2": {
+        "id": "z015p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z015p3": {
+        "id": "z015p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z016": {
+        "id": "z016",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 810,
+            "y": 816
+        }
+    },
+    "z016p1": {
+        "id": "z016p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 893,
+            "y": 730
+        }
+    },
+    "z016p2": {
+        "id": "z016p2",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z016p3": {
+        "id": "z016p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z017": {
+        "id": "z017",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 855,
+            "y": 985
+        }
+    },
+    "z017p1": {
+        "id": "z017p1",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "z017p2": {
+        "id": "z017p2",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z017p3": {
+        "id": "z017p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z018": {
+        "id": "z018",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 855,
+            "y": 985
+        }
+    },
+    "z018p1": {
+        "id": "z018p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 789,
+            "y": 973
+        }
+    },
+    "z018p2": {
+        "id": "z018p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z018p3": {
+        "id": "z018p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z019": {
+        "id": "z019",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "z019p1": {
+        "id": "z019p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "z019p2": {
+        "id": "z019p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "z019p3": {
+        "id": "z019p3",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z020": {
+        "id": "z020",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 759,
+            "y": 748
+        }
+    },
+    "z020p1": {
+        "id": "z020p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 703,
+            "y": 905
+        }
+    },
+    "z020p2": {
+        "id": "z020p2",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "z020p3": {
+        "id": "z020p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z021": {
+        "id": "z021",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z021p1": {
+        "id": "z021p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 685,
+            "y": 637
+        }
+    },
+    "z021p2": {
+        "id": "z021p2",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z021p3": {
+        "id": "z021p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z021p4": {
+        "id": "z021p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "z022": {
+        "id": "z022",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "z022p1": {
+        "id": "z022p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "z022p2": {
+        "id": "z022p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 498,
+            "y": 808
+        }
+    },
+    "z022p3": {
+        "id": "z022p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "z023": {
+        "id": "z023",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 810,
+            "y": 816
+        }
+    },
+    "z023p1": {
+        "id": "z023p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "z023p2": {
+        "id": "z023p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z023p3": {
+        "id": "z023p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z023p4": {
+        "id": "z023p4",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "z024": {
+        "id": "z024",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "z024p1": {
+        "id": "z024p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 835,
+            "y": 837
+        }
+    },
+    "z024p2": {
+        "id": "z024p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z024p3": {
+        "id": "z024p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 767,
+            "y": 867
+        }
+    },
+    "z024p4": {
+        "id": "z024p4",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z025": {
+        "id": "z025",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 810,
+            "y": 816
+        }
+    },
+    "z025p1": {
+        "id": "z025p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 867,
+            "y": 870
+        }
+    },
+    "z025p2": {
+        "id": "z025p2",
+        "posPic": "worldMapPos_1.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "z025p3": {
+        "id": "z025p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 577,
+            "y": 741
+        }
+    },
+    "z026": {
+        "id": "z026",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 426,
+            "y": 958
+        }
+    },
+    "z026p1": {
+        "id": "z026p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 611,
+            "y": 803
+        }
+    },
+    "z026p2": {
+        "id": "z026p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z026p3": {
+        "id": "z026p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 621,
+            "y": 805
+        }
+    },
+    "z026p4": {
+        "id": "z026p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z027": {
+        "id": "z027",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 746,
+            "y": 910
+        }
+    },
+    "z027p1": {
+        "id": "z027p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z027p2": {
+        "id": "z027p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z027p3": {
+        "id": "z027p3",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z028": {
+        "id": "z028",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 794,
+            "y": 921
+        }
+    },
+    "z028p1": {
+        "id": "z028p1",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z028p2": {
+        "id": "z028p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 530,
+            "y": 839
+        }
+    },
+    "z028p3": {
+        "id": "z028p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 533,
+            "y": 851
+        }
+    },
+    "z029": {
+        "id": "z029",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 773,
+            "y": 950
+        }
+    },
+    "z029p1": {
+        "id": "z029p1",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "z029p2": {
+        "id": "z029p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 855,
+            "y": 985
+        }
+    },
+    "z029p3": {
+        "id": "c029p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 797,
+            "y": 971
+        }
+    },
+    "z030": {
+        "id": "z030",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "z030p1": {
+        "id": "z030p1",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z030p2": {
+        "id": "z030p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 721,
+            "y": 687
+        }
+    },
+    "z030p3": {
+        "id": "z030p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 855,
+            "y": 757
+        }
+    },
+    "z031": {
+        "id": "z031",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z031p1": {
+        "id": "z031p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 695,
+            "y": 723
+        }
+    },
+    "z031p2": {
+        "id": "z031p2",
+        "posPic": "worldMapPos_9.png",
+        "pos": {
+            "x": 821,
+            "y": 701
+        }
+    },
+    "z031p3": {
+        "id": "z031p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "z032": {
+        "id": "z032",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 771,
+            "y": 788
+        }
+    },
+    "z032p1": {
+        "id": "z032p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "z032p2": {
+        "id": "z032p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "z032p3": {
+        "id": "z032p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "z033": {
+        "id": "z033",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 806,
+            "y": 731
+        }
+    },
+    "z033p1": {
+        "id": "z033p1",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 806,
+            "y": 731
+        }
+    },
+    "z033p2": {
+        "id": "z033p2",
+        "posPic": "worldMapPos_10.png",
+        "pos": {
+            "x": 806,
+            "y": 731
+        }
+    },
+    "z033p3": {
+        "id": "z033p3",
+        "posPic": "worldMapPos_4.png",
+        "pos": {
+            "x": 937,
+            "y": 721
+        }
+    },
+    "h001": {
+        "id": "h001",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p1": {
+        "id": "h001p1",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p2": {
+        "id": "h001p2",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p3": {
+        "id": "h001p3",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p4": {
+        "id": "h001p4",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p5": {
+        "id": "h001p5",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h001p6": {
+        "id": "h001p6",
+        "posPic": "worldMapPos_6.png",
+        "pos": {
+            "x": 399,
+            "y": 563
+        }
+    },
+    "h002": {
+        "id": "h002",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p1": {
+        "id": "h002p1",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p2": {
+        "id": "h002p2",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p3": {
+        "id": "h002p3",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p4": {
+        "id": "h002p4",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p5": {
+        "id": "h002p5",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h002p6": {
+        "id": "h002p6",
+        "posPic": "worldMapPos_8.png",
+        "pos": {
+            "x": 783,
+            "y": 569
+        }
+    },
+    "h003": {
+        "id": "h003",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p1": {
+        "id": "h003p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p2": {
+        "id": "h003p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p3": {
+        "id": "h003p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p4": {
+        "id": "h003p4",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p5": {
+        "id": "h003p5",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h003p6": {
+        "id": "h003p6",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 603,
+            "y": 986
+        }
+    },
+    "h004": {
+        "id": "h004",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p1": {
+        "id": "h004p1",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p2": {
+        "id": "h004p2",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p3": {
+        "id": "h004p3",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p4": {
+        "id": "h004p4",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p5": {
+        "id": "h004p5",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h004p6": {
+        "id": "h004p6",
+        "posPic": "worldMapPos_5.png",
+        "pos": {
+            "x": 1092,
+            "y": 835
+        }
+    },
+    "h005": {
+        "id": "h005",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p1": {
+        "id": "h005p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p2": {
+        "id": "h005p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p3": {
+        "id": "h005p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p4": {
+        "id": "h005p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p5": {
+        "id": "h005p5",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h005p6": {
+        "id": "h005p6",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 413,
+            "y": 980
+        }
+    },
+    "h006": {
+        "id": "h006",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p1": {
+        "id": "h006p1",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p2": {
+        "id": "h006p2",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p3": {
+        "id": "h006p3",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p4": {
+        "id": "h006p4",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p5": {
+        "id": "h006p5",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h006p6": {
+        "id": "h006p6",
+        "posPic": "worldMapPos_2.png",
+        "pos": {
+            "x": 762,
+            "y": 980
+        }
+    },
+    "h007": {
+        "id": "h007",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p1": {
+        "id": "h007p1",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p2": {
+        "id": "h007p2",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p3": {
+        "id": "h007p3",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p4": {
+        "id": "h007p4",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p5": {
+        "id": "h007p5",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h007p6": {
+        "id": "h007p6",
+        "posPic": "worldMapPos_7.png",
+        "pos": {
+            "x": 958,
+            "y": 1039
+        }
+    },
+    "h008": {
+        "id": "h008",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h008p1": {
+        "id": "h008p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h008p2": {
+        "id": "h008p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h008p3": {
+        "id": "h008p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h008p4": {
+        "id": "h008p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h009": {
+        "id": "h009",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "h009p1": {
+        "id": "h009p1",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "h009p2": {
+        "id": "h009p2",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "h009p3": {
+        "id": "h009p3",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "h009p4": {
+        "id": "h009p4",
+        "posPic": "worldMapPos_3.png",
+        "pos": {
+            "x": 743,
+            "y": 743
+        }
+    },
+    "h010": {
+        "id": "h010",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h010p1": {
+        "id": "h010p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h010p2": {
+        "id": "h010p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h010p3": {
+        "id": "h010p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h010p4": {
+        "id": "h010p4",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h011": {
+        "id": "h011",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h011p1": {
+        "id": "h011p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h011p2": {
+        "id": "h011p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h011p3": {
+        "id": "h011p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h011p4": {
+        "id": "h011p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h012": {
+        "id": "h012",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h012p1": {
+        "id": "h012p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h012p2": {
+        "id": "h012p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h012p3": {
+        "id": "h012p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h012p4": {
+        "id": "h012p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 545,
+            "y": 679
+        }
+    },
+    "h013": {
+        "id": "h013",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h013p1": {
+        "id": "h013p1",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h013p2": {
+        "id": "h013p2",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h013p3": {
+        "id": "h013p3",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h013p4": {
+        "id": "h013p4",
+        "posPic": "worldMapPos_11.png",
+        "pos": {
+            "x": 905,
+            "y": 799
+        }
+    },
+    "h014": {
+        "id": "h014",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h014p1": {
+        "id": "h014p1",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h014p2": {
+        "id": "h014p2",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h014p3": {
+        "id": "h014p3",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    },
+    "h014p4": {
+        "id": "h014p4",
+        "posPic": "worldMapPos_12.png",
+        "pos": {
+            "x": 717,
+            "y": 793
+        }
+    }
+}

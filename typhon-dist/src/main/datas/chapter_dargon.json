@@ -1,0 +1,118 @@
+[{
+"id": "c_d001",
+"parts": [{
+"id": "c_d001p1",
+"terrain": "None",
+"steps": [{
+"sid": "c_d001p1b1",
+"backgroundImage": "ui/largepicture/lm.jpg",
+"members": [
+{
+"monsterPos": {
+"x": 70,
+"y": 540
+},
+"monsterZorder": 3,
+"scale": 0.3,
+"hpBarPos": {
+"x": 70,
+"y": 450
+},
+"hpBarZorder": 4,
+"touchSelectPos": {
+"x": 70,
+"y": 540
+},
+"ais": [
+"S10",
+"S11"
+]
+},
+{
+"monsterPos": {
+"x": 150,
+"y": 665
+},
+"monsterZorder": 1,
+"scale": 0.3,
+"hpBarPos": {
+"x": 150,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 150,
+"y": 660
+},
+"ais": [
+"S10",
+"S11"
+]
+},
+{
+"monsterPos": {
+"x": 240,
+"y": 545
+},
+"monsterZorder": 5,
+"scale": 0.35,
+"hpBarPos": {
+"x": 240,
+"y": 450
+},
+"hpBarZorder": 6,
+"touchSelectPos": {
+"x": 240,
+"y": 540
+},
+"ais": [
+"S10",
+"S11"
+]
+},
+{
+"monsterPos": {
+"x": 330,
+"y": 670
+},
+"monsterZorder": 1,
+"scale": 0.3,
+"hpBarPos": {
+"x": 330,
+"y": 585
+},
+"hpBarZorder": 2,
+"touchSelectPos": {
+"x": 330,
+"y": 660
+},
+"ais": [
+"S10",
+"S11"
+]
+},
+{
+"monsterPos": {
+"x": 410,
+"y": 540
+},
+"monsterZorder": 3,
+"scale": 0.3,
+"hpBarPos": {
+"x": 410,
+"y": 450
+},
+"hpBarZorder": 4,
+"touchSelectPos": {
+"x": 410,
+"y": 540
+},
+"ais": [
+"S10",
+"S11"
+]
+}
+]
+}]
+}]
+}]

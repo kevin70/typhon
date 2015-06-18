@@ -1,0 +1,772 @@
+[
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 4,
+"matkUp": 4
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 5,
+"matkUp": 5
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 6,
+"matkUp": 6,
+"hpUp": 30
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 7,
+"matkUp": 7,
+"hpUp": 40
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 8,
+"matkUp": 8,
+"hpUp": 50,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 9,
+"matkUp": 9,
+"hpUp": 60,
+"mdefUp": 5
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 10,
+"matkUp": 10,
+"hpUp": 65,
+"mdefUp": 6
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 12,
+"matkUp": 12,
+"hpUp": 75,
+"mdefUp": 7
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 14,
+"matkUp": 14,
+"hpUp": 85,
+"mdefUp": 7,
+"defUp": 9
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 16,
+"matkUp": 16,
+"hpUp": 95,
+"mdefUp": 8,
+"defUp": 11
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 18,
+"matkUp": 18,
+"hpUp": 105,
+"mdefUp": 8,
+"defUp": 13
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 20,
+"matkUp": 20,
+"hpUp": 115,
+"mdefUp": 9,
+"defUp": 15
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+},
+{
+"atkUp": 21,
+"matkUp": 21,
+"hpUp": 120,
+"mdefUp": 9,
+"defUp": 16
+}
+]

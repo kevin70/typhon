@@ -16,12 +16,17 @@
 package org.skfiy.typhon.action;
 
 import java.util.TimeZone;
+
+import javax.inject.Inject;
 import javax.inject.Singleton;
+
 import org.skfiy.typhon.annotation.Action;
 import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.packet.PacketTimestamp;
 import org.skfiy.typhon.session.SessionContext;
+import org.skfiy.typhon.spi.ConfigurationLoader;
+import org.skfiy.typhon.spi.ServerSettingKeys;
 
 /**
  *
@@ -29,13 +34,15 @@ import org.skfiy.typhon.session.SessionContext;
  */
 @Singleton
 public class TimestampAction {
-
+    @Inject
+    private ConfigurationLoader configurationLoader;
     @Action(Namespaces.TIMESTAMP)
     public void getTimestamp(Packet packet) {
         PacketTimestamp result = PacketTimestamp.createResult(packet);
         TimeZone timeZone = TimeZone.getDefault();
         result.setTimeMillis(System.currentTimeMillis());
         result.setRawOffset(timeZone.getRawOffset());
+        result.setServerinitTime(configurationLoader.getServerLong(ServerSettingKeys.SERVER_INIT_TIME));
         result.setZone(timeZone.getID());
         SessionContext.getSession().write(result);
     }

@@ -16,14 +16,15 @@ limitations under the License.
 -->
 <Server port="7870" shutdown="SHUTDOWN">
     
-    <Listener className="org.skfiy.typhon.jmx.BuiltinJmxListener"/>
+    <Listener port="1090" username="shuifa" password="shuifa"
+              className="org.skfiy.typhon.jmx.HtmlJmxListener"/>
     <Listener className="org.skfiy.typhon.deploy.DatabaseDeployListener"/>
     
     <Service name="Typhon">
-        <Connector host="127.0.0.1" port="7869" logOn="on"
-            connectionTimeout="20000">
+        <Connector className="org.skfiy.typhon.net.Netty4Connector"
+                   host="0.0.0.0" port="7869" logEnabled="on" connectionTimeout="20000">
             <Listener className="org.skfiy.typhon.container.ContainerListener"
-                  impl="org.skfiy.typhon.container.GuiceContainer"/>
+                      impl="org.skfiy.typhon.container.SpringContainer"/>
         </Connector>
     </Service>
     

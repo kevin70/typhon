@@ -21,7 +21,19 @@ package org.skfiy.typhon.packet;
  */
 public class OAuth2 extends Packet {
 
+    private String uid;
     private String code;
+    private Platform platform;
+    private String channel;
+    private String label;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
 
     public String getCode() {
         return code;
@@ -30,4 +42,29 @@ public class OAuth2 extends Packet {
     public void setCode(String code) {
         this.code = code;
     }
+
+    public Platform getPlatform() {
+        return platform;
+    }
+
+    public void setPlatform(Platform platform) {
+        this.platform = platform;
+    }
+
+    public String getChannel() {
+        return channel;
+    }
+
+    public void setChannel(String channel) {
+        this.channel = channel;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
 }

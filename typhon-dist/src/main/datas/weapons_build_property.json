@@ -1,0 +1,48 @@
+[
+    {
+        "levelLimit": 50,
+        "soulCounts": 10,
+        "costType": "C",
+        "counts": 500000
+    },
+    {
+        "levelLimit": 50,
+        "soulCounts": 30,
+        "costType": "C",
+        "counts": 1000000
+    },
+    {
+        "levelLimit": 50,
+        "soulCounts": 50,
+        "costType": "C",
+        "counts": 2000000
+    },
+    {
+        "levelLimit": 50,
+        "soulCounts": 100,
+        "costType": "D",
+        "counts": 200
+    },
+    {
+        "levelLimit": 50,
+        "soulCounts": 150,
+        "costType": "D",
+        "counts": 500
+    },
+    {
+        "levelLimit": 50,
+        "soulCounts": 2,
+        "costType": "D",
+        "counts": 500,
+        "costItems": [
+            {
+                "name": "s002",
+                "number": 123
+            },
+            {
+                "name": "s001",
+                "number": 123
+            }
+        ]
+    }
+]

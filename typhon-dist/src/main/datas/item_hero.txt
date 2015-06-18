@@ -1,0 +1,26 @@
+id              道具ID
+type            道具类型（固定值：Hero）
+quality         道具的品质（可选值：X1, X2, X3, X4, X5）
+displayName     显示名称（客户端专用）
+icon            英雄ICON（客户端专用）
+area            英雄地域（可选值：Wei, Shu, Wu, QXiong）
+race            英雄兵种（可选值：Ce -> 策, Bu -> 步, Qi -> 骑, Gong -> 弓, Che -> 车, None -> 无区别）
+gender          性别(Male -> 男, Female -> 女)
+shots           英雄可用的拉霸选项（可选值：Q7 -> 7, BSa -> 必杀, GJi -> 攻击, FYu -> 防御, QXi -> 奇袭, JCe -> 计策, YHu -> 援护, Miss -> Miss）
+tong            统
+wu              武
+zhi             智
+tongUp          统 -> 成长值
+wuUp            武 -> 成长值
+zhiUp           智 -> 成长值
+potentialUp     资质成长值
+parryValue      默认格挡值
+maxFury         英雄最高怒气值
+critRate        英雄初始暴击率(弃用)
+decritRate      英雄初始韧性百分比(弃用)
+critMagn        增加暴击伤害比例(弃用)
+parryRate       英雄格挡率(弃用)
+deparryRate     英雄破挡率(弃用)
+parryValue      格挡伤害值(弃用)
+askill          英雄主动技能
+pskill          英雄被动技能

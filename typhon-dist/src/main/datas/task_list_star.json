@@ -1,0 +1,62 @@
+[
+    {
+        "terms": 10,
+        "diamond": 5,
+        "icon": "ui/itemicon/r099_icon.png"
+    },
+    {
+        "terms": 50,
+        "diamond": 10,
+        "icon": "ui/itemicon/r100_icon.png"
+    },
+    {
+        "terms": 100,
+        "diamond": 15,
+        "icon": "ui/itemicon/r101_icon.png"
+    },
+    {
+        "terms": 200,
+        "diamond": 20,
+        "icon": "ui/itemicon/r102_icon.png"
+    },
+    {
+        "terms": 400,
+        "diamond": 25,
+        "icon": "ui/itemicon/r103_icon.png"
+    },
+    {
+        "terms": 600,
+        "diamond": 30,
+        "icon": "ui/itemicon/r104_icon.png"
+    },
+    {
+        "terms": 800,
+        "diamond": 35,
+        "icon": "ui/itemicon/r105_icon.png"
+    },
+    {
+        "terms": 1000,
+        "diamond": 40,
+        "icon": "ui/itemicon/r106_icon.png"
+    },
+    {
+        "terms": 1200,
+        "diamond": 45,
+        "icon": "ui/itemicon/r107_icon.png"
+    },
+    {
+        "terms": 1500,
+        "diamond": 50,
+        "icon": "ui/itemicon/r108_icon.png"
+    },
+    {
+        "terms": 2000,
+        "diamond": 55,
+        "icon": "ui/itemicon/r109_icon.png"
+    },
+    {
+        "terms": 2500,
+        "diamond": 60,
+        "icon": "ui/itemicon/r110_icon.png"
+    }
+]

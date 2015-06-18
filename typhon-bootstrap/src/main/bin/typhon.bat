@@ -146,7 +146,7 @@ if not "%JPDA_ADDRESS%" == "" goto gotJpdaAddress
 set JPDA_ADDRESS=8000
 :gotJpdaAddress
 if not "%JPDA_SUSPEND%" == "" goto gotJpdaSuspend
-set JPDA_SUSPEND=y
+set JPDA_SUSPEND=n
 :gotJpdaSuspend
 if not "%JPDA_OPTS%" == "" goto gotJpdaOpts
 set JPDA_OPTS=-agentlib:jdwp=transport=%JPDA_TRANSPORT%,address=%JPDA_ADDRESS%,server=y,suspend=%JPDA_SUSPEND%

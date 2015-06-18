@@ -15,6 +15,7 @@
  */
 package org.skfiy.typhon.dispatcher;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,24 +31,18 @@ import org.skfiy.typhon.packet.Packet;
 @Singleton
 public class ReflectionDispatcherFactory implements DispatcherFactory {
 
-    private final ReflectionDispatcher dispatcher;
-    private final Container container;
-    private final ActionHelper helper;
-
-    /**
-     *
-     * @param container
-     * @param helper
-     */
     @Inject
-    public ReflectionDispatcherFactory(Container container) {
-        this.container = container;
-        helper = new ActionHelper(container);
-        dispatcher = new ReflectionDispatcher();
-    }
+    private Container container;
+    
+    private ReflectionDispatcher dispatcher;
+    private ActionHelper helper;
 
     @Override
     public Dispatcher getDispatcher() {
+        if (dispatcher == null) {
+            helper = new ActionHelper(container);
+            dispatcher = new ReflectionDispatcher();
+        }
         return dispatcher;
     }
 
@@ -80,10 +75,25 @@ public class ReflectionDispatcherFactory implements DispatcherFactory {
             Object obj = container.getInstance(am.getMethod().getDeclaringClass());
             
             try {
-                am.getMethod().invoke(obj, new Object[]{packet});
+                am.getMethod().invoke(obj, new Object[] {packet});
+            } catch (InvocationTargetException e) {
+                throw findException(e);
+            } catch (RuntimeException e) {
+                throw e;
             } catch (Exception e) {
                 throw new DispatcherException(e);
             }
+        }
+        
+        private RuntimeException findException(Throwable t) {
+            if (t.getCause() == null) {
+                if (!(t instanceof RuntimeException)) {
+                    throw new RuntimeException(t);
+                }
+            } else if (t.getCause() != null) {
+                return findException(t.getCause());
+            }
+            return (RuntimeException) t;
         }
     }
 }

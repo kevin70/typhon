@@ -25,6 +25,12 @@ import org.skfiy.typhon.domain.RoleData;
 public interface RoleDatable {
 
     /**
+     * 
+     * @param player 
+     */
+    void initialize(Player player);
+    
+    /**
      *
      * @param player
      * @param roleData

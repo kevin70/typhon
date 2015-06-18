@@ -15,14 +15,14 @@
  */
 package org.skfiy.typhon.spi;
 
-import org.skfiy.typhon.session.SessionUtils;
 import java.util.Set;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import org.skfiy.typhon.domain.Player;
-import org.skfiy.typhon.repository.impl.RoleRepositoryImpl;
 import org.skfiy.typhon.session.Session;
+import org.skfiy.typhon.session.SessionConstants;
 import org.skfiy.typhon.session.SessionListener;
+import org.skfiy.typhon.spi.role.RoleListener;
 
 /**
  *
@@ -31,6 +31,9 @@ import org.skfiy.typhon.session.SessionListener;
 @Singleton
 public class PlayerSessionListener implements SessionListener {
 
+    @Inject
+    private Set<RoleListener> roleListeners;
+    
     @Override
     public void sessionCreated(Session session) {
 
@@ -38,5 +41,13 @@ public class PlayerSessionListener implements SessionListener {
 
     @Override
     public void sessionDestroyed(Session session) {
+        Player player = (Player) session.getAttribute(SessionConstants.ATTR_PLAYER);
+        if (player == null) {
+            return;
+        }
+        
+        for (RoleListener listener : roleListeners) {
+            listener.roleUnloaded(player.getRole());
+        }
     }
 }

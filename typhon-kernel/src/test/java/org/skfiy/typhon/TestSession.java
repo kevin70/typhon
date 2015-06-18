@@ -23,8 +23,8 @@ import org.skfiy.typhon.session.AbstractSession;
  */
 public class TestSession extends AbstractSession {
 
-    private long creationTime;
-    private long lastAccessedTime;
+    private final long creationTime;
+    private final long lastAccessedTime;
 
     public TestSession() {
         creationTime = lastAccessedTime = System.currentTimeMillis();
@@ -37,10 +37,9 @@ public class TestSession extends AbstractSession {
 
     @Override
     public int getId() {
-        // FIXME
-        throw new UnsupportedOperationException("Not supported yet.");
+        return 250;
     }
-    
+
     @Override
     public long getLastAccessedTime() {
         return lastAccessedTime;
@@ -52,7 +51,12 @@ public class TestSession extends AbstractSession {
     }
 
     @Override
+    public boolean isAvailable() {
+        return true;
+    }
+
+    @Override
     public void close() {
     }
-    
+
 }

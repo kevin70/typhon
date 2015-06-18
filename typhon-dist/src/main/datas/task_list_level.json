@@ -1,0 +1,138 @@
+[
+{
+"terms": 10,
+"diamond": 10,
+"#item.id": "w011",
+"count": 10,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 20,
+"diamond": 15,
+"#item.id": "w012",
+"count": 10,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 30,
+"diamond": 20,
+"#item.id": "t005",
+"count": 1,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 40,
+"diamond": 25,
+"#item.id": "sa04",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 50,
+"diamond": 30,
+"#item.id": "sa05",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 60,
+"diamond": 35,
+"#item.id": "sa06",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 70,
+"diamond": 40,
+"#item.id": "sa07",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 80,
+"diamond": 45,
+"#item.id": "sa08",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 90,
+"diamond": 50,
+"#item.id": "sa09",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 100,
+"diamond": 55,
+"#item.id": "sa10",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 105,
+"diamond": 60,
+"#item.id": "sa11",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 110,
+"diamond": 65,
+"#item.id": "sa12",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 115,
+"diamond": 70,
+"#item.id": "sa13",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 115,
+"diamond": 75,
+"#item.id": "sa14",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 120,
+"diamond": 80,
+"#item.id": "sb01",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 125,
+"diamond": 85,
+"#item.id": "sb02",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+},
+{
+"terms": 130,
+"diamond": 100,
+"#item.id": "sb03",
+"count": 2,
+"icon": "ui/itemicon/r036_icon.png",
+"type": 1
+}
+]

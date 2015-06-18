@@ -15,10 +15,13 @@
  */
 package org.skfiy.typhon.packet;
 
+import com.alibaba.fastjson.annotation.JSONType;
+
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
+@JSONType(ignores = {"ns"})
 public class Packet {
 
     private String ns;
@@ -59,6 +62,28 @@ public class Packet {
         out.setType(Type.rs);
     }
 
+    /**
+     * 
+     * @param in
+     * @return 
+     */
+    public static Packet createResult(Packet in) {
+        Packet out = new Packet();
+        assignResult(in, out);
+        return out;
+    }
+    
+    /**
+     *
+     * @param in
+     * @param out
+     */
+    public static void assignResult(Packet in, Packet out) {
+        out.setId(in.getId());
+        out.setNs(in.getNs());
+        out.setType(Type.rs);
+    }
+    
     /**
      *
      */

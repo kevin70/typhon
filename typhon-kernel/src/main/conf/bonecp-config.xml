@@ -16,15 +16,12 @@ limitations under the License.
 -->
 <bonecp-config>
     <default-config>
+        <property name="partitionCount">3</property>
         <property name="minConnectionsPerPartition">5</property>
         <property name="maxConnectionsPerPartition">50</property>
-        <property name="partitionCount">3</property>
-        <property name="idleConnectionTestPeriodInSeconds">30</property>
-        <property name="idleMaxAgeInMinutes">10</property>
-        <property name="statementsCacheSize">0</property>
+        <property name="statementsCacheSize">20</property>
         <property name="logStatementsEnabled">false</property>
         <property name="disableJMX">false</property>
-        <property name="connectionTimeoutInMs">20000</property>
-        <property name="maxConnectionAgeInSeconds">1800</property>
+        <property name="connectionTestStatement">SELECT 1</property>
     </default-config>
 </bonecp-config>

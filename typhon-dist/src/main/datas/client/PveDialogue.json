@@ -1,0 +1,1222 @@
+{
+"c001p1": {
+"id": "c001p1",
+"mapLoaded": [
+{
+"type": "ENEMY",
+"dialogue": "DG00002"
+},
+{
+"type": "SELF",
+"dialogue": "DG00001"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00005"
+},
+{
+"type": "SELF",
+"dialogue": "DG00003"
+},
+{
+"type": "SELF",
+"dialogue": "DG00004"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00006"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00007"
+},
+{
+"type": "SELF",
+"dialogue": "DG00008"
+}
+]
+},
+"c001p2": {
+"id": "c001p2",
+"mapLoaded": [
+{
+"type": "ENEMY",
+"dialogue": "DG00010"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00011"
+},
+{
+"type": "SELF",
+"dialogue": "DG00009"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00014"
+},
+{
+"type": "SELF",
+"dialogue": "DG00012"
+},
+{
+"type": "SELF",
+"dialogue": "DG00013"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00015"
+},
+{
+"type": "SELF",
+"dialogue": "DG00016"
+},
+{
+"type": "SELF",
+"dialogue": "DG00017"
+}
+]
+},
+"c001p3": {
+"id": "c001p3",
+"mapLoaded": [
+{
+"type": "ENEMY",
+"dialogue": "DG00020"
+},
+{
+"type": "SELF",
+"dialogue": "DG00018"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00021"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00184"
+},
+{
+"type": "SELF",
+"dialogue": "DG00019"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00185"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00023"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00022"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00024"
+},
+{
+"type": "SELF",
+"dialogue": "DG00026"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00025"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00186"
+},
+{
+"type": "SELF",
+"dialogue": "DG00027"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00028"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00029"
+},
+{
+"type": "SELF",
+"dialogue": "DG00030"
+}
+]
+},
+"c002p1": {
+"id": "c002p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00031"
+},
+{
+"type": "SELF",
+"dialogue": "DG00032"
+}
+],
+"bossAppear": [
+{
+"type": "SELF",
+"dialogue": "DG00033"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00034"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00035"
+},
+{
+"type": "SELF",
+"dialogue": "DG00036"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00037"
+},
+{
+"type": "SELF",
+"dialogue": "DG00038"
+}
+]
+},
+"c002p2": {
+"id": "c002p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00039"
+},
+{
+"type": "SELF",
+"dialogue": "DG00040"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00041"
+},
+{
+"type": "SELF",
+"dialogue": "DG00042"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00043"
+},
+{
+"type": "SELF",
+"dialogue": "DG00044"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00045"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00046"
+},
+{
+"type": "SELF",
+"dialogue": "DG00047"
+}
+]
+},
+"c002p3": {
+"id": "c002p3",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00048"
+},
+{
+"type": "SELF",
+"dialogue": "DG00049"
+},
+{
+"type": "SELF",
+"dialogue": "DG00050"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00051"
+},
+{
+"type": "SELF",
+"dialogue": "DG00052"
+},
+{
+"type": "SELF",
+"dialogue": "DG00171"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00053"
+},
+{
+"type": "SELF",
+"dialogue": "DG00054"
+}
+]
+},
+"c003p1": {
+"id": "c003p1",
+"mapLoaded": [{
+"type": "SELF",
+"dialogue": "DG00055"
+}],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00056"
+},
+{
+"type": "SELF",
+"dialogue": "DG00057"
+},
+{
+"type": "SELF",
+"dialogue": "DG00058"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00059"
+},
+{
+"type": "SELF",
+"dialogue": "DG00060"
+}
+]
+},
+"c003p2": {
+"id": "c003p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00061"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00062"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00063"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00064"
+},
+{
+"type": "SELF",
+"dialogue": "DG00065"
+}
+],
+"bossDie": [
+{
+"type": "SELF",
+"dialogue": "DG00066"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00067"
+}
+]
+},
+"c003p3": {
+"id": "c003p3",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00069"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00070"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00071"
+},
+{
+"type": "SELF",
+"dialogue": "DG00072"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00073"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00074"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00075"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00076"
+},
+{
+"type": "SELF",
+"dialogue": "DG00077"
+},
+{
+"type": "SELF",
+"dialogue": "DG00078"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00079"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00080"
+},
+{
+"type": "SELF",
+"dialogue": "DG00081"
+},
+{
+"type": "SELF",
+"dialogue": "DG00082"
+}
+]
+},
+"c004p1": {
+"id": "c004p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00083"
+},
+{
+"type": "SELF",
+"dialogue": "DG00084"
+},
+{
+"type": "SELF",
+"dialogue": "DG00085"
+},
+{
+"type": "SELF",
+"dialogue": "DG00086"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00087"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00088"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00089"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00090"
+},
+{
+"type": "SELF",
+"dialogue": "DG00091"
+},
+{
+"type": "SELF",
+"dialogue": "DG00092"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00093"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00094"
+},
+{
+"type": "SELF",
+"dialogue": "DG00095"
+}
+]
+},
+"c004p2": {
+"id": "c004p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00096"
+},
+{
+"type": "SELF",
+"dialogue": "DG00097"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00098"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00099"
+},
+{
+"type": "SELF",
+"dialogue": "DG00100"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00101"
+},
+{
+"type": "SELF",
+"dialogue": "DG00102"
+}
+]
+},
+"c004p3": {
+"id": "c004p3",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00103"
+},
+{
+"type": "SELF",
+"dialogue": "DG00104"
+},
+{
+"type": "SELF",
+"dialogue": "DG00105"
+}
+],
+"bossAppear": [
+{
+"type": "SELF",
+"dialogue": "DG00106"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00107"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00108"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00109"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00110"
+},
+{
+"type": "SELF",
+"dialogue": "DG00111"
+}
+]
+},
+"c004p4": {
+"id": "c004p4",
+"mapLoaded": [
+{
+"type": "ENEMY",
+"dialogue": "DG00112"
+},
+{
+"type": "SELF",
+"dialogue": "DG00113"
+},
+{
+"type": "SELF",
+"dialogue": "DG00114"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00115"
+},
+{
+"type": "SELF",
+"dialogue": "DG00116"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00117"
+},
+{
+"type": "SELF",
+"dialogue": "DG00118"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00119"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00120"
+},
+{
+"type": "SELF",
+"dialogue": "DG00121"
+},
+{
+"type": "SELF",
+"dialogue": "DG00122"
+},
+{
+"type": "SELF",
+"dialogue": "DG00123"
+}
+]
+},
+"c004p5": {
+"id": "c004p5",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00124"
+},
+{
+"type": "SELF",
+"dialogue": "DG00125"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00126"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00127"
+},
+{
+"type": "SELF",
+"dialogue": "DG00128"
+},
+{
+"type": "SELF",
+"dialogue": "DG00129"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00130"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00131"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00132"
+},
+{
+"type": "SELF",
+"dialogue": "DG00133"
+}
+]
+},
+"c004p6": {
+"id": "c004p6",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00134"
+},
+{
+"type": "SELF",
+"dialogue": "DG00135"
+},
+{
+"type": "SELF",
+"dialogue": "DG00136"
+},
+{
+"type": "SELF",
+"dialogue": "DG00137"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00138"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00139"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00140"
+},
+{
+"type": "SELF",
+"dialogue": "DG00141"
+},
+{
+"type": "SELF",
+"dialogue": "DG00142"
+}
+],
+"bossHpUnder": {
+"hpRatio": 0.5,
+"content": [{
+"type": "ENEMY",
+"dialogue": "DG00144"
+}]
+},
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00145"
+},
+{
+"type": "SELF",
+"dialogue": "DG00146"
+},
+{
+"type": "SELF",
+"dialogue": "DG00147"
+}
+]
+},
+"c004p7": {
+"id": "c004p7",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00148"
+},
+{
+"type": "SELF",
+"dialogue": "DG00149"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00150"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00151"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00152"
+},
+{
+"type": "SELF",
+"dialogue": "DG00153"
+}
+],
+"bossFullFury": [{
+"type": "ENEMY",
+"dialogue": "DG00154"
+}],
+"bossHpUnder": {
+"hpRatio": 0.5,
+"content": [
+{
+"type": "ENEMY",
+"dialogue": "DG00155"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00156"
+}
+]
+},
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00157"
+},
+{
+"type": "SELF",
+"dialogue": "DG00158"
+},
+{
+"type": "SELF",
+"dialogue": "DG00159"
+},
+{
+"type": "SELF",
+"dialogue": "DG00160"
+},
+{
+"type": "SELF",
+"dialogue": "DG00161"
+}
+]
+},
+"c005p1": {
+"id": "c005p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00162"
+},
+{
+"type": "SELF",
+"dialogue": "DG00163"
+},
+{
+"type": "SELF",
+"dialogue": "DG00164"
+}
+],
+"bossAppear": [{
+"type": "ENEMY",
+"dialogue": "DG00165"
+}],
+"bossDie": [{
+"type": "SELF",
+"dialogue": "DG00166"
+}]
+},
+"c005p2": {
+"id": "c005p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00167"
+},
+{
+"type": "SELF",
+"dialogue": "DG00168"
+}
+],
+"bossAppear": [
+{
+"type": "SELF",
+"dialogue": "DG00169"
+},
+{
+"type": "SELF",
+"dialogue": "DG00172"
+}
+],
+"bossDie": [{
+"type": "ENEMY",
+"dialogue": "DG00170"
+}]
+},
+"c005p3": {
+"id": "c005p3",
+"mapLoaded": [{
+"type": "ENEMY",
+"dialogue": "DG00173"
+}],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00174"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00175"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00176"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00177"
+},
+{
+"type": "SELF",
+"dialogue": "DG00178"
+},
+{
+"type": "SELF",
+"dialogue": "DG00179"
+}
+],
+"bossFullFury": [{
+"type": "ENEMY",
+"dialogue": "DG00180"
+}],
+"bossHpUnder": {
+"hpRatio": 0.5,
+"content": [{
+"type": "ENEMY",
+"dialogue": "DG00181"
+}]
+},
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00182"
+},
+{
+"type": "SELF",
+"dialogue": "DG00183"
+}
+]
+},
+"c006p1": {
+"id": "c006p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00187"
+},
+{
+"type": "SELF",
+"dialogue": "DG00188"
+}
+],
+"bossDie": [{
+"type": "SELF",
+"dialogue": "DG00189"
+}]
+},
+"c006p2": {
+"id": "c006p2",
+"mapLoaded": [{
+"type": "SELF",
+"dialogue": "DG00190"
+}],
+"bossDie": [{
+"type": "SELF",
+"dialogue": "DG00191"
+}]
+},
+"c006p3": {
+"id": "c006p3",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00192"
+},
+{
+"type": "SELF",
+"dialogue": "DG00193"
+},
+{
+"type": "SELF",
+"dialogue": "DG00194"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00195"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00196"
+},
+{
+"type": "SELF",
+"dialogue": "DG00197"
+},
+{
+"type": "SELF",
+"dialogue": "DG00198"
+}
+],
+"bossDie": [{
+"type": "SELF",
+"dialogue": "DG00199"
+}]
+},
+"c007p1": {
+"id": "c007p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00200"
+},
+{
+"type": "SELF",
+"dialogue": "DG00201"
+},
+{
+"type": "SELF",
+"dialogue": "DG00202"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00203"
+},
+{
+"type": "SELF",
+"dialogue": "DG00204"
+}
+]
+},
+"c007p2": {
+"id": "c007p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00205"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00206"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00207"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00208"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00209"
+},
+{
+"type": "SELF",
+"dialogue": "DG00210"
+}
+],
+"bossHpUnder": {
+"hpRatio": 0.5,
+"content": [{
+"type": "ENEMY",
+"dialogue": "DG00213"
+}]
+},
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00211"
+},
+{
+"type": "SELF",
+"dialogue": "DG00212"
+}
+]
+},
+"c007p3": {
+"id": "c007p3",
+"mapLoaded": [
+{
+"type": "ENEMY",
+"dialogue": "DG00214"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00215"
+},
+{
+"type": "SELF",
+"dialogue": "DG00216"
+},
+{
+"type": "SELF",
+"dialogue": "DG00217"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00218"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00219"
+},
+{
+"type": "SELF",
+"dialogue": "DG00220"
+}
+]
+},
+"c008p1": {
+"id": "c008p1",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00221"
+},
+{
+"type": "SELF",
+"dialogue": "DG00222"
+},
+{
+"type": "SELF",
+"dialogue": "DG00223"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00224"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00225"
+},
+{
+"type": "SELF",
+"dialogue": "DG00226"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00227"
+},
+{
+"type": "SELF",
+"dialogue": "DG00228"
+}
+]
+},
+"c008p2": {
+"id": "c008p2",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00229"
+},
+{
+"type": "SELF",
+"dialogue": "DG00230"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00231"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00232"
+},
+{
+"type": "SELF",
+"dialogue": "DG00233"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00234"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00235"
+},
+{
+"type": "SELF",
+"dialogue": "DG00236"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00237"
+},
+{
+"type": "SELF",
+"dialogue": "DG00238"
+},
+{
+"type": "SELF",
+"dialogue": "DG00239"
+}
+]
+},
+"c008p3": {
+"id": "c008p3",
+"mapLoaded": [
+{
+"type": "SELF",
+"dialogue": "DG00240"
+},
+{
+"type": "SELF",
+"dialogue": "DG00241"
+},
+{
+"type": "SELF",
+"dialogue": "DG00242"
+}
+],
+"bossAppear": [
+{
+"type": "ENEMY",
+"dialogue": "DG00243"
+},
+{
+"type": "ENEMY",
+"dialogue": "DG00244"
+},
+{
+"type": "SELF",
+"dialogue": "DG00245"
+}
+],
+"bossDie": [
+{
+"type": "ENEMY",
+"dialogue": "DG00246"
+},
+{
+"type": "SELF",
+"dialogue": "DG00247"
+}
+]
+}
+}

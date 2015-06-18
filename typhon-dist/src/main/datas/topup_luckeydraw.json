@@ -1,0 +1,74 @@
+[
+{
+"id": "t01",
+"#item.id": "hc08",
+"count": 1,
+"prob": 1
+},
+{
+"id": "t08",
+"#item.id": "w018",
+"count": 3,
+"prob": 10
+},
+{
+"id": "t11",
+"#item.id": "w022",
+"count": 10,
+"prob": 16
+},
+{
+"id": "t05",
+"#item.id": "w022",
+"count": 5,
+"prob": 5
+},
+{
+"id": "t09",
+"#item.id": "w008",
+"count": 10,
+"prob": 12
+},
+{
+"id": "t02",
+"#item.id": "sd06",
+"count": 3,
+"prob": 2
+},
+{
+"id": "t12",
+"#item.id": "w002",
+"count": 5,
+"prob": 18
+},
+{
+"id": "t06",
+"#item.id": "w002",
+"count": 30,
+"prob": 7
+},
+{
+"id": "t03",
+"#item.id": "e056",
+"count": 2,
+"prob": 3
+},
+{
+"id": "t10",
+"#item.id": "w002",
+"count": 10,
+"prob": 14
+},
+{
+"id": "t04",
+"#item.id": "t018",
+"count": 5,
+"prob": 4
+},
+{
+"id": "t07",
+"#item.id": "w013",
+"count": 5,
+"prob": 8
+}
+]

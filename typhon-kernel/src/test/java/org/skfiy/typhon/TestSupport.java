@@ -15,25 +15,23 @@
  */
 package org.skfiy.typhon;
 
-import org.skfiy.typhon.container.GuiceContainer;
-
 /**
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
 public abstract class TestSupport extends TestRoot {
 
-    public static final GuiceContainer CONTAINER;
-
-    static {
-        CONTAINER = new GuiceContainer();
-        CONTAINER.init();
-
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            @Override
-            public void run() {
-                CONTAINER.destroy();
-            }
-        });
-    }
+//    public static final SpringContainer CONTAINER;
+//
+//    static {
+//        CONTAINER = new SpringContainer();
+//        CONTAINER.init();
+//
+//        Runtime.getRuntime().addShutdownHook(new Thread() {
+//            @Override
+//            public void run() {
+//                CONTAINER.destroy();
+//            }
+//        });
+//    }
 }

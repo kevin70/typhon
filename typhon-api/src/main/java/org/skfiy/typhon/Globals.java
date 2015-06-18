@@ -49,6 +49,11 @@ public final class Globals {
     public static final String CONSOLE_LOG_NAME = "console.out";
     
     /**
+     * 保存玩家操作失败数据
+     */
+    public static final String REPOSITORY_UPDATE_EXCEPION_LOG_PREFIX = "repository.update.exception.";
+    
+    /**
      * 关闭Asm解析的Json Parse Config.
      */
     public static final ParserConfig NO_ENABLED_ASM_PARSE_CONFIG;

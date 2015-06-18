@@ -15,52 +15,36 @@
  */
 package org.skfiy.typhon.domain;
 
-import com.alibaba.fastjson.annotation.JSONType;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.skfiy.typhon.domain.item.AbstractItem;
+
 import org.skfiy.typhon.dobj.ItemDobj;
-import org.skfiy.typhon.packet.Namespaces;
+import org.skfiy.typhon.domain.item.AbstractItem;
+import org.skfiy.typhon.util.DomainUtils;
 import org.skfiy.typhon.util.SortedList;
-import org.skfiy.util.Assert;
+
+import com.alibaba.fastjson.annotation.JSONType;
 
 /**
  * 背包实体对象设置.
  *
  * @author Kevin Zou <kevinz@skfiy.org>
  */
-@JSONType(ignores = "player")
-public class Bag implements Changeable {
+@JSONType(ignores = {"full"})
+public class Bag extends AbstractChangeable {
 
     private static final int MIN_POS = 1;
 
-    private final List<Node> nodeData = new SortedList<>();
-    private int maxSize = 100;
+    private final List<Node> nodes = new SortedList<>();
+    private int maxSize = Integer.MAX_VALUE;
     
-    private Player player;
-
-    @Override
-    public String getNs() {
-        return Namespaces.BIG;
-    }
-
-    @Override
-    public final Player getPlayer() {
-        return player;
-    }
-
-    @Override
-    public final void setPlayer(Player player) {
-        this.player = player;
-    }
-
     /**
      *
      * @return
      */
     public List<Node> getNodes() {
-        return Collections.unmodifiableList(nodeData);
+        return Collections.unmodifiableList(nodes);
     }
 
     /**
@@ -68,8 +52,12 @@ public class Bag implements Changeable {
      * @param nodes
      */
     public void setNodes(List<Node> nodes) {
-        this.nodeData.clear();
-        this.nodeData.addAll(nodes);
+        this.nodes.clear();
+        this.nodes.addAll(nodes);
+        
+        for (Node n : this.nodes) {
+            n.set(this, "nodes");
+        }
     }
 
     /**
@@ -96,7 +84,7 @@ public class Bag implements Changeable {
      * @param itemDobj 道具对象
      * @return 是否放置成功
      */
-    public boolean intoItem(ItemDobj itemDobj) {
+    public int intoItem(ItemDobj itemDobj) {
         return intoItem(itemDobj, 1);
     }
 
@@ -108,46 +96,64 @@ public class Bag implements Changeable {
      * @param count 道具数量
      * @return 是否放置成功
      */
-    public synchronized boolean intoItem(ItemDobj itemDobj, int count) {
+    public synchronized int intoItem(ItemDobj itemDobj, int count) {
         int c = count;
         if (isOverlapped(itemDobj)) {
-            Node[] nodes = findNodes(itemDobj.getId());
-            if (nodes.length > 0) {
-                for (Node n : nodes) {
-                    int av = n.item.getOverlapping() - n.total;
-                    if (av > 0) {
-                        c -= av;
-                        if (c <= 0) {
-                            n.total += count;
-                            return true;
-                        } else {
-                            n.total += av;
-                        }
+            Node n = findNode(itemDobj.getId());
+            if (n != null) {
+                int av = n.item.getOverlapping() - n.total;
+                if (av > 0) {
+                    c -= av;
+                    if (c <= 0) {
+                        n.setTotal(n.total + count);
+                    } else {
+                        n.setTotal(n.total + av);
                     }
+                    n.setLastGainTime((int) (System.currentTimeMillis() / 1000));
                 }
+                return n.pos;
+            }
+            
+            if (c > itemDobj.getOverlapping()) {
+                c = itemDobj.getOverlapping();
             }
         }
 
         if (c <= 0) {
-            return true;
+            return -1;
         }
 
         // 背包已满无法放置新的道具
         if (isFull()) {
-            return false;
+            return -1;
         }
 
-        int pos = nextPos();
-        if (pos <= 0) {
-            return false;
+        if (!isOverlapped(itemDobj) && c > 1) {
+            for (int i = 0; i < c; i++) {
+                addNode(itemDobj, 1);
+            }
+        } else {
+            return addNode(itemDobj, c);
         }
 
-        Node node = new Node();
-        node.setPos(pos);
-        node.setItem(itemDobj.toDomainItem());
-        node.setTotal(count);
-        nodeData.add(node);
-        return true;
+//        int pos = nextPos();
+//        if (pos < MIN_POS) {
+//            return -1;
+//        }
+//        
+//        Node node = new Node();
+//        node.setPos(pos);
+//        node.setItem(itemDobj.toDomainItem());
+//        node.setTotal(c);
+//        node.setLastGainTime((int) (System.currentTimeMillis() / 1000));
+//        
+//        nodes.add(node);
+//        
+//        // 通知客户端添加一个道具
+//        DomainUtils.fireIndexPropertyAdd(this, "nodes", node);
+//        
+//        node.set(this, "nodes");
+        return -1;
     }
 
     /**
@@ -157,7 +163,7 @@ public class Bag implements Changeable {
      * @return 道具信息
      */
     public Node findNode(int pos) {
-        for (Node node : nodeData) {
+        for (Node node : nodes) {
             if (node.pos == pos) {
                 return node;
             }
@@ -172,7 +178,7 @@ public class Bag implements Changeable {
      * @return 第一个符合条件的道具信息
      */
     public Node findNode(String iid) {
-        for (Node node : nodeData) {
+        for (Node node : nodes) {
             if (node.item.getId().equals(iid)) {
                 return node;
             }
@@ -188,7 +194,7 @@ public class Bag implements Changeable {
      */
     public Node[] findNodes(String iid) {
         List<Node> ns = new ArrayList<>();
-        for (Node node : nodeData) {
+        for (Node node : nodes) {
             if (node.getItem().getId().equals(iid)) {
                 ns.add(node);
             }
@@ -206,10 +212,12 @@ public class Bag implements Changeable {
      * @return {@code pos }位置对应的具体道具对象
      */
     public synchronized Node removeNode(int pos) {
-        for (int i = 0; i < nodeData.size(); i++) {
-            Node node = nodeData.get(i);
+        for (int i = 0; i < nodes.size(); i++) {
+            Node node = nodes.get(i);
             if (node.getPos() == pos) {
-                return nodeData.remove(i);
+                nodes.remove(i);
+                DomainUtils.fireIndexPropertyRemove(node);
+                return node;
             }
         }
         return null;
@@ -222,7 +230,11 @@ public class Bag implements Changeable {
      * @return 是否移除成功
      */
     public synchronized boolean removeNode(Node node) {
-        return nodeData.remove(node);
+        boolean r = nodes.remove(node);
+        if (r) {
+            DomainUtils.fireIndexPropertyRemove(node);
+        }
+        return r;
     }
 
     /**
@@ -245,13 +257,13 @@ public class Bag implements Changeable {
         Node destNode = findNode(destPost);
         if (destNode != null) {
             destNode.setPos(srcPos);
-            nodeData.remove(destNode);
-            nodeData.add(destNode);
+            nodes.remove(destNode);
+            nodes.add(destNode);
         }
 
         srcNode.setPos(destPost);
-        nodeData.remove(srcNode);
-        nodeData.add(srcNode);
+        nodes.remove(srcNode);
+        nodes.add(srcNode);
         return true;
     }
 
@@ -263,9 +275,7 @@ public class Bag implements Changeable {
      * @return 是否减少成功
      */
     public synchronized boolean decrementTotal(Node node, int count) {
-        Assert.notNull(node);
-
-        if (node.getTotal() < count) {
+        if (node == null || node.getTotal() < count) {
             return false;
         }
 
@@ -286,10 +296,10 @@ public class Bag implements Changeable {
      * @return 是否减少成功
      */
     public synchronized boolean decrementTotal(String iid, int count) {
-        Node[] nodes = findNodes(iid);
+        Node[] nodeData = findNodes(iid);
 
         int allCount = 0;
-        for (Node node : nodes) {
+        for (Node node : nodeData) {
             allCount += node.getTotal();
         }
 
@@ -298,7 +308,7 @@ public class Bag implements Changeable {
         }
 
         int newTotal;
-        for (Node node : nodes) {
+        for (Node node : nodeData) {
             newTotal = node.getTotal() - count;
             if (newTotal <= 0) {
                 removeNode(node);
@@ -321,7 +331,7 @@ public class Bag implements Changeable {
      * @return 数量
      */
     public int size() {
-        return nodeData.size();
+        return nodes.size();
     }
 
     /**
@@ -333,26 +343,47 @@ public class Bag implements Changeable {
         return (maxSize == size());
     }
     
+    private int addNode(ItemDobj itemDobj, int c) {
+        int pos = nextPos();
+        if (pos < MIN_POS) {
+            return -1;
+        }
+
+        Node node = new Node();
+        node.setPos(pos);
+        node.setItem(itemDobj.toDomainItem());
+        node.setTotal(c);
+        node.setLastGainTime((int) (System.currentTimeMillis() / 1000));
+
+        nodes.add(node);
+
+        // 通知客户端添加一个道具
+        DomainUtils.fireIndexPropertyAdd(this, "nodes", node);
+
+        node.set(this, "nodes");
+        return pos;
+    }
+    
     /**
      * 放置新道具的位置. 如果收到的返回值为-1则不是一个有效的位置, 此时背包无法容纳更多的道具.
      *
      * @return 道具的位置, 返回值大于等于1并且小于等余{@link #getMaxSize() }时为一个有效索引
      */
     private int nextPos() {
-        if (nodeData.isEmpty()) {
+        if (nodes.isEmpty()) {
             return MIN_POS;
         }
 
         Node prevNode = null;
-        for (int i = 0; i < nodeData.size(); i++) {
-            Node node = nodeData.get(i);
-            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS�?���?
+        for (int i = 0; i < nodes.size(); i++) {
+            Node node = nodes.get(i);
+            // 如果上一个节点为null, 并且第一个元素pos不是从MIN_POS
             if (prevNode == null) {
-                if (node.getPos() > MIN_POS) {
+                if (node == null || node.getPos() > MIN_POS) {
                     return MIN_POS;
                 }
             } else {
-                // 如果当前节点与上�?��节点的pos差距大于1则返回之间的pos
+                // 如果当前节点与上节点的pos差距大于1则返回之间的pos
                 if ((node.getPos() - prevNode.getPos()) > 1) {
                     return prevNode.getPos() + 1;
                 }
@@ -373,26 +404,32 @@ public class Bag implements Changeable {
     /**
      *
      */
-    public static class Node implements Comparable<Node> {
+    @JSONType(ignores = {"index"})
+    public static class Node extends AbstractIndexable implements Comparable<Node> {
 
         private int pos;
         private AbstractItem item;
         private int total;
-
+        private int lastGainTime;
+        
         public int getPos() {
             return pos;
         }
 
         public void setPos(int pos) {
+            DomainUtils.firePropertyChange(this, "pos", pos);
             this.pos = pos;
         }
 
-        public AbstractItem getItem() {
-            return item;
+        public <T extends AbstractItem> T getItem() {
+            return (T) item;
         }
 
         public void setItem(AbstractItem item) {
             this.item = item;
+            
+            // FIXME 设置道具的Parent属性
+            this.item.set(this, "item");
         }
 
         public int getTotal() {
@@ -401,8 +438,31 @@ public class Bag implements Changeable {
 
         public void setTotal(int total) {
             this.total = total;
+            
+            DomainUtils.firePropertyChange(this, "total", total);
         }
 
+        public int getLastGainTime() {
+            return lastGainTime;
+        }
+
+        public void setLastGainTime(int lastGainTime) {
+            this.lastGainTime = lastGainTime;
+            DomainUtils.firePropertyChange(this, "lastGainTime", lastGainTime);
+        }
+
+        // ==================================================================================
+        @Override
+        public String parentPropertyName() {
+            return "nodes";
+        }
+
+        @Override
+        public int index() {
+            return pos;
+        }
+        // ==================================================================================
+        
         @Override
         public int compareTo(Node o) {
             return Integer.compare(pos, o.pos);

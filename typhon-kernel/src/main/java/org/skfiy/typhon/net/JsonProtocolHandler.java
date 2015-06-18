@@ -25,17 +25,22 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import org.skfiy.typhon.Component;
 import org.skfiy.typhon.ComponentException;
-import org.skfiy.typhon.dispatcher.Dispatcher;
 import org.skfiy.typhon.dispatcher.DispatcherFactory;
+import org.skfiy.typhon.packet.Namespaces;
 import org.skfiy.typhon.packet.Packet;
 import org.skfiy.typhon.session.Session;
 import org.skfiy.typhon.session.SessionConstants;
 import org.skfiy.typhon.session.SessionContext;
 import org.skfiy.util.CustomizableThreadCreator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * {@code JSON } 消息协议处理器.
@@ -45,16 +50,20 @@ import org.skfiy.util.CustomizableThreadCreator;
 @Singleton
 public class JsonProtocolHandler implements Component, ProtocolHandler {
 
+    private static final Logger LOG = LoggerFactory.getLogger(JsonProtocolHandler.class);
+
     @Inject
     protected DispatcherFactory dispatcherFactory;
-    @Inject
+    @Resource
     protected Set<SessionErrorHandler> sessionErrorHandlers;
-    
-    protected Dispatcher dispatcher;
+
     protected ExecutorService executorService;
     protected CustomizableThreadCreator threadCreator;
     protected ThreadLocal<Session> _local_session;
 
+    private boolean shutdown = false;
+
+    @PostConstruct
     @Override
     public void init() {
         try {
@@ -69,16 +78,15 @@ public class JsonProtocolHandler implements Component, ProtocolHandler {
         } catch (Exception ex) {
             throw new ComponentException(ex);
         }
-        
-        dispatcher = dispatcherFactory.getDispatcher();
-        
+
         threadCreator = new CustomizableThreadCreator("json-exec-");
         threadCreator.setThreadGroupName("Protocol-ThreadGroup");
-        executorService = new ThreadPoolExecutor(Integer.getInteger("protocol.corePoolSize", 2),
-                Integer.getInteger("protocol.maxPoolSize", 200),
+        threadCreator.setDaemon(true);
+        executorService = new ThreadPoolExecutor(Integer.getInteger("protocol.corePoolSize", 4),
+                Integer.getInteger("protocol.maxPoolSize", 50),
                 Integer.getInteger("protocol.keepAliveTime", 3000),
                 TimeUnit.MILLISECONDS,
-                new ArrayBlockingQueue<Runnable>(Integer.getInteger("protocol.workQueueSize", 50)),
+                new ArrayBlockingQueue<Runnable>(Integer.getInteger("protocol.workQueueSize", 30)),
                 new CustomizableThreadFactory(),
                 new NewThreadPolicy());
     }
@@ -88,42 +96,58 @@ public class JsonProtocolHandler implements Component, ProtocolHandler {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @PreDestroy
     @Override
     public void destroy() {
+        shutdown = true;
         executorService.shutdown();
     }
 
     @Override
     public void handle(final Session session, final byte[] nsbs, final byte[] datas) {
-        synchronized (session) {
-            executorService.execute(new Runnable() {
-                @Override
-                public void run() {
-                    // 保存Session至上下文
+        if (shutdown) {
+            LOG.warn("shutdown......");
+            return;
+        }
+
+        final String ns = new String(nsbs, StandardCharsets.UTF_8);
+        Runnable impl = new Runnable() {
+
+            @Override
+            public void run() {
+                synchronized (session) {
                     _local_session.set(session);
-                    
                     try {
-                        String ns = new String(nsbs, StandardCharsets.UTF_8);
+
                         Packet packet = JSON.parseObject(datas,
                                 dispatcherFactory.getPacketClass(ns));
-                        
+                        packet.setNs(ns);
+
                         session.setAttribute(SessionConstants.ATTR_CONTEXT_PACKET, packet);
-                        dispatcher.dispatch(ns, packet);
+                        dispatcherFactory.getDispatcher().dispatch(ns, packet);
                         session.removeAttribute(SessionConstants.ATTR_CONTEXT_PACKET);
                     } catch (Throwable t) {
+                        LOG.error("{}:{} --> {}", new String(nsbs, StandardCharsets.UTF_8),
+                                new String(datas, StandardCharsets.UTF_8), t);
+
                         for (SessionErrorHandler seh : sessionErrorHandlers) {
-                            if (t.getClass().isAssignableFrom(seh.getErrorType())) {
+                            if (seh.getErrorType().isAssignableFrom(t.getClass())) {
                                 seh.handleError(session, t);
                                 break;
                             }
                         }
                     }
                 }
-            });
-            // End
+            }
+        };
+
+        if (Namespaces.LOGOUT.equals(ns)) {
+            impl.run();
+        } else {
+            executorService.execute(impl);
         }
     }
-    
+
     private class CustomizableThreadFactory implements ThreadFactory {
 
         @Override
@@ -131,7 +155,7 @@ public class JsonProtocolHandler implements Component, ProtocolHandler {
             return threadCreator.createThread(r);
         }
     }
-    
+
     private class NewThreadPolicy implements RejectedExecutionHandler {
 
         @Override
